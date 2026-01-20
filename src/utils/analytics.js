@@ -8,7 +8,7 @@
  */
 
 // This should be replaced with the actual Google Apps Script Web App URL after deployment
-const ANALYTICS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxc3GfrybfRHm-Pt27ImQtKG-yLwmbQ7X6pddY33_0c2Uhfo7Pfd-oVynLGOjnXtEiCRg/exec';
+const ANALYTICS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbw12jSRDnHrxOZJnDanNn6xfSbOrQy_vRUn_N1Jv1ped9oEkdCJzZoaSR_16XAAesQc/exec';
 
 /**
  * Tracks a game play event.
@@ -23,6 +23,8 @@ export const trackGamePlay = async (game) => {
         timestamp: new Date().toISOString(),
         action: 'play'
     };
+
+    console.log('[Analytics] Tracking play for:', game.title);
 
     if (ANALYTICS_ENDPOINT === 'YOUR_GOOGLE_APPS_SCRIPT_URL') {
         console.log('[Analytics] Deployment needed. Tracking:', payload);

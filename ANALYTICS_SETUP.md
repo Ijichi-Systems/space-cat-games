@@ -15,6 +15,11 @@ This document explains how to set up the backend for the privacy-friendly game a
 
 ```javascript
 function doPost(e) {
+  // SAFETY CHECK: Prevents error when clicking "Run" button in the editor
+  if (!e || !e.postData || !e.postData.contents) {
+    return ContentService.createTextOutput("Error: No data received. Note: This script must be triggered by a game play on the website, not the 'Run' button.").setMimeType(ContentService.MimeType.TEXT);
+  }
+
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName('Analytics') || ss.insertSheet('Analytics');
   
@@ -34,12 +39,12 @@ function doPost(e) {
   
   for (var i = 1; i < rows.length; i++) {
     if (rows[i][0] === gameTitle) {
-      var total = rows[i][1] + 1;
+      var total = Number(rows[i][1]) + 1;
       var lastTodayStr = rows[i][5];
       var lastMonthStr = rows[i][6];
       
-      var todayCount = (lastTodayStr === todayStr) ? rows[i][2] + 1 : 1;
-      var monthCount = (lastMonthStr === monthStr) ? rows[i][3] + 1 : 1;
+      var todayCount = (lastTodayStr === todayStr) ? Number(rows[i][2]) + 1 : 1;
+      var monthCount = (lastMonthStr === monthStr) ? Number(rows[i][3]) + 1 : 1;
       
       sheet.getRange(i + 1, 2, 1, 6).setValues([[
         total, 
@@ -70,15 +75,15 @@ function doPost(e) {
 2. Select type: **Web app**.
 3. Description: `Initial deployment`.
 4. Execute as: **Me**.
-5. Who has access: **Anyone**. (This is required for the website to send data without user authentication).
+5. Who has access: **Anyone**. (This is required for the website to send data).
 6. Click **Deploy**.
-7. You may be prompted to **Authorize access**. Click "Authorize access", select your Google account, click "Advanced" -> "Go to Game Analytics Backend (unsafe)", and click "Allow".
+7. Click "Authorize access", select your Google account, click "Advanced" -> "Go to Game Analytics Backend (unsafe)", and click "Allow".
 8. Copy the **Web App URL** provided.
 
 ## 4. Update Website Configuration
 
 1. Open `src/utils/analytics.js` in your project.
-2. Replace `'YOUR_GOOGLE_APPS_SCRIPT_URL'` with the URL you copied in the previous step:
+2. Replace `'YOUR_GOOGLE_APPS_SCRIPT_URL'` with the URL you copied:
 
 ```javascript
 const ANALYTICS_ENDPOINT = 'https://script.google.com/macros/s/.../exec';
@@ -86,5 +91,7 @@ const ANALYTICS_ENDPOINT = 'https://script.google.com/macros/s/.../exec';
 
 3. Save the file and rebuild your project.
 
-## Privacy Note
-This analytics system only tracks the game title and the time it was played. No IP addresses, user-agent strings, or personal identifiers are sent to or stored in the Google Sheet.
+## Troubleshooting
+
+*   **Error in Apps Script Editor**: If you see "TypeError: Cannot read properties of undefined (reading 'postData')", it means you clicked the "Run" button in the editor. This is normal; the script only works when called from the website.
+*   **Sheet not updating**: Ensure "Who has access" was set to **Anyone** during deployment. If you change the code, you must create a **New deployment** (Version: New version) for changes to take effect.
