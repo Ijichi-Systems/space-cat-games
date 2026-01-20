@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-18T09:50:11.349Z",
-  "count": 125,
+  "generatedAt": "2026-01-18T22:03:56.231Z",
+  "count": 131,
   "games": [
     {
       "title": "FIFA 2007",
@@ -725,6 +725,37 @@
       "title": "Ages of Conflict",
       "url": "/games/aoc.html",
       "img": "/images/aoc.png"
+    },
+    {
+      "title": "Evolving Bombs 3D",
+      "url": "/games/eb3.html",
+      "img": "/images/eb3.png"
+    },
+    {
+      "title": "Fifa 11",
+      "url": "/games/f11.html",
+      "img": "/images/fifa11.png"
+    },
+    {
+      "title": "osu!",
+      "url": "/games/osu!.html",
+      "img": "/images/osu.png"
+    },
+    {
+      "title": "Postal",
+      "url": "/games/Postal.html",
+      "img": "/images/postal.jpg"
+    },
+    {
+      "title": "Peggle",
+      "url": "/games/Peggle.html",
+      "img": "/images/peggle.png",
+      "alt": "peg"
+    },
+    {
+      "title": "Telekinesis Drive",
+      "url": "/games/tcar.html",
+      "img": "/images/telecar.png"
     }
   ]
 }

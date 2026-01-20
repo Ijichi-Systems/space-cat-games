@@ -67,6 +67,7 @@ export default function Home() {
                 <meta name="keywords" content="games, open source, browser games" />
                 <meta property="og:title" content="Space Cat Games - Home" />
                 <meta property="og:type" content="website" />
+                <script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script>
             </Helmet>
 
 
@@ -78,7 +79,7 @@ export default function Home() {
 
                     <br />
                     <a href="/games" className="btn">Play Now</a>
-                    <!-- Eplinx.com / Banner / 120x240 --><ins class="ins-zone" data-zone="160013"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
+                    {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
                 </div>
             </div>
 
@@ -109,7 +110,7 @@ export default function Home() {
                         <Game title="Crazy Cattle 3D"
                             img="/images/cattlemoment.webp"
                             url="/games/clcrazycattle3d.html" />
-                        <!-- Eplinx.com / Banner / 120x240 --><ins class="ins-zone" data-zone="160013"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
+                        {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
                     </div>
                 </section>
             </div>
@@ -120,33 +121,33 @@ export default function Home() {
 }
 
 function Feature({ title, text }) {
-  return (
-    <div className="feature">
-      <h3>{title}</h3>
-      <p>{text}</p>
-    </div>
-  );
+    return (
+        <div className="feature">
+            <h3>{title}</h3>
+            <p>{text}</p>
+        </div>
+    );
 }
 
 function Game({ title, img, url }) {
-  const handleClick = () => {
-    // Check if URL is external (starts with http:// or https://)
-    if (url.startsWith("http://") || url.startsWith("https://")) {
-      // Open external links in new tab
-      window.open(url, "_blank", "noopener,noreferrer");
-    } else {
-      // Use regular browser navigation for internal game routes
-      // These are actual static HTML files that need to be loaded from the public directory
-      window.location.href = url;
-    }
-  };
+    const handleClick = () => {
+        // Check if URL is external (starts with http:// or https://)
+        if (url.startsWith("http://") || url.startsWith("https://")) {
+            // Open external links in new tab
+            window.open(url, "_blank", "noopener,noreferrer");
+        } else {
+            // Use regular browser navigation for internal game routes
+            // These are actual static HTML files that need to be loaded from the public directory
+            window.location.href = url;
+        }
+    };
 
-  return (
-    <div className="game-item">
-      <button onClick={handleClick}>
-        <img src={img} alt={title} />
-      </button>
-      <p>{title}</p>
-    </div>
-  );
+    return (
+        <div className="game-item">
+            <button onClick={handleClick}>
+                <img src={img} alt={title} />
+            </button>
+            <p>{title}</p>
+        </div>
+    );
 }
