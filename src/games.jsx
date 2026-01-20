@@ -353,43 +353,97 @@ export default function Games() {
             </div>
             <style>
                 {`
-                    .game-item { position: relative; }
+                    .game-item { 
+                        position: relative; 
+                        overflow: hidden;
+                        border-radius: 12px;
+                        transition: transform 0.3s ease;
+                    }
+                    .game-item:hover { transform: translateY(-5px); }
+                    
+                    /* Strict reset for all buttons inside game items */
+                    .game-item button {
+                        appearance: none !important;
+                        -webkit-appearance: none !important;
+                        outline: none !important;
+                    }
+
                     .game-item-actions {
                         position: absolute;
-                        top: 8px;
-                        right: 8px;
+                        top: 10px;
+                        right: 10px;
                         z-index: 5;
                         display: flex;
-                        gap: 5px;
+                        gap: 6px;
                         opacity: 0;
-                        transition: opacity 0.2s;
+                        transform: translateY(-10px);
+                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        background: rgba(0, 0, 0, 0.4); /* Darker backdrop */
+                        backdrop-filter: blur(8px);
+                        -webkit-backdrop-filter: blur(8px);
+                        padding: 6px;
+                        border-radius: 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.15);
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
                     }
-                    .game-item:hover .game-item-actions { opacity: 1; }
+                    .game-item:hover .game-item-actions { 
+                        opacity: 1; 
+                        transform: translateY(0);
+                    }
                     .action-btn {
-                        background: rgba(0,0,0,0.6);
-                        border: none;
-                        border-radius: 4px;
-                        color: white;
+                        background: rgba(255, 255, 255, 0.1) !important;
+                        border: none !important;
+                        border-radius: 6px !important;
+                        color: white !important;
                         width: 32px;
                         height: 32px;
                         cursor: pointer;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        font-size: 16px;
+                        font-size: 14px;
+                        padding: 0 !important;
+                        transition: background 0.2s, transform 0.1s;
+                        box-shadow: none !important;
                     }
-                    .action-btn:hover { background: rgba(0,0,0,0.8); }
-                    .fav-btn.active { color: #f1c40f; }
+                    .action-btn:hover { 
+                        background: rgba(255, 255, 255, 0.2) !important; 
+                        transform: scale(1.05);
+                    }
+                    .action-btn:active { transform: scale(0.95); }
+                    .fav-btn.active { color: #f1c40f !important; }
                     .recent-games-section { margin-bottom: 40px; }
-                    .recent-games-scroll { overflow-x: auto; padding-bottom: 10px; }
+                    .recent-games-scroll { 
+                        overflow-x: auto; 
+                        padding-bottom: 12px;
+                        scrollbar-width: thin;
+                    }
                     .recent-grid { 
                         display: flex !important; 
                         flex-wrap: nowrap !important; 
-                        gap: 20px; 
+                        gap: 15px; 
                         justify-content: flex-start !important;
                     }
-                    .game-item.small { min-width: 140px; max-width: 140px; }
-                    .game-item.small p { font-size: 0.9em; }
+                    .game-item.small { 
+                        min-width: 140px; 
+                        max-width: 140px;
+                    }
+                    .game-item.small button {
+                        height: 140px !important;
+                        padding: 10px !important;
+                        border-radius: 15px !important;
+                    }
+                    .game-item.small img {
+                        max-width: 80px !important;
+                        max-height: 80px !important;
+                    }
+                    .game-item.small p { 
+                        font-size: 0.8em; 
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-top: 8px;
+                    }
                     `}
             </style>
 
