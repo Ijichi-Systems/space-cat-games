@@ -44,8 +44,20 @@ export default function Home() {
             .then(r => r.json())
             .then(data => {
                 if (data.games && data.games.length > 0) {
-                    const randomGame = data.games[Math.floor(Math.random() * data.games.length)];
-                    setGameOfTheDay(randomGame);
+                    // Get current date string in GMT (YYYY-MM-DD)
+                    const dateStr = new Date().toISOString().split('T')[0];
+
+                    // Simple deterministic hash function
+                    let hash = 0;
+                    for (let i = 0; i < dateStr.length; i++) {
+                        hash = (hash << 5) - hash + dateStr.charCodeAt(i);
+                        hash |= 0; // Convert to 32bit integer
+                    }
+
+                    // Use the hash to pick a game index
+                    const index = Math.abs(hash) % data.games.length;
+                    const dailyGame = data.games[index];
+                    setGameOfTheDay(dailyGame);
                 }
             })
             .catch(err => console.error("Failed to fetch games for Game of the Day:", err));
