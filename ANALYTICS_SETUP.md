@@ -118,7 +118,8 @@ To confirm that your analytics are correctly set up, follow these steps:
 ## Troubleshooting
 
 *   **"TypeError: Cannot read properties of undefined (reading 'postData')"**: This happens if you click the **"Run"** button inside the Apps Script editor. This is normal behavior! The script is designed to be triggered by the website, not manually run in the editor.
+*   **"NetworkError when attempting to fetch resource"**: This is almost always caused by an **AdBlocker**, **Brave Shield**, or **Firefox Enhanced Tracking Protection**. These tools see the request to `script.google.com` as a "tracker" and block the connection entirely.
+    *   **To fix/test**: Disable your AdBlocker or try opening the site in a **Private/Incognito window** where extensions are disabled. If it works there, the code is fine!
 *   **"Cross-Origin Request Blocked" / CORS Error**: You might still see a CORS warning in your browser console. This is **normal** when using Google Apps Script with `no-cors` mode. As long as the data appears in your spreadsheet, you can ignore this warning.
-*   **Status: (null) / Request Blocked**: If you use an **AdBlocker** or "Privacy" extension (like uBlock Origin, Brave's Shield, or Ghostery), it might block the connection to `script.google.com`. Try disabling it for your site to test if that is the cause.
 *   **Sheet not updating**: Ensure "Who has access" was set to **Anyone** during deployment. 
 *   **Important**: If you change the code in Apps Script, you must go to **Deploy > Manage Deployments**, click the **Edit** icon, choose **New Version**, and click **Deploy** again.

@@ -40,6 +40,7 @@ export const trackGamePlay = async (game) => {
             method: 'POST',
             mode: 'no-cors',
             cache: 'no-cache',
+            credentials: 'omit', // Prevents sending cookies which can trigger security blocks
             headers: {
                 'Content-Type': 'text/plain', // Using text/plain avoids preflight (CORS) checks
             },
