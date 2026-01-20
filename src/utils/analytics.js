@@ -15,7 +15,14 @@ const ANALYTICS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbw12jSRDnHrx
  * @param {Object} game - The game object being played.
  */
 export const trackGamePlay = async (game) => {
-    if (!game || !game.title) return;
+    if (!game) {
+        console.error('[Analytics] No game object provided');
+        return;
+    }
+    if (!game.title) {
+        console.error('[Analytics] Game object missing title:', game);
+        return;
+    }
 
     // Only send the game title. No user IDs, IPs, or other PII.
     const payload = {
@@ -24,14 +31,15 @@ export const trackGamePlay = async (game) => {
         action: 'play'
     };
 
-    console.log('[Analytics] Tracking play for:', game.title);
+    console.log('[Analytics] Attempting to track play for:', game.title);
 
-    if (ANALYTICS_ENDPOINT === 'YOUR_GOOGLE_APPS_SCRIPT_URL') {
-        console.log('[Analytics] Deployment needed. Tracking:', payload);
+    if (ANALYTICS_ENDPOINT === 'YOUR_GOOGLE_APPS_SCRIPT_URL' || !ANALYTICS_ENDPOINT) {
+        console.warn('[Analytics] Deployment needed or endpoint missing. Data:', payload);
         return;
     }
 
     try {
+        console.log('[Analytics] Sending request to:', ANALYTICS_ENDPOINT);
         // We use mode: 'no-cors' and no headers to make the request as "silent" as possible.
         // This avoids CORS preflight checks and handles Google's redirects automatically.
         const fetchPromise = fetch(ANALYTICS_ENDPOINT, {
@@ -44,6 +52,6 @@ export const trackGamePlay = async (game) => {
         return fetchPromise;
     } catch (error) {
         // Silently fail to not interrupt user experience
-        console.error('[Analytics] Error reporting play:', error);
+        console.error('[Analytics] Critical error during fetch setup:', error);
     }
 };
