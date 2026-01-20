@@ -9,7 +9,7 @@ function doPost(e) {
 
   // Set up headers if new sheet
   if (sheet.getLastRow() === 0) {
-    sheet.appendRow(['Game Title', 'Total Plays', 'Plays Today', 'Plays This Month', 'Last Updated', 'Today Date', 'Month']);
+    sheet.appendRow(['Game Title', 'Total Plays', 'Plays Today', 'Plays This Month', 'Last Updated', 'Todays Date', 'Month']);
   }
 
   var data = JSON.parse(e.postData.contents);
