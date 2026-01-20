@@ -186,12 +186,14 @@
 </head>
 
 <body>
-  <div id="loading-text" style="color: white; font-size: 48px; font-family: cursive; text-align: center; margin-top: 20px;"> LOADING... </div>
+    <div id="loading-text"
+        style="color: white; font-size: 48px; font-family: cursive; text-align: center; margin-top: 20px;"> LOADING...
+    </div>
     <script>
-      let loadingtext = document.getElementById("loading-text");
+        let loadingtext = document.getElementById("loading-text");
         const changelater = "https://raw.githubusercontent.com/web-ports/milk-bag-games/refs/heads/main/outside/renpy.wasm";
         const originalFetch = window.fetch;
-        window.fetch = async function(input, init) {
+        window.fetch = async function (input, init) {
             let url = input;
             if (input instanceof Request) {
                 url = input.url;
@@ -206,39 +208,39 @@
             return originalFetch(input, init);
         };
 
-      let doneparts = 0;
-      function mergeFiles(fileParts) {
-      return new Promise((resolve, reject) => {
-          let buffers = [];
+        let doneparts = 0;
+        function mergeFiles(fileParts) {
+            return new Promise((resolve, reject) => {
+                let buffers = [];
 
-          function fetchPart(index) {
-              if (index >= fileParts.length) {
-                  let mergedBlob = new Blob(buffers);
-                  let mergedFileUrl = URL.createObjectURL(mergedBlob);
-                  resolve(mergedFileUrl);
-                  return;
-              }
-              fetch(fileParts[index]).then((response) => response.arrayBuffer()).then((data) => {
-                  buffers.push(data);
-                  doneparts = doneparts+1;
-                  loadingtext.textContent = "LOADING... ("+doneparts+"/"+maxparts+")";
-                  fetchPart(index + 1);
-              }).catch(reject);
-          }
-          fetchPart(0);
-      });
-  }
+                function fetchPart(index) {
+                    if (index >= fileParts.length) {
+                        let mergedBlob = new Blob(buffers);
+                        let mergedFileUrl = URL.createObjectURL(mergedBlob);
+                        resolve(mergedFileUrl);
+                        return;
+                    }
+                    fetch(fileParts[index]).then((response) => response.arrayBuffer()).then((data) => {
+                        buffers.push(data);
+                        doneparts = doneparts + 1;
+                        loadingtext.textContent = "LOADING... (" + doneparts + "/" + maxparts + ")";
+                        fetchPart(index + 1);
+                    }).catch(reject);
+                }
+                fetchPart(0);
+            });
+        }
 
-  let maxparts = 0;
-  function getParts(file, start, end) {
-      let parts = [];
-      for (let i = start; i <= end; i++) {
-          parts.push(file + ".part" + i);
-      }
-      maxparts = parts.length+maxparts;
-      loadingtext.textContent = "LOADING... ("+doneparts+"/"+maxparts+")";
-      return parts;
-  }
+        let maxparts = 0;
+        function getParts(file, start, end) {
+            let parts = [];
+            for (let i = start; i <= end; i++) {
+                parts.push(file + ".part" + i);
+            }
+            maxparts = parts.length + maxparts;
+            loadingtext.textContent = "LOADING... (" + doneparts + "/" + maxparts + ")";
+            return parts;
+        }
         mergeFiles(getParts("game.zip", 1, 32)).then(async url => {
             window.gameZipURL = url;
             let renpypre = document.createElement("script");
@@ -258,7 +260,8 @@
     <div id="ContextContainer">
         <a id="ContextButton">&#8801;</a><br />
         <div id="ContextMenu" style="display: none;">
-            <input id="ID_SavegamesImport" type="file" onchange="onSavegamesImport(this)" accept="application/zip" style=display:none></input>
+            <input id="ID_SavegamesImport" type="file" onchange="onSavegamesImport(this)" accept="application/zip"
+                style=display:none></input>
             <a href="javascript:document.getElementById('ID_SavegamesImport').click();">Import Saves</a>
             <a href="javascript:onSavegamesExport();">Export Saves</a>
             <a href="javascript:FSDownload('/log.txt', 'text/plain');">Download Log</a>
@@ -281,6 +284,7 @@
         </form>
     </div>
 
+    <!-- 
     <script>
         // Register the service worker.
         if (navigator.serviceWorker) {
@@ -291,6 +295,7 @@
             }
         }
     </script>
+    -->
 </body>
 
 </html>
