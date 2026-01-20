@@ -146,19 +146,7 @@ export default function Games() {
         localStorage.setItem("scg_favorites", JSON.stringify(newFavorites));
     };
 
-    const copyGameLink = (e, gameUrl) => {
-        e.stopPropagation();
-        const fullUrl = window.location.origin + gameUrl;
-        navigator.clipboard.writeText(fullUrl).then(() => {
-            const btn = e.currentTarget;
-            const originalText = btn.innerText;
-            btn.innerText = "✅";
-            setTimeout(() => {
-                btn.innerText = originalText;
-            }, 2000);
-        });
-    };
-
+    // Track Recently Played
     const handleGameClick = (game) => {
         // Track Recently Played
         const newRecent = [game, ...recentGames.filter(g => g.url !== game.url)].slice(0, 10);
@@ -231,33 +219,6 @@ export default function Games() {
             </Helmet>
 
             <div className="container">
-                {/* Recently Played Section */}
-                {recentGames.length > 0 && (
-                    <section className="recent-games-section">
-                        <h2>Recently Played</h2>
-                        <div className="recent-games-scroll">
-                            <div className="games-grid recent-grid">
-                                {recentGames.map((game, index) => (
-                                    <div key={`recent-${index}`} className="game-item small">
-                                        <button
-                                            type="button"
-                                            onClick={() => handleGameClick(game)}
-                                            title={game.title}
-                                        >
-                                            <img
-                                                src={game.img}
-                                                alt={game.title}
-                                                onError={(e) => { e.target.src = "/images/noimg.png"; }}
-                                            />
-                                        </button>
-                                        <p>{game.title}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </section>
-                )}
-
                 <h1>Games Collection</h1>
                 <p>
                     Browse our extensive collection of free browser games. Click
@@ -308,6 +269,33 @@ export default function Games() {
                     </div>
                 </div>
 
+                {/* Recently Played Section - Moved below controls */}
+                {recentGames.length > 0 && (
+                    <section className="recent-games-section">
+                        <h2>Recently Played</h2>
+                        <div className="recent-games-scroll">
+                            <div className="games-grid recent-grid">
+                                {recentGames.map((game, index) => (
+                                    <div key={`recent-${index}`} className="game-item small">
+                                        <button
+                                            type="button"
+                                            onClick={() => handleGameClick(game)}
+                                            title={game.title}
+                                        >
+                                            <img
+                                                src={game.img}
+                                                alt={game.title}
+                                                onError={(e) => { e.target.src = "/images/noimg.png"; }}
+                                            />
+                                        </button>
+                                        <p>{game.title}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+                )}
+
                 <div className="games-grid" id="gamesGrid" ref={gamesGridRef}>
                     {filteredGames.length > 0 ? (
                         filteredGames.map((game, index) => (
@@ -319,13 +307,6 @@ export default function Games() {
                                         title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
                                     >
                                         {favorites.includes(game.url) ? '⭐' : '☆'}
-                                    </button>
-                                    <button
-                                        className="action-btn copy-btn"
-                                        onClick={(e) => copyGameLink(e, game.url)}
-                                        title="Copy Link"
-                                    >
-                                        🔗
                                     </button>
                                 </div>
                                 <button
@@ -378,22 +359,15 @@ export default function Games() {
                         opacity: 0;
                         transform: translateY(-10px);
                         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                        background: rgba(0, 0, 0, 0.4); /* Darker backdrop */
-                        backdrop-filter: blur(8px);
-                        -webkit-backdrop-filter: blur(8px);
-                        padding: 6px;
-                        border-radius: 10px;
-                        border: 1px solid rgba(255, 255, 255, 0.15);
-                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
                     }
                     .game-item:hover .game-item-actions { 
                         opacity: 1; 
                         transform: translateY(0);
                     }
                     .action-btn {
-                        background: rgba(255, 255, 255, 0.1) !important;
+                        background: transparent !important;
                         border: none !important;
-                        border-radius: 6px !important;
+                        border-radius: 50% !important;
                         color: white !important;
                         width: 32px;
                         height: 32px;
@@ -401,10 +375,11 @@ export default function Games() {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        font-size: 14px;
+                        font-size: 20px; /* Slightly larger star */
                         padding: 0 !important;
-                        transition: background 0.2s, transform 0.1s;
+                        transition: transform 0.2s;
                         box-shadow: none !important;
+                        text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Shadow for visibility */
                     }
                     .action-btn:hover { 
                         background: rgba(255, 255, 255, 0.2) !important; 
