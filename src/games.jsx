@@ -278,6 +278,13 @@ export default function Games() {
                                 {recentGames.map((game, index) => (
                                     <div key={`recent-${index}`} className="game-item small">
                                         <button
+                                            className={`star-btn ${favorites.includes(game.url) ? 'active' : ''}`}
+                                            onClick={(e) => toggleFavorite(e, game.url)}
+                                            title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
+                                        >
+                                            {favorites.includes(game.url) ? '⭐' : '☆'}
+                                        </button>
+                                        <button
                                             type="button"
                                             onClick={() => handleGameClick(game)}
                                             title={game.title}
@@ -289,13 +296,6 @@ export default function Games() {
                                             />
                                         </button>
                                         <p>{game.title}</p>
-                                        <button
-                                            className={`star-btn ${favorites.includes(game.url) ? 'active' : ''}`}
-                                            onClick={(e) => toggleFavorite(e, game.url)}
-                                            title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
-                                        >
-                                            {favorites.includes(game.url) ? '⭐' : '☆'}
-                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -307,6 +307,13 @@ export default function Games() {
                     {filteredGames.length > 0 ? (
                         filteredGames.map((game, index) => (
                             <div key={index} className="game-item">
+                                <button
+                                    className={`star-btn ${favorites.includes(game.url) ? 'active' : ''}`}
+                                    onClick={(e) => toggleFavorite(e, game.url)}
+                                    title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
+                                >
+                                    {favorites.includes(game.url) ? '⭐' : '☆'}
+                                </button>
                                 <button
                                     type="button"
                                     onClick={() => handleGameClick(game)}
@@ -321,13 +328,6 @@ export default function Games() {
                                     />
                                 </button>
                                 <p>{game.title}</p>
-                                <button
-                                    className={`star-btn ${favorites.includes(game.url) ? 'active' : ''}`}
-                                    onClick={(e) => toggleFavorite(e, game.url)}
-                                    title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
-                                >
-                                    {favorites.includes(game.url) ? '⭐' : '☆'}
-                                </button>
                             </div>
                         ))
                     ) : (
@@ -358,16 +358,24 @@ export default function Games() {
                     }
 
                     .star-btn {
-                        background: transparent !important;
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        z-index: 10;
+                        background: rgba(0, 0, 0, 0.5) !important;
+                        border-radius: 50%;
                         border: none !important;
-                        color: #7f8c8d !important;
+                        color: #ffffff !important;
                         cursor: pointer;
                         font-size: 18px;
                         padding: 5px !important;
                         transition: transform 0.2s, color 0.2s;
-                        margin-top: -5px;
                         display: block;
-                        width: fit-content;
+                        width: 32px;
+                        height: 32px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                     .star-btn:hover { transform: scale(1.2); }
                     .star-btn.active { color: #f1c40f !important; }
