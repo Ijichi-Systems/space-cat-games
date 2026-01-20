@@ -8,6 +8,11 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
 export default function Games() {
+    const [games, setGames] = useState([]);
+    const [filteredGames, setFilteredGames] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [sortType, setSortType] = useState("default");
+    const [loading, setLoading] = useState(true);
     const [favorites, setFavorites] = useState([]);
     const [recentGames, setRecentGames] = useState([]);
     const [fps, setFps] = useState(0);
@@ -225,124 +230,126 @@ export default function Games() {
                 <link href="/games.css" rel="stylesheet" />
             </Helmet>
 
-            {/* Recently Played Section */}
-            {recentGames.length > 0 && (
-                <section className="recent-games-section">
-                    <h2>Recently Played</h2>
-                    <div className="recent-games-scroll">
-                        <div className="games-grid recent-grid">
-                            {recentGames.map((game, index) => (
-                                <div key={`recent-${index}`} className="game-item small">
-                                    <button
-                                        type="button"
-                                        onClick={() => handleGameClick(game)}
-                                        title={game.title}
-                                    >
-                                        <img
-                                            src={game.img}
-                                            alt={game.title}
-                                            onError={(e) => { e.target.src = "/images/noimg.png"; }}
-                                        />
-                                    </button>
-                                    <p>{game.title}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-            )}
-
-            <h1>Games Collection</h1>
-            <p>
-                Browse our extensive collection of free browser games. Click
-                on any game to start playing instantly!
-            </p>
-
-            {/* QoL Features Section */}
-            <div className="game-controls">
-                <div className="search-container">
-                    <input
-                        type="text"
-                        id="gameSearch"
-                        className="search-input"
-                        placeholder="Search for games..."
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                    />
-                </div>
-
-                <div className="controls-row">
-                    <div className="sort-options">
-                        <label htmlFor="gameSort">Sort by:</label>
-                        <select
-                            id="gameSort"
-                            className="sort-select"
-                            value={sortType}
-                            onChange={(e) => setSortType(e.target.value)}
-                        >
-                            <option value="default">Default</option>
-                            <option value=" az">Name (A-Z)</option>
-                            <option value="za">Name (Z-A)</option>
-                            <option value="favorites">⭐ Favorites Only</option>
-                        </select>
-                    </div>
-
-                    <button
-                        id="randomGameBtn"
-                        className="btn random-btn"
-                        onClick={handleRandomGame}
-                    >
-                        <span className="icon">🎲</span> Random Game
-                    </button>
-                </div>
-
-                <div className="game-count">
-                    Showing <span id="visibleCount">{filteredGames.length}</span> of{" "}
-                    <span id="totalCount">{games.length}</span> games
-                </div>
-            </div>
-
-            <div className="games-grid" id="gamesGrid" ref={gamesGridRef}>
-                {filteredGames.length > 0 ? (
-                    filteredGames.map((game, index) => (
-                        <div key={index} className="game-item">
-                            <div className="game-item-actions">
-                                <button
-                                    className={`action-btn fav-btn ${favorites.includes(game.url) ? 'active' : ''}`}
-                                    onClick={(e) => toggleFavorite(e, game.url)}
-                                    title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
-                                >
-                                    {favorites.includes(game.url) ? '⭐' : '☆'}
-                                </button>
-                                <button
-                                    className="action-btn copy-btn"
-                                    onClick={(e) => copyGameLink(e, game.url)}
-                                    title="Copy Link"
-                                >
-                                    🔗
-                                </button>
+            <div className="container">
+                {/* Recently Played Section */}
+                {recentGames.length > 0 && (
+                    <section className="recent-games-section">
+                        <h2>Recently Played</h2>
+                        <div className="recent-games-scroll">
+                            <div className="games-grid recent-grid">
+                                {recentGames.map((game, index) => (
+                                    <div key={`recent-${index}`} className="game-item small">
+                                        <button
+                                            type="button"
+                                            onClick={() => handleGameClick(game)}
+                                            title={game.title}
+                                        >
+                                            <img
+                                                src={game.img}
+                                                alt={game.title}
+                                                onError={(e) => { e.target.src = "/images/noimg.png"; }}
+                                            />
+                                        </button>
+                                        <p>{game.title}</p>
+                                    </div>
+                                ))}
                             </div>
-                            <button
-                                type="button"
-                                onClick={() => handleGameClick(game)}
-                                title={game.title}
-                            >
-                                <img
-                                    src={game.img}
-                                    alt={game.alt || game.title}
-                                    onError={(e) => {
-                                        e.target.src = "/images/noimg.png";
-                                    }}
-                                />
-                            </button>
-                            <p>{game.title}</p>
                         </div>
-                    ))
-                ) : (
-                    <div className="no-games">
-                        <p>No games found matching your criteria.</p>
-                    </div>
+                    </section>
                 )}
+
+                <h1>Games Collection</h1>
+                <p>
+                    Browse our extensive collection of free browser games. Click
+                    on any game to start playing instantly!
+                </p>
+
+                {/* QoL Features Section */}
+                <div className="game-controls">
+                    <div className="search-container">
+                        <input
+                            type="text"
+                            id="gameSearch"
+                            className="search-input"
+                            placeholder="Search for games..."
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
+                    </div>
+
+                    <div className="controls-row">
+                        <div className="sort-options">
+                            <label htmlFor="gameSort">Sort by:</label>
+                            <select
+                                id="gameSort"
+                                className="sort-select"
+                                value={sortType}
+                                onChange={(e) => setSortType(e.target.value)}
+                            >
+                                <option value="default">Default</option>
+                                <option value=" az">Name (A-Z)</option>
+                                <option value="za">Name (Z-A)</option>
+                                <option value="favorites">⭐ Favorites Only</option>
+                            </select>
+                        </div>
+
+                        <button
+                            id="randomGameBtn"
+                            className="btn random-btn"
+                            onClick={handleRandomGame}
+                        >
+                            <span className="icon">🎲</span> Random Game
+                        </button>
+                    </div>
+
+                    <div className="game-count">
+                        Showing <span id="visibleCount">{filteredGames.length}</span> of{" "}
+                        <span id="totalCount">{games.length}</span> games
+                    </div>
+                </div>
+
+                <div className="games-grid" id="gamesGrid" ref={gamesGridRef}>
+                    {filteredGames.length > 0 ? (
+                        filteredGames.map((game, index) => (
+                            <div key={index} className="game-item">
+                                <div className="game-item-actions">
+                                    <button
+                                        className={`action-btn fav-btn ${favorites.includes(game.url) ? 'active' : ''}`}
+                                        onClick={(e) => toggleFavorite(e, game.url)}
+                                        title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
+                                    >
+                                        {favorites.includes(game.url) ? '⭐' : '☆'}
+                                    </button>
+                                    <button
+                                        className="action-btn copy-btn"
+                                        onClick={(e) => copyGameLink(e, game.url)}
+                                        title="Copy Link"
+                                    >
+                                        🔗
+                                    </button>
+                                </div>
+                                <button
+                                    type="button"
+                                    onClick={() => handleGameClick(game)}
+                                    title={game.title}
+                                >
+                                    <img
+                                        src={game.img}
+                                        alt={game.alt || game.title}
+                                        onError={(e) => {
+                                            e.target.src = "/images/noimg.png";
+                                        }}
+                                    />
+                                </button>
+                                <p>{game.title}</p>
+                            </div>
+                        ))
+                    ) : (
+                        <div className="no-games">
+                            <p>No games found matching your criteria.</p>
+                        </div>
+                    )}
+                </div>
             </div>
             <style>
                 {`
