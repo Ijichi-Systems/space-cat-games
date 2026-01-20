@@ -11,6 +11,7 @@ export default function Home() {
     const [buildId, setBuildId] = useState("");
     const [tip, setTip] = useState("");
     const [header, setHeader] = useState("");
+    const [gameOfTheDay, setGameOfTheDay] = useState(null);
 
     const tips = [
         "Aishite Aishite Aishite!",
@@ -37,6 +38,17 @@ export default function Home() {
             setTip(tips[Math.floor(Math.random() * tips.length)]);
         pickTip();
         const interval = setInterval(pickTip, 5000);
+
+        // Fetch Game of the Day
+        fetch("/games.json")
+            .then(r => r.json())
+            .then(data => {
+                if (data.games && data.games.length > 0) {
+                    const randomGame = data.games[Math.floor(Math.random() * data.games.length)];
+                    setGameOfTheDay(randomGame);
+                }
+            })
+            .catch(err => console.error("Failed to fetch games for Game of the Day:", err));
 
         // Build ID - prefer local build info which is now accurate
         if (__BUILD_INFO__.gitCommit !== 'unknown') {
@@ -84,6 +96,19 @@ export default function Home() {
             </div>
 
             <div className="container">
+                {gameOfTheDay && (
+                    <section className="game-of-the-day">
+                        <h2>Game of the Day</h2>
+                        <div className="games-grid single-game">
+                            <Game
+                                title={gameOfTheDay.title}
+                                img={gameOfTheDay.img}
+                                url={gameOfTheDay.url}
+                            />
+                        </div>
+                    </section>
+                )}
+
                 <section className="features">
                     <h2>Why Play at Space Cat Games?</h2>
 
