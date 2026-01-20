@@ -29,7 +29,7 @@ function doPost(e) {
   }
   
   var data = JSON.parse(e.postData.contents);
-  var gameTitle = data.game;
+  var gameTitle = String(data.game).trim();
   var now = new Date();
   var todayStr = Utilities.formatDate(now, "GMT", "yyyy-MM-dd");
   var monthStr = Utilities.formatDate(now, "GMT", "yyyy-MM");
@@ -38,7 +38,8 @@ function doPost(e) {
   var found = false;
   
   for (var i = 1; i < rows.length; i++) {
-    if (rows[i][0] === gameTitle) {
+    // Check if game title matches (ignoring case and extra spaces)
+    if (String(rows[i][0]).trim().toLowerCase() === gameTitle.toLowerCase()) {
       var total = Number(rows[i][1]) + 1;
       var lastTodayStr = rows[i][5];
       var lastMonthStr = rows[i][6];
@@ -91,7 +92,33 @@ const ANALYTICS_ENDPOINT = 'https://script.google.com/macros/s/.../exec';
 
 3. Save the file and rebuild your project.
 
+## 5. How to Verify It's Working
+
+To confirm that your analytics are correctly set up, follow these steps:
+
+### A. Check the Browser Console
+1. Open your website in your browser.
+2. Press `F12` or right-click and select **Inspect**, then go to the **Console** tab.
+3. Click on a game to play it.
+4. You should see a message like: `[Analytics] Tracking play for: Minecraft`.
+5. If there is an error, it will appear in red (e.g., `401 Unauthorized` or `404 Not Found`).
+
+### B. Check Google Apps Script Executions
+1. Go back to your [Google Apps Script editor](https://script.google.com/).
+2. On the left sidebar, click the **Executions** icon (looks like a clock).
+3. You should see a list of recent `doPost` executions.
+4. If the status is **Completed**, the data was received and processed.
+5. If it says **Failed**, click on it to see the error message.
+
+### C. Check the Google Sheet
+1. Open your Google Sheet.
+2. You should see a sheet named **Analytics** (it will be created automatically if it didn't exist).
+3. A new row should appear with the game title you clicked, or the numbers in an existing row should increase.
+
 ## Troubleshooting
 
-*   **Error in Apps Script Editor**: If you see "TypeError: Cannot read properties of undefined (reading 'postData')", it means you clicked the "Run" button in the editor. This is normal; the script only works when called from the website.
-*   **Sheet not updating**: Ensure "Who has access" was set to **Anyone** during deployment. If you change the code, you must create a **New deployment** (Version: New version) for changes to take effect.
+*   **"TypeError: Cannot read properties of undefined (reading 'postData')"**: This happens if you click the **"Run"** button inside the Apps Script editor. This is normal behavior! The script is designed to be triggered by the website, not manually run in the editor.
+*   **"Cross-Origin Request Blocked" / CORS Error**: You might still see a CORS warning in your browser console. This is **normal** when using Google Apps Script with `no-cors` mode. As long as the data appears in your spreadsheet, you can ignore this warning.
+*   **Status: (null) / Request Blocked**: If you use an **AdBlocker** or "Privacy" extension (like uBlock Origin, Brave's Shield, or Ghostery), it might block the connection to `script.google.com`. Try disabling it for your site to test if that is the cause.
+*   **Sheet not updating**: Ensure "Who has access" was set to **Anyone** during deployment. 
+*   **Important**: If you change the code in Apps Script, you must go to **Deploy > Manage Deployments**, click the **Edit** icon, choose **New Version**, and click **Deploy** again.

@@ -32,21 +32,19 @@ export const trackGamePlay = async (game) => {
     }
 
     try {
-        // Use sendBeacon for "fire and forget" analytics if supported, 
-        // otherwise use fetch. fetch with 'no-cors' is often enough for simple logging.
-        if (navigator.sendBeacon) {
-            const blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
-            navigator.sendBeacon(ANALYTICS_ENDPOINT, blob);
-        } else {
-            await fetch(ANALYTICS_ENDPOINT, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(payload),
-            });
-        }
+        // For Google Apps Script, we use 'no-cors' mode. 
+        // This is because Google Apps Script redirects (302) the POST request to a different domain,
+        // which usually triggers CORS blocks in standard 'cors' mode.
+        // 'no-cors' allows the request to be sent even if we can't read the response.
+        await fetch(ANALYTICS_ENDPOINT, {
+            method: 'POST',
+            mode: 'no-cors',
+            cache: 'no-cache',
+            headers: {
+                'Content-Type': 'text/plain', // Using text/plain avoids preflight (CORS) checks
+            },
+            body: JSON.stringify(payload),
+        });
     } catch (error) {
         // Silently fail to not interrupt user experience
         console.error('[Analytics] Error reporting play:', error);
