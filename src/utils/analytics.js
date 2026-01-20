@@ -32,19 +32,12 @@ export const trackGamePlay = async (game) => {
     }
 
     try {
-        // For Google Apps Script, we use 'no-cors' mode. 
-        // This is because Google Apps Script redirects (302) the POST request to a different domain,
-        // which usually triggers CORS blocks in standard 'cors' mode.
-        // 'no-cors' allows the request to be sent even if we can't read the response.
+        // We use mode: 'no-cors' and no headers to make the request as "silent" as possible.
+        // This avoids CORS preflight checks and handles Google's redirects automatically.
         await fetch(ANALYTICS_ENDPOINT, {
             method: 'POST',
             mode: 'no-cors',
-            cache: 'no-cache',
-            credentials: 'omit', // Prevents sending cookies which can trigger security blocks
-            headers: {
-                'Content-Type': 'text/plain', // Using text/plain avoids preflight (CORS) checks
-            },
-            body: JSON.stringify(payload),
+            body: JSON.stringify(payload)
         });
     } catch (error) {
         // Silently fail to not interrupt user experience
