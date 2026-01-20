@@ -14,6 +14,7 @@ This document explains how to set up the backend for the privacy-friendly game a
 2. Delete any existing code in the editor (`Code.gs`) and paste the following:
 
 ```javascript
+// This function handles the actual analytics data sent from the website
 function doPost(e) {
   // SAFETY CHECK: Prevents error when clicking "Run" button in the editor
   if (!e || !e.postData || !e.postData.contents) {
@@ -65,6 +66,11 @@ function doPost(e) {
   }
   
   return ContentService.createTextOutput("OK").setMimeType(ContentService.MimeType.TEXT);
+}
+
+// This function allows you to verify the script is working by visiting the URL in your browser
+function doGet() {
+  return ContentService.createTextOutput("Analytics Script is Active. Status: Online.").setMimeType(ContentService.MimeType.TEXT);
 }
 ```
 
