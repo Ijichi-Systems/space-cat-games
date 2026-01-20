@@ -1,8 +1,24 @@
-// This function handles the actual analytics data sent from the website
 function doPost(e) {
-  if (!e || !e.postData || !e.postData.contents) {
-    return ContentService.createTextOutput("Error: No data received.").setMimeType(ContentService.MimeType.TEXT);
+  var data;
+  var gameTitle = "Unknown Game";
+
+  try {
+    // 1. Try reading from the post body (JSON)
+    if (e && e.postData && e.postData.contents) {
+      data = JSON.parse(e.postData.contents);
+      gameTitle = data.game || data.title || "Unknown";
+    }
+    // 2. Try reading from parameters (Form data)
+    else if (e && e.parameter && e.parameter.game) {
+      gameTitle = e.parameter.game;
+    }
+  } catch (err) {
+    // 3. Last resort: just take the raw content if it's a simple string
+    gameTitle = e.postData.contents || "Error Parsing";
   }
+
+  // Final cleanup of the name
+  gameTitle = String(gameTitle).trim();
 
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName('Analytics') || ss.insertSheet('Analytics');
@@ -11,8 +27,6 @@ function doPost(e) {
     sheet.appendRow(['Game Title', 'Total Plays', 'Plays Today', 'Plays This Month', 'Last Updated', 'Today Date', 'Month']);
   }
 
-  var data = JSON.parse(e.postData.contents);
-  var gameTitle = String(data.game).trim();
   var now = new Date();
   var todayStr = Utilities.formatDate(now, "GMT", "yyyy-MM-dd");
   var monthStr = Utilities.formatDate(now, "GMT", "yyyy-MM");
@@ -40,7 +54,6 @@ function doPost(e) {
   return ContentService.createTextOutput("OK").setMimeType(ContentService.MimeType.TEXT);
 }
 
-// NEW: This allows you to test the URL in your browser!
 function doGet() {
   return ContentService.createTextOutput("Analytics Script is Active. Status: Online.").setMimeType(ContentService.MimeType.TEXT);
 }
