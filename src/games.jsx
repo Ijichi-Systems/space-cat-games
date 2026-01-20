@@ -126,9 +126,16 @@ export default function Games() {
     };
 
     // Track Recently Played
-    const handleGameClick = (game) => {
-        // Privacy-friendly analytics
-        trackGamePlay(game);
+    const handleGameClick = async (game) => {
+        // Privacy-friendly analytics - we await it with a small timeout to prevent NS_BINDING_ABORTED
+        try {
+            await Promise.race([
+                trackGamePlay(game),
+                new Promise(resolve => setTimeout(resolve, 300)) // Max wait 300ms
+            ]);
+        } catch (e) {
+            console.warn('[Analytics] Tracking timed out or failed', e);
+        }
 
         // Track Recently Played
         const newRecent = [game, ...recentGames.filter(g => g.url !== game.url)].slice(0, 10);

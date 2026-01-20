@@ -34,11 +34,14 @@ export const trackGamePlay = async (game) => {
     try {
         // We use mode: 'no-cors' and no headers to make the request as "silent" as possible.
         // This avoids CORS preflight checks and handles Google's redirects automatically.
-        await fetch(ANALYTICS_ENDPOINT, {
+        const fetchPromise = fetch(ANALYTICS_ENDPOINT, {
             method: 'POST',
             mode: 'no-cors',
             body: JSON.stringify(payload)
         });
+
+        // We return the promise so the caller can wait for it if needed
+        return fetchPromise;
     } catch (error) {
         // Silently fail to not interrupt user experience
         console.error('[Analytics] Error reporting play:', error);

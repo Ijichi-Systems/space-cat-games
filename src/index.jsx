@@ -168,9 +168,16 @@ function Feature({ title, text }) {
 }
 
 function Game({ title, img, url }) {
-    const handleClick = () => {
-        // Privacy-friendly analytics
-        trackGamePlay({ title, url });
+    const handleClick = async () => {
+        // Privacy-friendly analytics - we await it with a small timeout to prevent NS_BINDING_ABORTED
+        try {
+            await Promise.race([
+                trackGamePlay({ title, url }),
+                new Promise(resolve => setTimeout(resolve, 300)) // Max wait 300ms
+            ]);
+        } catch (e) {
+            console.warn('[Analytics] Tracking timed out or failed', e);
+        }
 
         // Check if URL is external (starts with http:// or https://)
         if (url.startsWith("http://") || url.startsWith("https://")) {
