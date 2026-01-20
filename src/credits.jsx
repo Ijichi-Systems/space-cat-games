@@ -34,6 +34,7 @@ export default function Credits() {
                             <strong><a href="https://github.com/neurontechofficial">Neuron Technologies </a></strong>
                         </li>
                     </ul>
+                    <!-- Eplinx.com / Banner / 120x240 --><ins class="ins-zone" data-zone="160013"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
                 </section>
                 <section className="credits-section">
                     <h2>Special Thanks</h2>
@@ -51,6 +52,7 @@ export default function Credits() {
                             <strong>Netlify:</strong> For keeping us running at the moment.
                         </li>
                     </ul>
+                    <!-- Eplinx.com / Banner / 120x240 --><ins class="ins-zone" data-zone="160013"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
                 </section>
                     <h3>Tools</h3>
                     <ul className="credits-list">
@@ -61,8 +63,10 @@ export default function Credits() {
                         <li>
                             <strong>Vite: </strong>Created by VoidZero Inc. <a href="https://vite.dev/">https://vite.dev</a>
                         </li>
+                        <!-- Eplinx.com / Banner / 120x240 --><ins class="ins-zone" data-zone="160013"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
                         <li>
                             <strong>Git: </strong>Source Control Management System used at Neuron Technologies <a href="https://git-scm.com/">https://git-scm.com/</a>
+                            <!-- Eplinx.com / Banner / 120x240 --><ins class="ins-zone" data-zone="160013"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
                         </li>
                         <li>
                             <strong>Node.js: </strong>The JavaScript runtime we use.{' '}
@@ -74,10 +78,11 @@ export default function Credits() {
                                 {' '}
                                 OwO on Yarn
                             </a>
+                            <!-- Eplinx.com / Banner / 120x240 --><ins class="ins-zone" data-zone="160013"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
                         </li>
                     </ul>
             </div>
-
+<!-- Eplinx.com / Banner / 120x240 --><ins class="ins-zone" data-zone="160013"></ins><script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script><!-- /Eplinx.com -->
             <Footer />
         </>
     );
