@@ -13,7 +13,6 @@ export default function Games() {
     const [searchTerm, setSearchTerm] = useState("");
     const [sortType, setSortType] = useState("default");
     const [loading, setLoading] = useState(true);
-    const [favorites, setFavorites] = useState([]);
     const [recentGames, setRecentGames] = useState([]);
     const [fps, setFps] = useState(0);
     const [showBackToTop, setShowBackToTop] = useState(false);
@@ -35,12 +34,6 @@ export default function Games() {
                 setLoading(false);
             });
 
-        // Load Favorites
-        const savedFavorites = localStorage.getItem("scg_favorites");
-        if (savedFavorites) {
-            setFavorites(JSON.parse(savedFavorites));
-        }
-
         // Load Recently Played
         const savedRecent = localStorage.getItem("scg_recent");
         if (savedRecent) {
@@ -58,11 +51,6 @@ export default function Games() {
             );
         }
 
-        // Favorites filter
-        if (sortType === "favorites") {
-            filtered = filtered.filter(game => favorites.includes(game.url));
-        }
-
         // Sort
         if (sortType === "az") {
             filtered = [...filtered].sort((a, b) =>
@@ -75,7 +63,7 @@ export default function Games() {
         }
 
         setFilteredGames(filtered);
-    }, [searchTerm, sortType, games, favorites]);
+    }, [searchTerm, sortType, games]);
 
     // FPS Counter
     useEffect(() => {
@@ -134,16 +122,6 @@ export default function Games() {
 
     const handleBackToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
-    const toggleFavorite = (e, gameUrl) => {
-        e.stopPropagation();
-        const newFavorites = favorites.includes(gameUrl)
-            ? favorites.filter(url => url !== gameUrl)
-            : [...favorites, gameUrl];
-
-        setFavorites(newFavorites);
-        localStorage.setItem("scg_favorites", JSON.stringify(newFavorites));
     };
 
     // Track Recently Played
@@ -250,7 +228,6 @@ export default function Games() {
                                 <option value="default">Default</option>
                                 <option value=" az">Name (A-Z)</option>
                                 <option value="za">Name (Z-A)</option>
-                                <option value="favorites">⭐ Favorites Only</option>
                             </select>
                         </div>
 
@@ -278,13 +255,6 @@ export default function Games() {
                                 {recentGames.map((game, index) => (
                                     <div key={`recent-${index}`} className="game-item small">
                                         <button
-                                            className={`star-btn ${favorites.includes(game.url) ? 'active' : ''}`}
-                                            onClick={(e) => toggleFavorite(e, game.url)}
-                                            title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
-                                        >
-                                            {favorites.includes(game.url) ? '⭐' : '☆'}
-                                        </button>
-                                        <button
                                             type="button"
                                             onClick={() => handleGameClick(game)}
                                             title={game.title}
@@ -307,13 +277,6 @@ export default function Games() {
                     {filteredGames.length > 0 ? (
                         filteredGames.map((game, index) => (
                             <div key={index} className="game-item">
-                                <button
-                                    className={`star-btn ${favorites.includes(game.url) ? 'active' : ''}`}
-                                    onClick={(e) => toggleFavorite(e, game.url)}
-                                    title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
-                                >
-                                    {favorites.includes(game.url) ? '⭐' : '☆'}
-                                </button>
                                 <button
                                     type="button"
                                     onClick={() => handleGameClick(game)}
@@ -356,29 +319,6 @@ export default function Games() {
                         -webkit-appearance: none !important;
                         outline: none !important;
                     }
-
-                    .star-btn {
-                        position: absolute;
-                        top: 5px;
-                        left: 5px;
-                        z-index: 10;
-                        background: rgba(0, 0, 0, 0.5) !important;
-                        border-radius: 50%;
-                        border: none !important;
-                        color: #ffffff !important;
-                        cursor: pointer;
-                        font-size: 18px;
-                        padding: 5px !important;
-                        transition: transform 0.2s, color 0.2s;
-                        display: block;
-                        width: 32px;
-                        height: 32px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    .star-btn:hover { transform: scale(1.2); }
-                    .star-btn.active { color: #f1c40f !important; }
 
                     .recent-games-section { margin-bottom: 40px; }
                     .recent-games-scroll { 
