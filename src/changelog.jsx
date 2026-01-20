@@ -6,6 +6,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import commits from "./data/commits.json";
 
 export default function Changelog() {
     return (
@@ -21,6 +22,20 @@ export default function Changelog() {
                 <h1>Changelog</h1>
                 <p>Track the evolution of Space Cat Games through our version history.</p>
                 {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
+
+                {commits && commits.length > 0 && (
+                    <section className="changelog-section">
+                        <h2>Recent Commits</h2>
+                        <ul className="commit-list">
+                            {commits.map((commit) => (
+                                <li key={commit.hash} className="commit-item">
+                                    <span className="commit-date">{commit.date}</span> - <strong>{commit.message}</strong> <small>({commit.hash})</small>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                )}
+
                 <section className="changelog-section">
                     <h2>Version 18</h2>
                     <p className="release-date">January 1, 2026</p>

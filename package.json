@@ -1,12 +1,12 @@
 {
   "name": "space-cat-games",
   "private": true,
-  "version": "18.0.28",
+  "version": "18.0.29",
   "type": "module",
   "scripts": {
-    "predev": "node scripts/generate-games-json.js",
+    "predev": "node scripts/update-changelog.js && node scripts/generate-games-json.js",
     "dev": "vite",
-    "prebuild": "node scripts/generate-games-json.js",
+    "prebuild": "node scripts/update-changelog.js && node scripts/generate-games-json.js",
     "build": "vite build",
     "postbuild": "mkdir -p dist/api && cp -r public/api/* dist/api/ || true",
     "lint": "eslint .",
