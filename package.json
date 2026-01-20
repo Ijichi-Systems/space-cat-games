@@ -1,7 +1,7 @@
 {
   "name": "space-cat-games",
   "private": true,
-  "version": "18.0.19",
+  "version": "18.0.20",
   "type": "module",
   "scripts": {
     "predev": "node scripts/generate-games-json.js",

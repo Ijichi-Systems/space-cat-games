@@ -8,18 +8,15 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
 export default function Games() {
-    const [games, setGames] = useState([]);
-    const [filteredGames, setFilteredGames] = useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
-    const [sortType, setSortType] = useState("default");
-    const [loading, setLoading] = useState(true);
+    const [favorites, setFavorites] = useState([]);
+    const [recentGames, setRecentGames] = useState([]);
     const [fps, setFps] = useState(0);
     const [showBackToTop, setShowBackToTop] = useState(false);
     const [flagDrawerOpen, setFlagDrawerOpen] = useState(false);
     const gamesGridRef = useRef(null);
     const highlightedGameRef = useRef(null);
 
-    // Load games from API
+    // Load games from API and localStorage
     useEffect(() => {
         fetch("/api/games.json")
             .then((r) => r.json())
@@ -32,9 +29,21 @@ export default function Games() {
                 console.error("Error loading games:", err);
                 setLoading(false);
             });
+
+        // Load Favorites
+        const savedFavorites = localStorage.getItem("scg_favorites");
+        if (savedFavorites) {
+            setFavorites(JSON.parse(savedFavorites));
+        }
+
+        // Load Recently Played
+        const savedRecent = localStorage.getItem("scg_recent");
+        if (savedRecent) {
+            setRecentGames(JSON.parse(savedRecent));
+        }
     }, []);
 
-    // Search functionality
+    // Search and Filter functionality
     useEffect(() => {
         let filtered = games;
 
@@ -42,6 +51,11 @@ export default function Games() {
             filtered = games.filter((game) =>
                 game.title.toLowerCase().includes(searchTerm.toLowerCase())
             );
+        }
+
+        // Favorites filter
+        if (sortType === "favorites") {
+            filtered = filtered.filter(game => favorites.includes(game.url));
         }
 
         // Sort
@@ -56,7 +70,7 @@ export default function Games() {
         }
 
         setFilteredGames(filtered);
-    }, [searchTerm, sortType, games]);
+    }, [searchTerm, sortType, games, favorites]);
 
     // FPS Counter
     useEffect(() => {
@@ -117,15 +131,40 @@ export default function Games() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    const handleGameClick = (url) => {
+    const toggleFavorite = (e, gameUrl) => {
+        e.stopPropagation();
+        const newFavorites = favorites.includes(gameUrl)
+            ? favorites.filter(url => url !== gameUrl)
+            : [...favorites, gameUrl];
+
+        setFavorites(newFavorites);
+        localStorage.setItem("scg_favorites", JSON.stringify(newFavorites));
+    };
+
+    const copyGameLink = (e, gameUrl) => {
+        e.stopPropagation();
+        const fullUrl = window.location.origin + gameUrl;
+        navigator.clipboard.writeText(fullUrl).then(() => {
+            const btn = e.currentTarget;
+            const originalText = btn.innerText;
+            btn.innerText = "✅";
+            setTimeout(() => {
+                btn.innerText = originalText;
+            }, 2000);
+        });
+    };
+
+    const handleGameClick = (game) => {
+        // Track Recently Played
+        const newRecent = [game, ...recentGames.filter(g => g.url !== game.url)].slice(0, 10);
+        setRecentGames(newRecent);
+        localStorage.setItem("scg_recent", JSON.stringify(newRecent));
+
         // Check if URL is external (starts with http:// or https://)
-        if (url.startsWith('http://') || url.startsWith('https://')) {
-            // Open external links in new tab
-            window.open(url, '_blank', 'noopener,noreferrer');
+        if (game.url.startsWith('http://') || game.url.startsWith('https://')) {
+            window.open(game.url, '_blank', 'noopener,noreferrer');
         } else {
-            // Use regular browser navigation for internal game routes
-            // These are actual static HTML files that need to be loaded from the public directory
-            window.location.href = url;
+            window.location.href = game.url;
         }
     };
 
@@ -134,38 +173,40 @@ export default function Games() {
             <>
                 <Helmet>
                     <title>Space Cat Games - Games</title>
-                    <meta
-                        name="description"
-                        content="Browse our extensive collection of free browser games"
-                    />
                 </Helmet>
                 <div className="container">
-                    <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            minHeight: "50vh",
-                        }}
-                    >
-                        <div
-                            style={{
-                                border: "8px solid #eee",
-                                borderTop: "8px solid #e74c3c",
-                                borderRadius: "50%",
-                                width: "64px",
-                                height: "64px",
-                                animation: "spin 1s linear infinite",
-                            }}
-                        />
+                    <h1>Games Collection</h1>
+                    <div className="game-controls skeleton-controls">
+                        <div className="skeleton skeleton-search"></div>
+                        <div className="skeleton skeleton-button"></div>
+                    </div>
+                    <div className="games-grid">
+                        {[...Array(12)].map((_, i) => (
+                            <div key={i} className="game-item skeleton-card">
+                                <div className="skeleton skeleton-img"></div>
+                                <div className="skeleton skeleton-text"></div>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <style>
                     {`
-                    @keyframes spin {
-                        0% { transform: rotate(0deg); }
-                        100% { transform: rotate(360deg); }
+                    .skeleton {
+                        background: #333;
+                        background: linear-gradient(90deg, #333 25%, #444 50%, #333 75%);
+                        background-size: 200% 100%;
+                        animation: skeleton-loading 1.5s infinite;
+                        border-radius: 4px;
                     }
+                    @keyframes skeleton-loading {
+                        0% { background-position: 200% 0; }
+                        100% { background-position: -200% 0; }
+                    }
+                    .skeleton-search { height: 40px; width: 100%; margin-bottom: 20px; }
+                    .skeleton-button { height: 40px; width: 150px; }
+                    .skeleton-img { width: 100%; aspect-ratio: 16/10; border-radius: 8px; margin-bottom: 10px; }
+                    .skeleton-text { height: 16px; width: 80%; margin: 0 auto; }
+                    .skeleton-card { border: none !important; background: transparent !important; }
                     `}
                 </style>
             </>
@@ -184,62 +225,106 @@ export default function Games() {
                 <link href="/games.css" rel="stylesheet" />
             </Helmet>
 
-            <div className="container">
-                <h1>Games Collection</h1>
-                <p>
-                    Browse our extensive collection of free browser games. Click
-                    on any game to start playing instantly!
-                </p>
-
-                {/* QoL Features Section */}
-                <div className="game-controls">
-                    <div className="search-container">
-                        <input
-                            type="text"
-                            id="gameSearch"
-                            className="search-input"
-                            placeholder="Search for games..."
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                        />
-                    </div>
-
-                    <div className="controls-row">
-                        <div className="sort-options">
-                            <label htmlFor="gameSort">Sort by:</label>
-                            <select
-                                id="gameSort"
-                                className="sort-select"
-                                value={sortType}
-                                onChange={(e) => setSortType(e.target.value)}
-                            >
-                                <option value="default">Default</option>
-                                <option value="az">Name (A-Z)</option>
-                                <option value="za">Name (Z-A)</option>
-                            </select>
+            {/* Recently Played Section */}
+            {recentGames.length > 0 && (
+                <section className="recent-games-section">
+                    <h2>Recently Played</h2>
+                    <div className="recent-games-scroll">
+                        <div className="games-grid recent-grid">
+                            {recentGames.map((game, index) => (
+                                <div key={`recent-${index}`} className="game-item small">
+                                    <button
+                                        type="button"
+                                        onClick={() => handleGameClick(game)}
+                                        title={game.title}
+                                    >
+                                        <img
+                                            src={game.img}
+                                            alt={game.title}
+                                            onError={(e) => { e.target.src = "/images/noimg.png"; }}
+                                        />
+                                    </button>
+                                    <p>{game.title}</p>
+                                </div>
+                            ))}
                         </div>
-
-                        <button
-                            id="randomGameBtn"
-                            className="btn random-btn"
-                            onClick={handleRandomGame}
-                        >
-                            <span className="icon">🎲</span> Random Game
-                        </button>
                     </div>
+                </section>
+            )}
 
-                    <div className="game-count">
-                        Showing <span id="visibleCount">{filteredGames.length}</span> of{" "}
-                        <span id="totalCount">{games.length}</span> games
-                    </div>
+            <h1>Games Collection</h1>
+            <p>
+                Browse our extensive collection of free browser games. Click
+                on any game to start playing instantly!
+            </p>
+
+            {/* QoL Features Section */}
+            <div className="game-controls">
+                <div className="search-container">
+                    <input
+                        type="text"
+                        id="gameSearch"
+                        className="search-input"
+                        placeholder="Search for games..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                    />
                 </div>
 
-                <div className="games-grid" id="gamesGrid" ref={gamesGridRef}>
-                    {filteredGames.map((game, index) => (
+                <div className="controls-row">
+                    <div className="sort-options">
+                        <label htmlFor="gameSort">Sort by:</label>
+                        <select
+                            id="gameSort"
+                            className="sort-select"
+                            value={sortType}
+                            onChange={(e) => setSortType(e.target.value)}
+                        >
+                            <option value="default">Default</option>
+                            <option value=" az">Name (A-Z)</option>
+                            <option value="za">Name (Z-A)</option>
+                            <option value="favorites">⭐ Favorites Only</option>
+                        </select>
+                    </div>
+
+                    <button
+                        id="randomGameBtn"
+                        className="btn random-btn"
+                        onClick={handleRandomGame}
+                    >
+                        <span className="icon">🎲</span> Random Game
+                    </button>
+                </div>
+
+                <div className="game-count">
+                    Showing <span id="visibleCount">{filteredGames.length}</span> of{" "}
+                    <span id="totalCount">{games.length}</span> games
+                </div>
+            </div>
+
+            <div className="games-grid" id="gamesGrid" ref={gamesGridRef}>
+                {filteredGames.length > 0 ? (
+                    filteredGames.map((game, index) => (
                         <div key={index} className="game-item">
+                            <div className="game-item-actions">
+                                <button
+                                    className={`action-btn fav-btn ${favorites.includes(game.url) ? 'active' : ''}`}
+                                    onClick={(e) => toggleFavorite(e, game.url)}
+                                    title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
+                                >
+                                    {favorites.includes(game.url) ? '⭐' : '☆'}
+                                </button>
+                                <button
+                                    className="action-btn copy-btn"
+                                    onClick={(e) => copyGameLink(e, game.url)}
+                                    title="Copy Link"
+                                >
+                                    🔗
+                                </button>
+                            </div>
                             <button
                                 type="button"
-                                onClick={() => handleGameClick(game.url)}
+                                onClick={() => handleGameClick(game)}
                                 title={game.title}
                             >
                                 <img
@@ -252,9 +337,54 @@ export default function Games() {
                             </button>
                             <p>{game.title}</p>
                         </div>
-                    ))}
-                </div>
+                    ))
+                ) : (
+                    <div className="no-games">
+                        <p>No games found matching your criteria.</p>
+                    </div>
+                )}
             </div>
+            <style>
+                {`
+                    .game-item { position: relative; }
+                    .game-item-actions {
+                        position: absolute;
+                        top: 8px;
+                        right: 8px;
+                        z-index: 5;
+                        display: flex;
+                        gap: 5px;
+                        opacity: 0;
+                        transition: opacity 0.2s;
+                    }
+                    .game-item:hover .game-item-actions { opacity: 1; }
+                    .action-btn {
+                        background: rgba(0,0,0,0.6);
+                        border: none;
+                        border-radius: 4px;
+                        color: white;
+                        width: 32px;
+                        height: 32px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 16px;
+                    }
+                    .action-btn:hover { background: rgba(0,0,0,0.8); }
+                    .fav-btn.active { color: #f1c40f; }
+                    .recent-games-section { margin-bottom: 40px; }
+                    .recent-games-scroll { overflow-x: auto; padding-bottom: 10px; }
+                    .recent-grid { 
+                        display: flex !important; 
+                        flex-wrap: nowrap !important; 
+                        gap: 20px; 
+                        justify-content: flex-start !important;
+                    }
+                    .game-item.small { min-width: 140px; max-width: 140px; }
+                    .game-item.small p { font-size: 0.9em; }
+                    `}
+            </style>
 
             <Footer />
 
