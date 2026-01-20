@@ -289,6 +289,13 @@ export default function Games() {
                                             />
                                         </button>
                                         <p>{game.title}</p>
+                                        <button
+                                            className={`star-btn ${favorites.includes(game.url) ? 'active' : ''}`}
+                                            onClick={(e) => toggleFavorite(e, game.url)}
+                                            title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
+                                        >
+                                            {favorites.includes(game.url) ? '⭐' : '☆'}
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -300,15 +307,6 @@ export default function Games() {
                     {filteredGames.length > 0 ? (
                         filteredGames.map((game, index) => (
                             <div key={index} className="game-item">
-                                <div className="game-item-actions">
-                                    <button
-                                        className={`action-btn fav-btn ${favorites.includes(game.url) ? 'active' : ''}`}
-                                        onClick={(e) => toggleFavorite(e, game.url)}
-                                        title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
-                                    >
-                                        {favorites.includes(game.url) ? '⭐' : '☆'}
-                                    </button>
-                                </div>
                                 <button
                                     type="button"
                                     onClick={() => handleGameClick(game)}
@@ -323,6 +321,13 @@ export default function Games() {
                                     />
                                 </button>
                                 <p>{game.title}</p>
+                                <button
+                                    className={`star-btn ${favorites.includes(game.url) ? 'active' : ''}`}
+                                    onClick={(e) => toggleFavorite(e, game.url)}
+                                    title={favorites.includes(game.url) ? "Remove from Favorites" : "Add to Favorites"}
+                                >
+                                    {favorites.includes(game.url) ? '⭐' : '☆'}
+                                </button>
                             </div>
                         ))
                     ) : (
@@ -339,6 +344,9 @@ export default function Games() {
                         overflow: hidden;
                         border-radius: 12px;
                         transition: transform 0.3s ease;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                     }
                     .game-item:hover { transform: translateY(-5px); }
                     
@@ -349,44 +357,21 @@ export default function Games() {
                         outline: none !important;
                     }
 
-                    .game-item-actions {
-                        position: absolute;
-                        top: 10px;
-                        right: 10px;
-                        z-index: 5;
-                        display: flex;
-                        gap: 6px;
-                        opacity: 0;
-                        transform: translateY(-10px);
-                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                    }
-                    .game-item:hover .game-item-actions { 
-                        opacity: 1; 
-                        transform: translateY(0);
-                    }
-                    .action-btn {
+                    .star-btn {
                         background: transparent !important;
                         border: none !important;
-                        border-radius: 50% !important;
-                        color: white !important;
-                        width: 32px;
-                        height: 32px;
+                        color: #7f8c8d !important;
                         cursor: pointer;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 20px; /* Slightly larger star */
-                        padding: 0 !important;
-                        transition: transform 0.2s;
-                        box-shadow: none !important;
-                        text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Shadow for visibility */
+                        font-size: 18px;
+                        padding: 5px !important;
+                        transition: transform 0.2s, color 0.2s;
+                        margin-top: -5px;
+                        display: block;
+                        width: fit-content;
                     }
-                    .action-btn:hover { 
-                        background: rgba(255, 255, 255, 0.2) !important; 
-                        transform: scale(1.05);
-                    }
-                    .action-btn:active { transform: scale(0.95); }
-                    .fav-btn.active { color: #f1c40f !important; }
+                    .star-btn:hover { transform: scale(1.2); }
+                    .star-btn.active { color: #f1c40f !important; }
+
                     .recent-games-section { margin-bottom: 40px; }
                     .recent-games-scroll { 
                         overflow-x: auto; 
