@@ -292,10 +292,17 @@ export default function Games() {
                 <div className="games-grid" id="gamesGrid" ref={gamesGridRef}>
                     {filteredGames.length > 0 ? (
                         filteredGames.map((game, index) => (
-                            <div key={index} className="game-item">
+                            <div key={index} className="game-item" onClick={() => {
+                                console.log('[Debug] DIV click triggered for:', game?.title);
+                                handleGameClick(game);
+                            }}>
                                 <button
                                     type="button"
-                                    onClick={() => handleGameClick(game)}
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        console.log('[Debug] Button click triggered for:', game?.title);
+                                        handleGameClick(game);
+                                    }}
                                     title={game.title}
                                 >
                                     <img
