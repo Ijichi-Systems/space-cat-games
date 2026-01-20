@@ -6,6 +6,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import { trackGamePlay } from "./utils/analytics";
 
 export default function Games() {
     const [games, setGames] = useState([]);
@@ -126,6 +127,9 @@ export default function Games() {
 
     // Track Recently Played
     const handleGameClick = (game) => {
+        // Privacy-friendly analytics
+        trackGamePlay(game);
+
         // Track Recently Played
         const newRecent = [game, ...recentGames.filter(g => g.url !== game.url)].slice(0, 10);
         setRecentGames(newRecent);

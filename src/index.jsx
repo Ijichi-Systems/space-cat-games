@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import { trackGamePlay } from "./utils/analytics";
 
 export default function Home() {
     const [buildId, setBuildId] = useState("");
@@ -168,6 +169,9 @@ function Feature({ title, text }) {
 
 function Game({ title, img, url }) {
     const handleClick = () => {
+        // Privacy-friendly analytics
+        trackGamePlay({ title, url });
+
         // Check if URL is external (starts with http:// or https://)
         if (url.startsWith("http://") || url.startsWith("https://")) {
             // Open external links in new tab
