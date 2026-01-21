@@ -36,11 +36,18 @@ function doPost(e) {
 
   for (var i = 1; i < rows.length; i++) {
     if (String(rows[i][0]).trim().toLowerCase() === gameTitle.toLowerCase()) {
-      var total = Number(rows[i][1]) + 1;
-      var lastTodayStr = rows[i][5];
-      var lastMonthStr = rows[i][6];
-      var todayCount = (lastTodayStr === todayStr) ? Number(rows[i][2]) + 1 : 1;
-      var monthCount = (lastMonthStr === monthStr) ? Number(rows[i][3]) + 1 : 1;
+      var total = (Number(rows[i][1]) || 0) + 1;
+      
+      // Handle potential Date objects from Sheet
+      var lastTodayVal = rows[i][5];
+      var lastMonthVal = rows[i][6];
+      
+      var lastTodayStr = (lastTodayVal instanceof Date) ? Utilities.formatDate(lastTodayVal, "GMT", "yyyy-MM-dd") : String(lastTodayVal);
+      var lastMonthStr = (lastMonthVal instanceof Date) ? Utilities.formatDate(lastMonthVal, "GMT", "yyyy-MM") : String(lastMonthVal);
+
+      var todayCount = (lastTodayStr === todayStr) ? (Number(rows[i][2]) || 0) + 1 : 1;
+      var monthCount = (lastMonthStr === monthStr) ? (Number(rows[i][3]) || 0) + 1 : 1;
+      
       sheet.getRange(i + 1, 2, 1, 6).setValues([[total, todayCount, monthCount, now, todayStr, monthStr]]);
       found = true;
       break;
@@ -55,5 +62,29 @@ function doPost(e) {
 }
 
 function doGet() {
-  return ContentService.createTextOutput("Analytics Script is Active. Status: Online.").setMimeType(ContentService.MimeType.TEXT);
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName('Analytics');
+  
+  if (!sheet) {
+    return ContentService.createTextOutput(JSON.stringify({error: "No data available"})).setMimeType(ContentService.MimeType.JSON);
+  }
+  
+  var rows = sheet.getDataRange().getValues();
+  var data = [];
+  var headers = rows[0];
+  
+  for (var i = 1; i < rows.length; i++) {
+    var obj = {};
+    for (var j = 0; j < headers.length; j++) {
+      var value = rows[i][j];
+      // Format dates for JSON
+      if (value instanceof Date) {
+        value = value.toISOString();
+      }
+      obj[headers[j].split(' ').join('_').toLowerCase()] = value;
+    }
+    data.push(obj);
+  }
+  
+  return ContentService.createTextOutput(JSON.stringify(data)).setMimeType(ContentService.MimeType.JSON);
 }
