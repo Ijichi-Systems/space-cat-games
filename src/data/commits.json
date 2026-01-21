@@ -1,5 +1,143 @@
 [
   {
+    "hash": "eaf7b60",
+    "author": "Ben",
+    "date": "2026-01-21",
+    "message": "fix ad only showing on reload"
+  },
+  {
+    "hash": "3e2293f",
+    "author": "Ben",
+    "date": "2026-01-21",
+    "message": "dont need that many ads bud"
+  },
+  {
+    "hash": "e07b7eb",
+    "author": "Ben",
+    "date": "2026-01-21",
+    "message": "start user survey collection"
+  },
+  {
+    "hash": "7b27c01",
+    "author": "Ben",
+    "date": "2026-01-21",
+    "message": "add bad parenting 1"
+  },
+  {
+    "hash": "c0ee2f1",
+    "author": "Ben",
+    "date": "2026-01-21",
+    "message": "other backend changes"
+  },
+  {
+    "hash": "ff0f935",
+    "author": "Ben",
+    "date": "2026-01-21",
+    "message": "other backend changes"
+  },
+  {
+    "hash": "e15e23e",
+    "author": "Ben House",
+    "date": "2026-01-21",
+    "message": "version bump"
+  },
+  {
+    "hash": "368c322",
+    "author": "Ben House",
+    "date": "2026-01-21",
+    "message": "remove redundant gitlab button"
+  },
+  {
+    "hash": "83e7aa9",
+    "author": "Ben House",
+    "date": "2026-01-21",
+    "message": "remove borkused ad"
+  },
+  {
+    "hash": "3c1922b",
+    "author": "Ben House",
+    "date": "2026-01-21",
+    "message": "update game name"
+  },
+  {
+    "hash": "0cfb1cc",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "get rid of md file"
+  },
+  {
+    "hash": "42d55fc",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "handlers?"
+  },
+  {
+    "hash": "476c207",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "logging..."
+  },
+  {
+    "hash": "53aba7d",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "waiting to make SURE we ping the backend"
+  },
+  {
+    "hash": "4d6236d",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "this is getting boring now"
+  },
+  {
+    "hash": "e53a8ec",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "still having backend issues"
+  },
+  {
+    "hash": "d3157b0",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "add doGet() for returning data for GS"
+  },
+  {
+    "hash": "5797b0c",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "backend patch"
+  },
+  {
+    "hash": "2040cbe",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "minor mistake in backend"
+  },
+  {
+    "hash": "600d625",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "update backend"
+  },
+  {
+    "hash": "98f20c3",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "deploy backend"
+  },
+  {
+    "hash": "4fa16e7",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "GSheet based analytics"
+  },
+  {
+    "hash": "a5d1960",
+    "author": "Ben",
+    "date": "2026-01-20",
+    "message": "new prebuilds stage"
+  },
+  {
     "hash": "7268e08",
     "author": "Ben",
     "date": "2026-01-20",
@@ -160,143 +298,5 @@
     "author": "Ben",
     "date": "2026-01-18",
     "message": "add game i can't be arsed to type"
-  },
-  {
-    "hash": "a6dd0fb",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "Merge remote-tracking branch 'origin/main'"
-  },
-  {
-    "hash": "7bbf22f",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "add peggle"
-  },
-  {
-    "hash": "77a2776",
-    "author": "Anirudh",
-    "date": "2026-01-18",
-    "message": "Clean up Eplinx.com banner scripts in changelog"
-  },
-  {
-    "hash": "86b4b19",
-    "author": "Anirudh",
-    "date": "2026-01-18",
-    "message": "Add Eplinx.com banner scripts to credits section"
-  },
-  {
-    "hash": "5777b10",
-    "author": "Anirudh",
-    "date": "2026-01-18",
-    "message": "Add Eplinx.com banner scripts to index.jsx"
-  },
-  {
-    "hash": "0c6b904",
-    "author": "Anirudh",
-    "date": "2026-01-18",
-    "message": "Add site verification meta tag to index.html"
-  },
-  {
-    "hash": "9ef88db",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "add postal"
-  },
-  {
-    "hash": "2b22211",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "add osu!"
-  },
-  {
-    "hash": "11241bd",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "remove osu for a new osu"
-  },
-  {
-    "hash": "93d6936",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "add fifa 11"
-  },
-  {
-    "hash": "ad23755",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "add evolving bombs 3d"
-  },
-  {
-    "hash": "5162d07",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "display dynamic header"
-  },
-  {
-    "hash": "45c9361",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "node fuckery"
-  },
-  {
-    "hash": "8a14b53",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "Delete CNAME"
-  },
-  {
-    "hash": "12b2fe1",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "Add Ages of Conflict."
-  },
-  {
-    "hash": "56f3a7c",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "API corrections"
-  },
-  {
-    "hash": "d72d485",
-    "author": "Ben",
-    "date": "2026-01-17",
-    "message": "add office fight"
-  },
-  {
-    "hash": "1082256",
-    "author": "Ben",
-    "date": "2026-01-17",
-    "message": "m i  l   k"
-  },
-  {
-    "hash": "d1b59df",
-    "author": "Ben",
-    "date": "2026-01-17",
-    "message": "copyright, am I right?"
-  },
-  {
-    "hash": "21feab4",
-    "author": "Ben",
-    "date": "2026-01-17",
-    "message": "m i l k"
-  },
-  {
-    "hash": "150dd38",
-    "author": "Ben",
-    "date": "2026-01-15",
-    "message": "fixing borkage"
-  },
-  {
-    "hash": "6a32d7a",
-    "author": "Ben",
-    "date": "2026-01-15",
-    "message": "don't need the navbar in jsx files."
-  },
-  {
-    "hash": "5e11e8a",
-    "author": "Ben",
-    "date": "2026-01-15",
-    "message": "Add Snow Rider 3D"
   }
 ]

@@ -4,6 +4,7 @@
 
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import EplinxBanner from "./EplinxBanner";
 
 export default function Footer() {
   const location = useLocation();
@@ -130,6 +131,7 @@ export default function Footer() {
           <div>Built on: {new Date(__BUILD_INFO__.date).toLocaleString()}</div>
           <div>Node: {__BUILD_INFO__.node} | Vite: {__BUILD_INFO__.vite} | Version: {version}</div>
         </div>
+        <EplinxBanner />
       </div>
     </footer>
   );
