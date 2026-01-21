@@ -18,6 +18,7 @@ export default function Games() {
     const [fps, setFps] = useState(0);
     const [showBackToTop, setShowBackToTop] = useState(false);
     const [flagDrawerOpen, setFlagDrawerOpen] = useState(false);
+    const [showSurveyPopup, setShowSurveyPopup] = useState(false);
     const gamesGridRef = useRef(null);
     const highlightedGameRef = useRef(null);
 
@@ -39,6 +40,12 @@ export default function Games() {
         const savedRecent = localStorage.getItem("scg_recent");
         if (savedRecent) {
             setRecentGames(JSON.parse(savedRecent));
+        }
+
+        // Check for survey popup
+        const surveySeen = localStorage.getItem("scg_survey_seen");
+        if (!surveySeen) {
+            setShowSurveyPopup(true);
         }
     }, []);
 
@@ -125,6 +132,11 @@ export default function Games() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
+    const handleCloseSurvey = () => {
+        setShowSurveyPopup(false);
+        localStorage.setItem("scg_survey_seen", "true");
+    };
+
     // Track Recently Played
     const handleGameClick = async (game) => {
         console.log('[Debug] handleGameClick triggered for:', game?.title);
@@ -162,6 +174,24 @@ export default function Games() {
                     <title>Space Cat Games - Games</title>
                 </Helmet>
                 <div className="container">
+                    {showSurveyPopup && (
+                        <div className="survey-popup-overlay">
+                            <div className="survey-popup">
+                                <button className="survey-close" onClick={handleCloseSurvey}>&times;</button>
+                                <h3>Quick Survey! 🐱</h3>
+                                <p>We'd love to hear your thoughts on Space Cat Games. It only takes a minute!</p>
+                                <a 
+                                    href="https://form.typeform.com/to/Dp8OGYV7" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="btn survey-btn"
+                                    onClick={handleCloseSurvey}
+                                >
+                                    Take the Survey
+                                </a>
+                            </div>
+                        </div>
+                    )}
                     <h1>Games Collection</h1>
                     <div className="game-controls skeleton-controls">
                         <div className="skeleton skeleton-search"></div>
@@ -196,6 +226,24 @@ export default function Games() {
                     .skeleton-card { border: none !important; background: transparent !important; }
                     `}
                 </style>
+                {showSurveyPopup && (
+                    <div className="survey-popup-overlay">
+                        <div className="survey-popup">
+                            <button className="survey-close" onClick={handleCloseSurvey}>&times;</button>
+                            <h3>Quick Survey! 🐱</h3>
+                            <p>We'd love to hear your thoughts on Space Cat Games. It only takes a minute!</p>
+                            <a 
+                                href="https://form.typeform.com/to/Dp8OGYV7" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="btn survey-btn"
+                                onClick={handleCloseSurvey}
+                            >
+                                Take the Survey
+                            </a>
+                        </div>
+                    </div>
+                )}
             </>
         );
     }
@@ -213,6 +261,24 @@ export default function Games() {
             </Helmet>
 
             <div className="container">
+                {showSurveyPopup && (
+                    <div className="survey-popup-overlay">
+                        <div className="survey-popup">
+                            <button className="survey-close" onClick={handleCloseSurvey}>&times;</button>
+                            <h3>Quick Survey! 🐱</h3>
+                            <p>We'd love to hear your thoughts on Space Cat Games. It only takes a minute!</p>
+                            <a 
+                                href="https://form.typeform.com/to/Dp8OGYV7" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="btn survey-btn"
+                                onClick={handleCloseSurvey}
+                            >
+                                Take the Survey
+                            </a>
+                        </div>
+                    </div>
+                )}
                 <h1>Games Collection</h1>
                 <p>
                     Browse our extensive collection of free browser games. Click
