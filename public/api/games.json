@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-18T22:03:56.231Z",
+  "generatedAt": "2026-01-21T16:36:50.597Z",
   "count": 131,
   "games": [
     {
@@ -756,6 +756,11 @@
       "title": "Telekinesis Car",
       "url": "/games/tcar.html",
       "img": "/images/telecar.png"
+    },
+    {
+      "title": "Bad Parenting 1",
+      "url": "/games/bp1.html",
+      "img": "/images/bp1.png"
     }
   ]
 }
