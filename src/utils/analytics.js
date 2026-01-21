@@ -11,6 +11,34 @@
 const ANALYTICS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbw12jSRDnHrxOZJnDanNn6xfSbOrQy_vRUn_N1Jv1ped9oEkdCJzZoaSR_16XAAesQc/exec';
 
 /**
+ * Tracks a site visit event.
+ */
+export const trackSiteVisit = async () => {
+    const payload = {
+        game: "Site Visit",
+        timestamp: new Date().toISOString(),
+        action: 'visit'
+    };
+
+    console.log('[Analytics] Tracking site visit');
+
+    if (ANALYTICS_ENDPOINT === 'YOUR_GOOGLE_APPS_SCRIPT_URL' || !ANALYTICS_ENDPOINT) {
+        console.warn('[Analytics] Deployment needed or endpoint missing. Data:', payload);
+        return;
+    }
+
+    try {
+        return fetch(ANALYTICS_ENDPOINT, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: JSON.stringify(payload)
+        });
+    } catch (error) {
+        console.error('[Analytics] Critical error during site visit tracking:', error);
+    }
+};
+
+/**
  * Tracks a game play event.
  * @param {Object} game - The game object being played.
  */

@@ -24,7 +24,7 @@ function doPost(e) {
   var sheet = ss.getSheetByName('Analytics') || ss.insertSheet('Analytics');
 
   if (sheet.getLastRow() === 0) {
-    sheet.appendRow(['Game Title', 'Total Plays', 'Plays Today', 'Plays This Month', 'Last Updated', 'Today Date', 'Month']);
+    sheet.appendRow(['Item/Game', 'Total Count', 'Count Today', 'Count This Month', 'Last Updated', 'Today Date', 'Month']);
   }
 
   var now = new Date();
