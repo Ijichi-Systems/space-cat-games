@@ -13,7 +13,6 @@ export default function Credits() {
             <Helmet>
                 <title>Space Cat Games - Credits</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script>
             </Helmet>
 
 

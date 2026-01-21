@@ -14,7 +14,6 @@ export default function Changelog() {
             <Helmet>
                 <title>Space Cat Games - Changelog</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <script data-cfasync="false" async src="https://media.eplinx.net/js/code.min.js"></script>
             </Helmet>
 
 

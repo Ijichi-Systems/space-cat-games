@@ -98,11 +98,6 @@ export default function Home() {
         <meta name="keywords" content="games, open source, browser games" />
         <meta property="og:title" content="Space Cat Games - Home" />
         <meta property="og:type" content="website" />
-        <script
-          data-cfasync="false"
-          async
-          src="https://media.eplinx.net/js/code.min.js"
-        ></script>
       </Helmet>
 
       <div className="hero">
