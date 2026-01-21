@@ -21,7 +21,11 @@ export default function Changelog() {
             <div className="container">
                 <h1>Changelog</h1>
                 <p>Track the evolution of Space Cat Games through our version history.</p>
-                {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
+                {/* Eplinx.com / Banner / 120x240 */}
+                <div className="ad-container-changelog">
+                    <ins className="ins-zone" data-zone="160013"></ins>
+                </div>
+                {/* /Eplinx.com */}
 
                 {commits && commits.length > 0 && (
                     <section className="changelog-section">
@@ -54,7 +58,11 @@ export default function Changelog() {
                 </section>
 
                 <br />
-                {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
+                {/* Eplinx.com / Banner / 120x240 */}
+                <div className="ad-container-changelog">
+                    <ins className="ins-zone" data-zone="160013"></ins>
+                </div>
+                {/* /Eplinx.com */}
                 <section className="changelog-section">
                     <h2>Version 16.1</h2>
                     <p className="release-date">October 6, 2025</p>
@@ -71,7 +79,11 @@ export default function Changelog() {
                         <li>Added Suika Game, Truck Space 2, Warfare Arena 3 and Paperception.</li>
                     </ul>
                 </section>
-                {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
+                {/* Eplinx.com / Banner / 120x240 */}
+                <div className="ad-container-changelog">
+                    <ins className="ins-zone" data-zone="160013"></ins>
+                </div>
+                {/* /Eplinx.com */}
                 <section className="changelog-section">
                     <h2>Version 15</h2>
                     <p className="release-date">July 3, 2025</p>
@@ -90,7 +102,11 @@ export default function Changelog() {
                         <li>Starting to write things in React</li>
                     </ul>
                 </section>
-                {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}{/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
+                {/* Eplinx.com / Banner / 120x240 */}
+                <div className="ad-container-changelog">
+                    <ins className="ins-zone" data-zone="160013"></ins>
+                </div>
+                {/* /Eplinx.com */}
                 <section className="changelog-section">
                     <h2>Version 14</h2>
                     <p className="release-date">June 4, 2025</p>
@@ -109,7 +125,11 @@ export default function Changelog() {
                         <li>SuperTuxKart!</li>
                     </ul>
                 </section>
-                {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
+                {/* Eplinx.com / Banner / 120x240 */}
+                <div className="ad-container-changelog">
+                    <ins className="ins-zone" data-zone="160013"></ins>
+                </div>
+                {/* /Eplinx.com */}
                 <section className="changelog-section">
                     <h2>Version 13</h2>
                     <p className="release-date">May 20, 2025</p>
@@ -132,7 +152,11 @@ export default function Changelog() {
                         <li>StarryCat SB3 Runtime</li>
                     </ul>
                 </section>
-                {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
+                {/* Eplinx.com / Banner / 120x240 */}
+                <div className="ad-container-changelog">
+                    <ins className="ins-zone" data-zone="160013"></ins>
+                </div>
+                {/* /Eplinx.com */}
                 <section className="changelog-section">
                     <h2>Version 12.1</h2>
                     <p className="release-date">April 10, 2025</p>
@@ -197,7 +221,11 @@ export default function Changelog() {
                         our <a href="/archive">Archive</a>.
                     </p>
                 </section>
-                {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
+                {/* Eplinx.com / Banner / 120x240 */}
+                <div className="ad-container-changelog">
+                    <ins className="ins-zone" data-zone="160013"></ins>
+                </div>
+                {/* /Eplinx.com */}
                 <div className="marquee-container">
                     <marquee>
                         <img src="/neocities.png" width="100" height="30" alt="Neocities" />
@@ -208,7 +236,11 @@ export default function Changelog() {
                     </marquee>
                 </div>
             </div>
-            {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
+            {/* Eplinx.com / Banner / 120x240 */}
+            <div className="ad-container-changelog">
+                <ins className="ins-zone" data-zone="160013"></ins>
+            </div>
+            {/* /Eplinx.com */}
 
             <Footer />
         </>

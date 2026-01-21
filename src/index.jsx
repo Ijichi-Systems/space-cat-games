@@ -179,7 +179,9 @@ export default function Home() {
               url="/games/clcrazycattle3d.html"
             />
             {/* Eplinx.com / Banner / 120x240 */}
-            <ins className="ins-zone" data-zone="160013"></ins>
+            <div className="game-item ad-item">
+              <ins className="ins-zone" data-zone="160013"></ins>
+            </div>
             {/* /Eplinx.com */}
           </div>
         </section>

@@ -342,6 +342,14 @@ a:hover {
   position: relative;
 }
 
+.game-item.ad-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px; /* Match height of other game buttons if needed, or just let it be taller */
+  min-height: 240px;
+}
+
 .game-item button {
   width: 100%;
   height: 160px;
@@ -466,6 +474,42 @@ footer {
   .game-item button {
     height: 140px;
   }
+}
+
+/* Eplinx Ads */
+.ins-zone {
+  display: block;
+  width: 120px;
+  height: 240px;
+  background: rgba(0, 0, 0, 0.05); /* Placeholder background */
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.aso-zone {
+  display: block;
+  width: 468px;
+  max-width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aso-zone {
+    width: 320px;
+    height: 50px;
+  }
+}
+
+.ad-container-changelog {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 /* Loading Spinner */

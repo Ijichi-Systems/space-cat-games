@@ -64,10 +64,8 @@ export default function Credits() {
                     <li>
                         <strong>Vite: </strong>Created by VoidZero Inc. <a href="https://vite.dev/">https://vite.dev</a>
                     </li>
-                    {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
                     <li>
                         <strong>Git: </strong>Source Control Management System used at Neuron Technologies <a href="https://git-scm.com/">https://git-scm.com/</a>
-                        {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
                     </li>
                     <li>
                         <strong>Node.js: </strong>The JavaScript runtime we use.{' '}
@@ -79,7 +77,6 @@ export default function Credits() {
                             {' '}
                             OwO on Yarn
                         </a>
-                        {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
                     </li>
                 </ul>
             </div>
