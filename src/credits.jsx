@@ -34,6 +34,13 @@ export default function Credits() {
                             <strong><a href="https://github.com/neurontechofficial">Neuron Technologies </a></strong>
                         </li>
                     </ul>
+                    <br>
+                        <h2>Operations Team (NS)</h2>
+                            <ul className="credits-list">
+                                <li>
+                                    <strong>Data: </strong>maz
+                                </li>
+                            </ul>
                     {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
                 </section>
                 <section className="credits-section">
@@ -81,6 +88,5 @@ export default function Credits() {
             </div>
             {/* Eplinx.com / Banner / 120x240 */}<ins className="ins-zone" data-zone="160013"></ins>{/* /Eplinx.com */}
             <Footer />
-        </>
     );
 }
