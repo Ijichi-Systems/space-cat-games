@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-22T09:59:33.981Z",
-  "count": 132,
+  "generatedAt": "2026-01-22T10:01:02.765Z",
+  "count": 133,
   "games": [
     {
       "title": "FIFA 2007",
@@ -766,6 +766,11 @@
       "title": "Chess Classic",
       "url": "/games/cc.html",
       "img": "/images/chess.png"
+    },
+    {
+      "title": "Soundboard",
+      "url": "/games/soundboard.html",
+      "img": "/images/sboard.png"
     }
   ]
 }
