@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-22T10:01:02.765Z",
-  "count": 133,
+  "generatedAt": "2026-01-22T10:03:18.665Z",
+  "count": 134,
   "games": [
     {
       "title": "FIFA 2007",
@@ -771,6 +771,11 @@
       "title": "Soundboard",
       "url": "/games/soundboard.html",
       "img": "/images/sboard.png"
+    },
+    {
+      "title": "Buckshot Roulette",
+      "url": "/games/br.html",
+      "img": "/games/br.png"
     }
   ]
 }
