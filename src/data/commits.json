@@ -1,5 +1,41 @@
 [
   {
+    "hash": "e286071",
+    "author": "Ben",
+    "date": "2026-01-22",
+    "message": "add buckshot roulette"
+  },
+  {
+    "hash": "aea5bdf",
+    "author": "Ben",
+    "date": "2026-01-22",
+    "message": "add soundboard"
+  },
+  {
+    "hash": "2494beb",
+    "author": "Ben",
+    "date": "2026-01-22",
+    "message": "add chess classic"
+  },
+  {
+    "hash": "f2e3c56",
+    "author": "Ben",
+    "date": "2026-01-22",
+    "message": "throw maz in the credits"
+  },
+  {
+    "hash": "2b6c403",
+    "author": "Ben",
+    "date": "2026-01-22",
+    "message": "prevent site vist from being reced"
+  },
+  {
+    "hash": "927ea7b",
+    "author": "Ben",
+    "date": "2026-01-21",
+    "message": "put an EplinxBanner component in place"
+  },
+  {
     "hash": "eaf7b60",
     "author": "Ben",
     "date": "2026-01-21",
@@ -262,41 +298,5 @@
     "author": "Ben House",
     "date": "2026-01-20",
     "message": "fix navbar"
-  },
-  {
-    "hash": "af92caa",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "version bump"
-  },
-  {
-    "hash": "d4f451c",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "nuke webosu and unused python file"
-  },
-  {
-    "hash": "6aaaa27",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "tips are not tips, apparently"
-  },
-  {
-    "hash": "5d44f7e",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "no more title because mr.scrungly complained"
-  },
-  {
-    "hash": "32686a0",
-    "author": "Ben",
-    "date": "2026-01-19",
-    "message": "Update README.md"
-  },
-  {
-    "hash": "aeee75d",
-    "author": "Ben",
-    "date": "2026-01-18",
-    "message": "add game i can't be arsed to type"
   }
 ]

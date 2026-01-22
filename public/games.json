@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-21T16:36:50.597Z",
-  "count": 131,
+  "generatedAt": "2026-01-22T10:03:18.665Z",
+  "count": 134,
   "games": [
     {
       "title": "FIFA 2007",
@@ -761,6 +761,21 @@
       "title": "Bad Parenting 1",
       "url": "/games/bp1.html",
       "img": "/images/bp1.png"
+    },
+    {
+      "title": "Chess Classic",
+      "url": "/games/cc.html",
+      "img": "/images/chess.png"
+    },
+    {
+      "title": "Soundboard",
+      "url": "/games/soundboard.html",
+      "img": "/images/sboard.png"
+    },
+    {
+      "title": "Buckshot Roulette",
+      "url": "/games/br.html",
+      "img": "/games/br.png"
     }
   ]
 }
