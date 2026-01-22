@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/navbar.tsx'
@@ -10,13 +10,8 @@ import Opensource from './opensource.jsx'
 import Changelog from './changelog.jsx'
 import Privacy from './privacy.jsx'
 import DebugDashboard from './components/DebugDashboard.jsx'
-import { trackSiteVisit } from './utils/analytics'
 
 function App() {
-    useEffect(() => {
-        trackSiteVisit();
-    }, []);
-
     return (
         <BrowserRouter>
             <Navbar />

@@ -2,6 +2,24 @@ function doPost(e) {
   var data;
   var gameTitle = "Unknown Game";
 
+  // Check if we should ignore this request early
+  if (e && e.postData && e.postData.contents) {
+    try {
+      var checkData = JSON.parse(e.postData.contents);
+      var checkTitle = checkData.game || checkData.title || "";
+      var normalizedTitle = String(checkTitle).trim().toLowerCase();
+      if (normalizedTitle === "site visit" || normalizedTitle === "site_visit") {
+        return ContentService.createTextOutput("Ignored").setMimeType(ContentService.MimeType.TEXT);
+      }
+    } catch (err) {}
+  }
+  if (e && e.parameter && e.parameter.game) {
+    var paramTitle = String(e.parameter.game).trim().toLowerCase();
+    if (paramTitle === "site visit" || paramTitle === "site_visit") {
+      return ContentService.createTextOutput("Ignored").setMimeType(ContentService.MimeType.TEXT);
+    }
+  }
+
   try {
     // 1. Try reading from the post body (JSON)
     if (e && e.postData && e.postData.contents) {
@@ -24,7 +42,7 @@ function doPost(e) {
   var sheet = ss.getSheetByName('Analytics') || ss.insertSheet('Analytics');
 
   if (sheet.getLastRow() === 0) {
-    sheet.appendRow(['Item/Game', 'Total Count', 'Count Today', 'Count This Month', 'Last Updated', 'Today Date', 'Month']);
+    sheet.appendRow(['Game Title', 'Total Plays', 'Plays Today', 'Plays This Month', 'Last Updated', 'Today Date', 'Month']);
   }
 
   var now = new Date();
@@ -74,6 +92,8 @@ function doGet() {
   var headers = rows[0];
   
   for (var i = 1; i < rows.length; i++) {
+    if (String(rows[i][0]).toLowerCase() === "site visit") continue;
+
     var obj = {};
     for (var j = 0; j < headers.length; j++) {
       var value = rows[i][j];
