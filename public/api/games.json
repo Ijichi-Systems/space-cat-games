@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-22T10:03:18.665Z",
-  "count": 134,
+  "generatedAt": "2026-01-23T16:48:21.293Z",
+  "count": 135,
   "games": [
     {
       "title": "FIFA 2007",
@@ -776,6 +776,11 @@
       "title": "Buckshot Roulette",
       "url": "/games/br.html",
       "img": "/games/br.png"
+    },
+    {
+      "title": "JS Racer",
+      "url": "/games/racer.html",
+      "img": "/images/noimg.png"
     }
   ]
 }
