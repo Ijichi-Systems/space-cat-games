@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-28T18:50:39.795Z",
-  "count": 134,
+  "generatedAt": "2026-01-28T18:53:56.305Z",
+  "count": 135,
   "games": [
     {
       "title": "FIFA 2007",
@@ -774,6 +774,11 @@
       "title": "2048 Merge Run",
       "url": "/games/2048mr.html",
       "img": "/images/2048mr.png"
+    },
+    {
+      "title": "Minecraft Indev",
+      "url": "/games/mc-indev.html",
+      "img": "/images/mc-indev.html"
     }
   ]
 }
