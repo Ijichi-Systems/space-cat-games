@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-28T18:53:56.305Z",
-  "count": 135,
+  "generatedAt": "2026-01-28T18:56:52.218Z",
+  "count": 136,
   "games": [
     {
       "title": "FIFA 2007",
@@ -779,6 +779,11 @@
       "title": "Minecraft Indev",
       "url": "/games/mc-indev.html",
       "img": "/images/mc-indev.html"
+    },
+    {
+      "title": "Build a Plane",
+      "url": "/games/bap.html",
+      "img": "/games/buildplane.png"
     }
   ]
 }
