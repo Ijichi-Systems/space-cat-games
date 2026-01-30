@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-28T18:56:52.218Z",
-  "count": 136,
+  "generatedAt": "2026-01-30T18:43:52.018Z",
+  "count": 137,
   "games": [
     {
       "title": "FIFA 2007",
@@ -784,6 +784,11 @@
       "title": "Build a Plane",
       "url": "/games/bap.html",
       "img": "/images/buildplane.png"
+    },
+    {
+      "title": "Basketball Stars",
+      "url": "/games/bstars.html",
+      "img": "/images/bstars.png"
     }
   ]
 }
