@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-07T11:12:26.513Z",
-  "count": 142,
+  "generatedAt": "2026-02-07T11:27:50.140Z",
+  "count": 143,
   "games": [
     {
       "title": "FIFA 2007",
@@ -816,6 +816,11 @@
       "url": "/games/winston.html",
       "img": "/images/winston.png",
       "alt": "I may or may not have included a secret, res..."
+    },
+    {
+      "title": "Make a Superboat!",
+      "url": "/games/makesuperboat.html",
+      "img": "/images/makesuperboat.png"
     }
   ]
 }
