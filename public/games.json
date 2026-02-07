@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-22T10:03:18.665Z",
-  "count": 134,
+  "generatedAt": "2026-02-07T11:05:06.405Z",
+  "count": 139,
   "games": [
     {
       "title": "FIFA 2007",
@@ -471,12 +471,6 @@
       "alt": "DON'T YOU LECTURE ME"
     },
     {
-      "title": "Papa's Donuteria",
-      "url": "/games/Papa/",
-      "img": "/games/doughnutiocn.png",
-      "alt": "Papa's Donuteria"
-    },
-    {
       "title": "Paper.io 2",
       "url": "/games/Paper.io%202.html",
       "img": "https://i.ibb.co/VYFygR7L/images-1.jpg",
@@ -565,12 +559,6 @@
       "url": "/games/OMORI.html",
       "img": "/games/omori-icon.png",
       "alt": "OMORI"
-    },
-    {
-      "title": "Papa's Cupcakeria",
-      "url": "/games/Papa/",
-      "img": "/games/cupcakeria-icon.png",
-      "alt": "Papa's Cupcakeria"
     },
     {
       "title": "Pou",
@@ -776,6 +764,41 @@
       "title": "Buckshot Roulette",
       "url": "/games/br.html",
       "img": "/games/br.png"
+    },
+    {
+      "title": "JS Racer",
+      "url": "/games/racer.html",
+      "img": "/images/noimg.png"
+    },
+    {
+      "title": "2048 Merge Run",
+      "url": "/games/2048mr.html",
+      "img": "/images/2048mr.png"
+    },
+    {
+      "title": "Minecraft Indev",
+      "url": "/games/mc-indev.html",
+      "img": "/images/mc-indev.png"
+    },
+    {
+      "title": "Build a Plane",
+      "url": "/games/bap.html",
+      "img": "/images/buildplane.png"
+    },
+    {
+      "title": "Basketball Stars",
+      "url": "/games/bstars.html",
+      "img": "/images/bstars.png"
+    },
+    {
+      "title": "Basketball Random",
+      "url": "/games/brandom.html",
+      "img": "/images/brandom.png"
+    },
+    {
+      "title": "Blocky Snakes",
+      "url": "/games/blocksnakes.html",
+      "img": "/images/blocksnakes.png"
     }
   ]
 }

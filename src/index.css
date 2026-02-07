@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e74c3c;
+  --color-secondary: #3498db;
+  --color-dark: #121212;
+  --color-bg-nav: rgba(18, 18, 18, 0.8);
+  --color-text-light: #eeeeee;
+  --color-text-muted: #888888;
+  
+  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.3);
+  --shadow-nav: 0 2px 10px rgba(0, 0, 0, 0.5);
+  
+  --radius-card: 12px;
+  --radius-btn: 8px;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-text-light font-sans m-0 p-0 transition-colors duration-300;
+  }
+  
+  * {
+    @apply box-border;
+  }
+  
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto px-5;
+  }
+
+  .btn {
+    @apply inline-block bg-primary text-white px-6 py-3 rounded-btn font-bold transition-all duration-300 border-none cursor-pointer shadow-card hover:bg-[#c0392b] hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .hero {
+    @apply py-20 px-0 text-center bg-gradient-to-b from-[#1a1a1a] to-dark border-b border-white/5;
+  }
+
+  .hero h1 {
+    @apply text-4xl mb-2 font-bold;
+  }
+
+  .hero #build-id {
+    @apply text-text-muted text-[0.9rem] mb-4 font-mono;
+  }
+
+  .random-tip {
+    @apply text-primary italic font-medium min-h-[1.5em] transition-all duration-500;
+  }
+
+  .games-grid {
+    @apply grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-8 my-10;
+  }
+
+  .game-item {
+    @apply bg-white/5 rounded-card p-4 text-center transition-all duration-300 border border-white/5 shadow-card hover:-translate-y-2 hover:bg-white/10 hover:border-primary/30;
+  }
+
+  .game-item button {
+    @apply block w-full bg-none border-none p-0 cursor-pointer overflow-hidden rounded-lg mb-3;
+  }
+
+  .game-item img {
+    @apply w-full aspect-square object-cover transition-transform duration-500 hover:scale-110;
+  }
+
+  .game-item p {
+    @apply m-0 font-semibold text-[1.1rem];
+  }
+
+  /* Skeleton Loading Styles */
+  .skeleton {
+    @apply bg-white/10 relative overflow-hidden;
+  }
+
+  .skeleton::after {
+    @apply content-[''] absolute inset-0 -translate-x-full;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+
+  .skeleton-card .skeleton-img {
+    @apply w-full aspect-square rounded-lg mb-3;
+  }
+
+  .skeleton-card .skeleton-text {
+    @apply h-5 w-3/4 mx-auto rounded;
+  }
+
+  .skeleton-controls .skeleton-search {
+    @apply h-12 w-full max-w-[400px] rounded-lg;
+  }
+
+  .skeleton-controls .skeleton-button {
+    @apply h-12 w-40 rounded-lg;
+  }
+
+  /* Highlight Effect */
+  .highlight-game {
+    @apply ring-4 ring-primary ring-offset-4 ring-offset-dark scale-105 z-10;
+  }
+}
+
+/* Dark theme specific overrides if needed (though we default to dark) */
+body.dark-theme {
+  --color-primary: #e74c3c;
+  --color-dark: #121212;
+}

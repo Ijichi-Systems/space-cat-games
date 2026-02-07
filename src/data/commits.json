@@ -1,5 +1,95 @@
 [
   {
+    "hash": "50fbf67",
+    "author": "Ben",
+    "date": "2026-01-30",
+    "message": "start the shift to tailwind CSS"
+  },
+  {
+    "hash": "56995d6",
+    "author": "Ben",
+    "date": "2026-01-30",
+    "message": "add basketball random"
+  },
+  {
+    "hash": "d14c4b7",
+    "author": "Ben",
+    "date": "2026-01-30",
+    "message": "add basketball stars"
+  },
+  {
+    "hash": "f1233b9",
+    "author": "Ben",
+    "date": "2026-01-28",
+    "message": "fix incorrect table entry"
+  },
+  {
+    "hash": "4a47523",
+    "author": "Ben",
+    "date": "2026-01-28",
+    "message": "this might be the right img"
+  },
+  {
+    "hash": "5ec3349",
+    "author": "Ben",
+    "date": "2026-01-28",
+    "message": "Added Build a Plane"
+  },
+  {
+    "hash": "f594739",
+    "author": "Ben",
+    "date": "2026-01-28",
+    "message": "added minecraft indev"
+  },
+  {
+    "hash": "4fda9d8",
+    "author": "Ben",
+    "date": "2026-01-28",
+    "message": "Upgrade minecraft"
+  },
+  {
+    "hash": "a6c83a6",
+    "author": "Ben",
+    "date": "2026-01-28",
+    "message": "added 2048 merge run"
+  },
+  {
+    "hash": "ea7a4e9",
+    "author": "Ben House",
+    "date": "2026-01-26",
+    "message": "remove borked game"
+  },
+  {
+    "hash": "f0b1291",
+    "author": "Ben House",
+    "date": "2026-01-26",
+    "message": "remove broken game"
+  },
+  {
+    "hash": "413e1a5",
+    "author": "Ben House",
+    "date": "2026-01-26",
+    "message": "remove broken game"
+  },
+  {
+    "hash": "a11e714",
+    "author": "Ben House",
+    "date": "2026-01-26",
+    "message": "remove a broken game"
+  },
+  {
+    "hash": "4bbf77d",
+    "author": "logan",
+    "date": "2026-01-23",
+    "message": "added JS racer, my first commit!"
+  },
+  {
+    "hash": "b57dc40",
+    "author": "Ben",
+    "date": "2026-01-22",
+    "message": "it builds now"
+  },
+  {
     "hash": "e286071",
     "author": "Ben",
     "date": "2026-01-22",
@@ -208,95 +298,5 @@
     "author": "Ben",
     "date": "2026-01-20",
     "message": "weird ass bugs"
-  },
-  {
-    "hash": "f218527",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "make sure the GoD only refreshes every 24 hours"
-  },
-  {
-    "hash": "8023ad0",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "new counter"
-  },
-  {
-    "hash": "7130155",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "QoL shit"
-  },
-  {
-    "hash": "39b523e",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "milk games should now work"
-  },
-  {
-    "hash": "04660a6",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "Add \"game of the day\""
-  },
-  {
-    "hash": "7863c0e",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "fix syntax errors"
-  },
-  {
-    "hash": "33d6683",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "Merge pull request #28 from AnirudhKarthikofficial/main"
-  },
-  {
-    "hash": "6aa52eb",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "Merge branch 'main' into main"
-  },
-  {
-    "hash": "ccc4a02",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "version bump"
-  },
-  {
-    "hash": "de51021",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "version in footer?"
-  },
-  {
-    "hash": "aaed1bc",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "version bump"
-  },
-  {
-    "hash": "60d293a",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "remove help button"
-  },
-  {
-    "hash": "fd866fd",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "fix broken help link in navbar"
-  },
-  {
-    "hash": "6d2fb00",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "fix navbar"
-  },
-  {
-    "hash": "d7b082d",
-    "author": "Ben House",
-    "date": "2026-01-20",
-    "message": "fix navbar"
   }
 ]

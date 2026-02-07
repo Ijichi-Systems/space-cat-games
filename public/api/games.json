@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-30T18:46:23.248Z",
-  "count": 138,
+  "generatedAt": "2026-02-07T11:05:06.405Z",
+  "count": 139,
   "games": [
     {
       "title": "FIFA 2007",
@@ -794,6 +794,11 @@
       "title": "Basketball Random",
       "url": "/games/brandom.html",
       "img": "/images/brandom.png"
+    },
+    {
+      "title": "Blocky Snakes",
+      "url": "/games/blocksnakes.html",
+      "img": "/images/blocksnakes.png"
     }
   ]
 }
