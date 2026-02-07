@@ -2,7 +2,7 @@
 
 // This is only known to work on Linux.
 
-/* @author meowcat767*/
+/* @author meowcat767 */
 
 import fs from 'fs';
 import path from 'path';
@@ -28,7 +28,7 @@ async function askQuestion(question) {
 
 async function main() {
     console.log('\n Add New Game to Space Cat Games\n');
-    console.log('\n (C) Space Cat Games - Neuron Technologies, Nijika Softworks. All rights reserved..')
+    console.log('\n (C) Space Cat Games - Neuron Technologies, Nijika Softworks. All rights reserved.')
     console.log('Press Ctrl+C at any time to cancel\n');
 
     const title = await askQuestion('Game title: ');
