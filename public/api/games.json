@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-07T11:08:01.567Z",
-  "count": 140,
+  "generatedAt": "2026-02-07T11:09:33.241Z",
+  "count": 141,
   "games": [
     {
       "title": "FIFA 2007",
@@ -805,6 +805,11 @@
       "url": "/games/coreball.html",
       "img": "/images/coreball.png",
       "alt": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "title": "DOOM",
+      "url": "/games/doom.html",
+      "img": "/images/doom.png"
     }
   ]
 }
