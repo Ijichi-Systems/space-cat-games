@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-07T11:09:33.241Z",
-  "count": 141,
+  "generatedAt": "2026-02-07T11:12:26.513Z",
+  "count": 142,
   "games": [
     {
       "title": "FIFA 2007",
@@ -810,6 +810,12 @@
       "title": "DOOM",
       "url": "/games/doom.html",
       "img": "/images/doom.png"
+    },
+    {
+      "title": "Five nights at Winston's",
+      "url": "/games/winston.html",
+      "img": "/images/winston.png",
+      "alt": "I may or may not have included a secret, res..."
     }
   ]
 }
