@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-07T11:05:06.405Z",
-  "count": 139,
+  "generatedAt": "2026-02-07T11:08:01.567Z",
+  "count": 140,
   "games": [
     {
       "title": "FIFA 2007",
@@ -799,6 +799,12 @@
       "title": "Blocky Snakes",
       "url": "/games/blocksnakes.html",
       "img": "/images/blocksnakes.png"
+    },
+    {
+      "title": "Coreball",
+      "url": "/games/coreball.html",
+      "img": "/images/coreball.png",
+      "alt": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
     }
   ]
 }
