@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-07T11:27:50.140Z",
-  "count": 143,
+  "generatedAt": "2026-02-13T12:36:10.680Z",
+  "count": 144,
   "games": [
     {
       "title": "FIFA 2007",
@@ -821,6 +821,12 @@
       "title": "Make a Superboat!",
       "url": "/games/makesuperboat.html",
       "img": "/images/makesuperboat.png"
+    },
+    {
+      "title": "maz ball",
+      "url": "https://mazball.vercel.app",
+      "img": "https://i.postimg.cc/MTZkD05S/IMG-3016.jpg",
+      "alt": "peak gaming"
     }
   ]
 }
