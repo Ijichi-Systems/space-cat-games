@@ -157,9 +157,9 @@ export default function Home() {
 
           <div className="games-grid">
             <Game
-              title="SuperTuxKart"
-              img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3wVhcyQV-z7il2CAUbDkZJKkWTUe9lrR_3A&s"
-              url="https://supertuxkart.pages.dev/"
+              title="Geometry Dash"
+              img="https://i.ibb.co/Xr5LnpSz/Logo-of-Geometry-Dash-svg.png"
+              url="/games/gm.html"
             />
 
             <Game
