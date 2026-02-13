@@ -1,5 +1,59 @@
 [
   {
+    "hash": "85ed37c",
+    "author": "Ben House",
+    "date": "2026-02-13",
+    "message": "version bump"
+  },
+  {
+    "hash": "20ab5dc",
+    "author": "Ben House",
+    "date": "2026-02-13",
+    "message": "center that text"
+  },
+  {
+    "hash": "e5b27ed",
+    "author": "Ben House",
+    "date": "2026-02-13",
+    "message": "update text under header update cc"
+  },
+  {
+    "hash": "12cd17b",
+    "author": "Ben House",
+    "date": "2026-02-13",
+    "message": "Update featured games under-text"
+  },
+  {
+    "hash": "b200b93",
+    "author": "Ben House",
+    "date": "2026-02-13",
+    "message": "update cc"
+  },
+  {
+    "hash": "cba0473",
+    "author": "Ben House",
+    "date": "2026-02-13",
+    "message": "Update CC"
+  },
+  {
+    "hash": "57d8fa3",
+    "author": "Ben House",
+    "date": "2026-02-13",
+    "message": "trim section"
+  },
+  {
+    "hash": "206683a",
+    "author": "Ben House",
+    "date": "2026-02-13",
+    "message": "commit bump"
+  },
+  {
+    "hash": "173df69",
+    "author": "Ben House",
+    "date": "2026-02-13",
+    "message": "Version bump"
+  },
+  {
     "hash": "7b54f32",
     "author": "Ben House",
     "date": "2026-02-13",
@@ -244,59 +298,5 @@
     "author": "Ben House",
     "date": "2026-01-21",
     "message": "update game name"
-  },
-  {
-    "hash": "0cfb1cc",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "get rid of md file"
-  },
-  {
-    "hash": "42d55fc",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "handlers?"
-  },
-  {
-    "hash": "476c207",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "logging..."
-  },
-  {
-    "hash": "53aba7d",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "waiting to make SURE we ping the backend"
-  },
-  {
-    "hash": "4d6236d",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "this is getting boring now"
-  },
-  {
-    "hash": "e53a8ec",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "still having backend issues"
-  },
-  {
-    "hash": "d3157b0",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "add doGet() for returning data for GS"
-  },
-  {
-    "hash": "5797b0c",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "backend patch"
-  },
-  {
-    "hash": "2040cbe",
-    "author": "Ben",
-    "date": "2026-01-20",
-    "message": "minor mistake in backend"
   }
 ]
