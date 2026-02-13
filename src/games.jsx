@@ -527,7 +527,7 @@ export default function Games() {
         </button>
       )}
 
-      {/* Flag Drawer */}
+      {/* Flag Drawer mroew*/}
       <div
         id="flag-drawer"
         className={flagDrawerOpen ? "open" : ""}
