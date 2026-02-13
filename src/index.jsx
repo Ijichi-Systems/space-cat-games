@@ -173,11 +173,6 @@ export default function Home() {
               img="/images/spacewavesicon.png"
               url="/games/spacewaves.html"
             />
-            {/* Eplinx.com / Banner / 120x240 */}
-            <div className="game-item ad-item">
-              <ins className="ins-zone" data-zone="160013"></ins>
-            </div>
-            {/* /Eplinx.com */}
           </div>
         </section>
       </div>
