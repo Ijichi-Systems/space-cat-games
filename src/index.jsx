@@ -170,8 +170,8 @@ export default function Home() {
 
             <Game
               title="Space Waves"
-              img="/images/cattlemoment.webp"
-              url="/games/clcrazycattle3d.html"
+              img="/images/spacewavesicon.png"
+              url="/games/spacewaves.html"
             />
             {/* Eplinx.com / Banner / 120x240 */}
             <div className="game-item ad-item">
