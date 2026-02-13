@@ -154,7 +154,9 @@ export default function Home() {
 
         <section className="featured-games">
           <h2>Featured Games</h2>
-          <p>Featured games are selected at the start of every month</p>
+          <p class="center">
+            Featured games are selected at the start of every month
+          </p>
 
           <div className="games-grid">
             <Game
