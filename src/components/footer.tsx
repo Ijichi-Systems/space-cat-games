@@ -42,7 +42,7 @@ export default function Footer() {
     <footer>
       <div className="container">
         <p>
-          © 2025 Nijika Softworks &{" "}
+          © 2025 <a href="https://catbell.site">Catbell Software</a> &{" "}
           <a href="https://github.com/neurontechofficial">
             Neuron Technologies
           </a>{" "}
@@ -58,15 +58,21 @@ export default function Footer() {
               <span className="unit-label">DAYS</span>
             </div>
             <div className="uptime-unit">
-              <span className="value">{uptime.hours.toString().padStart(2, '0')}</span>
+              <span className="value">
+                {uptime.hours.toString().padStart(2, "0")}
+              </span>
               <span className="unit-label">HRS</span>
             </div>
             <div className="uptime-unit">
-              <span className="value">{uptime.minutes.toString().padStart(2, '0')}</span>
+              <span className="value">
+                {uptime.minutes.toString().padStart(2, "0")}
+              </span>
               <span className="unit-label">MIN</span>
             </div>
             <div className="uptime-unit highlight">
-              <span className="value">{uptime.seconds.toString().padStart(2, '0')}</span>
+              <span className="value">
+                {uptime.seconds.toString().padStart(2, "0")}
+              </span>
               <span className="unit-label">SEC</span>
             </div>
           </div>
@@ -127,9 +133,12 @@ export default function Footer() {
         <br />
 
         {/* Build Info */}
-        <div style={{ marginTop: '20px', color: '#666', fontSize: '0.8rem' }}>
+        <div style={{ marginTop: "20px", color: "#666", fontSize: "0.8rem" }}>
           <div>Built on: {new Date(__BUILD_INFO__.date).toLocaleString()}</div>
-          <div>Node: {__BUILD_INFO__.node} | Vite: {__BUILD_INFO__.vite} | Version: {version}</div>
+          <div>
+            Node: {__BUILD_INFO__.node} | Vite: {__BUILD_INFO__.vite} | Version:{" "}
+            {version}
+          </div>
         </div>
         <EplinxBanner />
       </div>
