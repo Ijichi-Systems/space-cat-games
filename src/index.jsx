@@ -163,13 +163,13 @@ export default function Home() {
             />
 
             <Game
-              title="Minecraft"
-              img="https://i.ibb.co/tT7XZRMW/Grass-Block-JE2.webp"
-              url="/games/minecraft.html"
+              title="Snow Rider 3D"
+              img="/images/snowrider.png"
+              url="/games/snowrider.html"
             />
 
             <Game
-              title="Crazy Cattle 3D"
+              title="Space Waves"
               img="/images/cattlemoment.webp"
               url="/games/clcrazycattle3d.html"
             />
