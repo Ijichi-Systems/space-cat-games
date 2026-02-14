@@ -11,7 +11,6 @@ export default function Navbar() {
     <div className="topnav">
       <Link to="/">Home</Link>
       <Link to="/games">Games</Link>
-      <a href="https://nijikasoftworks.meowcat.site/">News</a>
       <Link to="/opensource">Source Code</Link>
       <Link to="/credits">Credits</Link>
       <Link to="/changelog">Changelog</Link>

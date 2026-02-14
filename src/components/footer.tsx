@@ -42,7 +42,7 @@ export default function Footer() {
     <footer>
       <div className="container">
         <p>
-          © 2026 <a href="https://catbell.site">Catbell Software</a> &{" "}
+          © 2026 Nijika Softworks &{" "}
           <a href="https://github.com/neurontechofficial">
             Neuron Technologies
           </a>{" "}
