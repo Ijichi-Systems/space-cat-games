@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-14T22:56:42.167Z",
-  "count": 145,
+  "generatedAt": "2026-02-14T23:04:15.314Z",
+  "count": 146,
   "games": [
     {
       "title": "FIFA 2007",
@@ -832,6 +832,11 @@
       "title": "Chicken Game 3: industrial revolution",
       "url": "/games/c3.html",
       "img": "/images/c3.png"
+    },
+    {
+      "title": "Chicken Game 4: A Space Odyssey",
+      "url": "/games/c4.html",
+      "img": "/images/c4.png"
     }
   ]
 }
