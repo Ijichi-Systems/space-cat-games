@@ -23,6 +23,8 @@ export default function Home() {
     "The most Cutting Edge games website.",
     "Cirno is behind you by the way.",
     "did you know that for some reason this is react now?",
+      "Now the train's gone and left.",
+
   ];
 
   useEffect(() => {
