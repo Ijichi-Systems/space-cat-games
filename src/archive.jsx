@@ -256,9 +256,6 @@ export default function Archive() {
         FPS: --
       </div>
 
-      {/* Ezoic - sidebar_floating_2 - sidebar_floating_2 */}
-      <div id="ezoic-pub-ad-placeholder-108" />
-      {/* End Ezoic - sidebar_floating_2 - sidebar_floating_2 */}
     </>
   );
 }
