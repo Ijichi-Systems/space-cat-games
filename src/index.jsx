@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import { trackGamePlay } from "./utils/analytics";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export default function Home() {
   const [buildId, setBuildId] = useState("");
@@ -103,6 +104,7 @@ export default function Home() {
       </Helmet>
 
       <div className="hero">
+        <SpeedInsights />
         <div className="container">
           <h1 id="main-header">{header}</h1>
           <div id="build-id">{buildId}</div>
