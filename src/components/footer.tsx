@@ -4,7 +4,6 @@
 
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import EplinxBanner from "./EplinxBanner";
 
 export default function Footer() {
   const location = useLocation();
@@ -140,7 +139,6 @@ export default function Footer() {
             {version}
           </div>
         </div>
-        <EplinxBanner />
       </div>
     </footer>
   );
