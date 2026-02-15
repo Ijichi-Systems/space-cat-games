@@ -47,9 +47,6 @@ export default function Credits() {
               <strong>Data: </strong>maz
             </li>
           </ul>
-          {/* Eplinx.com / Banner / 120x240 */}
-          <ins className="ins-zone" data-zone="160013"></ins>
-          {/* /Eplinx.com */}
         </section>
         <section className="credits-section">
           <h2>Special Thanks</h2>
@@ -67,9 +64,6 @@ export default function Credits() {
               <strong>Netlify:</strong> For keeping us running at the moment.
             </li>
           </ul>
-          {/* Eplinx.com / Banner / 120x240 */}
-          <ins className="ins-zone" data-zone="160013"></ins>
-          {/* /Eplinx.com */}
         </section>
         <h3>Tools</h3>
         <ul className="credits-list">
@@ -99,9 +93,6 @@ export default function Credits() {
           </li>
         </ul>
       </div>
-      {/* Eplinx.com / Banner / 120x240 */}
-      <ins className="ins-zone" data-zone="160013"></ins>
-      {/* /Eplinx.com */}
       <Footer />
     </>
   );
