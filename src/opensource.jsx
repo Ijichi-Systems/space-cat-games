@@ -181,7 +181,6 @@ export default function Opensource() {
           </ul>
         </section>
         </div>
-      </div>
 
       <Footer />
       {/* FPS Counter */}
