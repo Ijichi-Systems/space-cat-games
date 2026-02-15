@@ -41,7 +41,7 @@ export default function Credits() {
             </li>
           </ul>
           <br />
-          <h2>Operations Team (Catbell Software)</h2>
+          <h2>Operations Team (NS)</h2>
           <ul className="credits-list">
             <li>
               <strong>Data: </strong>maz
