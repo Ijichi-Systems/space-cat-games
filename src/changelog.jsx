@@ -190,7 +190,7 @@ export default function Changelog() {
                         our <a href="/archive">Archive</a>.
                     </p>
                 </section>
-
+            </div>
             <Footer />
         </>
     );
