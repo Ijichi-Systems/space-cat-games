@@ -180,29 +180,6 @@ export default function Opensource() {
             </li>
           </ul>
         </section>
-        <div className="marquee-container">
-          <marquee>
-            <img src="/neocities.png" width={100} height={30} alt="Neocities" />
-            <img
-              src="/Team_Astrocat.png"
-              width={70}
-              height={30}
-              alt="Team Astrocat"
-            />
-            <img src="/gplv3.svg" width={70} height={30} alt="GPL v3" />
-            <img
-              src="/mothracompat.gif"
-              width={70}
-              height={30}
-              alt="Mothra Compatible"
-            />
-            <img
-              src="https://9p.io/plan9/img/power36.gif"
-              width={70}
-              height={30}
-              alt="Plan 9"
-            />
-          </marquee>
         </div>
       </div>
 
