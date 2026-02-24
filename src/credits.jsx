@@ -80,8 +80,7 @@ export default function Credits() {
             <a href="https://vite.dev/">https://vite.dev</a>
           </li>
           <li>
-            <strong>Git: </strong>Source Control Management System used at
-            Neuron Technologies{" "}
+            <strong>Git: </strong>Source Control Management System{" "}
             <a href="https://git-scm.com/">https://git-scm.com/</a>
           </li>
           <li>
