@@ -52,6 +52,10 @@ export default function Credits() {
           <h2>Special Thanks</h2>
           <ul className="credits-list">
             <li>
+              <strong>Chase:</strong> for giving us permission to distribute
+              copies of Chicken Game.
+            </li>
+            <li>
               <strong>Neocities:</strong> For hosting us for almost a year
             </li>
             <li>
