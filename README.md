@@ -6,6 +6,8 @@
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/spacecatgames) 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f795125c-9403-49b7-9e84-ae0c0c4df19e/deploy-status)](https://app.netlify.com/projects/spacecatgame/deploys)
 [![wakatime](https://wakatime.com/badge/user/dde58933-1038-4e79-920c-d923c92f1fa4/project/243db57b-c9df-4b25-b6b6-990b204ce8a5.svg)](https://wakatime.com/badge/user/dde58933-1038-4e79-920c-d923c92f1fa4/project/243db57b-c9df-4b25-b6b6-990b204ce8a5)
+![GitHub repo size](https://img.shields.io/github/repo-size/neurontechofficial/spacecatgames)
+
 
 Space Cat Games is a small, easy-to-deploy React single-page application (SPA) that builds to static HTML, CSS, and JavaScript. Drop the built files into the document root of any static host and your games website is ready — no deep coding knowledge required.
 
