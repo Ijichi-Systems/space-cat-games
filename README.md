@@ -25,7 +25,6 @@ Space Cat Games is a small, easy-to-deploy React single-page application (SPA) t
   - nginx  
   - Plain file hosting  
 - Lightweight and easy to customize  
-- Automated chores handled by an automation user (see **Automations**)
 
 ---
 
@@ -170,17 +169,6 @@ docker run -p 8080:80 spacecatgames
 
 ---
 
-## Automations and Contributors
-
-**meowcat767-auto** runs chore tasks for this repo.
-
-They/them run automated maintenance tasks; the automation runner script is located at `worker.py`.
-
-- Inspect `worker.py` to see what tasks are performed.
-- Check whether any tokens or secrets are required.
-- If you want to extend or change automation behavior, update `worker.py` and relevant GitHub Actions/workers and test locally before pushing.
-
----
 
 ## Troubleshooting
 
