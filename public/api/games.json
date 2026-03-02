@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-14T23:14:38.722Z",
-  "count": 147,
+  "generatedAt": "2026-03-02T19:01:29.519Z",
+  "count": 148,
   "games": [
     {
       "title": "FIFA 2007",
@@ -842,6 +842,11 @@
       "title": "Chicken Game 5: egg armageddon",
       "url": "/games/c5.html",
       "img": "/images/c5.png"
+    },
+    {
+      "title": "Five Nights at Epstein's",
+      "url": "/games/ep.html",
+      "img": "/images/bige.png"
     }
   ]
 }
