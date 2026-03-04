@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-07T11:27:50.140Z",
-  "count": 143,
+  "generatedAt": "2026-03-02T19:01:29.519Z",
+  "count": 148,
   "games": [
     {
       "title": "FIFA 2007",
@@ -821,6 +821,32 @@
       "title": "Make a Superboat!",
       "url": "/games/makesuperboat.html",
       "img": "/images/makesuperboat.png"
+    },
+    {
+      "title": "maz ball",
+      "url": "https://mazball.vercel.app",
+      "img": "https://i.postimg.cc/MTZkD05S/IMG-3016.jpg",
+      "alt": "peak gaming"
+    },
+    {
+      "title": "Chicken Game 3: industrial revolution",
+      "url": "/games/c3.html",
+      "img": "/images/c3.png"
+    },
+    {
+      "title": "Chicken Game 4: A Space Odyssey",
+      "url": "/games/c4.html",
+      "img": "/images/c4.png"
+    },
+    {
+      "title": "Chicken Game 5: egg armageddon",
+      "url": "/games/c5.html",
+      "img": "/images/c5.png"
+    },
+    {
+      "title": "Five Nights at Epstein's",
+      "url": "/games/ep/e.html",
+      "img": "/images/bige.png"
     }
   ]
 }
