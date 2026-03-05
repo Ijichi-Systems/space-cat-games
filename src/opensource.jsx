@@ -13,10 +13,7 @@ export default function Opensource() {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Space Cat Games - Open Source</title>
         <link href="/css/style.css" rel="stylesheet" type="text/css" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </Helmet>
 
       <div className="container">
@@ -180,7 +177,7 @@ export default function Opensource() {
             </li>
           </ul>
         </section>
-        </div>
+      </div>
 
       <Footer />
       {/* FPS Counter */}

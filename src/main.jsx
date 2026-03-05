@@ -14,7 +14,11 @@ import Opensource from './opensource.jsx'
 import Changelog from './changelog.jsx'
 import Privacy from './privacy.jsx'
 import DebugDashboard from './components/DebugDashboard.jsx'
+import { SettingsProvider, useSettings } from './hooks/useSettings.tsx'
+import SettingsPage from './components/Settings.tsx'
+import CodeEditor from './components/CodeEditor.tsx'
 import { useEplnxRefresh } from './hooks/useEplnxRefresh'
+import { Helmet } from 'react-helmet'
 
 // Component to handle route changes and refresh ads
 function RouteChangeHandler() {
@@ -34,9 +38,15 @@ function RouteChangeHandler() {
     return null
 }
 
-function App() {
+function AppContent() {
+    const { settings } = useSettings()
+
     return (
         <BrowserRouter>
+            <Helmet>
+                <title>{settings.tabTitle}</title>
+                <link rel="icon" href={settings.tabIcon} />
+            </Helmet>
             <RouteChangeHandler />
             <Navbar />
             <Routes>
@@ -48,10 +58,20 @@ function App() {
                 <Route path="/changelog" element={<Changelog />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/debug" element={<DebugDashboard />} />
+                <Route path="/settings" element={<SettingsPage />} />
 
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
+            <CodeEditor />
         </BrowserRouter>
+    )
+}
+
+function App() {
+    return (
+        <SettingsProvider>
+            <AppContent />
+        </SettingsProvider>
     )
 }
 

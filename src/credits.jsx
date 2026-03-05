@@ -11,7 +11,6 @@ export default function Credits() {
   return (
     <>
       <Helmet>
-        <title>Space Cat Games - Credits</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
 

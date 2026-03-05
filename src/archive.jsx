@@ -11,7 +11,6 @@ export default function Archive() {
   return (
     <>
       <Helmet>
-        <title>Space Cat Games - Archive</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
 

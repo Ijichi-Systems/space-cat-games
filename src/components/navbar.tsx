@@ -15,6 +15,7 @@ export default function Navbar() {
       <Link to="/credits">Credits</Link>
       <Link to="/changelog">Changelog</Link>
       <Link to="/archive">Archive</Link>
+      <Link to="/settings" style={{ color: '#e74c3c', fontWeight: 'bold' }}>Settings</Link>
       <span
         style={{
           float: "right",

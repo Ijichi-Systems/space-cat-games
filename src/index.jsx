@@ -24,7 +24,7 @@ export default function Home() {
     "The most Cutting Edge games website.",
     "Cirno is behind you by the way.",
     "did you know that for some reason this is react now?",
-      "Now the train's gone and left.",
+    "Now the train's gone and left.",
 
   ];
 
@@ -93,7 +93,6 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Space Cat Games - Home</title>
         <meta
           name="description"
           content="The worlds best free and open source games website!"

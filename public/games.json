@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-02T19:01:29.519Z",
-  "count": 148,
+  "generatedAt": "2026-03-05T18:23:45.495Z",
+  "count": 149,
   "games": [
     {
       "title": "FIFA 2007",
@@ -844,9 +844,14 @@
       "img": "/images/c5.png"
     },
     {
-      "title": "Five Nights at Epstein's",
-      "url": "/games/ep/e.html",
-      "img": "/images/bige.png"
+      "title": "64 in 1 NES",
+      "url": "/games/64nes.html",
+      "img": "/images/64.gif"
+    },
+    {
+      "title": "Cooking Mama",
+      "url": "/games/cm.html",
+      "img": "/images/cm.png"
     }
   ]
 }

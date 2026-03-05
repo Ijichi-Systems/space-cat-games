@@ -170,7 +170,6 @@ export default function Games() {
     return (
       <>
         <Helmet>
-          <title>Space Cat Games - Games</title>
         </Helmet>
         <div className="container">
           {showSurveyPopup && (
@@ -260,7 +259,6 @@ export default function Games() {
   return (
     <>
       <Helmet>
-        <title>Space Cat Games - Games</title>
         <meta
           name="description"
           content="Browse our extensive collection of free browser games"
