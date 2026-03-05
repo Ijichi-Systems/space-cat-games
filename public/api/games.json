@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-02T19:01:29.519Z",
+  "generatedAt": "2026-03-05T18:13:32.303Z",
   "count": 148,
   "games": [
     {
@@ -843,5 +843,10 @@
       "url": "/games/c5.html",
       "img": "/images/c5.png"
     },
+    {
+      "title": "64 in 1 NES",
+      "url": "/games/64nes.html",
+      "img": "/images/64.gif"
+    }
   ]
 }
