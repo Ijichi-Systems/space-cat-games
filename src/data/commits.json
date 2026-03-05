@@ -1,5 +1,11 @@
 [
   {
+    "hash": "57d568a",
+    "author": "Ben",
+    "date": "2026-03-05",
+    "message": "working on settings"
+  },
+  {
     "hash": "7dd71f5",
     "author": "Ben",
     "date": "2026-03-05",
@@ -292,11 +298,5 @@
     "author": "Ben",
     "date": "2026-02-07",
     "message": "update tooling"
-  },
-  {
-    "hash": "a834648",
-    "author": "Ben",
-    "date": "2026-02-07",
-    "message": "add make a super boat"
   }
 ]

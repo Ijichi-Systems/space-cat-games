@@ -6,8 +6,8 @@
   "scripts": {
     "predev": "node scripts/update-changelog.js && node scripts/generate-games-json.js",
     "dev": "vite",
-    "prebuild": "node scripts/update-changelog.js && node scripts/generate-games-json.js",
-    "build": "vite build",
+    "prebuild": "node scripts/update-changelog.js && node scripts/generate-games-json.js ",
+    "build": "node scripts/update-version.js && vite build",
     "postbuild": "mkdir -p dist/api && cp -r public/api/* dist/api/ || true",
     "lint": "eslint .",
     "preview": "vite preview",
