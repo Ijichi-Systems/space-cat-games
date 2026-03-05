@@ -40,64 +40,57 @@ export default function CodeEditor() {
             ) : (
                 <>
                     {/* Header */}
-                    <div className="flex items-center justify-between p-5 border-b border-white/10 bg-white/5">
+                    <div className="flex items-center justify-between p-5 border-b border-white/10" style={{ background: 'rgba(255,255,255,0.03)' }}>
                         <div className="flex items-center gap-3">
                             <span className="text-xl">🛠️</span>
-                            <h3 className="font-bold text-sm uppercase tracking-widest text-white/80">Code Injector</h3>
+                            <h3 style={{ fontSize: '0.7rem', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '2px', color: 'rgba(255,255,255,0.7)', margin: 0 }}>Code Injector</h3>
                         </div>
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10 text-text-muted hover:text-white transition-all"
+                            style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%', background: 'none', border: 'none', color: '#888', cursor: 'pointer' }}
                         >
                             ✕
                         </button>
                     </div>
 
                     {/* Tabs */}
-                    <div className="flex p-3 gap-2 bg-black/40 mx-5 mt-2 rounded-[20px] border border-white/5">
+                    <div style={{ display: 'flex', padding: '12px', gap: '8px', background: 'rgba(0,0,0,0.3)', margin: '15px 20px 0', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.05)' }}>
                         <button
                             onClick={() => setActiveTab('js')}
-                            className={`flex-1 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-[0.15em] transition-all duration-500 relative overflow-hidden ${activeTab === 'js'
-                                    ? 'bg-gradient-to-r from-primary to-primary/80 text-white shadow-[0_5_15px_rgba(231,76,60,0.3)]'
-                                    : 'text-white/40 hover:bg-white/5 hover:text-white/70'
-                                }`}
+                            className="premium-btn"
+                            style={{ flex: 1, padding: '10px', fontSize: '0.65rem', background: activeTab === 'js' ? 'linear-gradient(to right, #e74c3c, #c0392b)' : 'transparent', color: activeTab === 'js' ? 'white' : '#888', border: 'none' }}
                         >
-                            {activeTab === 'js' && <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-30" />}
-                            <span className="relative z-10">JavaScript</span>
+                            JavaScript
                         </button>
                         <button
                             onClick={() => setActiveTab('css')}
-                            className={`flex-1 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-[0.15em] transition-all duration-500 relative overflow-hidden ${activeTab === 'css'
-                                    ? 'bg-gradient-to-r from-secondary to-secondary/80 text-white shadow-[0_5_15px_rgba(52,152,219,0.3)]'
-                                    : 'text-white/40 hover:bg-white/5 hover:text-white/70'
-                                }`}
+                            className="premium-btn"
+                            style={{ flex: 1, padding: '10px', fontSize: '0.65rem', background: activeTab === 'css' ? 'linear-gradient(to right, #3498db, #2980b9)' : 'transparent', color: activeTab === 'css' ? 'white' : '#888', border: 'none' }}
                         >
-                            {activeTab === 'css' && <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-30" />}
-                            <span className="relative z-10">CSS Styles</span>
+                            CSS Styles
                         </button>
                     </div>
 
                     {/* Editor Area */}
-                    <div className="flex-1 p-5 pt-3 relative group/editor">
+                    <div style={{ flex: 1, padding: '20px', position: 'relative' }}>
                         <textarea
-                            className={`w-full h-full bg-black/60 border border-white/5 rounded-[24px] p-6 font-mono text-xs resize-none outline-none transition-all duration-500 shadow-inner leading-relaxed ${activeTab === 'js' ? 'focus:border-primary/30 focus:ring-1 focus:ring-primary/20' : 'focus:border-secondary/30 focus:ring-1 focus:ring-secondary/20'
-                                }`}
+                            className="premium-input"
+                            style={{ height: '100%', fontSize: '0.75rem', fontFamily: 'monospace', resize: 'none' }}
                             placeholder={activeTab === 'js' ? "// Write your logic here..." : "/* Add your custom styles... */"}
                             value={activeTab === 'js' ? settings.customJS : settings.customCSS}
                             onChange={(e) => updateSettings({ [activeTab === 'js' ? 'customJS' : 'customCSS']: e.target.value })}
                             spellCheck={false}
                         />
-                        <div className={`absolute bottom-10 right-10 pointer-events-none transition-all duration-700 font-black italic opacity-5 ${activeTab === 'js' ? 'text-primary scale-110' : 'text-secondary scale-110'
-                            }`}>
-                            <span className="text-6xl">{activeTab === 'js' ? 'JS' : 'CSS'}</span>
+                        <div style={{ position: 'absolute', bottom: '40px', right: '40px', pointerEvents: 'none', opacity: 0.1, fontSize: '4rem', fontWeight: '900', fontStyle: 'italic', color: activeTab === 'js' ? '#e74c3c' : '#3498db' }}>
+                            {activeTab === 'js' ? 'JS' : 'CSS'}
                         </div>
                     </div>
 
                     {/* Footer Controls */}
-                    <div className="p-5 px-8 border-t border-white/5 flex justify-between items-center bg-black/20">
-                        <div className="flex items-center gap-3 bg-white/5 px-3 py-1.5 rounded-full border border-white/5">
-                            <div className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)] animate-pulse" />
-                            <span className="text-[9px] text-white/50 uppercase tracking-[0.2em] font-black">Link Established</span>
+                    <div style={{ padding: '20px 32px', borderTop: '1px solid rgba(255,255,255,0.05)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.1)' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.05)', padding: '6px 12px', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                            <div className="animate-pulse-glow" style={{ width: '8px', height: '8px', background: '#2ecc71', borderRadius: '50%' }} />
+                            <span style={{ fontSize: '0.6rem', fontWeight: '900', textTransform: 'uppercase', color: 'rgba(255,255,255,0.5)', letterSpacing: '1.5px' }}>Link Active</span>
                         </div>
                         <button
                             onClick={() => {
@@ -105,7 +98,9 @@ export default function CodeEditor() {
                                     updateSettings({ [activeTab === 'js' ? 'customJS' : 'customCSS']: '' });
                                 }
                             }}
-                            className="text-[9px] font-black uppercase tracking-[0.2em] text-red-400/40 hover:text-red-400 transition-all py-2 px-4 rounded-xl hover:bg-red-400/10 border border-transparent hover:border-red-400/20"
+                            style={{ background: 'none', border: 'none', color: '#e74c3c', fontSize: '0.6rem', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '1.5px', cursor: 'pointer', padding: '8px 12px', borderRadius: '12px' }}
+                            onMouseOver={(e) => e.currentTarget.style.background = 'rgba(231,76,60,0.1)'}
+                            onMouseOut={(e) => e.currentTarget.style.background = 'none'}
                         >
                             Clear Buffer
                         </button>

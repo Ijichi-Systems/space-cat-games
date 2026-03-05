@@ -21,81 +21,71 @@ export default function Settings() {
     };
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen" style={{ backgroundColor: '#121212', color: '#eee' }}>
             {/* Hero Section */}
-            <div className="hero">
+            <div className="premium-hero">
                 <div className="container">
-                    <h1 className="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
+                    <h1 style={{ fontSize: '3.5rem', fontWeight: '900', marginBottom: '1rem', background: 'linear-gradient(to right, #e74c3c, #3498db)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                         Preferences
                     </h1>
-                    <p className="text-text-muted text-lg max-w-2xl mx-auto">
-                        Customize your browsing experience with stealth mode and developer tools.
+                    <p style={{ color: '#888', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto' }}>
+                        Customize your stealth identity and developer toolkit.
                     </p>
                 </div>
             </div>
 
-            <div className="container py-12">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="container" style={{ padding: '60px 20px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px' }}>
 
                     {/* Main Settings Column */}
-                    <div className="lg:col-span-2 space-y-10">
+                    <div style={{ gridColumn: 'span 2', display: 'flex', flexDirection: 'column', gap: '40px' }}>
 
                         {/* Tab Cloaking Section */}
-                        <section className="bg-white/5 backdrop-blur-xl p-8 rounded-card border border-white/10 shadow-nav relative overflow-hidden group">
-                            <div className="absolute top-0 left-0 w-1 h-full bg-primary transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-500" />
-
-                            <div className="flex items-center gap-4 mb-6">
-                                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-2xl">🕵️</div>
+                        <section className="glass-card" style={{ padding: '40px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '30px' }}>
+                                <div style={{ fontSize: '2.5rem', width: '60px', height: '60px', background: 'rgba(231, 76, 60, 0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyCenter: 'center' }}>🕵️</div>
                                 <div>
-                                    <h2 className="text-2xl font-bold">Tab Cloaking</h2>
-                                    <p className="text-text-muted">Hide your activity under a different tab identity.</p>
+                                    <h2 style={{ fontSize: '1.8rem', fontWeight: '800', margin: '0' }}>Tab Cloaking</h2>
+                                    <p style={{ color: '#888', margin: '5px 0 0' }}>Disguise your browser tab instantly.</p>
                                 </div>
                             </div>
 
-                            <div className="space-y-8">
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
                                 <div>
-                                    <h3 className="text-sm font-semibold uppercase tracking-widest text-primary/80 mb-4">Quick Presets</h3>
-                                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                                    <h3 style={{ fontSize: '0.7rem', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '2px', color: '#e74c3c', marginBottom: '15px' }}>Quick Presets</h3>
+                                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: '15px' }}>
                                         {PRESETS.map((preset) => (
                                             <button
                                                 key={preset.name}
                                                 onClick={() => handlePresetClick(preset)}
-                                                className={`flex items-center gap-3 px-5 py-4 rounded-xl border transition-all duration-500 relative group/btn overflow-hidden ${settings.tabTitle === preset.title
-                                                        ? 'bg-gradient-to-br from-primary to-primary/80 border-primary shadow-[0_0_20px_rgba(231,76,60,0.4)] text-white'
-                                                        : 'bg-white/[0.03] border-white/10 text-white/70 hover:text-white hover:bg-white/[0.08] hover:border-white/20'
-                                                    }`}
+                                                className={`premium-btn ${settings.tabTitle === preset.title ? 'premium-btn-primary' : 'premium-btn-outline'}`}
                                             >
-                                                {/* Glow effect for active preset */}
-                                                {settings.tabTitle === preset.title && (
-                                                    <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-50" />
-                                                )}
-
-                                                <img src={preset.icon} alt="" className="w-6 h-6 rounded-md object-contain relative z-10" />
-                                                <span className="text-sm font-bold relative z-10">{preset.name}</span>
+                                                <img src={preset.icon} alt="" style={{ width: '20px', height: '20px', objectFit: 'contain' }} />
+                                                <span>{preset.name}</span>
                                             </button>
                                         ))}
                                     </div>
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    <div className="space-y-3">
-                                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-primary ml-1">Custom Title</label>
+                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                                    <div>
+                                        <label style={{ fontSize: '0.65rem', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '1px', color: '#e74c3c', marginLeft: '5px', marginBottom: '8px', display: 'block' }}>Custom Title</label>
                                         <input
                                             type="text"
-                                            className="w-full bg-white/[0.02] border border-white/5 rounded-2xl p-4 focus:ring-2 focus:ring-primary/30 focus:border-primary/50 outline-none transition-all placeholder:text-white/10 font-medium text-sm"
+                                            className="premium-input"
                                             value={settings.tabTitle}
                                             onChange={(e) => updateSettings({ tabTitle: e.target.value })}
-                                            placeholder="e.g. My Important Document"
+                                            placeholder="e.g. My Document"
                                         />
                                     </div>
-                                    <div className="space-y-3">
-                                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-primary ml-1">Favicon URL</label>
+                                    <div>
+                                        <label style={{ fontSize: '0.65rem', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '1px', color: '#e74c3c', marginLeft: '5px', marginBottom: '8px', display: 'block' }}>Favicon URL</label>
                                         <input
                                             type="text"
-                                            className="w-full bg-white/[0.02] border border-white/5 rounded-2xl p-4 focus:ring-2 focus:ring-primary/30 focus:border-primary/50 outline-none transition-all placeholder:text-white/10 font-medium text-sm"
+                                            className="premium-input"
                                             value={settings.tabIcon}
                                             onChange={(e) => updateSettings({ tabIcon: e.target.value })}
-                                            placeholder="https://example.com/icon.png"
+                                            placeholder="https://..."
                                         />
                                     </div>
                                 </div>
@@ -103,78 +93,69 @@ export default function Settings() {
                         </section>
 
                         {/* Developer Mode Section */}
-                        <section className="bg-white/5 backdrop-blur-2xl p-10 rounded-[32px] border border-white/10 shadow-2xl relative overflow-hidden group">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 blur-[60px] rounded-full -mr-16 -mt-16" />
-
-                            <div className="flex items-center justify-between relative z-10">
-                                <div className="flex items-center gap-6">
-                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary/30 to-secondary/10 flex items-center justify-center text-3xl shadow-inner border border-white/5">💻</div>
+                        <section className="glass-card" style={{ padding: '40px', position: 'relative' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                                    <div style={{ fontSize: '2.5rem', width: '60px', height: '60px', background: 'rgba(52, 152, 219, 0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyCenter: 'center' }}>💻</div>
                                     <div>
-                                        <h2 className="text-2xl font-bold tracking-tight">Developer Mode</h2>
-                                        <p className="text-text-muted mt-1 font-medium">Inject custom scripts and styling live.</p>
+                                        <h2 style={{ fontSize: '1.8rem', fontWeight: '800', margin: '0' }}>Developer Mode</h2>
+                                        <p style={{ color: '#888', margin: '5px 0 0' }}>Inject scripts and styles live.</p>
                                     </div>
                                 </div>
-                                <button
+                                <div
+                                    className={`premium-toggle-bg ${settings.enableCodeEditor ? 'active' : ''}`}
                                     onClick={() => updateSettings({ enableCodeEditor: !settings.enableCodeEditor })}
-                                    className={`w-20 h-10 rounded-full transition-all duration-500 relative p-1 pb-1.5 shadow-inner border border-white/10 ${settings.enableCodeEditor ? 'bg-secondary/80' : 'bg-white/5'
-                                        }`}
                                 >
-                                    <div className={`absolute top-1 w-8 h-8 rounded-full transition-all duration-500 transform ${settings.enableCodeEditor ? 'translate-x-10 bg-white shadow-[0_0_15px_rgba(255,255,255,0.5)]' : 'translate-x-0 bg-white/20'
-                                        }`} />
-                                </button>
+                                    <div className="premium-toggle-knob" />
+                                </div>
                             </div>
 
                             {settings.enableCodeEditor && (
-                                <div className="mt-10 animate-in fade-in zoom-in-95 duration-500">
-                                    <div className="p-6 bg-secondary/10 border border-secondary/20 rounded-2xl text-secondary flex gap-5 items-center backdrop-blur-md">
-                                        <span className="text-3xl">🚀</span>
-                                        <p className="text-sm font-bold leading-relaxed">
-                                            Live Code Editor is now active. Look for the rocket launchpad icon in the bottom right of your screen to start building.
-                                        </p>
-                                    </div>
+                                <div style={{ marginTop: '30px', padding: '20px', background: 'rgba(52, 152, 219, 0.1)', border: '1px solid rgba(52, 152, 219, 0.2)', borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                    <span style={{ fontSize: '1.5rem' }}>🚀</span>
+                                    <p style={{ fontSize: '0.9rem', fontWeight: '700', color: '#3498db', margin: 0 }}>
+                                        Live Code Editor active. Look for the rocket icon in the bottom right.
+                                    </p>
                                 </div>
                             )}
                         </section>
                     </div>
 
-                    {/* Sidebar / Summary */}
-                    <div className="space-y-8">
-                        <div className="bg-white/5 backdrop-blur-3xl p-10 rounded-[32px] border border-white/10 shadow-2xl">
-                            <h3 className="text-xl font-bold mb-6 flex items-center gap-3">
-                                <span className="w-2 h-2 rounded-full bg-primary" />
-                                System Info
+                    {/* Sidebar */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+                        <div className="glass-card" style={{ padding: '40px' }}>
+                            <h3 style={{ fontSize: '1.2rem', fontWeight: '800', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                <span style={{ width: '8px', height: '8px', background: '#e74c3c', borderRadius: '50%' }} />
+                                Local Storage
                             </h3>
-                            <p className="text-sm text-text-muted mb-8 leading-relaxed font-medium">
-                                Your settings are synced to this browser and will persist even after you close the tab.
+                            <p style={{ fontSize: '0.9rem', color: '#888', lineHeight: '1.6', marginBottom: '30px' }}>
+                                Your preferences are synchronized with this browser's local storage and persist across sessions.
                             </p>
 
-                            <div className="space-y-6 mb-10">
-                                <div className="flex justify-between items-center text-sm py-3 border-b border-white/5">
-                                    <span className="text-text-muted font-bold uppercase tracking-widest text-[10px]">Registry</span>
-                                    <span className="font-mono text-primary text-xs bg-primary/10 px-2 py-1 rounded-md">local_storage</span>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginBottom: '30px' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
+                                    <span style={{ fontSize: '0.6rem', fontWeight: '900', textTransform: 'uppercase', color: '#888' }}>Registry</span>
+                                    <span style={{ fontFamily: 'monospace', color: '#e74c3c', fontSize: '0.8rem' }}>local_vault</span>
                                 </div>
-                                <div className="flex justify-between items-center text-sm py-3 border-b border-white/5">
-                                    <span className="text-text-muted font-bold uppercase tracking-widest text-[10px]">Status</span>
-                                    <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded-md ${settings.enableCodeEditor ? 'bg-secondary/20 text-secondary' : 'bg-red-500/10 text-red-400'
-                                        }`}>
-                                        {settings.enableCodeEditor ? 'Active' : 'Standby'}
-                                    </span>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
+                                    <span style={{ fontSize: '0.6rem', fontWeight: '900', textTransform: 'uppercase', color: '#888' }}>Status</span>
+                                    <span style={{ fontSize: '0.7rem', fontWeight: '900', color: settings.enableCodeEditor ? '#2ecc71' : '#e74c3c' }}>{settings.enableCodeEditor ? 'SYNCHRONIZED' : 'IDLE'}</span>
                                 </div>
                             </div>
 
                             <button
                                 onClick={resetSettings}
-                                className="w-full py-5 bg-gradient-to-r from-red-500/5 to-red-600/5 hover:from-red-500 hover:to-red-600 border border-red-500/20 hover:border-red-500 rounded-2xl transition-all duration-500 text-xs font-black uppercase tracking-[0.25em] text-red-400 hover:text-white hover:shadow-[0_10px_30px_rgba(239,68,68,0.3)] group"
+                                className="premium-btn"
+                                style={{ width: '100%', background: 'rgba(231, 76, 60, 0.05)', border: '1px solid rgba(231, 76, 60, 0.2)', color: '#e74c3c' }}
                             >
-                                <span className="group-hover:scale-110 transition-transform inline-block">Reset Core Engine</span>
+                                Clear localstorage
                             </button>
                         </div>
 
-                        <div className="p-6 rounded-card border border-white/5 bg-white/[0.02] text-center">
-                            <p className="text-xs text-text-muted">Space Cat Games v{__BUILD_INFO__.appVersion}</p>
+                        <div className="p-6 rounded-card border border-white/5 bg-white/[0.02] text-center" style={{ marginTop: '20px' }}>
+                            <p style={{ fontSize: '0.8rem', color: '#888' }}>Space Cat Games v{__BUILD_INFO__.appVersion}</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
