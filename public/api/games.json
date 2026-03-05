@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-05T18:23:45.495Z",
+  "generatedAt": "2026-03-05T18:50:56.615Z",
   "count": 149,
   "games": [
     {
@@ -846,6 +846,11 @@
       "title": "Cooking Mama",
       "url": "/games/cm.html",
       "img": "/images/cm.png"
+    },
+    {
+      "title": "Growden.io",
+      "url": "/games/Growden.io.html",
+      "img": "/images/growden.png"
     }
   ]
 }
