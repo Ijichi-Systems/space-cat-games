@@ -3,6 +3,7 @@
  */
 
 import React, { useEffect } from 'react'
+import './index.css'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Navbar from './components/navbar.tsx'
