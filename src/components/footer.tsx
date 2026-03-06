@@ -127,9 +127,10 @@ export default function Footer() {
         </style>
 
         {/* Images */}
-        <img src="images/react.png" width={150} height={60} />
-        <img src="images/vite.svg" height={55} />
-        <br />
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '16px', margin: '10px 0' }}>
+          <img src="images/react.png" width={150} height={60} />
+          <img src="images/vite.svg" height={55} />
+        </div>
 
         {/* Build Info */}
         <div style={{ marginTop: "20px", color: "#666", fontSize: "0.8rem" }}>
