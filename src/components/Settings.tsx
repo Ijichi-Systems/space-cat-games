@@ -43,7 +43,7 @@ export default function Settings() {
                         {/* Tab Cloaking Section */}
                         <section className="glass-card" style={{ padding: '40px' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '30px' }}>
-                                <div style={{ fontSize: '2.5rem', width: '60px', height: '60px', background: 'rgba(231, 76, 60, 0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyCenter: 'center' }}>🕵️</div>
+                                <div style={{ fontSize: '2.5rem', width: '60px', height: '60px', background: 'rgba(231, 76, 60, 0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>🕵️</div>
                                 <div>
                                     <h2 style={{ fontSize: '1.8rem', fontWeight: '800', margin: '0' }}>Tab Cloaking</h2>
                                     <p style={{ color: '#888', margin: '5px 0 0' }}>Disguise your browser tab instantly.</p>
@@ -96,7 +96,7 @@ export default function Settings() {
                         <section className="glass-card" style={{ padding: '40px', position: 'relative' }}>
                             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                                    <div style={{ fontSize: '2.5rem', width: '60px', height: '60px', background: 'rgba(52, 152, 219, 0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyCenter: 'center' }}>💻</div>
+                                    <div style={{ fontSize: '2.5rem', width: '60px', height: '60px', background: 'rgba(52, 152, 219, 0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>💻</div>
                                     <div>
                                         <h2 style={{ fontSize: '1.8rem', fontWeight: '800', margin: '0' }}>Developer Mode</h2>
                                         <p style={{ color: '#888', margin: '5px 0 0' }}>Inject scripts and styles live.</p>
