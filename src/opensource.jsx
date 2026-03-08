@@ -19,18 +19,14 @@ export default function Opensource() {
       <div className="container">
         <h1>Source code and other code things!</h1>
         <section className="license-section">
-          <h2>Developer Time!</h2>
+          <h2>Development Information</h2>
           <a href="https://wakatime.com/badge/github/neurontechofficial/spacecatgames">
             <img
-              src="https://wakatime.com/badge/github/neurontechofficial/spacecatgames.svg"
-              alt="wakatime"
+                src="https://wakatime.com/badge/github/neurontechofficial/spacecatgames.svg"
+                alt="wakatime"
             />
           </a>
-          <p>
-            <small>
-              <em>-- please note this was setup in January of 2025 --</em>
-            </small>
-          </p>
+          <img alt="GitHub Release" src="https://img.shields.io/github/v/release/neurontechofficial/spacecatgames"/>
           <h2>Website Source Code</h2>
           <p>
             The Space Cat Games website is built using open web technologies.
@@ -42,36 +38,17 @@ export default function Opensource() {
           </p>
           <div className="cta-section">
             <a
-              href="https://github.com/Ijichi-Systems/space-cat-games"
-              className="btn"
+                href="https://github.com/Ijichi-Systems/space-cat-games"
+                className="btn"
             >
               View Source on GitHub
             </a>
           </div>
-          <section className="license-section">
-            <h2>Space Cat Games: Cutting Edge</h2>
-            <p>
-              Want to see experimental features, bugs and absolute chaos? Well
-              this is for you!
-            </p>
-            <p>
-              <strong>Warning:</strong> This is an unstable version and contains
-              bugs or incomplete features.
-            </p>
-            <div className="cta-section">
-              <a
-                href="https://spacecatgames-cutting-edge.onrender.com"
-                className="btn"
-              >
-                Try Cutting Edge
-              </a>
-            </div>
-          </section>
         </section>
         <section className="license-section">
           <h2>Old Release - 12.1.2</h2>
           <p>
-            Want to roll back time and visit the last version before the revamp?
+          Want to roll back time and visit the last version before the revamp?
             Well here it is!.
           </p>
           <p>
