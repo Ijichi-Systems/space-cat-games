@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-08T15:55:30.315Z",
-  "count": 152,
+  "generatedAt": "2026-03-08T16:08:26.204Z",
+  "count": 153,
   "games": [
     {
       "title": "FIFA 2007",
@@ -865,6 +865,11 @@
       "title": "Cuphead",
       "url": "/games/Cuphead.html",
       "img": "/images/cuphead.jpg"
+    },
+    {
+      "title": "Famidash",
+      "url": "/games/Famidash.html",
+      "img": "/images/famidash.webp"
     }
   ]
 }
