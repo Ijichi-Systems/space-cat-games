@@ -27,6 +27,7 @@ export default function Opensource() {
             />
           </a>
           <img alt="GitHub Release" src="https://img.shields.io/github/v/release/neurontechofficial/spacecatgames"/>
+          <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/neurontechofficial/spacecatgames"/>
           <h2>Website Source Code</h2>
           <p>
             The Space Cat Games website is built using open web technologies.
