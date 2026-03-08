@@ -2,6 +2,10 @@
 
 * [Home](README.md)
 
+## Deploying Space Cat Games
+
+* [How to deploy](deploying-space-cat-games/how-to-deploy.md)
+
 ## Modifying Space Cat Games <a href="#mod" id="mod"></a>
 
 * [Overview](mod/overview.md)
