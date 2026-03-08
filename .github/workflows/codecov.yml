@@ -25,8 +25,8 @@ jobs:
         run: npm ci
 
       # Run tests with coverage
-      - name: Run Vitest with coverage
-        run: npx vitest run --coverage
+      - name: Run Jest with coverage
+        run: npx jest --coverage
 
       # Upload coverage to Codecov
       - name: Upload coverage reports to Codecov
