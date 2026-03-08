@@ -1,3 +1,7 @@
+---
+icon: js
+---
+
 # games.jsx
 
 #### Loading games from API

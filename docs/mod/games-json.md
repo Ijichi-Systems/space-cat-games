@@ -26,3 +26,25 @@ At the top of the file, metadata is stored.
 
 `count` stores the total number of games.
 
+`games` is an array of all current games.
+
+
+
+Games are stored as follows:
+
+```json
+{
+  "title": "Wordle",
+  "url": "/games/wordle.html",
+  "img": "https://i.ibb.co/SXZymjyS/images.png",
+  "alt": "Wordle"
+},
+```
+
+`title`  is the name of the game.
+
+`url`  points to where the game is
+
+`img`  points to the icon location.
+
+`alt`  is alt text to be attached.
