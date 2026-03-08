@@ -12,10 +12,12 @@ export default function Navbar() {
       <Link to="/">Home</Link>
       <Link to="/games">Games</Link>
       <Link to="/opensource">Source Code</Link>
+        <Link to="https://space-cat-games.gitbook.io/space-cat-games-docs/">Documentation</Link>
       <Link to="/credits">Credits</Link>
       <Link to="/changelog">Changelog</Link>
       <Link to="/archive">Archive</Link>
       <Link to="/settings" style={{ color: '#e74c3c', fontWeight: 'bold' }}>Settings</Link>
+
       <span
         style={{
           float: "right",
