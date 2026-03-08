@@ -21,7 +21,6 @@ export default function Archive() {
           historical artifacts, images, and resources.
         </p>
 
-        {/* content preserved, but ensure images have alt and correct public paths */}
         <section className="archive-section">
           <h2>Cut/Lost Images</h2>
           <div className="archive-item">
