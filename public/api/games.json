@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-08T15:35:45.963Z",
-  "count": 151,
+  "generatedAt": "2026-03-08T15:55:30.315Z",
+  "count": 152,
   "games": [
     {
       "title": "FIFA 2007",
@@ -860,6 +860,11 @@
       "title": "Block Blast",
       "url": "/games/Block Blast.html",
       "img": "/images/blockblast.png"
+    },
+    {
+      "title": "Cuphead",
+      "url": "/games/Cuphead.html",
+      "img": "/images/cuphead.jpg"
     }
   ]
 }
