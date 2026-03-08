@@ -29,7 +29,7 @@ export default function Settings() {
                         Preferences
                     </h1>
                     <p style={{ color: '#888', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto' }}>
-                        Customize your stealth identity and developer toolkit.
+                        "NO DON'T PRESS THAT BIG RED BUTTO-" *explosion sounds*
                     </p>
                 </div>
             </div>
