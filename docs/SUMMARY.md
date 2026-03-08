@@ -6,3 +6,4 @@
 
 * [Overview](mod/overview.md)
 * [games.jsx](mod/games.jsx.md)
+* [games.json](mod/games-json.md)
