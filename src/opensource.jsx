@@ -28,6 +28,9 @@ export default function Opensource() {
           </a>
           <img alt="GitHub Release" src="https://img.shields.io/github/v/release/neurontechofficial/spacecatgames"/>
           <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/neurontechofficial/spacecatgames"/>
+          <img alt="GitHub commit activity"
+               src="https://img.shields.io/github/commit-activity/t/neurontechofficial/spacecatgames"/>
+
           <h2>Website Source Code</h2>
           <p>
             The Space Cat Games website is built using open web technologies.
@@ -49,7 +52,7 @@ export default function Opensource() {
         <section className="license-section">
           <h2>Old Release - 12.1.2</h2>
           <p>
-          Want to roll back time and visit the last version before the revamp?
+            Want to roll back time and visit the last version before the revamp?
             Well here it is!.
           </p>
           <p>
