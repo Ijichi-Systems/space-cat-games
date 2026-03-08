@@ -132,16 +132,6 @@ export default function Settings() {
                                 Your preferences are synchronized with this browser's local storage and persist across sessions.
                             </p>
 
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginBottom: '30px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
-                                    <span style={{ fontSize: '0.6rem', fontWeight: '900', textTransform: 'uppercase', color: '#888' }}>Registry</span>
-                                    <span style={{ fontFamily: 'monospace', color: '#e74c3c', fontSize: '0.8rem' }}>local_vault</span>
-                                </div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
-                                    <span style={{ fontSize: '0.6rem', fontWeight: '900', textTransform: 'uppercase', color: '#888' }}>Status</span>
-                                    <span style={{ fontSize: '0.7rem', fontWeight: '900', color: settings.enableCodeEditor ? '#2ecc71' : '#e74c3c' }}>{settings.enableCodeEditor ? 'SYNCHRONIZED' : 'IDLE'}</span>
-                                </div>
-                            </div>
 
                             <button
                                 onClick={resetSettings}
