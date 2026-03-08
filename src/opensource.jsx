@@ -19,7 +19,7 @@ export default function Opensource() {
       <div className="container">
         <h1>Source code and other code things!</h1>
         <section className="license-section">
-          <h2>Development Information</h2>
+          <h2>Development Statistics</h2>
           <a href="https://wakatime.com/badge/github/neurontechofficial/spacecatgames">
             <img
                 src="https://wakatime.com/badge/github/neurontechofficial/spacecatgames.svg"
@@ -30,6 +30,9 @@ export default function Opensource() {
           <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/neurontechofficial/spacecatgames"/>
           <img alt="GitHub commit activity"
                src="https://img.shields.io/github/commit-activity/t/neurontechofficial/spacecatgames"/>
+          <img alt="GitHub commits since latest release"
+               src="https://img.shields.io/github/commits-since/neurontechofficial/spacecatgames/latest"/>
+
 
           <h2>Website Source Code</h2>
           <p>

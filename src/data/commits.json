@@ -1,5 +1,59 @@
 [
   {
+    "hash": "d8e2b94",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add commit activity badge"
+  },
+  {
+    "hash": "42374fc",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add repo size badge"
+  },
+  {
+    "hash": "e36d6f4",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add release badge"
+  },
+  {
+    "hash": "b353c81",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "remove broken game"
+  },
+  {
+    "hash": "bf5ef61",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "now it builds"
+  },
+  {
+    "hash": "66dc84d",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "BUILDS ARE FAILING!"
+  },
+  {
+    "hash": "a7ff65d",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add check for games with no image"
+  },
+  {
+    "hash": "b5b36ec",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add quick mathematica script for checking game count"
+  },
+  {
+    "hash": "1db5813",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "update credits"
+  },
+  {
     "hash": "e36be6b",
     "author": "Ben",
     "date": "2026-03-06",
@@ -244,59 +298,5 @@
     "author": "Ben",
     "date": "2026-02-14",
     "message": "move back to NS"
-  },
-  {
-    "hash": "66a0dab",
-    "author": "Ben House",
-    "date": "2026-02-13",
-    "message": "mreow"
-  },
-  {
-    "hash": "34196b2",
-    "author": "Ben House",
-    "date": "2026-02-13",
-    "message": "mroew"
-  },
-  {
-    "hash": "f20b910",
-    "author": "Ben House",
-    "date": "2026-02-13",
-    "message": "update user form"
-  },
-  {
-    "hash": "7c55da9",
-    "author": "Ben House",
-    "date": "2026-02-13",
-    "message": "add mazball"
-  },
-  {
-    "hash": "e77a636",
-    "author": "Ben House",
-    "date": "2026-02-13",
-    "message": "add mazball"
-  },
-  {
-    "hash": "a051a75",
-    "author": "Ben House",
-    "date": "2026-02-13",
-    "message": "update NS to CB"
-  },
-  {
-    "hash": "621e185",
-    "author": "Ben House",
-    "date": "2026-02-13",
-    "message": "version bump"
-  },
-  {
-    "hash": "44bc5c9",
-    "author": "Ben House",
-    "date": "2026-02-13",
-    "message": "update C info to 2025"
-  },
-  {
-    "hash": "85ed37c",
-    "author": "Ben House",
-    "date": "2026-02-13",
-    "message": "version bump"
   }
 ]
