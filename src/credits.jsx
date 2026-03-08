@@ -40,7 +40,8 @@ export default function Credits() {
             </li>
           </ul>
         </section>
+      </div>
       <Footer />
     </>
-      );
-      }
+  );
+}
