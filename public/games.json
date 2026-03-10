@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-06T14:54:55.192Z",
-  "count": 151,
+  "generatedAt": "2026-03-08T16:12:13.201Z",
+  "count": 154,
   "games": [
     {
       "title": "FIFA 2007",
@@ -88,8 +88,8 @@
     },
     {
       "title": "Tetris",
-      "url": "/games/tetris.html",
-      "img": "https://i.ibb.co/vv645Z00/tetris-logo.png",
+      "url": "/games/Tetris.html",
+      "img": "/images/tetris.jpg",
       "alt": "Tetris"
     },
     {
@@ -855,6 +855,26 @@
       "title": "roberto simulator",
       "url": "https://roberto-simulator.netlify.app/",
       "img": "roberto.jpeg"
+    },
+    {
+      "title": "Block Blast",
+      "url": "/games/Block Blast.html",
+      "img": "/images/blockblast.png"
+    },
+    {
+      "title": "Cuphead",
+      "url": "/games/Cuphead.html",
+      "img": "/images/cuphead.jpg"
+    },
+    {
+      "title": "Famidash",
+      "url": "/games/Famidash.html",
+      "img": "/images/famidash.webp"
+    },
+    {
+      "title": "Parappa The Rapper",
+      "url": "/games/Parappa The Rapper",
+      "img": "/images/ptr.png"
     }
   ]
 }

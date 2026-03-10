@@ -1,5 +1,179 @@
 [
   {
+    "hash": "64ee1f8",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "update tetris"
+  },
+  {
+    "hash": "6fbcc32",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add parappa"
+  },
+  {
+    "hash": "f56209b",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add famidash"
+  },
+  {
+    "hash": "ce76e9f",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add cuphead"
+  },
+  {
+    "hash": "d9c4deb",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "Merge remote-tracking branch 'origin/main'"
+  },
+  {
+    "hash": "a5d367d",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add block blast"
+  },
+  {
+    "hash": "8d4c122",
+    "author": "Ben House",
+    "date": "2026-03-08",
+    "message": "GITBOOK-11: add button for deploying"
+  },
+  {
+    "hash": "fec9b97",
+    "author": "Ben House",
+    "date": "2026-03-08",
+    "message": "GITBOOK-10: add a how to deploy thing"
+  },
+  {
+    "hash": "6cef132",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "Merge remote-tracking branch 'origin/main'"
+  },
+  {
+    "hash": "4b4640a",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "remove code cov"
+  },
+  {
+    "hash": "8bff3d7",
+    "author": "Ben House",
+    "date": "2026-03-08",
+    "message": "GITBOOK-9: add version bumper"
+  },
+  {
+    "hash": "9956edc",
+    "author": "Ben House",
+    "date": "2026-03-08",
+    "message": "GITBOOK-8: improve desc"
+  },
+  {
+    "hash": "5ac5eec",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "*explosion sounds*"
+  },
+  {
+    "hash": "efb76df",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add docs to navbar"
+  },
+  {
+    "hash": "acb421d",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "that was pointless"
+  },
+  {
+    "hash": "fbbf015",
+    "author": "Ben House",
+    "date": "2026-03-08",
+    "message": "GITBOOK-7: improve"
+  },
+  {
+    "hash": "d79eaea",
+    "author": "Noah",
+    "date": "2026-03-08",
+    "message": "GITBOOK-6: Games.json"
+  },
+  {
+    "hash": "33957dc",
+    "author": "Ben House",
+    "date": "2026-03-08",
+    "message": "GITBOOK-4: update games.jsx"
+  },
+  {
+    "hash": "49457b4",
+    "author": "Ben House",
+    "date": "2026-03-08",
+    "message": "GITBOOK-3: No subject"
+  },
+  {
+    "hash": "b315d0b",
+    "author": "Ben House",
+    "date": "2026-03-08",
+    "message": "GITBOOK-2: No subject"
+  },
+  {
+    "hash": "5f001a9",
+    "author": "Ben House",
+    "date": "2026-03-08",
+    "message": "GITBOOK-1: No subject"
+  },
+  {
+    "hash": "cf1ee62",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add docs folder"
+  },
+  {
+    "hash": "0f737e6",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add codecov badge"
+  },
+  {
+    "hash": "942670d",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "covorage generated"
+  },
+  {
+    "hash": "5758366",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "Merge remote-tracking branch 'origin/main'"
+  },
+  {
+    "hash": "efe7b3d",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "now we are jesting proper"
+  },
+  {
+    "hash": "46472a3",
+    "author": "meowcat767",
+    "date": "2026-03-08",
+    "message": "Replace Vitest with Jest for coverage testing"
+  },
+  {
+    "hash": "40ac05d",
+    "author": "meowcat767",
+    "date": "2026-03-08",
+    "message": "Add Codecov workflow for test coverage reporting"
+  },
+  {
+    "hash": "2f301bc",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "install jest"
+  },
+  {
     "hash": "d8e2b94",
     "author": "Ben",
     "date": "2026-03-08",
@@ -124,179 +298,5 @@
     "author": "Ben",
     "date": "2026-03-05",
     "message": "working on settings"
-  },
-  {
-    "hash": "7dd71f5",
-    "author": "Ben",
-    "date": "2026-03-05",
-    "message": "add 64 in 1 NES"
-  },
-  {
-    "hash": "3389816",
-    "author": "Ben",
-    "date": "2026-03-05",
-    "message": "remove the big e"
-  },
-  {
-    "hash": "4a173ad",
-    "author": "Ben",
-    "date": "2026-03-04",
-    "message": "update the big e"
-  },
-  {
-    "hash": "6c1f49f",
-    "author": "Ben",
-    "date": "2026-03-04",
-    "message": "update the big e"
-  },
-  {
-    "hash": "f46e57c",
-    "author": "Ben",
-    "date": "2026-03-02",
-    "message": "add the big e"
-  },
-  {
-    "hash": "24cdbf5",
-    "author": "dependabot[bot]",
-    "date": "2026-03-02",
-    "message": "Bump minimatch in the npm_and_yarn group across 1 directory"
-  },
-  {
-    "hash": "84e80ca",
-    "author": "meowcat767",
-    "date": "2026-03-02",
-    "message": "Merge pull request #29 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-b2936519f3"
-  },
-  {
-    "hash": "78d0139",
-    "author": "meowcat767",
-    "date": "2026-03-02",
-    "message": "Remove automations and contributors section from README"
-  },
-  {
-    "hash": "c81ea33",
-    "author": "dependabot[bot]",
-    "date": "2026-02-28",
-    "message": "Bump rollup in the npm_and_yarn group across 1 directory"
-  },
-  {
-    "hash": "f54aeeb",
-    "author": "meowcat767",
-    "date": "2026-02-26",
-    "message": "Update README.md"
-  },
-  {
-    "hash": "c9b27c8",
-    "author": "Ben House",
-    "date": "2026-02-24",
-    "message": "huwahh"
-  },
-  {
-    "hash": "cb3830d",
-    "author": "Ben House",
-    "date": "2026-02-24",
-    "message": "version bump"
-  },
-  {
-    "hash": "9caba05",
-    "author": "Ben House",
-    "date": "2026-02-24",
-    "message": "thanks chase"
-  },
-  {
-    "hash": "7b03c14",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "101?"
-  },
-  {
-    "hash": "9ae3d9f",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "experimenting with vercel speed insights"
-  },
-  {
-    "hash": "762d629",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "vercel unhappy"
-  },
-  {
-    "hash": "a4897da",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "Final commit for v18.0.0"
-  },
-  {
-    "hash": "3971dc7",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "invalid div"
-  },
-  {
-    "hash": "464f125",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "start removing marquees"
-  },
-  {
-    "hash": "5303484",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "fixed"
-  },
-  {
-    "hash": "926c624",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "who the hell put 700 ads"
-  },
-  {
-    "hash": "6b05d28",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "started removing ads because they don't work."
-  },
-  {
-    "hash": "8bda7a1",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "change ref"
-  },
-  {
-    "hash": "514cc2c",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "lagtrain???"
-  },
-  {
-    "hash": "e58c1cd",
-    "author": "Ben",
-    "date": "2026-02-15",
-    "message": "actually add chicken game 5"
-  },
-  {
-    "hash": "ad1e809",
-    "author": "Ben",
-    "date": "2026-02-14",
-    "message": "add chicken game 5"
-  },
-  {
-    "hash": "fffcf67",
-    "author": "Ben",
-    "date": "2026-02-14",
-    "message": "add chicken game 4"
-  },
-  {
-    "hash": "d46b887",
-    "author": "Ben",
-    "date": "2026-02-14",
-    "message": "add chicken game 3"
-  },
-  {
-    "hash": "f20a8fc",
-    "author": "Ben",
-    "date": "2026-02-14",
-    "message": "move back to NS"
   }
 ]

@@ -39,6 +39,7 @@ export default function Footer() {
 
   return (
     <footer>
+      
       <div className="container">
         <p>
           © 2026 Nijika Softworks &{" "}
@@ -46,6 +47,7 @@ export default function Footer() {
             Neuron Technologies
           </a>{" "}
           | All rights reserved.
+          
         </p>
 
         {/* Uptime Counter */}
@@ -128,6 +130,9 @@ export default function Footer() {
 
         {/* Images */}
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '16px', margin: '10px 0' }}>
+        <img alt="GitHub commit activity"
+               src="https://img.shields.io/github/commit-activity/t/neurontechofficial/spacecatgames"/>
+          <img alt="GitHub Release" src="https://img.shields.io/github/v/release/neurontechofficial/spacecatgames"/>
           <img src="images/react.png" width={150} height={60} />
           <img src="images/vite.svg" height={55} />
         </div>
