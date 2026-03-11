@@ -42,11 +42,11 @@ export default function Opensource() {
             General Public License v3.0.
           </p>
           <p>
-            You can view and download the source code from our repositories:
+            You can view and download the source code from the repository:
           </p>
           <div className="cta-section">
             <a
-                href="https://github.com/Ijichi-Systems/space-cat-games"
+                href="https://github.com/Neurontechofficial/spacecatgames"
                 className="btn"
             >
               View Source on GitHub
