@@ -65,13 +65,13 @@ yarn
 ### Start the development server
 
 ```bash
-npm start
+npm run dev
 ```
 
 or
 
 ```bash
-yarn start
+yarn run dev
 ```
 
 This usually starts a dev server (commonly at `http://localhost:3000/`) with hot reloading.  
