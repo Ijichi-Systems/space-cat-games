@@ -137,7 +137,7 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Build Info */}
+        {/* Build Info, expect IDE to warn since these are set by vite/node on build  */}
         <div style={{ marginTop: "20px", color: "#666", fontSize: "0.8rem" }}>
           <div>Built on: {new Date(__BUILD_INFO__.date).toLocaleString()}</div>
           <div>
