@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-12T11:08:09.937Z",
-  "count": 156,
+  "generatedAt": "2026-03-12T11:17:26.466Z",
+  "count": 157,
   "games": [
     {
       "title": "FIFA 2007",
@@ -885,6 +885,11 @@
       "title": "Breaklock",
       "url": "/games/Breaklock.html",
       "img": "/images/breaklock.png"
+    },
+    {
+      "title": "Wolfenstein 3D",
+      "url": "/games/wolfen.html",
+      "img": "/images/wolfen.jpg"
     }
   ]
 }
