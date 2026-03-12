@@ -90,7 +90,6 @@ export default function CodeEditor() {
                     <div style={{ padding: '20px 32px', borderTop: '1px solid rgba(255,255,255,0.05)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.1)' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.05)', padding: '6px 12px', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.05)' }}>
                             <div className="animate-pulse-glow" style={{ width: '8px', height: '8px', background: '#2ecc71', borderRadius: '50%' }} />
-                            <span style={{ fontSize: '0.6rem', fontWeight: '900', textTransform: 'uppercase', color: 'rgba(255,255,255,0.5)', letterSpacing: '1.5px' }}>Link Active</span>
                         </div>
                         <button
                             onClick={() => {

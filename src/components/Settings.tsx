@@ -114,7 +114,7 @@ export default function Settings() {
                                 <div style={{ marginTop: '30px', padding: '20px', background: 'rgba(52, 152, 219, 0.1)', border: '1px solid rgba(52, 152, 219, 0.2)', borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '15px' }}>
                                     <span style={{ fontSize: '1.5rem' }}>🚀</span>
                                     <p style={{ fontSize: '0.9rem', fontWeight: '700', color: '#3498db', margin: 0 }}>
-                                        Live Code Editor active. Look for the rocket icon in the bottom right.
+                                        Live Code Editor active. Look for the rocket icon at the bottom.
                                     </p>
                                 </div>
                             )}
