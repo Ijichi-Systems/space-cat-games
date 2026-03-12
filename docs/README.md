@@ -6,7 +6,10 @@ description: Welcome to the Space Cat Games Docs
 
 ### What are these docs for?
 
-These docs are targeted at **developers**, not end users. These docs go into how systems, components and scripts function.&#x20;
+These docs are targeted at both users and developers.\
+If you are an end user, refer to TODO\[USER AREA].
+
+If you are a developer, refer to "Modifying Space Cat Games".
 
 
 
