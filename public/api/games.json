@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-12T11:17:26.466Z",
-  "count": 157,
+  "generatedAt": "2026-03-12T11:33:48.985Z",
+  "count": 158,
   "games": [
     {
       "title": "FIFA 2007",
@@ -890,6 +890,11 @@
       "title": "Wolfenstein 3D",
       "url": "/games/wolfen.html",
       "img": "/images/wolfen.jpg"
+    },
+    {
+      "title": "WarioWare, Inc.: Mega Microgame$",
+      "url": "/games/warioware.html",
+      "img": "/images/warioware.jpg"
     }
   ]
 }
