@@ -130,11 +130,11 @@ export default function Footer() {
 
         {/* Images */}
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '16px', margin: '10px 0' }}>
-        <img alt="GitHub commit activity"
-               src="https://img.shields.io/github/commit-activity/t/neurontechofficial/spacecatgames"/>
-          <img alt="GitHub Release" src="https://img.shields.io/github/v/release/neurontechofficial/spacecatgames"/>
           <img src="images/react.png" width={150} height={60} />
           <img src="images/vite.svg" height={55} />
+          <a href="https://www.wolfram.com/language/">
+            <img src="images/wl.png" width={120} alt="Wolfram Language" />
+          </a>
         </div>
 
         {/* Build Info */}

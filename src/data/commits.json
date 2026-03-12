@@ -1,5 +1,41 @@
 [
   {
+    "hash": "bf298d9",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "update tests?"
+  },
+  {
+    "hash": "de4eeda",
+    "author": "meowcat767",
+    "date": "2026-03-11",
+    "message": "Update README.md"
+  },
+  {
+    "hash": "7b800f8",
+    "author": "meowcat767",
+    "date": "2026-03-11",
+    "message": "update GitHub link"
+  },
+  {
+    "hash": "63bf1e4",
+    "author": "meowcat767",
+    "date": "2026-03-11",
+    "message": "remove archive from navbar"
+  },
+  {
+    "hash": "81deb08",
+    "author": "meowcat767",
+    "date": "2026-03-11",
+    "message": "Update package.json"
+  },
+  {
+    "hash": "57b405a",
+    "author": "Ben House",
+    "date": "2026-03-10",
+    "message": "place status badges in bottom"
+  },
+  {
     "hash": "64ee1f8",
     "author": "Ben",
     "date": "2026-03-08",
@@ -262,41 +298,5 @@
     "author": "Ben",
     "date": "2026-03-06",
     "message": "ROBERTO"
-  },
-  {
-    "hash": "a1e8d84",
-    "author": "Ben House",
-    "date": "2026-03-06",
-    "message": "ROBERTO"
-  },
-  {
-    "hash": "fffe4c1",
-    "author": "Ben",
-    "date": "2026-03-05",
-    "message": "settings are a bit borked but thats ok"
-  },
-  {
-    "hash": "d4b438a",
-    "author": "Ben",
-    "date": "2026-03-05",
-    "message": "add growden"
-  },
-  {
-    "hash": "7f9f6e7",
-    "author": "Ben",
-    "date": "2026-03-05",
-    "message": "shartery"
-  },
-  {
-    "hash": "b0f555f",
-    "author": "Ben",
-    "date": "2026-03-05",
-    "message": "update package info"
-  },
-  {
-    "hash": "57d568a",
-    "author": "Ben",
-    "date": "2026-03-05",
-    "message": "working on settings"
   }
 ]
