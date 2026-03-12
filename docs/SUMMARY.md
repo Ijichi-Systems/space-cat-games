@@ -5,6 +5,7 @@
 ## Using Space Cat Games
 
 * [Overview](using-space-cat-games/overview.md)
+* [Searching and Selecting games](using-space-cat-games/searching-and-selecting-games.md)
 
 ## Deploying Space Cat Games
 
