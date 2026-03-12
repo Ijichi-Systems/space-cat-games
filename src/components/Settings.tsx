@@ -9,7 +9,7 @@ const PRESETS = [
     { name: 'Default', title: 'Space Cat Games - Home', icon: '/favicon.ico' },
     { name: 'Google', title: 'Google', icon: 'https://www.google.com/favicon.ico' },
     { name: 'Google Classroom', title: 'Classes', icon: 'https://ssl.gstatic.com/classroom/favicon.png' },
-    { name: 'Canvas', title: 'Dashboard', icon: 'https://du11bjcvkw-gl.cloudfront.net/assets/favicon-00e97262.ico' },
+    { name: 'Canva', title: 'Dashboard', icon: 'https://du11bjcvkw-gl.cloudfront.net/assets/favicon-00e97262.ico' },
     { name: 'Drive', title: 'My Drive - Google Drive', icon: 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png' },
 ];
 
