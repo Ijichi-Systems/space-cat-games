@@ -32,8 +32,6 @@ export default function Opensource() {
                src="https://img.shields.io/github/commit-activity/t/neurontechofficial/spacecatgames"/>
           <img alt="GitHub commits since latest release"
                src="https://img.shields.io/github/commits-since/neurontechofficial/spacecatgames/latest"/>
-          <img alt="Codecov" src="https://img.shields.io/codecov/c/github/neurontechofficial/spacecatgames"/>
-
 
           <h2>Website Source Code</h2>
           <p>
