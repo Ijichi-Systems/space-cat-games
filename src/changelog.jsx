@@ -182,13 +182,6 @@ export default function Changelog() {
                     </ul>
                 </section>
 
-                <section className="changelog-section">
-                    <h2>Previous Versions</h2>
-                    <p>
-                        For information about previous versions (9 and earlier), please visit
-                        our <a href="/archive">Archive</a>.
-                    </p>
-                </section>
             </div>
             <Footer />
         </>
