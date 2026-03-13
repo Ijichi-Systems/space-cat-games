@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-13T17:12:42.206Z",
-  "count": 159,
+  "generatedAt": "2026-03-13T17:16:45.714Z",
+  "count": 160,
   "games": [
     {
       "title": "FIFA 2007",
@@ -900,6 +900,11 @@
       "title": "Pepsiman",
       "url": "/games/pepsiman.html",
       "img": "/images/pepsiman.jpg"
+    },
+    {
+      "title": "Touhou 1: Highly Responsive To Prayers",
+      "url": "/games/tou1.html",
+      "img": "/images/th1.webp"
     }
   ]
 }
