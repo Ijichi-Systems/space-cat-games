@@ -79,9 +79,30 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Style for Uptime Counter */}
+        {/* Style */}
         <style>
           {`
+          .discord-invite {
+          margin-top: 12px;
+           display: flex;
+          justify-content: center;
+        }
+
+        .discord-button {
+          background: #5865F2;
+          color: white;
+          padding: 8px 16px;
+          border-radius: 8px;
+          font-size: 0.85rem;
+          text-decoration: none;
+          font-weight: 600;
+          transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+          .discord-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(88, 101, 242, 0.4);
+          }
             .uptime-wrapper {
               margin: 25px auto;
               padding: 15px;
@@ -125,6 +146,7 @@ export default function Footer() {
             .uptime-unit.highlight .value {
               color: #e74c3c;
             }
+            
           `}
         </style>
 
@@ -134,6 +156,18 @@ export default function Footer() {
           <img src="images/vite.svg" height={55} />
           <a href="https://www.wolfram.com/language/">
             <img src="images/wl.png" width={120} alt="Wolfram Language" />
+          </a>
+        </div>
+
+        {/* Discord Invite */}
+        <div className="discord-invite">
+          <a
+              href="https://discord.gg/QvCGyRYNpH"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="discord-button"
+          >
+            Join our Discord
           </a>
         </div>
 
