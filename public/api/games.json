@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-12T11:33:48.985Z",
-  "count": 158,
+  "generatedAt": "2026-03-13T17:12:42.206Z",
+  "count": 159,
   "games": [
     {
       "title": "FIFA 2007",
@@ -895,6 +895,11 @@
       "title": "WarioWare, Inc.: Mega Microgame$",
       "url": "/games/warioware.html",
       "img": "/images/warioware.jpg"
+    },
+    {
+      "title": "Pepsiman",
+      "url": "/games/pepsiman.html",
+      "img": "/images/pepsiman.jpg"
     }
   ]
 }
