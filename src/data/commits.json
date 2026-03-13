@@ -1,5 +1,11 @@
 [
   {
+    "hash": "f956a8e",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "make archive page because of failing builds"
+  },
+  {
     "hash": "f6b0cea",
     "author": "Ben",
     "date": "2026-03-13",
@@ -292,11 +298,5 @@
     "author": "Ben",
     "date": "2026-03-08",
     "message": "add codecov badge"
-  },
-  {
-    "hash": "942670d",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "covorage generated"
   }
 ]
