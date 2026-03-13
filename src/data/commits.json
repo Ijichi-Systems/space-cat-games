@@ -1,5 +1,119 @@
 [
   {
+    "hash": "b86ad32",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "add touhou 1"
+  },
+  {
+    "hash": "8873900",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "add pepsiman"
+  },
+  {
+    "hash": "f9129a1",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "pop the archive"
+  },
+  {
+    "hash": "c14a0c2",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "update footer to have discord link"
+  },
+  {
+    "hash": "da74a98",
+    "author": "Ben House",
+    "date": "2026-03-13",
+    "message": "update version"
+  },
+  {
+    "hash": "1d44195",
+    "author": "Ben House",
+    "date": "2026-03-13",
+    "message": "delete coverage folder"
+  },
+  {
+    "hash": "8b41e7f",
+    "author": "Ben House",
+    "date": "2026-03-13",
+    "message": "append section"
+  },
+  {
+    "hash": "029d18c",
+    "author": "Ben House",
+    "date": "2026-03-13",
+    "message": "append codecov badge"
+  },
+  {
+    "hash": "1801933",
+    "author": "meowcat767",
+    "date": "2026-03-12",
+    "message": "Update Settings.tsx"
+  },
+  {
+    "hash": "bf0396f",
+    "author": "meowcat767",
+    "date": "2026-03-12",
+    "message": "Update footer.tsx to add IDE comment"
+  },
+  {
+    "hash": "ddd5209",
+    "author": "Ben House",
+    "date": "2026-03-12",
+    "message": "GITBOOK-14: add search and select"
+  },
+  {
+    "hash": "8100857",
+    "author": "Ben House",
+    "date": "2026-03-12",
+    "message": "GITBOOK-13: add using space cat games"
+  },
+  {
+    "hash": "deee4f8",
+    "author": "Ben House",
+    "date": "2026-03-12",
+    "message": "GITBOOK-12: change home"
+  },
+  {
+    "hash": "a7f7aec",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "WOLFENSTEIN???? EPS-"
+  },
+  {
+    "hash": "7eedafb",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "WOLFENSTEIN???? EPS-"
+  },
+  {
+    "hash": "2e6133b",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "add ultrakill"
+  },
+  {
+    "hash": "b99ddee",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "add ultrakill"
+  },
+  {
+    "hash": "a07bba2",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "update settings"
+  },
+  {
+    "hash": "44325cd",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "we use the dog now"
+  },
+  {
     "hash": "bf298d9",
     "author": "Ben",
     "date": "2026-03-12",
@@ -184,119 +298,5 @@
     "author": "Ben",
     "date": "2026-03-08",
     "message": "Merge remote-tracking branch 'origin/main'"
-  },
-  {
-    "hash": "efe7b3d",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "now we are jesting proper"
-  },
-  {
-    "hash": "46472a3",
-    "author": "meowcat767",
-    "date": "2026-03-08",
-    "message": "Replace Vitest with Jest for coverage testing"
-  },
-  {
-    "hash": "40ac05d",
-    "author": "meowcat767",
-    "date": "2026-03-08",
-    "message": "Add Codecov workflow for test coverage reporting"
-  },
-  {
-    "hash": "2f301bc",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "install jest"
-  },
-  {
-    "hash": "d8e2b94",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add commit activity badge"
-  },
-  {
-    "hash": "42374fc",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add repo size badge"
-  },
-  {
-    "hash": "e36d6f4",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add release badge"
-  },
-  {
-    "hash": "b353c81",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "remove broken game"
-  },
-  {
-    "hash": "bf5ef61",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "now it builds"
-  },
-  {
-    "hash": "66dc84d",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "BUILDS ARE FAILING!"
-  },
-  {
-    "hash": "a7ff65d",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add check for games with no image"
-  },
-  {
-    "hash": "b5b36ec",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add quick mathematica script for checking game count"
-  },
-  {
-    "hash": "1db5813",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "update credits"
-  },
-  {
-    "hash": "e36be6b",
-    "author": "Ben",
-    "date": "2026-03-06",
-    "message": "update url"
-  },
-  {
-    "hash": "1288ebf",
-    "author": "Ben",
-    "date": "2026-03-06",
-    "message": "Merge remote-tracking branch 'origin/main'"
-  },
-  {
-    "hash": "0f9d490",
-    "author": "Ben",
-    "date": "2026-03-06",
-    "message": "center items in footer"
-  },
-  {
-    "hash": "45632ad",
-    "author": "meowcat767",
-    "date": "2026-03-06",
-    "message": "Merge pull request #30 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-bb3626eb1a"
-  },
-  {
-    "hash": "b6fa22d",
-    "author": "Ben",
-    "date": "2026-03-06",
-    "message": "center it"
-  },
-  {
-    "hash": "ef2bae9",
-    "author": "Ben",
-    "date": "2026-03-06",
-    "message": "ROBERTO"
   }
 ]

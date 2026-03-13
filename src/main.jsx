@@ -54,7 +54,6 @@ function AppContent() {
                 <Route path="/" element={<Home />} />
                 <Route path="/games" element={<Games />} />
                 <Route path="/credits" element={<Credits />} />
-                <Route path="/archive" element={<Archive />} />
                 <Route path="/opensource" element={<Opensource />} />
                 <Route path="/changelog" element={<Changelog />} />
                 <Route path="/privacy" element={<Privacy />} />
