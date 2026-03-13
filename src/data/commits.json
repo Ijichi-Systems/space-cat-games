@@ -1,5 +1,11 @@
 [
   {
+    "hash": "f6b0cea",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "delete broken route"
+  },
+  {
     "hash": "b86ad32",
     "author": "Ben",
     "date": "2026-03-13",
@@ -292,11 +298,5 @@
     "author": "Ben",
     "date": "2026-03-08",
     "message": "covorage generated"
-  },
-  {
-    "hash": "5758366",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "Merge remote-tracking branch 'origin/main'"
   }
 ]
