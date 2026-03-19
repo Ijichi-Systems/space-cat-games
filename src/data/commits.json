@@ -1,5 +1,11 @@
 [
   {
+    "hash": "2f8b857",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "meta: pkg updates"
+  },
+  {
     "hash": "f956a8e",
     "author": "Ben",
     "date": "2026-03-13",
@@ -292,11 +298,5 @@
     "author": "Ben",
     "date": "2026-03-08",
     "message": "add docs folder"
-  },
-  {
-    "hash": "0f737e6",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add codecov badge"
   }
 ]
