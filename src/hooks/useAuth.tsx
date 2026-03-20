@@ -3,53 +3,56 @@
  */
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import netlifyIdentity from 'netlify-identity-widget';
 
-interface GoogleUser {
-  name: string;
+const NETLIFY_IDENTITY_URL = 'https://spacecatgames.site/.netlify/identity';
+
+export interface NetlifyUser {
+  id: string;
   email: string;
-  picture: string;
-  sub: string;
+  user_metadata: {
+    full_name?: string;
+    avatar_url?: string;
+  };
 }
 
 interface AuthContextType {
-  user: GoogleUser | null;
-  setUser: (user: GoogleUser | null) => void;
+  user: NetlifyUser | null;
+  login: () => void;
   logout: () => void;
-  isConfigured: boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'scg_auth_user';
-
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUserState] = useState<GoogleUser | null>(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      return saved ? JSON.parse(saved) : null;
-    } catch {
-      return null;
-    }
-  });
+  const [user, setUser] = useState<NetlifyUser | null>(null);
 
-  const isConfigured = Boolean(import.meta.env.VITE_GOOGLE_CLIENT_ID);
-  console.log("[Auth] isConfigured:", isConfigured);
+  useEffect(() => {
+    netlifyIdentity.init({ APIUrl: NETLIFY_IDENTITY_URL });
 
-  const setUser = (u: GoogleUser | null) => {
-    setUserState(u);
-    if (u) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(u));
-    } else {
-      localStorage.removeItem(STORAGE_KEY);
-    }
-  };
+    const current = netlifyIdentity.currentUser() as NetlifyUser | null;
+    if (current) setUser(current);
 
-  const logout = () => {
-    setUser(null);
-  };
+    netlifyIdentity.on('login', (u) => {
+      setUser(u as NetlifyUser);
+      netlifyIdentity.close();
+    });
+
+    netlifyIdentity.on('logout', () => {
+      setUser(null);
+    });
+
+    return () => {
+      netlifyIdentity.off('login');
+      netlifyIdentity.off('logout');
+    };
+  }, []);
+
+  const login = () => netlifyIdentity.open('login');
+  const logout = () => netlifyIdentity.logout();
 
   return (
-    <AuthContext.Provider value={{ user, setUser, logout, isConfigured }}>
+    <AuthContext.Provider value={{ user, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
@@ -57,8 +60,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
+  if (!context) throw new Error('useAuth must be used within an AuthProvider');
   return context;
 };

@@ -12,7 +12,6 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
-import { GoogleOAuthProvider } from "@react-oauth/google";
 import Navbar from "./components/navbar.tsx";
 import Home from "./index.jsx";
 import Games from "./games.jsx";
@@ -29,17 +28,11 @@ import CodeEditor from "./components/CodeEditor.tsx";
 import { useEplnxRefresh } from "./hooks/useEplnxRefresh";
 import { Helmet } from "react-helmet";
 
-const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || "";
-console.log("[Auth] VITE_GOOGLE_CLIENT_ID set:", Boolean(GOOGLE_CLIENT_ID), "| value starts with:", GOOGLE_CLIENT_ID ? GOOGLE_CLIENT_ID.slice(0, 8) + "..." : "(empty)");
-
-// Component to handle route changes and refresh ads
 function RouteChangeHandler() {
   const location = useLocation();
   const { refreshEplnxAds } = useEplnxRefresh();
 
   useEffect(() => {
-    // Refresh ads on every route change
-    // Small delay to ensure DOM has updated with new ad slots
     const timer = setTimeout(() => {
       refreshEplnxAds();
     }, 100);
@@ -70,7 +63,6 @@ function AppContent() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/debug" element={<DebugDashboard />} />
         <Route path="/settings" element={<SettingsPage />} />
-
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <CodeEditor />
@@ -79,22 +71,15 @@ function AppContent() {
 }
 
 function App() {
-  const inner = (
+  return (
     <SettingsProvider>
       <AuthProvider>
         <AppContent />
       </AuthProvider>
     </SettingsProvider>
   );
-
-  return GOOGLE_CLIENT_ID ? (
-    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
-      {inner}
-    </GoogleOAuthProvider>
-  ) : inner;
 }
 
-// Mount React
 const rootEl = document.getElementById("root");
 if (rootEl) {
   const root = createRoot(rootEl);
