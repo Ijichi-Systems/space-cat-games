@@ -1,5 +1,35 @@
 [
   {
+    "hash": "b4aa8db",
+    "author": "Ben",
+    "date": "2026-03-20",
+    "message": "update colour"
+  },
+  {
+    "hash": "84df91e",
+    "author": "Ben",
+    "date": "2026-03-20",
+    "message": "Merge remote-tracking branch 'origin/main'"
+  },
+  {
+    "hash": "2e04570",
+    "author": "Ben",
+    "date": "2026-03-20",
+    "message": "meta: pkg updates"
+  },
+  {
+    "hash": "3eb70d6",
+    "author": "Ben",
+    "date": "2026-03-20",
+    "message": "meta: pkg updates"
+  },
+  {
+    "hash": "09faa06",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Add a personalized dashboard to track game activity and stats"
+  },
+  {
     "hash": "9c1444c",
     "author": "aperturelabs",
     "date": "2026-03-20",
@@ -76,5 +106,197 @@
     "author": "Ben House",
     "date": "2026-03-19",
     "message": "version bump"
+  },
+  {
+    "hash": "28968d4",
+    "author": "Ben House",
+    "date": "2026-03-19",
+    "message": "add stuff for better stack"
+  },
+  {
+    "hash": "2f8b857",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "meta: pkg updates"
+  },
+  {
+    "hash": "f956a8e",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "make archive page because of failing builds"
+  },
+  {
+    "hash": "f6b0cea",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "delete broken route"
+  },
+  {
+    "hash": "b86ad32",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "add touhou 1"
+  },
+  {
+    "hash": "8873900",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "add pepsiman"
+  },
+  {
+    "hash": "f9129a1",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "pop the archive"
+  },
+  {
+    "hash": "c14a0c2",
+    "author": "Ben",
+    "date": "2026-03-13",
+    "message": "update footer to have discord link"
+  },
+  {
+    "hash": "da74a98",
+    "author": "Ben House",
+    "date": "2026-03-13",
+    "message": "update version"
+  },
+  {
+    "hash": "1d44195",
+    "author": "Ben House",
+    "date": "2026-03-13",
+    "message": "delete coverage folder"
+  },
+  {
+    "hash": "8b41e7f",
+    "author": "Ben House",
+    "date": "2026-03-13",
+    "message": "append section"
+  },
+  {
+    "hash": "029d18c",
+    "author": "Ben House",
+    "date": "2026-03-13",
+    "message": "append codecov badge"
+  },
+  {
+    "hash": "1801933",
+    "author": "meowcat767",
+    "date": "2026-03-12",
+    "message": "Update Settings.tsx"
+  },
+  {
+    "hash": "bf0396f",
+    "author": "meowcat767",
+    "date": "2026-03-12",
+    "message": "Update footer.tsx to add IDE comment"
+  },
+  {
+    "hash": "ddd5209",
+    "author": "Ben House",
+    "date": "2026-03-12",
+    "message": "GITBOOK-14: add search and select"
+  },
+  {
+    "hash": "8100857",
+    "author": "Ben House",
+    "date": "2026-03-12",
+    "message": "GITBOOK-13: add using space cat games"
+  },
+  {
+    "hash": "deee4f8",
+    "author": "Ben House",
+    "date": "2026-03-12",
+    "message": "GITBOOK-12: change home"
+  },
+  {
+    "hash": "a7f7aec",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "WOLFENSTEIN???? EPS-"
+  },
+  {
+    "hash": "7eedafb",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "WOLFENSTEIN???? EPS-"
+  },
+  {
+    "hash": "2e6133b",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "add ultrakill"
+  },
+  {
+    "hash": "b99ddee",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "add ultrakill"
+  },
+  {
+    "hash": "a07bba2",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "update settings"
+  },
+  {
+    "hash": "44325cd",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "we use the dog now"
+  },
+  {
+    "hash": "bf298d9",
+    "author": "Ben",
+    "date": "2026-03-12",
+    "message": "update tests?"
+  },
+  {
+    "hash": "de4eeda",
+    "author": "meowcat767",
+    "date": "2026-03-11",
+    "message": "Update README.md"
+  },
+  {
+    "hash": "7b800f8",
+    "author": "meowcat767",
+    "date": "2026-03-11",
+    "message": "update GitHub link"
+  },
+  {
+    "hash": "63bf1e4",
+    "author": "meowcat767",
+    "date": "2026-03-11",
+    "message": "remove archive from navbar"
+  },
+  {
+    "hash": "81deb08",
+    "author": "meowcat767",
+    "date": "2026-03-11",
+    "message": "Update package.json"
+  },
+  {
+    "hash": "57b405a",
+    "author": "Ben House",
+    "date": "2026-03-10",
+    "message": "place status badges in bottom"
+  },
+  {
+    "hash": "64ee1f8",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "update tetris"
+  },
+  {
+    "hash": "6fbcc32",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add parappa"
+  },
+  {
+    "hash": "f56209b",
+    "author": "Ben",
+    "date": "2026-03-08",
+    "message": "add famidash"
   }
 ]
