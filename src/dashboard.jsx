@@ -146,7 +146,7 @@ export default function Dashboard() {
             {user ? `${name}'s Dashboard` : 'My Dashboard'}
           </h1>
           <p style={{ color: '#888', fontSize: '0.9rem' }}>
-            Your personal play stats — stored locally in your browser.
+            Your personal play stats.
           </p>
         </div>
 
