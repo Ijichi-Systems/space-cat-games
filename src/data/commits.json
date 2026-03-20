@@ -1,5 +1,11 @@
 [
   {
+    "hash": "1e49ad0",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Adjust navbar layout to position user and version elements correctly"
+  },
+  {
     "hash": "edfd283",
     "author": "meowcat767",
     "date": "2026-03-20",
