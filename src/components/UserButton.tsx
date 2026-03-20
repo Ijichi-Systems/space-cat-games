@@ -42,8 +42,6 @@ function LoginButton() {
       onClick={() => { setLoading(true); login(); }}
       disabled={loading}
       style={{
-        float: 'right',
-        margin: '8px 8px 8px 0',
         padding: '6px 14px',
         background: '#4285F4',
         color: '#fff',
@@ -55,6 +53,7 @@ function LoginButton() {
         display: 'flex',
         alignItems: 'center',
         gap: '6px',
+        whiteSpace: 'nowrap',
       }}
     >
       <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +85,7 @@ function ProfileMenu() {
   if (!user) return null;
 
   return (
-    <div ref={ref} style={{ float: 'right', position: 'relative', margin: '6px 8px 6px 0' }}>
+    <div ref={ref} style={{ position: 'relative' }}>
       <button
         onClick={() => setOpen((o) => !o)}
         style={{

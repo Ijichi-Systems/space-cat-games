@@ -1,5 +1,11 @@
 [
   {
+    "hash": "4a9bb7d",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Prevent app crash by conditionally rendering Google sign-in"
+  },
+  {
     "hash": "97fc706",
     "author": "aperturelabs",
     "date": "2026-03-20",
