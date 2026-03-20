@@ -1,5 +1,11 @@
 [
   {
+    "hash": "9c1444c",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Replace Google authentication with Netlify Identity for simpler login"
+  },
+  {
     "hash": "21ce4c7",
     "author": "aperturelabs",
     "date": "2026-03-20",

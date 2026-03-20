@@ -3,6 +3,7 @@
  */
 
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 
 export default function UserButton() {
@@ -103,6 +104,20 @@ export default function UserButton() {
             <div style={{ color: '#888', fontSize: '0.78rem' }}>{user.email}</div>
           </div>
           <hr style={{ border: 'none', borderTop: '1px solid #333', margin: '0 0 10px' }} />
+          <Link
+            to="/dashboard"
+            onClick={() => setOpen(false)}
+            style={{
+              display: 'block',
+              color: '#aaa',
+              fontSize: '0.84rem',
+              padding: '6px 0',
+              textDecoration: 'none',
+              marginBottom: '8px',
+            }}
+          >
+            Dashboard
+          </Link>
           <button
             onClick={() => { logout(); setOpen(false); }}
             style={{

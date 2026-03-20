@@ -16,6 +16,7 @@ export default function Navbar() {
       <Link to="https://space-cat-games.gitbook.io/space-cat-games-docs/">Documentation</Link>
       <Link to="/credits">Credits</Link>
       <Link to="/changelog">Changelog</Link>
+      <Link to="/dashboard">Dashboard</Link>
       <Link to="/settings" style={{ color: '#e74c3c', fontWeight: 'bold' }}>Settings</Link>
 
       <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '4px' }}>

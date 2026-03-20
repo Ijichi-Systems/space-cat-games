@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import { trackGamePlay } from "./utils/analytics";
+import { usePlayHistory } from "./hooks/usePlayHistory";
 
 export default function Games() {
   const [games, setGames] = useState([]);
@@ -19,6 +20,7 @@ export default function Games() {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [flagDrawerOpen, setFlagDrawerOpen] = useState(false);
   const [showSurveyPopup, setShowSurveyPopup] = useState(false);
+  const { recordPlay } = usePlayHistory();
   const gamesGridRef = useRef(null);
   const highlightedGameRef = useRef(null);
 
@@ -147,6 +149,9 @@ export default function Games() {
     } catch (e) {
       console.warn("[Analytics] Tracking timed out or failed", e);
     }
+
+    // Record play in history
+    recordPlay(game);
 
     // Track Recently Played
     const newRecent = [
