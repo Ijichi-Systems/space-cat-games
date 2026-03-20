@@ -1,302 +1,80 @@
 [
   {
-    "hash": "f956a8e",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "make archive page because of failing builds"
+    "hash": "9c1444c",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Replace Google authentication with Netlify Identity for simpler login"
   },
   {
-    "hash": "f6b0cea",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "delete broken route"
+    "hash": "21ce4c7",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Add logging to show authentication configuration status"
   },
   {
-    "hash": "b86ad32",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "add touhou 1"
+    "hash": "114cd94",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Add a new commit record for adjusting the navbar layout"
   },
   {
-    "hash": "8873900",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "add pepsiman"
+    "hash": "1e49ad0",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Adjust navbar layout to position user and version elements correctly"
   },
   {
-    "hash": "f9129a1",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "pop the archive"
-  },
-  {
-    "hash": "c14a0c2",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "update footer to have discord link"
-  },
-  {
-    "hash": "da74a98",
-    "author": "Ben House",
-    "date": "2026-03-13",
-    "message": "update version"
-  },
-  {
-    "hash": "1d44195",
-    "author": "Ben House",
-    "date": "2026-03-13",
-    "message": "delete coverage folder"
-  },
-  {
-    "hash": "8b41e7f",
-    "author": "Ben House",
-    "date": "2026-03-13",
-    "message": "append section"
-  },
-  {
-    "hash": "029d18c",
-    "author": "Ben House",
-    "date": "2026-03-13",
-    "message": "append codecov badge"
-  },
-  {
-    "hash": "1801933",
+    "hash": "edfd283",
     "author": "meowcat767",
-    "date": "2026-03-12",
-    "message": "Update Settings.tsx"
+    "date": "2026-03-20",
+    "message": "Migrate workflow from main.yml to count.yaml"
   },
   {
-    "hash": "bf0396f",
+    "hash": "9f59106",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Adjust navbar layout to properly position user and version elements"
+  },
+  {
+    "hash": "f6643c4",
     "author": "meowcat767",
-    "date": "2026-03-12",
-    "message": "Update footer.tsx to add IDE comment"
+    "date": "2026-03-20",
+    "message": "Merge pull request #31 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-e5a595f223"
   },
   {
-    "hash": "ddd5209",
+    "hash": "4a9bb7d",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Prevent app crash by conditionally rendering Google sign-in"
+  },
+  {
+    "hash": "97fc706",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Saved progress at the end of the loop"
+  },
+  {
+    "hash": "8d28770",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Add Google authentication for secure user sign-in"
+  },
+  {
+    "hash": "8e0ed60",
+    "author": "dependabot[bot]",
+    "date": "2026-03-20",
+    "message": "Bump flatted in the npm_and_yarn group across 1 directory"
+  },
+  {
+    "hash": "aea3cb1",
+    "author": "aperturelabs",
+    "date": "2026-03-20",
+    "message": "Saved progress at the end of the loop"
+  },
+  {
+    "hash": "9e92590",
     "author": "Ben House",
-    "date": "2026-03-12",
-    "message": "GITBOOK-14: add search and select"
-  },
-  {
-    "hash": "8100857",
-    "author": "Ben House",
-    "date": "2026-03-12",
-    "message": "GITBOOK-13: add using space cat games"
-  },
-  {
-    "hash": "deee4f8",
-    "author": "Ben House",
-    "date": "2026-03-12",
-    "message": "GITBOOK-12: change home"
-  },
-  {
-    "hash": "a7f7aec",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "WOLFENSTEIN???? EPS-"
-  },
-  {
-    "hash": "7eedafb",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "WOLFENSTEIN???? EPS-"
-  },
-  {
-    "hash": "2e6133b",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "add ultrakill"
-  },
-  {
-    "hash": "b99ddee",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "add ultrakill"
-  },
-  {
-    "hash": "a07bba2",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "update settings"
-  },
-  {
-    "hash": "44325cd",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "we use the dog now"
-  },
-  {
-    "hash": "bf298d9",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "update tests?"
-  },
-  {
-    "hash": "de4eeda",
-    "author": "meowcat767",
-    "date": "2026-03-11",
-    "message": "Update README.md"
-  },
-  {
-    "hash": "7b800f8",
-    "author": "meowcat767",
-    "date": "2026-03-11",
-    "message": "update GitHub link"
-  },
-  {
-    "hash": "63bf1e4",
-    "author": "meowcat767",
-    "date": "2026-03-11",
-    "message": "remove archive from navbar"
-  },
-  {
-    "hash": "81deb08",
-    "author": "meowcat767",
-    "date": "2026-03-11",
-    "message": "Update package.json"
-  },
-  {
-    "hash": "57b405a",
-    "author": "Ben House",
-    "date": "2026-03-10",
-    "message": "place status badges in bottom"
-  },
-  {
-    "hash": "64ee1f8",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "update tetris"
-  },
-  {
-    "hash": "6fbcc32",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add parappa"
-  },
-  {
-    "hash": "f56209b",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add famidash"
-  },
-  {
-    "hash": "ce76e9f",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add cuphead"
-  },
-  {
-    "hash": "d9c4deb",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "Merge remote-tracking branch 'origin/main'"
-  },
-  {
-    "hash": "a5d367d",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add block blast"
-  },
-  {
-    "hash": "8d4c122",
-    "author": "Ben House",
-    "date": "2026-03-08",
-    "message": "GITBOOK-11: add button for deploying"
-  },
-  {
-    "hash": "fec9b97",
-    "author": "Ben House",
-    "date": "2026-03-08",
-    "message": "GITBOOK-10: add a how to deploy thing"
-  },
-  {
-    "hash": "6cef132",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "Merge remote-tracking branch 'origin/main'"
-  },
-  {
-    "hash": "4b4640a",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "remove code cov"
-  },
-  {
-    "hash": "8bff3d7",
-    "author": "Ben House",
-    "date": "2026-03-08",
-    "message": "GITBOOK-9: add version bumper"
-  },
-  {
-    "hash": "9956edc",
-    "author": "Ben House",
-    "date": "2026-03-08",
-    "message": "GITBOOK-8: improve desc"
-  },
-  {
-    "hash": "5ac5eec",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "*explosion sounds*"
-  },
-  {
-    "hash": "efb76df",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add docs to navbar"
-  },
-  {
-    "hash": "acb421d",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "that was pointless"
-  },
-  {
-    "hash": "fbbf015",
-    "author": "Ben House",
-    "date": "2026-03-08",
-    "message": "GITBOOK-7: improve"
-  },
-  {
-    "hash": "d79eaea",
-    "author": "Noah",
-    "date": "2026-03-08",
-    "message": "GITBOOK-6: Games.json"
-  },
-  {
-    "hash": "33957dc",
-    "author": "Ben House",
-    "date": "2026-03-08",
-    "message": "GITBOOK-4: update games.jsx"
-  },
-  {
-    "hash": "49457b4",
-    "author": "Ben House",
-    "date": "2026-03-08",
-    "message": "GITBOOK-3: No subject"
-  },
-  {
-    "hash": "b315d0b",
-    "author": "Ben House",
-    "date": "2026-03-08",
-    "message": "GITBOOK-2: No subject"
-  },
-  {
-    "hash": "5f001a9",
-    "author": "Ben House",
-    "date": "2026-03-08",
-    "message": "GITBOOK-1: No subject"
-  },
-  {
-    "hash": "cf1ee62",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add docs folder"
-  },
-  {
-    "hash": "0f737e6",
-    "author": "Ben",
-    "date": "2026-03-08",
-    "message": "add codecov badge"
+    "date": "2026-03-19",
+    "message": "version bump"
   }
 ]

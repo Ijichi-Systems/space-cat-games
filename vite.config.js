@@ -28,6 +28,11 @@ const appVersion = JSON.parse(fs.readFileSync(appPkgPath, 'utf-8')).version
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    host: true,
+    port: 5000,
+    allowedHosts: true,
+  },
   define: {
     __BUILD_INFO__: JSON.stringify({
       date: new Date().toISOString(),
