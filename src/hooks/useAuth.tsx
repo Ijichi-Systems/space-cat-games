@@ -33,6 +33,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   });
 
   const isConfigured = Boolean(import.meta.env.VITE_GOOGLE_CLIENT_ID);
+  console.log("[Auth] isConfigured:", isConfigured);
 
   const setUser = (u: GoogleUser | null) => {
     setUserState(u);

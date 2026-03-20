@@ -30,6 +30,7 @@ import { useEplnxRefresh } from "./hooks/useEplnxRefresh";
 import { Helmet } from "react-helmet";
 
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || "";
+console.log("[Auth] VITE_GOOGLE_CLIENT_ID set:", Boolean(GOOGLE_CLIENT_ID), "| value starts with:", GOOGLE_CLIENT_ID ? GOOGLE_CLIENT_ID.slice(0, 8) + "..." : "(empty)");
 
 // Component to handle route changes and refresh ads
 function RouteChangeHandler() {

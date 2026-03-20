@@ -164,6 +164,7 @@ function ProfileMenu() {
 
 export default function UserButton() {
   const { user, isConfigured } = useAuth();
+  console.log("[UserButton] isConfigured:", isConfigured, "| user:", user?.email ?? null);
 
   if (!isConfigured) return null;
 
