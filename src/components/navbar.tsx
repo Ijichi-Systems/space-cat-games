@@ -3,6 +3,7 @@
  */
 
 import { Link } from "react-router-dom";
+import UserButton from "./UserButton";
 
 export default function Navbar() {
   const version = __BUILD_INFO__.appVersion;
@@ -16,6 +17,8 @@ export default function Navbar() {
       <Link to="/credits">Credits</Link>
       <Link to="/changelog">Changelog</Link>
       <Link to="/settings" style={{ color: '#e74c3c', fontWeight: 'bold' }}>Settings</Link>
+
+      <UserButton />
 
       <span
         style={{
