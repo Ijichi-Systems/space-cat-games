@@ -78,15 +78,19 @@ function AppContent() {
 }
 
 function App() {
-  return (
-    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
-      <SettingsProvider>
-        <AuthProvider>
-          <AppContent />
-        </AuthProvider>
-      </SettingsProvider>
-    </GoogleOAuthProvider>
+  const inner = (
+    <SettingsProvider>
+      <AuthProvider>
+        <AppContent />
+      </AuthProvider>
+    </SettingsProvider>
   );
+
+  return GOOGLE_CLIENT_ID ? (
+    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+      {inner}
+    </GoogleOAuthProvider>
+  ) : inner;
 }
 
 // Mount React
