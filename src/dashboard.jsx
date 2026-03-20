@@ -17,7 +17,7 @@ import {
 import { useAuth } from './hooks/useAuth';
 import Footer from './components/footer';
 
-/* ── Activity Heatmap ── */
+/* Activity Heatmap  */
 function ActivityHeatmap({ countByDay }) {
   const today = new Date();
 
@@ -100,7 +100,7 @@ function ActivityHeatmap({ countByDay }) {
   );
 }
 
-/* ── Stat Card ── */
+/*  Stat Card  */
 function StatCard({ label, value, sub }) {
   return (
     <div style={{
@@ -118,7 +118,7 @@ function StatCard({ label, value, sub }) {
   );
 }
 
-/* ── Dashboard Page ── */
+/* Dashboard Page */
 export default function Dashboard() {
   const { history } = usePlayHistory();
   const { user } = useAuth();
@@ -142,7 +142,7 @@ export default function Dashboard() {
 
         {/* Header */}
         <div style={{ marginBottom: '32px' }}>
-          <h1 style={{ fontSize: '1.8rem', fontWeight: '700', color: '#eee', marginBottom: '4px' }}>
+          <h1 style={{ fontSize: '1.8rem', fontWeight: '700', color: '#000000', marginBottom: '4px' }}>
             {user ? `${name}'s Dashboard` : 'My Dashboard'}
           </h1>
           <p style={{ color: '#888', fontSize: '0.9rem' }}>
