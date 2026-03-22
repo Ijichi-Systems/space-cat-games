@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-22T21:34:18.309Z",
-  "count": 161,
+  "generatedAt": "2026-03-22T21:35:13.614Z",
+  "count": 162,
   "games": [
     {
       "title": "FIFA 2007",
@@ -909,6 +909,11 @@
     {
       "title": "Russian Car Driver",
       "url": "/games/clrussiancardriver.html",
+      "img": "/images/noimg.png"
+    },
+    {
+      "title": "Russian CS:GO",
+      "url": "/games/clcs6.html",
       "img": "/images/noimg.png"
     }
   ]
