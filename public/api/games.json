@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-13T17:16:45.714Z",
-  "count": 160,
+  "generatedAt": "2026-03-22T21:34:18.309Z",
+  "count": 161,
   "games": [
     {
       "title": "FIFA 2007",
@@ -905,6 +905,11 @@
       "title": "Touhou 1: Highly Responsive To Prayers",
       "url": "/games/tou1.html",
       "img": "/images/th1.webp"
+    },
+    {
+      "title": "Russian Car Driver",
+      "url": "/games/clrussiancardriver.html",
+      "img": "/images/noimg.png"
     }
   ]
 }
