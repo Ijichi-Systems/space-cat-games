@@ -5,7 +5,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import netlifyIdentity from 'netlify-identity-widget';
 
-const NETLIFY_IDENTITY_URL = 'https://scg-worker.netlify.app';
+const NETLIFY_IDENTITY_URL = 'https://scg-worker.netlify.app/.netlify/identity';
 
 export interface NetlifyUser {
   id: string;
