@@ -22,16 +22,26 @@ export default function Opensource() {
           <h2>Development Statistics</h2>
           <a href="https://wakatime.com/badge/github/neurontechofficial/spacecatgames">
             <img
-                src="https://wakatime.com/badge/github/neurontechofficial/spacecatgames.svg"
-                alt="wakatime"
+              src="https://wakatime.com/badge/github/neurontechofficial/spacecatgames.svg"
+              alt="wakatime"
             />
           </a>
-          <img alt="GitHub Release" src="https://img.shields.io/github/v/release/neurontechofficial/spacecatgames"/>
-          <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/neurontechofficial/spacecatgames"/>
-          <img alt="GitHub commit activity"
-               src="https://img.shields.io/github/commit-activity/t/neurontechofficial/spacecatgames"/>
-          <img alt="GitHub commits since latest release"
-               src="https://img.shields.io/github/commits-since/neurontechofficial/spacecatgames/latest"/>
+          <img
+            alt="GitHub Release"
+            src="https://img.shields.io/github/v/release/neurontechofficial/spacecatgames"
+          />
+          <img
+            alt="GitHub repo size"
+            src="https://img.shields.io/github/repo-size/neurontechofficial/spacecatgames"
+          />
+          <img
+            alt="GitHub commit activity"
+            src="https://img.shields.io/github/commit-activity/t/neurontechofficial/spacecatgames"
+          />
+          <img
+            alt="GitHub commits since latest release"
+            src="https://img.shields.io/github/commits-since/neurontechofficial/spacecatgames/latest"
+          />
 
           <h2>Website Source Code</h2>
           <p>
@@ -39,13 +49,11 @@ export default function Opensource() {
             The source code for this website is freely available under the GNU
             General Public License v3.0.
           </p>
-          <p>
-            You can view and download the source code from the repository:
-          </p>
+          <p>You can view and download the source code from the repository:</p>
           <div className="cta-section">
             <a
-                href="https://github.com/Neurontechofficial/spacecatgames"
-                className="btn"
+              href="https://github.com/Neurontechofficial/spacecatgames"
+              className="btn"
             >
               View Source on GitHub
             </a>
@@ -163,25 +171,6 @@ export default function Opensource() {
       </div>
 
       <Footer />
-      {/* FPS Counter */}
-      <div
-        id="fps-counter"
-        style={{
-          position: "fixed",
-          top: 10,
-          right: 10,
-          background: "rgba(20, 20, 20, 0.8)",
-          color: "#0f0",
-          fontFamily: "monospace",
-          fontSize: 16,
-          padding: "6px 12px",
-          borderRadius: 6,
-          zIndex: 9999,
-          pointerEvents: "none",
-        }}
-      >
-        FPS: --
-      </div>
     </>
   );
 }
