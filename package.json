@@ -1,12 +1,12 @@
 {
   "name": "space-cat-games",
   "private": true,
-  "version": "18.3.18",
+  "version": "18.3.19",
   "type": "module",
   "scripts": {
-    "predev": "node scripts/update-changelog.js && node scripts/generate-games-json.js",
+    "predev": "node scripts/update-changelog.js && node scripts/generate-games-json.js && node scripts/generate-posts-json.js",
     "dev": "vite",
-    "prebuild": "node scripts/update-changelog.js && node scripts/generate-games-json.js ",
+    "prebuild": "node scripts/update-changelog.js && node scripts/generate-games-json.js && node scripts/generate-posts-json.js",
     "build": "node scripts/build-info.js && node scripts/update-version.js && vite build",
     "postbuild": "mkdir -p dist/api && cp -r public/api/* dist/api/ || true",
     "lint": "eslint .",
@@ -23,7 +23,9 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.30.3"
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^6.30.3",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

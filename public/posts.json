@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-03-25T09:01:28.858Z",
+  "posts": [
+    {
+      "slug": "hello-world",
+      "title": "Welcome to Space Cat Games Blog!",
+      "date": "2026-03-25",
+      "author": "Space Cat",
+      "version": "1.0.0",
+      "file": "/content/blog/hello-world.md"
+    }
+  ]
+}

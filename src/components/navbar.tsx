@@ -14,6 +14,7 @@ export default function Navbar() {
     <div className="topnav">
       <Link to="/">Home</Link>
       <Link to="/games">Games</Link>
+      <Link to="/blog">Blog</Link>
       <Link to="/opensource">Source Code</Link>
       <Link to="https://space-cat-games.gitbook.io/space-cat-games-docs/">Documentation</Link>
       <Link to="/credits">Credits</Link>

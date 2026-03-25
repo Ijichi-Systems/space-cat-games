@@ -26,6 +26,8 @@ import { AuthProvider } from "./hooks/useAuth.tsx";
 import SettingsPage from "./components/Settings.tsx";
 import Dashboard from "./dashboard.jsx";
 import CodeEditor from "./components/CodeEditor.tsx";
+import Blog from "./blog.jsx";
+import BlogPost from "./BlogPost.jsx";
 import { useEplnxRefresh } from "./hooks/useEplnxRefresh";
 import { Helmet } from "react-helmet";
 
@@ -64,6 +66,8 @@ function AppContent() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/debug" element={<DebugDashboard />} />
         <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
