@@ -1,7 +1,7 @@
 {
   "name": "space-cat-games",
   "private": true,
-  "version": "18.3.17",
+  "version": "18.3.18",
   "type": "module",
   "scripts": {
     "predev": "node scripts/update-changelog.js && node scripts/generate-games-json.js",

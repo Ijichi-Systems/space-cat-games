@@ -121,7 +121,7 @@ function StatCard({ label, value, sub }) {
 /* Dashboard Page */
 export default function Dashboard() {
   const { history } = usePlayHistory();
-  const { user } = useAuth();
+  const { user, isSupported } = useAuth();
 
   const countByDay = useMemo(() => getCountByDay(history), [history]);
   const totalPlays = getTotalPlays(history);
@@ -130,6 +130,18 @@ export default function Dashboard() {
   const topGames = getTopGames(history, 10);
   const streak = getLongestStreak(countByDay);
   const name = user?.user_metadata?.full_name || user?.email || 'Player';
+
+  if (!isSupported && !user) {
+    return (
+      <div style={{ maxWidth: '900px', margin: '0 auto', padding: '100px 20px', textAlign: 'center' }}>
+        <h1 style={{ color: '#eee' }}>Authentication Unavailable</h1>
+        <p style={{ color: '#888' }}>
+          Login is only available on the official <a href="https://spacecatgame.netlify.app" style={{ color: '#4285F4' }}>spacecatgame.netlify.app</a> domain.
+        </p>
+        <Link to="/" style={{ color: '#4285F4', marginTop: '20px', display: 'inline-block' }}>Return to Home</Link>
+      </div>
+    );
+  }
 
   return (
     <>

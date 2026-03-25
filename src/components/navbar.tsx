@@ -4,8 +4,10 @@
 
 import { Link } from "react-router-dom";
 import UserButton from "./UserButton";
+import { useAuth } from "../hooks/useAuth";
 
 export default function Navbar() {
+  const { isSupported, user } = useAuth();
   const version = __BUILD_INFO__.appVersion;
 
   return (
@@ -16,7 +18,7 @@ export default function Navbar() {
       <Link to="https://space-cat-games.gitbook.io/space-cat-games-docs/">Documentation</Link>
       <Link to="/credits">Credits</Link>
       <Link to="/changelog">Changelog</Link>
-      <Link to="/dashboard">Dashboard</Link>
+      {(isSupported || user) && <Link to="/dashboard">Dashboard</Link>}
       <Link to="/settings" style={{ color: '#e74c3c', fontWeight: 'bold' }}>Settings</Link>
 
       <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '4px' }}>

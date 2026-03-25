@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 
 export default function UserButton() {
-  const { user, login, logout } = useAuth();
+  const { user, login, logout, isSupported } = useAuth();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -22,6 +22,7 @@ export default function UserButton() {
   }, []);
 
   if (!user) {
+    if (!isSupported) return null;
     return (
       <button
         onClick={login}

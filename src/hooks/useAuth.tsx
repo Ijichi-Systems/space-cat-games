@@ -20,6 +20,7 @@ interface AuthContextType {
   user: NetlifyUser | null;
   login: () => void;
   logout: () => void;
+  isSupported: boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -27,7 +28,14 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<NetlifyUser | null>(null);
 
+  const isSupported = 
+    window.location.hostname === 'spacecatgame.netlify.app' || 
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1';
+
   useEffect(() => {
+    if (!isSupported) return;
+
     netlifyIdentity.init({ APIUrl: NETLIFY_IDENTITY_URL });
 
     const current = netlifyIdentity.currentUser() as NetlifyUser | null;
@@ -48,11 +56,19 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     };
   }, []);
 
-  const login = () => netlifyIdentity.open('login');
-  const logout = () => netlifyIdentity.logout();
+  const login = () => {
+    if (isSupported) {
+      netlifyIdentity.open('login');
+    }
+  };
+  const logout = () => {
+    if (isSupported) {
+      netlifyIdentity.logout();
+    }
+  };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ user, login, logout, isSupported }}>
       {children}
     </AuthContext.Provider>
   );

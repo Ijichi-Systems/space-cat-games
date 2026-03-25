@@ -5,7 +5,17 @@
 var tempErrorCreds;
 var tempProviderName;
 
+function isAuthSupported() {
+	return window.location.hostname === 'spacecatgame.netlify.app' || 
+	       window.location.hostname === 'localhost' ||
+	       window.location.hostname === '127.0.0.1';
+}
+
 function retrieveIdToken(successCallback, errorCallback) {
+	if (!isAuthSupported()) {
+		if (errorCallback) errorCallback("Authentication is only available on the official domain.");
+		return;
+	}
 	if(firebase.auth().currentUser === null){
 		if(errorCallback !== null) 
 			errorCallback("User is null");
@@ -31,6 +41,10 @@ function retrieveIdToken(successCallback, errorCallback) {
 }
 
 function anonymousLogin(successCallback, errorCallback) {
+	if (!isAuthSupported()) {
+		if (errorCallback) errorCallback("Authentication is only available on the official domain.");
+		return;
+	}
 	var resultObj = {
 		token: "",
 		displayName: "guest"
@@ -43,6 +57,10 @@ function anonymousLogin(successCallback, errorCallback) {
 }
 
 function firebaseLogin(providerName, successCallback, errorCallback) {
+	if (!isAuthSupported()) {
+		if (errorCallback) errorCallback("Authentication is only available on the official domain.");
+		return;
+	}
 	if (providerName === "anonymous") {
 		anonymousLogin(successCallback, errorCallback);
 		return;
