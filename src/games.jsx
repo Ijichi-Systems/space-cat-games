@@ -174,8 +174,7 @@ export default function Games() {
   if (loading) {
     return (
       <>
-        <Helmet>
-        </Helmet>
+        <Helmet></Helmet>
         <div className="container">
           {showSurveyPopup && (
             <div className="survey-popup-overlay">
@@ -471,26 +470,6 @@ export default function Games() {
       </style>
 
       <Footer />
-
-      {/* FPS Counter */}
-      <div
-        id="fps-counter"
-        style={{
-          position: "fixed",
-          top: 10,
-          right: 10,
-          background: "rgba(20,20,20,0.8)",
-          color: "#0f0",
-          fontFamily: "monospace",
-          fontSize: 16,
-          padding: "6px 12px",
-          borderRadius: 6,
-          zIndex: 9999,
-          pointerEvents: "none",
-        }}
-      >
-        FPS: {fps}
-      </div>
 
       {/* Back to Top Button */}
       {showBackToTop && (
