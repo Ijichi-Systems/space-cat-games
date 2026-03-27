@@ -10,6 +10,7 @@ interface Settings {
     enableCodeEditor: boolean;
     customJS: string;
     customCSS: string;
+    testAprilFools: boolean;
 }
 
 const DEFAULT_SETTINGS: Settings = {
@@ -18,6 +19,7 @@ const DEFAULT_SETTINGS: Settings = {
     enableCodeEditor: false,
     customJS: '',
     customCSS: '',
+    testAprilFools: false,
 };
 
 interface SettingsContextType {
@@ -63,6 +65,26 @@ export const useSettings = () => {
 };
 
 function applySettings(settings: Settings) {
+    // April Fools override
+    const now = new Date();
+    const isAprilFirst = now.getMonth() === 3 && now.getDate() === 1; // Month is 0-indexed, so 3 is April
+
+    let aprilFoolsStyle = document.getElementById('scg-april-fools');
+    if (isAprilFirst || settings.testAprilFools) {
+        if (!aprilFoolsStyle) {
+            aprilFoolsStyle = document.createElement('style');
+            aprilFoolsStyle.id = 'scg-april-fools';
+            document.head.appendChild(aprilFoolsStyle);
+        }
+        aprilFoolsStyle.textContent = `
+            * {
+                font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif !important;
+            }
+        `;
+    } else if (aprilFoolsStyle) {
+        aprilFoolsStyle.remove();
+    }
+
     // Apply Custom CSS
     let styleElement = document.getElementById('scg-custom-css');
     if (settings.customCSS) {
