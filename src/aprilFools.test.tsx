@@ -18,7 +18,7 @@ const mockLocalStorage = {
 
 vi.stubGlobal('localStorage', mockLocalStorage);
 
-import { render } from '@testing-library/react';
+import { render, fireEvent, act } from '@testing-library/react';
 import React from 'react';
 import { SettingsProvider, useSettings } from './hooks/useSettings';
 
@@ -76,7 +76,7 @@ describe('April Fools Font Override', () => {
     expect(style?.textContent).toContain('Comic Sans MS');
   });
 
-  it('should apply Comic Sans when testAprilFools is enabled even on a normal day', () => {
+  it('should apply Comic Sans when testAprilFools is enabled even on a normal day', async () => {
     const date = new Date(2026, 2, 27); // March 27, 2026
     vi.setSystemTime(date);
 
@@ -90,14 +90,18 @@ describe('April Fools Font Override', () => {
     expect(document.getElementById('scg-april-fools')).toBeNull();
 
     // Enable test flag
-    getByText('Enable Test').click();
+    await act(async () => {
+      fireEvent.click(getByText('Enable Test'));
+    });
 
     const style = document.getElementById('scg-april-fools');
     expect(style).not.toBeNull();
     expect(style?.textContent).toContain('Comic Sans MS');
 
     // Disable test flag
-    getByText('Disable Test').click();
+    await act(async () => {
+      fireEvent.click(getByText('Disable Test'));
+    });
     expect(document.getElementById('scg-april-fools')).toBeNull();
   });
 });
