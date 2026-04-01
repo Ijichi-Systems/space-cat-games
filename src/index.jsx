@@ -36,7 +36,7 @@ export default function Home() {
     if (Math.random() < 0.1) {
       setHeader(`スペースキャットゲーム バージョン${version}`);
     } else {
-      setHeader(`Welcome to cool Cat Games ${version} - Hello, aprol!`);
+      setHeader(`Welcome to cool Cat Games ${version} - Hello, React!`);
     }
 
     // Random tips
