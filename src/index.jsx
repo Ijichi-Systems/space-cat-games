@@ -25,6 +25,8 @@ export default function Home() {
     "Cirno is behind you by the way.",
     "did you know that for some reason this is react now?",
     "Now the train's gone and left.",
+    "Space cat games shutting down.",
+
 
   ];
 
@@ -34,7 +36,7 @@ export default function Home() {
     if (Math.random() < 0.1) {
       setHeader(`スペースキャットゲーム バージョン${version}`);
     } else {
-      setHeader(`Welcome to Space Cat Games ${version} - Hello, React!`);
+      setHeader(`Welcome to cool Cat Games ${version} - Hello, aprol!`);
     }
 
     // Random tips
