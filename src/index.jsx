@@ -16,16 +16,16 @@ export default function Home() {
   const [gameOfTheDay, setGameOfTheDay] = useState(null);
 
   const tips = [
-    "Aishite Aishite Aishite!",
-    "Mayday! Go ahead and fire away!",
-    "webstorm better than vscode lmao",
-    "quick release christmas day lmfao - meowcat767",
-    "1 year of service!",
-    "The most Cutting Edge games website.",
-    "Cirno is behind you by the way.",
-    "did you know that for some reason this is react now?",
-    "Now the train's gone and left.",
-    "Space cat games shutting down.",
+  //  "Aishite Aishite Aishite!",
+   //  "Mayday! Go ahead and fire away!",
+    // "webstorm better than vscode lmao",
+   //  "quick release christmas day lmfao - meowcat767",
+   //  "1 year of service!",
+   //  "The most Cutting Edge games website.",
+  //   "Cirno is behind you by the way.",
+ //    "did you know that for some reason this is react now?",
+ //    "Now the train's gone and left.",
+    "Space cat games shutting down. Please read the on the blog section.",
 
 
   ];
@@ -36,7 +36,7 @@ export default function Home() {
     if (Math.random() < 0.1) {
       setHeader(`スペースキャットゲーム バージョン${version}`);
     } else {
-      setHeader(`Welcome to cool Cat Games ${version} - Hello, React!`);
+      setHeader(`Welcome to Space Cat Games ${version} - Thank You.`);
     }
 
     // Random tips
