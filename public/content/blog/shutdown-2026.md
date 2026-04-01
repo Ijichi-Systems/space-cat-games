@@ -1,8 +1,8 @@
 ---
 title: Shutdown Notice
-date: 2026-03-27
+date: 2026-04-1
 author: meowcat767 & Anirudh
-version: 18.3.21
+version: 18.3.21 (EOL)
 ---
 
 # Shutdown Notice
