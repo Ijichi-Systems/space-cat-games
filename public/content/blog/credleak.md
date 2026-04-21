@@ -1,6 +1,6 @@
 ---
 title: Welcome to Space Cat Games Blog!
-date: 2026-03-25
+date: 2026-04-21
 author: meowcat767
 version: 18.3.19
 ---
