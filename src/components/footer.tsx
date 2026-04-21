@@ -39,7 +39,6 @@ export default function Footer() {
 
   return (
     <footer>
-      
       <div className="container">
         <p>
           © 2026 Nijika Softworks &{" "}
@@ -47,7 +46,6 @@ export default function Footer() {
             Neuron Technologies
           </a>{" "}
           | All rights reserved.
-          
         </p>
 
         {/* Uptime Counter */}
@@ -151,23 +149,19 @@ export default function Footer() {
         </style>
 
         {/* Images */}
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '16px', margin: '10px 0' }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "16px",
+            margin: "10px 0",
+          }}
+        >
           <img src="images/react.png" width={150} height={60} />
           <img src="images/vite.svg" height={55} />
           <a href="https://www.wolfram.com/language/">
             <img src="images/wl.png" width={120} alt="Wolfram Language" />
-          </a>
-        </div>
-
-        {/* Discord Invite */}
-        <div className="discord-invite">
-          <a
-              href="https://discord.gg/QvCGyRYNpH"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="discord-button"
-          >
-            Join our Discord
           </a>
         </div>
 
