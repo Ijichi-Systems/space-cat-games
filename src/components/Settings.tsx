@@ -129,7 +129,7 @@ export default function Settings() {
                                 Local Storage
                             </h3>
                             <p style={{ fontSize: '0.9rem', color: '#888', lineHeight: '1.6', marginBottom: '30px' }}>
-                                Your preferences are synchronized with this browser's local storage and persist across sessions.
+                                Your preferences are synchronized with this browser's local storage and persist across sessions. Clearing data will remove ALL YOUR SAVE DATA from ALL GAMES!
                             </p>
 
 
