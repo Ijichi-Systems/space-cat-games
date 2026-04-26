@@ -77,87 +77,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Style */}
-        <style>
-          {`
-          .discord-invite {
-          margin-top: 12px;
-           display: flex;
-          justify-content: center;
-        }
-
-        .discord-button {
-          background: #5865F2;
-          color: white;
-          padding: 8px 16px;
-          border-radius: 8px;
-          font-size: 0.85rem;
-          text-decoration: none;
-          font-weight: 600;
-          transition: transform 0.1s ease, box-shadow 0.1s ease;
-        }
-
-          .discord-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(88, 101, 242, 0.4);
-          }
-            .uptime-wrapper {
-              margin: 25px auto;
-              padding: 15px;
-              background: rgba(255, 255, 255, 0.03);
-              backdrop-filter: blur(10px);
-              border: 1px solid rgba(255, 255, 255, 0.1);
-              border-radius: 12px;
-              max-width: 400px;
-              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-              border-bottom: 2px solid #e74c3c;
-            }
-            .uptime-label {
-              font-size: 0.75rem;
-              letter-spacing: 2px;
-              color: #888;
-              margin-bottom: 10px;
-              font-weight: bold;
-            }
-            .uptime-counter {
-              display: flex;
-              justify-content: center;
-              gap: 15px;
-            }
-            .uptime-unit {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              min-width: 50px;
-            }
-            .uptime-unit .value {
-              font-size: 1.5rem;
-              font-weight: 800;
-              color: #eee;
-              font-family: 'Inter', monospace;
-            }
-            .uptime-unit .unit-label {
-              font-size: 0.65rem;
-              color: #666;
-              margin-top: 4px;
-            }
-            .uptime-unit.highlight .value {
-              color: #e74c3c;
-            }
-            
-          `}
-        </style>
-
         {/* Images */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "16px",
-            margin: "10px 0",
-          }}
-        >
+        <div className="flex justify-center items-center gap-4 my-[10px]">
           <img src="images/react.png" width={150} height={60} />
           <img src="images/vite.svg" height={55} />
           <a href="https://www.wolfram.com/language/">
@@ -166,7 +87,7 @@ export default function Footer() {
         </div>
 
         {/* Build Info, expect IDE to warn since these are set by vite/node on build  */}
-        <div style={{ marginTop: "20px", color: "#666", fontSize: "0.8rem" }}>
+        <div className="mt-5 text-[#666] text-[0.8rem]">
           <div>Built on: {new Date(__BUILD_INFO__.date).toLocaleString()}</div>
           <div>
             Node: {__BUILD_INFO__.node} | Vite: {__BUILD_INFO__.vite} | Version:{" "}

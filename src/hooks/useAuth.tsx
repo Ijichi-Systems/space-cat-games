@@ -31,7 +31,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const isSupported = 
     window.location.hostname === 'spacecatgame.netlify.app' || 
     window.location.hostname === 'localhost' ||
-    window.location.hostname === '127.0.0.1';
+    window.location.hostname === '127.0.0.1' ||
+    window.location.hostname.endsWith('.ts.net');
 
   useEffect(() => {
     if (!isSupported) return;
