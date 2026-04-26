@@ -31,6 +31,10 @@
   }
 }
 
+footer {
+  @apply bg-[#121212] text-text-light pt-[60px] pb-[30px] mt-[60px] text-center border-t border-white/5;
+}
+
 @layer components {
   .container {
     @apply max-w-[1200px] mx-auto px-5;
@@ -114,6 +118,18 @@
   /* Highlight Effect */
   .highlight-game {
     @apply ring-4 ring-primary ring-offset-4 ring-offset-dark scale-105 z-10;
+  }
+
+  .footer-links {
+    @apply flex justify-center flex-wrap gap-5 mb-[30px];
+  }
+
+  .footer-links a {
+    @apply text-white/70 text-[0.95rem] transition-colors duration-300 hover:text-primary;
+  }
+
+  .copyright {
+    @apply text-white/40 text-[0.85rem] mt-5;
   }
 
   /* Footer & Uptime Styles */
