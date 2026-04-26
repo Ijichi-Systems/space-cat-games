@@ -20,19 +20,11 @@ export default function Navbar() {
       <Link to="/credits">Credits</Link>
       <Link to="/changelog">Changelog</Link>
       {(isSupported || user) && <Link to="/dashboard">Dashboard</Link>}
-      <Link to="/settings" style={{ color: '#e74c3c', fontWeight: 'bold' }}>Settings</Link>
+      <Link to="/settings" className="text-primary font-bold">Settings</Link>
 
-      <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '4px' }}>
+      <div className="ml-auto flex items-center gap-1">
         <UserButton />
-        <span
-          style={{
-            padding: "0 16px",
-            color: "#888",
-            fontSize: "0.8rem",
-            cursor: "default",
-            whiteSpace: "nowrap",
-          }}
-        >
+        <span className="px-4 text-text-muted text-[0.8rem] cursor-default whitespace-nowrap">
           v{version}
         </span>
       </div>

@@ -14,7 +14,8 @@
     "generate-games": "node scripts/generate-games-json.js",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "tailscale": "vite --host --port 5000"
   },
   "dependencies": {
     "@netlify/blobs": "^10.7.4",

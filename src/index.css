@@ -13,6 +13,8 @@
   
   --radius-card: 12px;
   --radius-btn: 8px;
+
+  --color-discord: #5865F2;
 }
 
 @layer base {
@@ -47,6 +49,10 @@
   }
 
   .hero #build-id {
+    @apply text-text-muted text-[0.9rem] mb-4 font-mono;
+  }
+
+  .build-id {
     @apply text-text-muted text-[0.9rem] mb-4 font-mono;
   }
 
@@ -108,6 +114,33 @@
   /* Highlight Effect */
   .highlight-game {
     @apply ring-4 ring-primary ring-offset-4 ring-offset-dark scale-105 z-10;
+  }
+
+  /* Footer & Uptime Styles */
+  .uptime-wrapper {
+    @apply mx-auto my-[25px] p-[15px] bg-white/5 backdrop-blur-[10px] border border-white/10 rounded-xl max-w-[400px] shadow-card border-b-2 border-b-primary;
+  }
+  .uptime-label {
+    @apply text-[0.75rem] tracking-[2px] text-text-muted mb-[10px] font-bold;
+  }
+  .uptime-counter {
+    @apply flex justify-center gap-[15px];
+  }
+  .uptime-unit {
+    @apply flex flex-col items-center min-w-[50px];
+  }
+  .uptime-unit .value {
+    @apply text-2xl font-extrabold text-[#eee] font-sans;
+  }
+  .uptime-unit .unit-label {
+    @apply text-[0.65rem] text-[#666] mt-1;
+  }
+  .uptime-unit.highlight .value {
+    @apply text-primary;
+  }
+
+  .discord-button {
+    @apply bg-discord text-white px-4 py-2 rounded-lg text-[0.85rem] no-underline font-semibold transition-all duration-100 hover:-translate-y-0.5 hover:shadow-[0_4px_10px_rgba(88,101,242,0.4)];
   }
 }
 
