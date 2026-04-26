@@ -3,7 +3,7 @@
  */
 
 import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Footer() {
   const location = useLocation();
@@ -40,7 +40,15 @@ export default function Footer() {
   return (
     <footer>
       <div className="container text-center">
-        <p>
+        <div className="footer-links">
+          <Link to="/">Home</Link>
+          <Link to="/games">Games</Link>
+          <Link to="/credits">Credits</Link>
+          <Link to="/opensource">Open Source</Link>
+          <Link to="/changelog">Changelog</Link>
+        </div>
+
+        <p className="copyright">
           © 2026 Nijika Softworks &{" "}
           <a href="https://github.com/neurontechofficial">
             Neuron Technologies
@@ -78,15 +86,31 @@ export default function Footer() {
         </div>
 
         {/* Images */}
-        <div className="flex justify-center items-center gap-4 my-[10px]">
-          <img src="images/react.png" width={150} height={60} />
-          <img src="images/vite.svg" height={55} />
-          <a href="https://www.wolfram.com/language/">
-            <img src="images/wl.png" width={120} alt="Wolfram Language" />
+        <div className="flex justify-center items-center gap-4 my-10">
+          <a href="https://github.com/Starry-Systems/">
+            <img
+              src="https://avatars.githubusercontent.com/u/241321890?s=200&v=4"
+              className="h-[100px] w-auto md:h-[150px]"
+              alt="GitHub"
+            />
+          </a>
+          <a href="https://nijikasoftworks.meowcat.site/">
+            <img
+              src="images/ns_yellow.png"
+              className="h-[100px] w-auto md:h-[150px]"
+              alt="Nijika Softworks"
+            />
           </a>
         </div>
 
-        {/* Build Info, expect IDE to warn since these are set by vite/node on build  */}
+        {/* Built with badges */}
+        <div className="flex justify-center items-center gap-4 my-6 opacity-60">
+          <img src="images/react.png" height={30} className="h-[30px] w-auto" alt="React" />
+          <img src="images/vite.svg" height={25} className="h-[25px] w-auto" alt="Vite" />
+          <a href="https://www.wolfram.com/language/">
+            <img src="images/wl.png" height={30} className="h-[30px] w-auto" alt="Wolfram Language" />
+          </a>
+        </div>
         <div className="mt-5 text-[#666] text-[0.8rem]">
           <div>Built on: {new Date(__BUILD_INFO__.date).toLocaleString()}</div>
           <div>
