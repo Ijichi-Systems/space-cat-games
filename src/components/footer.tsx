@@ -39,7 +39,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="container">
+      <div className="container text-center">
         <p>
           © 2026 Nijika Softworks &{" "}
           <a href="https://github.com/neurontechofficial">

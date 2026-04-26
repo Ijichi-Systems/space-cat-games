@@ -130,7 +130,7 @@
     @apply flex flex-col items-center min-w-[50px];
   }
   .uptime-unit .value {
-    @apply text-2xl font-extrabold text-[#eee] font-sans;
+    @apply text-2xl font-extrabold text-[#eee] font-mono;
   }
   .uptime-unit .unit-label {
     @apply text-[0.65rem] text-[#666] mt-1;
