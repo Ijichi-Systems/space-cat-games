@@ -11,6 +11,8 @@ const PRESETS = [
     { name: 'Google Classroom', title: 'Classes', icon: 'https://ssl.gstatic.com/classroom/favicon.png' },
     { name: 'Canva', title: 'Dashboard', icon: 'https://du11bjcvkw-gl.cloudfront.net/assets/favicon-00e97262.ico' },
     { name: 'Drive', title: 'My Drive - Google Drive', icon: 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png' },
+    { name: 'Schoology', title: 'Home | Schoology', icon: 'https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico' },
+
 ];
 
 export default function Settings() {
@@ -140,6 +142,7 @@ export default function Settings() {
                             >
                                 Clear localstorage
                             </button>
+                            
                         </div>
 
                         <div className="p-6 rounded-card border border-white/5 bg-white/[0.02] text-center" style={{ marginTop: '20px' }}>
