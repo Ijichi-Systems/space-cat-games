@@ -108,7 +108,7 @@ export default function Home() {
         <SpeedInsights />
         <div className="container">
           <h1 id="main-header">{header}</h1>
-          <div id="build-id">{buildId}</div>
+          <div className="build-id">{buildId}</div>
           <div id="random-tip" className="random-tip">
             {tip}
           </div>

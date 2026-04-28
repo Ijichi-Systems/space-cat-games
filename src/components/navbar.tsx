@@ -20,19 +20,11 @@ export default function Navbar() {
       <Link to="/credits">Credits</Link>
       <Link to="/changelog">Changelog</Link>
       {(isSupported || user) && <Link to="/dashboard">Dashboard</Link>}
-      <Link to="/settings" style={{ color: '#e74c3c', fontWeight: 'bold' }}>Settings</Link>
+      <Link to="/settings" style={{ color: "#e74c3c", fontWeight: "bold" }}>Settings</Link>
 
-      <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '4px' }}>
+      <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: "4px" }}>
         <UserButton />
-        <span
-          style={{
-            padding: "0 16px",
-            color: "#888",
-            fontSize: "0.8rem",
-            cursor: "default",
-            whiteSpace: "nowrap",
-          }}
-        >
+        <span style={{ padding: "0 16px", color: "#888", fontSize: "0.8rem", cursor: "default", whiteSpace: "nowrap" }}>
           v{version}
         </span>
       </div>

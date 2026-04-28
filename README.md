@@ -15,7 +15,9 @@ Space Cat Games is a small, easy-to-deploy React single-page application (SPA) t
 
 ## Features
 
-- Minimal, easy-to-deploy static site  
+- [x] Integrate Tailwind CSS (v4)
+- [x] Tailscale MagicDNS and IP access support
+- [x] Minimal, easy-to-deploy static site  
 - Built with React (SPA)  
 - Works on any static host  
   - GitHub Pages  
