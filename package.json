@@ -1,7 +1,7 @@
 {
   "name": "space-cat-games",
   "private": true,
-  "version": "18.3.29",
+  "version": "18.3.30",
   "type": "module",
   "scripts": {
     "predev": "node scripts/update-changelog.js && node scripts/generate-games-json.js && node scripts/generate-posts-json.js",
@@ -30,6 +30,8 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.27.7",
+    "@babel/parser": "^7.27.7",
     "@eslint/js": "^9.39.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",

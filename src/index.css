@@ -1,264 +1,118 @@
-/*
- * Copyright (c) Starry Systems and Nijika Softworks.
- */
+@import "tailwindcss";
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #121212;
-  color: #eeeeee;
+@theme {
+  --color-primary: #e74c3c;
+  --color-secondary: #3498db;
+  --color-dark: #121212;
+  --color-bg-nav: rgba(18, 18, 18, 0.8);
+  --color-text-light: #eeeeee;
+  --color-text-muted: #888888;
+  
+  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.3);
+  --shadow-nav: 0 2px 10px rgba(0, 0, 0, 0.5);
+  
+  --radius-card: 12px;
+  --radius-btn: 8px;
 }
 
-.topnav {
-  background-color: rgba(18, 18, 18, 0.8);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
+@layer base {
+  body {
+    @apply bg-dark text-text-light font-sans m-0 p-0 transition-colors duration-300;
+  }
+  
+  * {
+    @apply box-border;
+  }
+  
+  a {
+    @apply text-inherit no-underline;
+  }
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  transition: background-color 0.3s;
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto px-5;
+  }
+
+  .btn {
+    @apply inline-block bg-primary text-white px-6 py-3 rounded-btn font-bold transition-all duration-300 border-none cursor-pointer shadow-card hover:bg-[#c0392b] hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .hero {
+    @apply py-20 px-0 text-center bg-gradient-to-b from-[#1a1a1a] to-dark border-b border-white/5;
+  }
+
+  .hero h1 {
+    @apply text-4xl mb-2 font-bold;
+  }
+
+  .hero #build-id {
+    @apply text-text-muted text-[0.9rem] mb-4 font-mono;
+  }
+
+  .random-tip {
+    @apply text-primary italic font-medium min-h-[1.5em] transition-all duration-500;
+  }
+
+  .games-grid {
+    @apply grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-8 my-10;
+  }
+
+  .game-item {
+    @apply bg-white/5 rounded-card p-4 text-center transition-all duration-300 border border-white/5 shadow-card hover:-translate-y-2 hover:bg-white/10 hover:border-primary/30;
+  }
+
+  .game-item button {
+    @apply block w-full bg-none border-none p-0 cursor-pointer overflow-hidden rounded-lg mb-3;
+  }
+
+  .game-item img {
+    @apply w-full aspect-square object-cover transition-transform duration-500 hover:scale-110;
+  }
+
+  .game-item p {
+    @apply m-0 font-semibold text-[1.1rem];
+  }
+
+  /* Skeleton Loading Styles */
+  .skeleton {
+    @apply bg-white/10 relative overflow-hidden;
+  }
+
+  .skeleton::after {
+    @apply content-[''] absolute inset-0 -translate-x-full;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+
+  .skeleton-card .skeleton-img {
+    @apply w-full aspect-square rounded-lg mb-3;
+  }
+
+  .skeleton-card .skeleton-text {
+    @apply h-5 w-3/4 mx-auto rounded;
+  }
+
+  .skeleton-controls .skeleton-search {
+    @apply h-12 w-full max-w-[400px] rounded-lg;
+  }
+
+  .skeleton-controls .skeleton-button {
+    @apply h-12 w-40 rounded-lg;
+  }
+
+  /* Highlight Effect */
+  .highlight-game {
+    @apply ring-4 ring-primary ring-offset-4 ring-offset-dark scale-105 z-10;
+  }
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.hero {
-  padding: 80px 0;
-  text-align: center;
-  background: linear-gradient(to bottom, #1a1a1a, #121212);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.build-id {
-  color: #888;
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-  font-family: monospace;
-}
-
-.random-tip {
-  color: #e74c3c;
-  font-style: italic;
-  font-weight: 500;
-  min-height: 1.5em;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #e74c3c;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.btn:hover {
-  background-color: #c0392b;
-  transform: translateY(-2px);
-}
-
-footer {
-  background-color: #121212;
-  color: #eeeeee;
-  padding: 60px 0 30px;
-  margin-top: 60px;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.footer-links a {
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: #e74c3c;
-}
-
-.copyright {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 0.85rem;
-  margin-top: 20px;
-}
-
-.uptime-wrapper {
-  margin: 25px auto;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  max-width: 400px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  border-bottom: 2px solid #e74c3c;
-}
-
-.uptime-label {
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  color: #888;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.uptime-counter {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.uptime-unit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-w: 50px;
-}
-
-.uptime-unit .value {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #eee;
-  font-family: monospace;
-}
-
-.uptime-unit .unit-label {
-  font-size: 0.65rem;
-  color: #666;
-  margin-top: 4px;
-}
-
-.uptime-unit.highlight .value {
-  color: #e74c3c;
-}
-
-.games-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 30px;
-  margin: 40px 0;
-}
-
-.game-item {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  transition: all 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.game-item:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(231, 76, 60, 0.3);
-}
-
-.game-item img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  transition: transform 0.5s;
-}
-
-.game-item:hover img {
-  transform: scale(1.05);
-}
-
-/* Skeleton Loading Styles */
-.skeleton {
-  background: rgba(255, 255, 255, 0.1);
-  position: relative;
-  overflow: hidden;
-}
-
-.skeleton::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  transform: translateX(-100%);
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
-  animation: shimmer 1.5s infinite;
-}
-
-@keyframes shimmer {
-  100% { transform: translateX(100%); }
-}
-
-.skeleton-card .skeleton-img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
-.skeleton-card .skeleton-text {
-  height: 20px;
-  width: 75%;
-  margin: 0 auto;
-  border-radius: 4px;
-}
-
-.skeleton-controls .skeleton-search {
-  height: 48px;
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
-}
-
-.skeleton-controls .skeleton-button {
-  height: 48px;
-  width: 160px;
-  border-radius: 8px;
-}
-
-/* Highlight Effect */
-.highlight-game {
-  outline: 4px solid #e74c3c;
-  outline-offset: 4px;
-  transform: scale(1.05);
-  z-index: 10;
+/* Dark theme specific overrides if needed (though we default to dark) */
+body.dark-theme {
+  --color-primary: #e74c3c;
+  --color-dark: #121212;
 }

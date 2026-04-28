@@ -1,5 +1,113 @@
 [
   {
+    "hash": "5f1d9de",
+    "author": "Ben",
+    "date": "2026-04-28",
+    "message": "fix builds"
+  },
+  {
+    "hash": "e1b5f03",
+    "author": "Ben",
+    "date": "2026-04-28",
+    "message": "posthog"
+  },
+  {
+    "hash": "1962040",
+    "author": "Ben",
+    "date": "2026-04-28",
+    "message": "getting ready for PostHog"
+  },
+  {
+    "hash": "434aed3",
+    "author": "Ben",
+    "date": "2026-04-28",
+    "message": "Merge remote-tracking branch 'origin/main'"
+  },
+  {
+    "hash": "e3adf77",
+    "author": "Ben",
+    "date": "2026-04-28",
+    "message": "sorting"
+  },
+  {
+    "hash": "609ee83",
+    "author": "Ben",
+    "date": "2026-04-28",
+    "message": "fix sorting"
+  },
+  {
+    "hash": "91e03f5",
+    "author": "Ben",
+    "date": "2026-04-28",
+    "message": "SORT IT ALPHABETICALLY!!"
+  },
+  {
+    "hash": "b949bf0",
+    "author": "Anirudh",
+    "date": "2026-04-26",
+    "message": "fixed all the issues in the setting when clicking on the Tab cloaking images aint show up."
+  },
+  {
+    "hash": "3cde8a8",
+    "author": "Anirudh",
+    "date": "2026-04-26",
+    "message": "SCHOOOLGY"
+  },
+  {
+    "hash": "0a82a4d",
+    "author": "Ben",
+    "date": "2026-04-26",
+    "message": "Complete reversion to standard CSS and Tailscale removal"
+  },
+  {
+    "hash": "a2a1d9d",
+    "author": "Ben",
+    "date": "2026-04-26",
+    "message": "Revert \"Merge pull request #39 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-754666cf41\""
+  },
+  {
+    "hash": "20bf2c2",
+    "author": "meowcat767",
+    "date": "2026-04-26",
+    "message": "Merge pull request #43 from neurontechofficial/NX"
+  },
+  {
+    "hash": "cd4fd8a",
+    "author": "Ben",
+    "date": "2026-04-26",
+    "message": "think i fixed the footer"
+  },
+  {
+    "hash": "8158145",
+    "author": "meowcat767",
+    "date": "2026-04-26",
+    "message": "Merge pull request #42 from neurontechofficial/NX"
+  },
+  {
+    "hash": "cf65330",
+    "author": "Ben",
+    "date": "2026-04-26",
+    "message": "think i fixed the footer"
+  },
+  {
+    "hash": "8ee4fc8",
+    "author": "meowcat767",
+    "date": "2026-04-26",
+    "message": "Merge pull request #41 from neurontechofficial/NX"
+  },
+  {
+    "hash": "ffd4a24",
+    "author": "Ben",
+    "date": "2026-04-26",
+    "message": "tailwind!!!"
+  },
+  {
+    "hash": "e9cb62e",
+    "author": "meowcat767",
+    "date": "2026-04-25",
+    "message": "Merge pull request #39 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-754666cf41"
+  },
+  {
     "hash": "8eb2f3a",
     "author": "Ben",
     "date": "2026-04-25",
@@ -28,6 +136,12 @@
     "author": "Anirudh",
     "date": "2026-04-25",
     "message": "gn"
+  },
+  {
+    "hash": "7865fae",
+    "author": "dependabot[bot]",
+    "date": "2026-04-25",
+    "message": "Bump postcss in the npm_and_yarn group across 1 directory"
   },
   {
     "hash": "a33b492",
@@ -184,119 +298,5 @@
     "author": "Ben",
     "date": "2026-03-25",
     "message": "Merge remote-tracking branch 'origin/main'"
-  },
-  {
-    "hash": "e249595",
-    "author": "Ben",
-    "date": "2026-03-25",
-    "message": "package auditing"
-  },
-  {
-    "hash": "fa37221",
-    "author": "Ben House",
-    "date": "2026-03-24",
-    "message": "add fruit ninja"
-  },
-  {
-    "hash": "bbd4352",
-    "author": "Ben House",
-    "date": "2026-03-24",
-    "message": "fps life is ending"
-  },
-  {
-    "hash": "d94ced6",
-    "author": "Ben House",
-    "date": "2026-03-24",
-    "message": "nuke fps counter"
-  },
-  {
-    "hash": "7ddb9c1",
-    "author": "Ben",
-    "date": "2026-03-23",
-    "message": "set identiry url"
-  },
-  {
-    "hash": "0f749dd",
-    "author": "Ben",
-    "date": "2026-03-23",
-    "message": "lets see here"
-  },
-  {
-    "hash": "111eba4",
-    "author": "Ben",
-    "date": "2026-03-23",
-    "message": "twesting"
-  },
-  {
-    "hash": "3a1a02f",
-    "author": "Ben",
-    "date": "2026-03-23",
-    "message": "CS CS CS GO GO GO"
-  },
-  {
-    "hash": "67106f4",
-    "author": "Ben",
-    "date": "2026-03-22",
-    "message": "CS CS CS GO GO GO"
-  },
-  {
-    "hash": "cbafc88",
-    "author": "Ben",
-    "date": "2026-03-22",
-    "message": "driving in ze russia"
-  },
-  {
-    "hash": "37f23bd",
-    "author": "Ben",
-    "date": "2026-03-20",
-    "message": "update text"
-  },
-  {
-    "hash": "d620a56",
-    "author": "Ben",
-    "date": "2026-03-20",
-    "message": "repair builds"
-  },
-  {
-    "hash": "b4aa8db",
-    "author": "Ben",
-    "date": "2026-03-20",
-    "message": "update colour"
-  },
-  {
-    "hash": "84df91e",
-    "author": "Ben",
-    "date": "2026-03-20",
-    "message": "Merge remote-tracking branch 'origin/main'"
-  },
-  {
-    "hash": "2e04570",
-    "author": "Ben",
-    "date": "2026-03-20",
-    "message": "meta: pkg updates"
-  },
-  {
-    "hash": "3eb70d6",
-    "author": "Ben",
-    "date": "2026-03-20",
-    "message": "meta: pkg updates"
-  },
-  {
-    "hash": "09faa06",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Add a personalized dashboard to track game activity and stats"
-  },
-  {
-    "hash": "9c1444c",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Replace Google authentication with Netlify Identity for simpler login"
-  },
-  {
-    "hash": "21ce4c7",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Add logging to show authentication configuration status"
   }
 ]
