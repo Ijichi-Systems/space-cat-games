@@ -8,6 +8,7 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import { trackGamePlay } from "./utils/analytics";
 import { usePlayHistory } from "./hooks/usePlayHistory";
+import posthog from "./utils/posthog";
 
 export default function Games() {
   const [games, setGames] = useState([]);
@@ -59,6 +60,10 @@ export default function Games() {
       filtered = games.filter((game) =>
         game.title.toLowerCase().includes(searchTerm.toLowerCase())
       );
+      posthog.capture('game searched', {
+        search_term: searchTerm,
+        results_count: filtered.length,
+      });
     }
 
     // Sort
@@ -106,6 +111,9 @@ export default function Games() {
 
   const handleRandomGame = () => {
     if (filteredGames.length === 0) return;
+    posthog.capture('random game selected', {
+      total_games_shown: filteredGames.length,
+    });
 
     const randomIndex = Math.floor(Math.random() * filteredGames.length);
     const randomGame = filteredGames[randomIndex];
@@ -131,6 +139,7 @@ export default function Games() {
   };
 
   const handleCloseSurvey = () => {
+    posthog.capture('survey dismissed');
     setShowSurveyPopup(false);
     localStorage.setItem("scg_survey_seen", "true");
   };

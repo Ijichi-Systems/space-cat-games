@@ -4,6 +4,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import netlifyIdentity from 'netlify-identity-widget';
+import posthog from '../utils/posthog';
 
 const NETLIFY_IDENTITY_URL = 'https://spacecatgame.netlify.app/.netlify/identity';
 
@@ -42,11 +43,21 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (current) setUser(current);
 
     netlifyIdentity.on('login', (u) => {
-      setUser(u as NetlifyUser);
+      const netlifyUser = u as NetlifyUser;
+      setUser(netlifyUser);
       netlifyIdentity.close();
+      posthog.identify(netlifyUser.id, {
+        email: netlifyUser.email,
+        name: netlifyUser.user_metadata?.full_name,
+      });
+      posthog.capture('user logged in', {
+        login_method: 'netlify_identity',
+      });
     });
 
     netlifyIdentity.on('logout', () => {
+      posthog.capture('user logged out');
+      posthog.reset();
       setUser(null);
     });
 

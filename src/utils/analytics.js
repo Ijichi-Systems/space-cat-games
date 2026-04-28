@@ -2,6 +2,8 @@
  * Copyright (c) Starry Systems and Nijika Softworks.
  */
 
+import posthog from './posthog';
+
 /**
  * Privacy-friendly game analytics.
  * Records game plays without tracking personal information.
@@ -37,6 +39,11 @@ export const trackGamePlay = async (game) => {
         console.warn('[Analytics] Deployment needed or endpoint missing. Data:', payload);
         return;
     }
+
+    posthog.capture('game played', {
+        game_title: game.title,
+        game_url: game.url,
+    });
 
     try {
         console.log('[Analytics] Sending request to:', ANALYTICS_ENDPOINT);
