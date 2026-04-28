@@ -1,302 +1,302 @@
 [
   {
-    "hash": "3a1a02f",
+    "hash": "91e03f5",
     "author": "Ben",
-    "date": "2026-03-23",
-    "message": "CS CS CS GO GO GO"
+    "date": "2026-04-28",
+    "message": "SORT IT ALPHABETICALLY!!"
   },
   {
-    "hash": "67106f4",
-    "author": "Ben",
-    "date": "2026-03-22",
-    "message": "CS CS CS GO GO GO"
+    "hash": "b949bf0",
+    "author": "Anirudh",
+    "date": "2026-04-26",
+    "message": "fixed all the issues in the setting when clicking on the Tab cloaking images aint show up."
   },
   {
-    "hash": "cbafc88",
-    "author": "Ben",
-    "date": "2026-03-22",
-    "message": "driving in ze russia"
+    "hash": "3cde8a8",
+    "author": "Anirudh",
+    "date": "2026-04-26",
+    "message": "SCHOOOLGY"
   },
   {
-    "hash": "37f23bd",
+    "hash": "0a82a4d",
     "author": "Ben",
-    "date": "2026-03-20",
-    "message": "update text"
+    "date": "2026-04-26",
+    "message": "Complete reversion to standard CSS and Tailscale removal"
   },
   {
-    "hash": "d620a56",
+    "hash": "a2a1d9d",
     "author": "Ben",
-    "date": "2026-03-20",
-    "message": "repair builds"
+    "date": "2026-04-26",
+    "message": "Revert \"Merge pull request #39 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-754666cf41\""
   },
   {
-    "hash": "b4aa8db",
-    "author": "Ben",
-    "date": "2026-03-20",
-    "message": "update colour"
+    "hash": "20bf2c2",
+    "author": "meowcat767",
+    "date": "2026-04-26",
+    "message": "Merge pull request #43 from neurontechofficial/NX"
   },
   {
-    "hash": "84df91e",
+    "hash": "cd4fd8a",
     "author": "Ben",
-    "date": "2026-03-20",
+    "date": "2026-04-26",
+    "message": "think i fixed the footer"
+  },
+  {
+    "hash": "8158145",
+    "author": "meowcat767",
+    "date": "2026-04-26",
+    "message": "Merge pull request #42 from neurontechofficial/NX"
+  },
+  {
+    "hash": "cf65330",
+    "author": "Ben",
+    "date": "2026-04-26",
+    "message": "think i fixed the footer"
+  },
+  {
+    "hash": "8ee4fc8",
+    "author": "meowcat767",
+    "date": "2026-04-26",
+    "message": "Merge pull request #41 from neurontechofficial/NX"
+  },
+  {
+    "hash": "ffd4a24",
+    "author": "Ben",
+    "date": "2026-04-26",
+    "message": "tailwind!!!"
+  },
+  {
+    "hash": "e9cb62e",
+    "author": "meowcat767",
+    "date": "2026-04-25",
+    "message": "Merge pull request #39 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-754666cf41"
+  },
+  {
+    "hash": "8eb2f3a",
+    "author": "Ben",
+    "date": "2026-04-25",
+    "message": "Not on my watch."
+  },
+  {
+    "hash": "7baffaf",
+    "author": "Ben",
+    "date": "2026-04-25",
+    "message": "Add @netlify/blobs dependency"
+  },
+  {
+    "hash": "9c2c890",
+    "author": "Ben",
+    "date": "2026-04-25",
+    "message": "yeah commas are important in JSON"
+  },
+  {
+    "hash": "ebdc1b5",
+    "author": "Anirudh",
+    "date": "2026-04-25",
+    "message": "Add GN MATH game to the games JSON"
+  },
+  {
+    "hash": "86e1659",
+    "author": "Anirudh",
+    "date": "2026-04-25",
+    "message": "gn"
+  },
+  {
+    "hash": "7865fae",
+    "author": "dependabot[bot]",
+    "date": "2026-04-25",
+    "message": "Bump postcss in the npm_and_yarn group across 1 directory"
+  },
+  {
+    "hash": "a33b492",
+    "author": "meowcat767",
+    "date": "2026-04-25",
+    "message": "Merge pull request #38 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-c4bc6a0a9e"
+  },
+  {
+    "hash": "d5ab9b2",
+    "author": "Ben House",
+    "date": "2026-04-21",
+    "message": "better warn them"
+  },
+  {
+    "hash": "ba7e992",
+    "author": "Ben House",
+    "date": "2026-04-21",
+    "message": "append button"
+  },
+  {
+    "hash": "9351155",
+    "author": "Ben House",
+    "date": "2026-04-21",
+    "message": "700 days post"
+  },
+  {
+    "hash": "5a5505a",
+    "author": "Ben House",
+    "date": "2026-04-21",
+    "message": "blog post about vercel"
+  },
+  {
+    "hash": "db204b5",
+    "author": "Ben",
+    "date": "2026-04-08",
+    "message": "add SEL"
+  },
+  {
+    "hash": "6e45979",
+    "author": "dependabot[bot]",
+    "date": "2026-04-06",
+    "message": "Bump vite in the npm_and_yarn group across 1 directory"
+  },
+  {
+    "hash": "93a257c",
+    "author": "Ben",
+    "date": "2026-04-02",
+    "message": "remove april fools stuff"
+  },
+  {
+    "hash": "301d6f9",
+    "author": "Anirudh",
+    "date": "2026-04-01",
+    "message": "Update shutdown date and version notation"
+  },
+  {
+    "hash": "0b48c4d",
+    "author": "Anirudh",
+    "date": "2026-04-01",
+    "message": "Comment out old tips and update header message"
+  },
+  {
+    "hash": "59d9bf4",
+    "author": "Anirudh",
+    "date": "2026-04-01",
+    "message": "Update title in shutdown-2026.md"
+  },
+  {
+    "hash": "af65bed",
+    "author": "Ben",
+    "date": "2026-04-01",
+    "message": "spelling is for the weak"
+  },
+  {
+    "hash": "91ec893",
+    "author": "Anirudh",
+    "date": "2026-04-01",
+    "message": "april fools update"
+  },
+  {
+    "hash": "e6fa919",
+    "author": "meowcat767",
+    "date": "2026-03-28",
+    "message": "Merge pull request #37 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-c4fb857816"
+  },
+  {
+    "hash": "974d8b4",
+    "author": "Ben",
+    "date": "2026-03-27",
+    "message": "new blog post"
+  },
+  {
+    "hash": "90ab9e8",
+    "author": "Ben",
+    "date": "2026-03-27",
+    "message": "tests update"
+  },
+  {
+    "hash": "885a8c3",
+    "author": "Ben",
+    "date": "2026-03-27",
     "message": "Merge remote-tracking branch 'origin/main'"
   },
   {
-    "hash": "2e04570",
+    "hash": "e977475",
     "author": "Ben",
-    "date": "2026-03-20",
-    "message": "meta: pkg updates"
+    "date": "2026-03-27",
+    "message": "FORCE MY SANS SIRE"
   },
   {
-    "hash": "3eb70d6",
-    "author": "Ben",
-    "date": "2026-03-20",
-    "message": "meta: pkg updates"
-  },
-  {
-    "hash": "09faa06",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Add a personalized dashboard to track game activity and stats"
-  },
-  {
-    "hash": "9c1444c",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Replace Google authentication with Netlify Identity for simpler login"
-  },
-  {
-    "hash": "21ce4c7",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Add logging to show authentication configuration status"
-  },
-  {
-    "hash": "114cd94",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Add a new commit record for adjusting the navbar layout"
-  },
-  {
-    "hash": "1e49ad0",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Adjust navbar layout to position user and version elements correctly"
-  },
-  {
-    "hash": "edfd283",
-    "author": "meowcat767",
-    "date": "2026-03-20",
-    "message": "Migrate workflow from main.yml to count.yaml"
-  },
-  {
-    "hash": "9f59106",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Adjust navbar layout to properly position user and version elements"
-  },
-  {
-    "hash": "f6643c4",
-    "author": "meowcat767",
-    "date": "2026-03-20",
-    "message": "Merge pull request #31 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-e5a595f223"
-  },
-  {
-    "hash": "4a9bb7d",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Prevent app crash by conditionally rendering Google sign-in"
-  },
-  {
-    "hash": "97fc706",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Saved progress at the end of the loop"
-  },
-  {
-    "hash": "8d28770",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Add Google authentication for secure user sign-in"
-  },
-  {
-    "hash": "8e0ed60",
+    "hash": "527df6e",
     "author": "dependabot[bot]",
-    "date": "2026-03-20",
-    "message": "Bump flatted in the npm_and_yarn group across 1 directory"
+    "date": "2026-03-27",
+    "message": "Bump handlebars in the npm_and_yarn group across 1 directory"
   },
   {
-    "hash": "aea3cb1",
-    "author": "aperturelabs",
-    "date": "2026-03-20",
-    "message": "Saved progress at the end of the loop"
-  },
-  {
-    "hash": "9e92590",
-    "author": "Ben House",
-    "date": "2026-03-19",
-    "message": "version bump"
-  },
-  {
-    "hash": "28968d4",
-    "author": "Ben House",
-    "date": "2026-03-19",
-    "message": "add stuff for better stack"
-  },
-  {
-    "hash": "2f8b857",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "meta: pkg updates"
-  },
-  {
-    "hash": "f956a8e",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "make archive page because of failing builds"
-  },
-  {
-    "hash": "f6b0cea",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "delete broken route"
-  },
-  {
-    "hash": "b86ad32",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "add touhou 1"
-  },
-  {
-    "hash": "8873900",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "add pepsiman"
-  },
-  {
-    "hash": "f9129a1",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "pop the archive"
-  },
-  {
-    "hash": "c14a0c2",
-    "author": "Ben",
-    "date": "2026-03-13",
-    "message": "update footer to have discord link"
-  },
-  {
-    "hash": "da74a98",
-    "author": "Ben House",
-    "date": "2026-03-13",
-    "message": "update version"
-  },
-  {
-    "hash": "1d44195",
-    "author": "Ben House",
-    "date": "2026-03-13",
-    "message": "delete coverage folder"
-  },
-  {
-    "hash": "8b41e7f",
-    "author": "Ben House",
-    "date": "2026-03-13",
-    "message": "append section"
-  },
-  {
-    "hash": "029d18c",
-    "author": "Ben House",
-    "date": "2026-03-13",
-    "message": "append codecov badge"
-  },
-  {
-    "hash": "1801933",
+    "hash": "51922d0",
     "author": "meowcat767",
-    "date": "2026-03-12",
-    "message": "Update Settings.tsx"
+    "date": "2026-03-27",
+    "message": "Merge pull request #33 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-66413a1f6e"
   },
   {
-    "hash": "bf0396f",
-    "author": "meowcat767",
-    "date": "2026-03-12",
-    "message": "Update footer.tsx to add IDE comment"
+    "hash": "213704c",
+    "author": "dependabot[bot]",
+    "date": "2026-03-26",
+    "message": "Bump picomatch in the npm_and_yarn group across 1 directory"
   },
   {
-    "hash": "ddd5209",
+    "hash": "eead459",
+    "author": "Ben",
+    "date": "2026-03-25",
+    "message": "blog system"
+  },
+  {
+    "hash": "5c94769",
+    "author": "Ben",
+    "date": "2026-03-25",
+    "message": "restrict login functions to main"
+  },
+  {
+    "hash": "02578d8",
+    "author": "Ben",
+    "date": "2026-03-25",
+    "message": "wrangler shoudln't kill itself now"
+  },
+  {
+    "hash": "44ff9b1",
+    "author": "Ben",
+    "date": "2026-03-25",
+    "message": "lock update"
+  },
+  {
+    "hash": "d0a366b",
+    "author": "Ben",
+    "date": "2026-03-25",
+    "message": "Merge remote-tracking branch 'origin/main'"
+  },
+  {
+    "hash": "e249595",
+    "author": "Ben",
+    "date": "2026-03-25",
+    "message": "package auditing"
+  },
+  {
+    "hash": "fa37221",
     "author": "Ben House",
-    "date": "2026-03-12",
-    "message": "GITBOOK-14: add search and select"
+    "date": "2026-03-24",
+    "message": "add fruit ninja"
   },
   {
-    "hash": "8100857",
+    "hash": "bbd4352",
     "author": "Ben House",
-    "date": "2026-03-12",
-    "message": "GITBOOK-13: add using space cat games"
+    "date": "2026-03-24",
+    "message": "fps life is ending"
   },
   {
-    "hash": "deee4f8",
+    "hash": "d94ced6",
     "author": "Ben House",
-    "date": "2026-03-12",
-    "message": "GITBOOK-12: change home"
+    "date": "2026-03-24",
+    "message": "nuke fps counter"
   },
   {
-    "hash": "a7f7aec",
+    "hash": "7ddb9c1",
     "author": "Ben",
-    "date": "2026-03-12",
-    "message": "WOLFENSTEIN???? EPS-"
+    "date": "2026-03-23",
+    "message": "set identiry url"
   },
   {
-    "hash": "7eedafb",
+    "hash": "0f749dd",
     "author": "Ben",
-    "date": "2026-03-12",
-    "message": "WOLFENSTEIN???? EPS-"
-  },
-  {
-    "hash": "2e6133b",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "add ultrakill"
-  },
-  {
-    "hash": "b99ddee",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "add ultrakill"
-  },
-  {
-    "hash": "a07bba2",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "update settings"
-  },
-  {
-    "hash": "44325cd",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "we use the dog now"
-  },
-  {
-    "hash": "bf298d9",
-    "author": "Ben",
-    "date": "2026-03-12",
-    "message": "update tests?"
-  },
-  {
-    "hash": "de4eeda",
-    "author": "meowcat767",
-    "date": "2026-03-11",
-    "message": "Update README.md"
-  },
-  {
-    "hash": "7b800f8",
-    "author": "meowcat767",
-    "date": "2026-03-11",
-    "message": "update GitHub link"
-  },
-  {
-    "hash": "63bf1e4",
-    "author": "meowcat767",
-    "date": "2026-03-11",
-    "message": "remove archive from navbar"
+    "date": "2026-03-23",
+    "message": "lets see here"
   }
 ]

@@ -1,384 +1,12 @@
 {
-  "generatedAt": "2026-03-22T21:35:13.614Z",
-  "count": 162,
+  "generatedAt": "2026-04-08T13:44:40.350Z",
+  "count": 164,
   "games": [
-    {
-      "title": "FIFA 2007",
-      "url": "/games/fifa2007.html",
-      "img": "/images/noimg.png",
-      "alt": "No Img"
-    },
-    {
-      "title": "Tap Goal",
-      "url": "/games/taptap.html",
-      "img": "/images/tapcap.png",
-      "alt": "Tap Goal"
-    },
-    {
-      "title": "The Hardest Game",
-      "url": "/games/hardestgame.html",
-      "img": "https://i.ibb.co/nNYZ2FST/8-LMW84-image-75.jpg",
-      "alt": "The Hardest Game"
-    },
-    {
-      "title": "Suika Game",
-      "url": "/games/suika.html",
-      "img": "/images/suika-icon.png",
-      "alt": "The Hardest Game"
-    },
-    {
-      "title": "Connect The Pipes",
-      "url": "/games/Connect%20the%20Pipes.html",
-      "img": "/images/pipecap.png",
-      "alt": "Connect the Pipes"
-    },
-    {
-      "title": "Circloo",
-      "url": "/games/circle.html",
-      "img": "https://i.ibb.co/nN1xjLPG/971353830f129fd3f1446398792e6997.jpg",
-      "alt": "Circloo"
-    },
-    {
-      "title": "Maze",
-      "url": "/games/maze.html",
-      "img": "/images/maze-cap.png",
-      "alt": "Maze"
-    },
-    {
-      "title": "There is no game",
-      "url": "/games/there-is-no-game/index.html",
-      "img": "/games/there-is-no-game/images/letter_n-sheet0.png",
-      "alt": "A blue and white letter N."
-    },
-    {
-      "title": "The Typing Game",
-      "url": "/games/The%20Typing%20Game.html",
-      "img": "/images/thetypinggame.png",
-      "alt": "cat."
-    },
-    {
-      "title": "Pick a Lock",
-      "url": "/games/Pick%20a%20Lock.html",
-      "img": "/images/pickalock.png",
-      "alt": "big yellow storage"
-    },
-    {
-      "title": "Cubit",
-      "url": "/games/Cubit%20-%20A%203D%20game.html",
-      "img": "/images/cubit.png",
-      "alt": "big yellow storage"
-    },
-    {
-      "title": "Wordle",
-      "url": "/games/wordle.html",
-      "img": "https://i.ibb.co/SXZymjyS/images.png",
-      "alt": "Wordle"
-    },
-    {
-      "title": "Chrome Dino",
-      "url": "/games/dino.html",
-      "img": "https://i.ibb.co/GBrwZRt/hes-just-so-pixelated-i-love-him-v0-obzrwinx6wfc1.webp",
-      "alt": "Chrome Dino"
-    },
-    {
-      "title": "Geometry Dash",
-      "url": "/games/gm.html",
-      "img": "https://i.ibb.co/Xr5LnpSz/Logo-of-Geometry-Dash-svg.png",
-      "alt": "Geometry Dash"
-    },
-    {
-      "title": "Tetris",
-      "url": "/games/Tetris.html",
-      "img": "/images/tetris.jpg",
-      "alt": "Tetris"
-    },
-    {
-      "title": "Stack",
-      "url": "/games/stack.html",
-      "img": "https://i.ibb.co/YTVCpPqL/unnamed.png",
-      "alt": "Stack"
-    },
-    {
-      "title": "Slope",
-      "url": "/games/slope.html",
-      "img": "/images/slopeicon.jpeg",
-      "alt": "Slope"
-    },
-    {
-      "title": "MotoX3M",
-      "url": "/games/moto.html",
-      "img": "/images/motocap.avif",
-      "alt": "motocap.avif"
-    },
-    {
-      "title": "Doodle Jump",
-      "url": "/games/doodle.html",
-      "img": "https://i.ibb.co/hR1ZK9Yc/Doodle-Jump.png",
-      "alt": "Doodle Jump"
-    },
-    {
-      "title": "Ping Pong",
-      "url": "/games/pingpong.html",
-      "img": "https://i.ibb.co/LD4Z3872/pong-1650079489009.jpg",
-      "alt": "Ping Pong"
-    },
-    {
-      "title": "Minesweeper",
-      "url": "/games/winmine.html",
-      "img": "https://i.ibb.co/Kc1J3Nhj/Mr-Smiley-Face-from-Minesweeper-render.webp",
-      "alt": "Minesweeper"
-    },
-    {
-      "title": "Learn to Fly 3",
-      "url": "/games/fly3.html",
-      "img": "https://i.ibb.co/GfPzN9Ns/images-5.jpg",
-      "alt": "Learn to Fly 3"
-    },
-    {
-      "title": "Stickman Hook",
-      "url": "/games/stckmnhk/index.html",
-      "img": "/games/stckmnhk/icon.jpg",
-      "alt": "Stick Man Hook icon"
-    },
-    {
-      "title": "Learn to fly",
-      "url": "/games/fly.html",
-      "img": "https://i.ytimg.com/vi/qIBxUAp-Gk8/maxresdefault.jpg",
-      "alt": "Learn to Fly"
-    },
-    {
-      "title": "Subway Surfers",
-      "url": "/games/subsurf/subsurfs.html",
-      "img": "/games/subsurf/icon.png",
-      "alt": "Subway Surfers"
-    },
-    {
-      "title": "Papa's Sushiria",
-      "url": "/games/sushi.html",
-      "img": "/images/icon_300x300_papassushiria.jpg",
-      "alt": "Papa's Sushiria"
-    },
-    {
-      "title": "Papa's Hotdoggeria",
-      "url": "/games/papahotdog.html",
-      "img": "/hotdog.jpg",
-      "alt": "Papa's Hotdoggeria"
-    },
-    {
-      "title": "Papa's Cheeseria",
-      "url": "/games/papacheese.html",
-      "img": "/cheeseria_300x300.jpg",
-      "alt": "Papa's Cheeseria"
-    },
-    {
-      "title": "Papa Louie 2",
-      "url": "/games/papalouie.html",
-      "img": "/papalouie2_400x226.jpg",
-      "alt": "Papa Louie 2"
-    },
-    {
-      "title": "Papa Louie 1",
-      "url": "/games/papalouie1.html",
-      "img": "/papalouie_400x226.jpg",
-      "alt": "Papa Louie 1"
-    },
-    {
-      "title": "Papa's Burgeria",
-      "url": "/games/papasbugeria.html",
-      "img": "/papasburgeria_400x226.jpg",
-      "alt": "Papa's Burgeria"
-    },
-    {
-      "title": "Papa's Freezeria",
-      "url": "/games/papaicecream.html",
-      "img": "/papasfreezeria_400x226.jpg",
-      "alt": "Papa's Freezeria"
-    },
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
       "url": "/games/fruits.html",
       "img": "/images/fruitscap.png",
       "alt": "Papa's Sushiria"
-    },
-    {
-      "title": "OOF Clicker",
-      "url": "/games/oofclick.html",
-      "img": "/images/noimg.png",
-      "alt": "No Image Available"
-    },
-    {
-      "title": "Cookie Clicker",
-      "url": "/games/cc/index.html",
-      "img": "/games/cc/icon.png",
-      "alt": "Cookie Clicker Logo"
-    },
-    {
-      "title": "SuperTuxKart",
-      "url": "https://supertuxkart.pages.dev/",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3wVhcyQV-z7il2CAUbDkZJKkWTUe9lrR_3A&s",
-      "alt": "SuperTuxKart"
-    },
-    {
-      "title": "Car Anatomy",
-      "url": "/games/crashbo.html",
-      "img": "/images/noimg.png",
-      "alt": "No Img"
-    },
-    {
-      "title": "Road Race 2",
-      "url": "/games/roadrace.html",
-      "img": "https://i.ibb.co/mCRSq3KB/Screenshot-2025-03-13-11-54-16.png",
-      "alt": "Road Race 2"
-    },
-    {
-      "title": "Truck Space 2",
-      "url": "/games/truckspace2/index.html",
-      "img": "/images/ts2.jpg",
-      "alt": "truck space 2"
-    },
-    {
-      "title": "Minecraft Platformer",
-      "url": "/games/mcplat.html",
-      "img": "https://i.ibb.co/B2vP8hy0/images-7.jpg",
-      "alt": "Minecraft Platformer"
-    },
-    {
-      "title": "Minecraft",
-      "url": "/games/minecraft.html",
-      "img": "https://i.ibb.co/tT7XZRMW/Grass-Block-JE2.webp",
-      "alt": "Minecraft"
-    },
-    {
-      "title": "Minecraft Platformer - Online",
-      "url": "/games/mconline.html",
-      "img": "/images/noimg.png",
-      "alt": "No Image Available"
-    },
-    {
-      "title": "Adjustable Fireworks",
-      "url": "/games/adjustable-fireworks.html",
-      "img": "/images/noimg.png",
-      "alt": "No Image available"
-    },
-    {
-      "title": "BMP Test",
-      "url": "/games/bmptest.html",
-      "img": "https://i.ibb.co/gZfFXQMt/1541504.png",
-      "alt": "BMP Test"
-    },
-    {
-      "title": "AI Music Creator",
-      "url": "/games/musicgen.html",
-      "img": "/images/note.jpg",
-      "alt": "Music Note"
-    },
-    {
-      "title": "Beepbox",
-      "url": "/games/beepbox_offline.html",
-      "img": "/images/noimg.png",
-      "alt": "No Image"
-    },
-    {
-      "title": "Time Shooter 3",
-      "url": "/games/time3.html",
-      "img": "https://i.ibb.co/PzYcrhGC/images-8.jpg",
-      "alt": "Time Shooter 3"
-    },
-    {
-      "title": "ASCII Shooter",
-      "url": "/games/asciishooter.html",
-      "img": "https://i.ibb.co/vxxDd0sd/Screenshot-2025-03-23-17-44-36.png",
-      "alt": "ASCII Shooter"
-    },
-    {
-      "title": "Ball Blast",
-      "url": "/games/ballblast.html",
-      "img": "/images/ballblast-cap.png",
-      "alt": "Ball Blast"
-    },
-    {
-      "title": "Warfare Area 3",
-      "url": "/games/warfarearea3/index.html",
-      "img": "/images/warfarearea3.jpg",
-      "alt": "A picture of a man holding a gun, surrounded by enemies."
-    },
-    {
-      "title": "Sand:box",
-      "url": "/games/sand.html",
-      "img": "https://i.ibb.co/xKbrp64L/images.jpg",
-      "alt": "Sand:box"
-    },
-    {
-      "title": "Railroad Runner",
-      "url": "/games/rr.html",
-      "img": "https://i.ibb.co/JW326Y6X/Screenshot-2025-03-13-11-44-18.png",
-      "alt": "Railroad Runner"
-    },
-    {
-      "title": "Captain Callisto",
-      "url": "/games/captain.html",
-      "img": "https://i.ibb.co/tTYw89Cv/Screenshot-2025-03-23-17-02-24.png",
-      "alt": "Captain Callisto"
-    },
-    {
-      "title": "Black Hole Square",
-      "url": "/games/blackhole.html",
-      "img": "/pipebomb.png",
-      "alt": "Black Hole Square"
-    },
-    {
-      "title": "Target Rush",
-      "url": "/games/target.html",
-      "img": "https://i.ibb.co/4ZcfP4Xs/UA5o3P.png",
-      "alt": "Target Rush"
-    },
-    {
-      "title": "gamble1928",
-      "url": "/games/gamble1928.html",
-      "img": "/images/1928cap.png",
-      "alt": "gamble1928"
-    },
-    {
-      "title": "The Bauble Factory",
-      "url": "/games/bbfactory.html",
-      "img": "/images/bbfactory-cap.png",
-      "alt": "The Bauble Factory"
-    },
-    {
-      "title": "Chicken Game 2",
-      "url": "/games/chickengame2.html",
-      "img": "/images/chickencap.png",
-      "alt": "Chicken Game 2"
-    },
-    {
-      "title": "Glueification!",
-      "url": "https://glueification.netlify.app/",
-      "img": "/icon/icon.png",
-      "alt": "Glueification"
-    },
-    {
-      "title": "Helios Proxy",
-      "url": "/games/helios.html",
-      "img": "/images/noimg.png",
-      "alt": "No Image available"
-    },
-    {
-      "title": "Paperception",
-      "url": "/games/paperception.html",
-      "img": "/images/paperception-icon.png",
-      "alt": "Paperception"
-    },
-    {
-      "title": "Monkey Mart",
-      "url": "/games/monkey-mart/index.html",
-      "img": "/games/monkey-mart/bg_loading.png",
-      "alt": "Monkey"
-    },
-    {
-      "title": "FNAF 1",
-      "url": "/games/f1/index.html",
-      "img": "/games/f1/icon.png",
-      "alt": "FNAF 1"
     },
     {
       "title": "3D Plane Game",
@@ -387,22 +15,76 @@
       "alt": "plane"
     },
     {
-      "title": "Miner Cat",
-      "url": "/games/Miner%20cat%20-%20Game.html",
-      "img": "/images/minercat.png",
-      "alt": "A cooked beef steak"
+      "title": "64 in 1 NES",
+      "url": "/games/64nes.html",
+      "img": "/images/64.gif"
     },
     {
-      "title": "People Playground",
-      "url": "/games/ppg.html",
-      "img": "/images/ppgicon.png",
-      "alt": "The People Playground icon"
+      "title": "2048 Merge Run",
+      "url": "/games/2048mr.html",
+      "img": "/images/2048mr.png"
     },
     {
-      "title": "Half-Life 1",
-      "url": "/games/hl.html",
-      "img": "/images/hlicon.png",
-      "alt": "lambda"
+      "title": "Adjustable Fireworks",
+      "url": "/games/adjustable-fireworks.html",
+      "img": "/images/noimg.png",
+      "alt": "No Image available"
+    },
+    {
+      "title": "Ages of Conflict",
+      "url": "/games/aoc.html",
+      "img": "/images/aoc.png"
+    },
+    {
+      "title": "AI Music Creator",
+      "url": "/games/musicgen.html",
+      "img": "/images/note.jpg",
+      "alt": "Music Note"
+    },
+    {
+      "title": "Amaze",
+      "url": "/games/Amaze.html",
+      "img": "/images/amazeicon.png",
+      "alt": "Amaze"
+    },
+    {
+      "title": "ASCII Shooter",
+      "url": "/games/asciishooter.html",
+      "img": "https://i.ibb.co/vxxDd0sd/Screenshot-2025-03-23-17-44-36.png",
+      "alt": "ASCII Shooter"
+    },
+    {
+      "title": "Bad Parenting 1",
+      "url": "/games/bp1.html",
+      "img": "/images/bp1.png"
+    },
+    {
+      "title": "Baldi's Basics Plus",
+      "url": "/games/Baldi/",
+      "img": "/games/baldiicon.png",
+      "alt": "Baldi's Basics Plus"
+    },
+    {
+      "title": "Ball Blast",
+      "url": "/games/ballblast.html",
+      "img": "/images/ballblast-cap.png",
+      "alt": "Ball Blast"
+    },
+    {
+      "title": "Basketball Random",
+      "url": "/games/brandom.html",
+      "img": "/images/brandom.png"
+    },
+    {
+      "title": "Basketball Stars",
+      "url": "/games/bstars.html",
+      "img": "/images/bstars.png"
+    },
+    {
+      "title": "Beepbox",
+      "url": "/games/beepbox_offline.html",
+      "img": "/images/noimg.png",
+      "alt": "No Image"
     },
     {
       "title": "Bendy and the Ink Machine",
@@ -417,10 +99,25 @@
       "alt": "Dreams come true."
     },
     {
-      "title": "Minecraft 1.21",
-      "url": "/games/mc12.html",
-      "img": "/images/12icon.png",
-      "alt": "Dreams come true."
+      "title": "BitPlanes",
+      "url": "/games/BitPlanes.html",
+      "img": "/images/bitplanesicon.png"
+    },
+    {
+      "title": "Black Hole Square",
+      "url": "/games/blackhole.html",
+      "img": "/pipebomb.png",
+      "alt": "Black Hole Square"
+    },
+    {
+      "title": "Block Blast",
+      "url": "/games/Block Blast.html",
+      "img": "/images/blockblast.png"
+    },
+    {
+      "title": "Blocky Snakes",
+      "url": "/games/blocksnakes.html",
+      "img": "/images/blocksnakes.png"
     },
     {
       "title": "Bloxorz",
@@ -429,10 +126,25 @@
       "alt": "absolute cinema"
     },
     {
-      "title": "Amaze",
-      "url": "/games/Amaze.html",
-      "img": "/images/amazeicon.png",
-      "alt": "Amaze"
+      "title": "BMP Test",
+      "url": "/games/bmptest.html",
+      "img": "https://i.ibb.co/gZfFXQMt/1541504.png",
+      "alt": "BMP Test"
+    },
+    {
+      "title": "Breaklock",
+      "url": "/games/Breaklock.html",
+      "img": "/images/breaklock.png"
+    },
+    {
+      "title": "Buckshot Roulette",
+      "url": "/games/br.html",
+      "img": "/games/br.png"
+    },
+    {
+      "title": "Build a Plane",
+      "url": "/games/bap.html",
+      "img": "/images/buildplane.png"
     },
     {
       "title": "Candy Crush",
@@ -441,22 +153,100 @@
       "alt": "Candy Crush"
     },
     {
+      "title": "Captain Callisto",
+      "url": "/games/captain.html",
+      "img": "https://i.ibb.co/tTYw89Cv/Screenshot-2025-03-23-17-02-24.png",
+      "alt": "Captain Callisto"
+    },
+    {
+      "title": "Car Anatomy",
+      "url": "/games/crashbo.html",
+      "img": "/images/noimg.png",
+      "alt": "No Img"
+    },
+    {
+      "title": "Chess Classic",
+      "url": "/games/cc.html",
+      "img": "/images/chess.png"
+    },
+    {
+      "title": "Chicken Game 2",
+      "url": "/games/chickengame2.html",
+      "img": "/images/chickencap.png",
+      "alt": "Chicken Game 2"
+    },
+    {
+      "title": "Chicken Game 3: industrial revolution",
+      "url": "/games/c3.html",
+      "img": "/images/c3.png"
+    },
+    {
+      "title": "Chicken Game 4: A Space Odyssey",
+      "url": "/games/c4.html",
+      "img": "/images/c4.png"
+    },
+    {
+      "title": "Chicken Game 5: egg armageddon",
+      "url": "/games/c5.html",
+      "img": "/images/c5.png"
+    },
+    {
+      "title": "Chrome Dino",
+      "url": "/games/dino.html",
+      "img": "https://i.ibb.co/GBrwZRt/hes-just-so-pixelated-i-love-him-v0-obzrwinx6wfc1.webp",
+      "alt": "Chrome Dino"
+    },
+    {
+      "title": "Circloo",
+      "url": "/games/circle.html",
+      "img": "https://i.ibb.co/nN1xjLPG/971353830f129fd3f1446398792e6997.jpg",
+      "alt": "Circloo"
+    },
+    {
       "title": "Color Water Sort 3D",
       "url": "/games/Color%20Water%20Sort%203D.html",
       "img": "/images/watersorticon.png",
       "alt": "Color Water Sort 3D"
     },
     {
-      "title": "Melon Playground",
-      "url": "/games/Melon%20Playground.html",
-      "img": "/images/noimg.png",
-      "alt": "Melon Playground"
+      "title": "Connect The Pipes",
+      "url": "/games/Connect%20the%20Pipes.html",
+      "img": "/images/pipecap.png",
+      "alt": "Connect the Pipes"
     },
     {
-      "title": "Baldi's Basics Plus",
-      "url": "/games/Baldi/",
-      "img": "/games/baldiicon.png",
-      "alt": "Baldi's Basics Plus"
+      "title": "Cookie Clicker",
+      "url": "/games/cc/index.html",
+      "img": "/games/cc/icon.png",
+      "alt": "Cookie Clicker Logo"
+    },
+    {
+      "title": "Cooking Mama",
+      "url": "/games/cm.html",
+      "img": "/images/cm.png"
+    },
+    {
+      "title": "Coreball",
+      "url": "/games/coreball.html",
+      "img": "/images/coreball.png",
+      "alt": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "title": "Crazy Kitty 3D",
+      "url": "/games/Crazy%20Kitty%203D.html",
+      "img": "/games/crazykitty3d-icon.png",
+      "alt": "Crazy Kitty 3D"
+    },
+    {
+      "title": "Cubit",
+      "url": "/games/Cubit%20-%20A%203D%20game.html",
+      "img": "/images/cubit.png",
+      "alt": "big yellow storage"
+    },
+    {
+      "title": "Cuphead",
+      "url": "/games/Cuphead.html",
+      "img": "/images/cuphead.jpg"
     },
     {
       "title": "DON'T YOU LECTURE ME",
@@ -465,40 +255,81 @@
       "alt": "DON'T YOU LECTURE ME"
     },
     {
-      "title": "Paper.io 2",
-      "url": "/games/Paper.io%202.html",
-      "img": "https://i.ibb.co/VYFygR7L/images-1.jpg",
-      "alt": "Paper.io 2"
+      "title": "Doodle Jump",
+      "url": "/games/doodle.html",
+      "img": "https://i.ibb.co/hR1ZK9Yc/Doodle-Jump.png",
+      "alt": "Doodle Jump"
     },
     {
-      "title": "Parappa The Rapper",
-      "url": "/games/Parappa%20The%20Rapper.html",
-      "img": "/games/parappaicon.png",
-      "alt": "Parappa The Rapper"
+      "title": "DOOM",
+      "url": "/games/doom.html",
+      "img": "/images/doom.png"
     },
     {
-      "title": "Sandboxels",
-      "url": "/games/Sandboxels.html",
-      "img": "/games/sandboxels-icon.png",
-      "alt": "Sandboxels"
+      "title": "Evolving Bombs 3D",
+      "url": "/games/eb3.html",
+      "img": "/images/eb3.png"
     },
     {
-      "title": "Slither.io",
-      "url": "/games/Slither.io.html",
-      "img": "/games/slitherio-icon.png",
-      "alt": "Slither.io"
+      "title": "Famidash",
+      "url": "/games/Famidash.html",
+      "img": "/images/famidash.webp"
     },
     {
-      "title": "Slowroads",
-      "url": "/games/Slowroads.html",
-      "img": "/games/slowroads-icon.png",
-      "alt": "Slowroads"
+      "title": "Fifa 11",
+      "url": "/games/f11.html",
+      "img": "/images/fifa11.png"
     },
     {
-      "title": "Crazy Kitty 3D",
-      "url": "/games/Crazy%20Kitty%203D.html",
-      "img": "/games/crazykitty3d-icon.png",
-      "alt": "Crazy Kitty 3D"
+      "title": "FIFA 2007",
+      "url": "/games/fifa2007.html",
+      "img": "/images/noimg.png",
+      "alt": "No Img"
+    },
+    {
+      "title": "Five nights at Winston's",
+      "url": "/games/winston.html",
+      "img": "/images/winston.png",
+      "alt": "I may or may not have included a secret, res..."
+    },
+    {
+      "title": "FNAF 1",
+      "url": "/games/f1/index.html",
+      "img": "/games/f1/icon.png",
+      "alt": "FNAF 1"
+    },
+    {
+      "title": "FNF: Bopcity",
+      "url": "/games/bopcity.html",
+      "img": "/images/bopcityicon.png"
+    },
+    {
+      "title": "Fruit Ninja",
+      "url": "/games/clfruitninja.html",
+      "img": "/images/fn.jpeg"
+    },
+    {
+      "title": "gamble1928",
+      "url": "/games/gamble1928.html",
+      "img": "/images/1928cap.png",
+      "alt": "gamble1928"
+    },
+    {
+      "title": "Geometry Dash",
+      "url": "/games/gm.html",
+      "img": "https://i.ibb.co/Xr5LnpSz/Logo-of-Geometry-Dash-svg.png",
+      "alt": "Geometry Dash"
+    },
+    {
+      "title": "Getting Over It",
+      "url": "/games/gettingoverit.html",
+      "img": "/images/gettingoverit.png"
+    },
+    {
+      "title": "Glueification!",
+      "url": "https://glueification.netlify.app/",
+      "img": "/icon/icon.png",
+      "alt": "Glueification"
     },
     {
       "title": "Going Balls",
@@ -525,10 +356,27 @@
       "alt": "Granny 2"
     },
     {
+      "title": "Growden.io",
+      "url": "/games/Growden.io.html",
+      "img": "/images/growden.png"
+    },
+    {
+      "title": "Half-Life 1",
+      "url": "/games/hl.html",
+      "img": "/images/hlicon.png",
+      "alt": "lambda"
+    },
+    {
       "title": "Happy Wheels",
       "url": "/games/Happy%20Wheels.html",
       "img": "/games/happy-wheels-icon.png",
       "alt": "Happy Wheels"
+    },
+    {
+      "title": "Helios Proxy",
+      "url": "/games/helios.html",
+      "img": "/images/noimg.png",
+      "alt": "No Image available"
     },
     {
       "title": "Hypper Sandbox",
@@ -537,10 +385,129 @@
       "alt": "Hypper Sandbox"
     },
     {
+      "title": "Jelly Drift",
+      "url": "/games/Jelly%20Drift.html",
+      "img": "/images/jellyicon.png",
+      "alt": "null"
+    },
+    {
       "title": "Jelly Mario",
       "url": "/games/Jelly%20Mario.html",
       "img": "/images/noimg.png",
       "alt": "Jelly Mario"
+    },
+    {
+      "title": "JS Racer",
+      "url": "/games/racer.html",
+      "img": "/images/noimg.png"
+    },
+    {
+      "title": "Kittytoy",
+      "url": "/games/kittytoy.html",
+      "img": "/images/kittytoyicon.png"
+    },
+    {
+      "title": "Layers Roll",
+      "url": "/games/layers.html",
+      "img": "/images/layersicon.png"
+    },
+    {
+      "title": "Learn to fly",
+      "url": "/games/fly.html",
+      "img": "https://i.ytimg.com/vi/qIBxUAp-Gk8/maxresdefault.jpg",
+      "alt": "Learn to Fly"
+    },
+    {
+      "title": "Learn to Fly 3",
+      "url": "/games/fly3.html",
+      "img": "https://i.ibb.co/GfPzN9Ns/images-5.jpg",
+      "alt": "Learn to Fly 3"
+    },
+    {
+      "title": "Make a Superboat!",
+      "url": "/games/makesuperboat.html",
+      "img": "/images/makesuperboat.png"
+    },
+    {
+      "title": "maz ball",
+      "url": "https://mazball.vercel.app",
+      "img": "https://i.postimg.cc/MTZkD05S/IMG-3016.jpg",
+      "alt": "peak gaming"
+    },
+    {
+      "title": "Maze",
+      "url": "/games/maze.html",
+      "img": "/images/maze-cap.png",
+      "alt": "Maze"
+    },
+    {
+      "title": "Melon Playground",
+      "url": "/games/Melon%20Playground.html",
+      "img": "/images/noimg.png",
+      "alt": "Melon Playground"
+    },
+    {
+      "title": "Milk Inside a Bag of Milk Inside a Bag of Milk",
+      "url": "/games/milk.html",
+      "img": "/images/milk.png"
+    },
+    {
+      "title": "Milk Outside A Bag Of Milk Outside A Bag Of Milk",
+      "url": "/games/milk2.html",
+      "img": "/images/milk2.png"
+    },
+    {
+      "title": "Minecraft",
+      "url": "/games/minecraft.html",
+      "img": "https://i.ibb.co/tT7XZRMW/Grass-Block-JE2.webp",
+      "alt": "Minecraft"
+    },
+    {
+      "title": "Minecraft 1.21",
+      "url": "/games/mc12.html",
+      "img": "/images/12icon.png",
+      "alt": "Dreams come true."
+    },
+    {
+      "title": "Minecraft Indev",
+      "url": "/games/mc-indev.html",
+      "img": "/images/mc-indev.png"
+    },
+    {
+      "title": "Minecraft Platformer",
+      "url": "/games/mcplat.html",
+      "img": "https://i.ibb.co/B2vP8hy0/images-7.jpg",
+      "alt": "Minecraft Platformer"
+    },
+    {
+      "title": "Minecraft Platformer - Online",
+      "url": "/games/mconline.html",
+      "img": "/images/noimg.png",
+      "alt": "No Image Available"
+    },
+    {
+      "title": "Miner Cat",
+      "url": "/games/Miner%20cat%20-%20Game.html",
+      "img": "/images/minercat.png",
+      "alt": "A cooked beef steak"
+    },
+    {
+      "title": "Minesweeper",
+      "url": "/games/winmine.html",
+      "img": "https://i.ibb.co/Kc1J3Nhj/Mr-Smiley-Face-from-Minesweeper-render.webp",
+      "alt": "Minesweeper"
+    },
+    {
+      "title": "Monkey Mart",
+      "url": "/games/monkey-mart/index.html",
+      "img": "/games/monkey-mart/bg_loading.png",
+      "alt": "Monkey"
+    },
+    {
+      "title": "MotoX3M",
+      "url": "/games/moto.html",
+      "img": "/images/motocap.avif",
+      "alt": "motocap.avif"
     },
     {
       "title": "Nijika's Ahoge",
@@ -549,10 +516,130 @@
       "alt": "Nijika's Ahoge"
     },
     {
+      "title": "Office Fight",
+      "url": "/games/of.html",
+      "img": "/images/office.png"
+    },
+    {
       "title": "OMORI",
       "url": "/games/OMORI.html",
       "img": "/games/omori-icon.png",
       "alt": "OMORI"
+    },
+    {
+      "title": "OOF Clicker",
+      "url": "/games/oofclick.html",
+      "img": "/images/noimg.png",
+      "alt": "No Image Available"
+    },
+    {
+      "title": "osu!",
+      "url": "/games/osu!.html",
+      "img": "/images/osu.png"
+    },
+    {
+      "title": "Papa Louie 1",
+      "url": "/games/papalouie1.html",
+      "img": "/papalouie_400x226.jpg",
+      "alt": "Papa Louie 1"
+    },
+    {
+      "title": "Papa Louie 2",
+      "url": "/games/papalouie.html",
+      "img": "/papalouie2_400x226.jpg",
+      "alt": "Papa Louie 2"
+    },
+    {
+      "title": "Papa's Burgeria",
+      "url": "/games/papasbugeria.html",
+      "img": "/papasburgeria_400x226.jpg",
+      "alt": "Papa's Burgeria"
+    },
+    {
+      "title": "Papa's Cheeseria",
+      "url": "/games/papacheese.html",
+      "img": "/cheeseria_300x300.jpg",
+      "alt": "Papa's Cheeseria"
+    },
+    {
+      "title": "Papa's Freezeria",
+      "url": "/games/papaicecream.html",
+      "img": "/papasfreezeria_400x226.jpg",
+      "alt": "Papa's Freezeria"
+    },
+    {
+      "title": "Papa's Hotdoggeria",
+      "url": "/games/papahotdog.html",
+      "img": "/hotdog.jpg",
+      "alt": "Papa's Hotdoggeria"
+    },
+    {
+      "title": "Papa's Sushiria",
+      "url": "/games/sushi.html",
+      "img": "/images/icon_300x300_papassushiria.jpg",
+      "alt": "Papa's Sushiria"
+    },
+    {
+      "title": "Paper.io 2",
+      "url": "/games/Paper.io%202.html",
+      "img": "https://i.ibb.co/VYFygR7L/images-1.jpg",
+      "alt": "Paper.io 2"
+    },
+    {
+      "title": "Paperception",
+      "url": "/games/paperception.html",
+      "img": "/images/paperception-icon.png",
+      "alt": "Paperception"
+    },
+    {
+      "title": "Parappa The Rapper",
+      "url": "/games/Parappa%20The%20Rapper.html",
+      "img": "/games/parappaicon.png",
+      "alt": "Parappa The Rapper"
+    },
+    {
+      "title": "Parappa The Rapper",
+      "url": "/games/Parappa The Rapper",
+      "img": "/images/ptr.png"
+    },
+    {
+      "title": "Peggle",
+      "url": "/games/Peggle.html",
+      "img": "/images/peggle.png",
+      "alt": "peg"
+    },
+    {
+      "title": "People Playground",
+      "url": "/games/ppg.html",
+      "img": "/images/ppgicon.png",
+      "alt": "The People Playground icon"
+    },
+    {
+      "title": "Pepsiman",
+      "url": "/games/pepsiman.html",
+      "img": "/images/pepsiman.jpg"
+    },
+    {
+      "title": "Pick a Lock",
+      "url": "/games/Pick%20a%20Lock.html",
+      "img": "/images/pickalock.png",
+      "alt": "big yellow storage"
+    },
+    {
+      "title": "Ping Pong",
+      "url": "/games/pingpong.html",
+      "img": "https://i.ibb.co/LD4Z3872/pong-1650079489009.jpg",
+      "alt": "Ping Pong"
+    },
+    {
+      "title": "Please Don't Touch Anything",
+      "url": "/games/pleasedonttouch.html",
+      "img": "/images/pleaseicon.png"
+    },
+    {
+      "title": "Postal",
+      "url": "/games/Postal.html",
+      "img": "/images/postal.jpg"
     },
     {
       "title": "Pou",
@@ -561,10 +648,53 @@
       "alt": "Pou"
     },
     {
-      "title": "Sandtris",
-      "url": "/games/Sandtris.html",
-      "img": "/games/sandtris-icon.png",
-      "alt": "Sandtris"
+      "title": "Ragdoll Archers",
+      "url": "/games/ragdollarchers.html",
+      "img": "/images/ragdollarchicon.png"
+    },
+    {
+      "title": "Ragdoll Hit",
+      "url": "/games/ragdollhit.html",
+      "img": "/images/ragdollhit.png"
+    },
+    {
+      "title": "Railroad Runner",
+      "url": "/games/rr.html",
+      "img": "https://i.ibb.co/JW326Y6X/Screenshot-2025-03-13-11-44-18.png",
+      "alt": "Railroad Runner"
+    },
+    {
+      "title": "Road Race 2",
+      "url": "/games/roadrace.html",
+      "img": "https://i.ibb.co/mCRSq3KB/Screenshot-2025-03-13-11-54-16.png",
+      "alt": "Road Race 2"
+    },
+    {
+      "title": "roberto simulator",
+      "url": "https://roberto-simulator.netlify.app/",
+      "img": "roberto.jpeg"
+    },
+    {
+      "title": "Russian Car Driver",
+      "url": "/games/clrussiancardriver.html",
+      "img": "/images/noimg.png"
+    },
+    {
+      "title": "Russian CS:GO",
+      "url": "/games/clcs6.html",
+      "img": "/images/noimg.png"
+    },
+    {
+      "title": "Sand:box",
+      "url": "/games/sand.html",
+      "img": "https://i.ibb.co/xKbrp64L/images.jpg",
+      "alt": "Sand:box"
+    },
+    {
+      "title": "Sandboxels",
+      "url": "/games/Sandboxels.html",
+      "img": "/games/sandboxels-icon.png",
+      "alt": "Sandboxels"
     },
     {
       "title": "Sandspiel",
@@ -573,10 +703,184 @@
       "alt": "Sandspiel"
     },
     {
+      "title": "Sandtris",
+      "url": "/games/Sandtris.html",
+      "img": "/games/sandtris-icon.png",
+      "alt": "Sandtris"
+    },
+    {
+      "title": "Serial Experiments Lain",
+      "url": "/games/SEL.html",
+      "img": "/images/SEL.jpg"
+    },
+    {
+      "title": "Slither.io",
+      "url": "/games/Slither.io.html",
+      "img": "/games/slitherio-icon.png",
+      "alt": "Slither.io"
+    },
+    {
+      "title": "Slope",
+      "url": "/games/slope.html",
+      "img": "/images/slopeicon.jpeg",
+      "alt": "Slope"
+    },
+    {
       "title": "Slope 2",
       "url": "/games/Slope%202.html",
       "img": "/games/slop2-icon.png",
       "alt": "Slope 2"
+    },
+    {
+      "title": "Slowroads",
+      "url": "/games/Slowroads.html",
+      "img": "/games/slowroads-icon.png",
+      "alt": "Slowroads"
+    },
+    {
+      "title": "Snow Rider 3D",
+      "url": "/games/snowrider.html",
+      "img": "/images/snowrider.png"
+    },
+    {
+      "title": "Soundboard",
+      "url": "/games/soundboard.html",
+      "img": "/images/sboard.png"
+    },
+    {
+      "title": "Space Waves",
+      "url": "/games/spacewaves.html",
+      "img": "/images/spacewavesicon.png"
+    },
+    {
+      "title": "Spacebar Clicker",
+      "url": "/games/Spacebar%20Clicker.html",
+      "img": "/images/spacebaricon.png",
+      "alt": "null"
+    },
+    {
+      "title": "Stack",
+      "url": "/games/stack.html",
+      "img": "https://i.ibb.co/YTVCpPqL/unnamed.png",
+      "alt": "Stack"
+    },
+    {
+      "title": "Stickman Hook",
+      "url": "/games/stckmnhk/index.html",
+      "img": "/games/stckmnhk/icon.jpg",
+      "alt": "Stick Man Hook icon"
+    },
+    {
+      "title": "Subway Surfers",
+      "url": "/games/subsurf/subsurfs.html",
+      "img": "/games/subsurf/icon.png",
+      "alt": "Subway Surfers"
+    },
+    {
+      "title": "Suika Game",
+      "url": "/games/suika.html",
+      "img": "/images/suika-icon.png",
+      "alt": "The Hardest Game"
+    },
+    {
+      "title": "SuperTuxKart",
+      "url": "https://supertuxkart.pages.dev/",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3wVhcyQV-z7il2CAUbDkZJKkWTUe9lrR_3A&s",
+      "alt": "SuperTuxKart"
+    },
+    {
+      "title": "Tanuki Sunset",
+      "url": "/games/tanukisunset.html",
+      "img": "/images/tomnook.png"
+    },
+    {
+      "title": "Tap Goal",
+      "url": "/games/taptap.html",
+      "img": "/images/tapcap.png",
+      "alt": "Tap Goal"
+    },
+    {
+      "title": "Target Rush",
+      "url": "/games/target.html",
+      "img": "https://i.ibb.co/4ZcfP4Xs/UA5o3P.png",
+      "alt": "Target Rush"
+    },
+    {
+      "title": "Telekinesis Car",
+      "url": "/games/tcar.html",
+      "img": "/images/telecar.png"
+    },
+    {
+      "title": "Telekinesis Drive",
+      "url": "/games/tdrive.html",
+      "img": "/images/tdrive.png"
+    },
+    {
+      "title": "Terraria",
+      "url": "/games/Terraria.html",
+      "img": "/images/ter.png"
+    },
+    {
+      "title": "Tetris",
+      "url": "/games/Tetris.html",
+      "img": "/images/tetris.jpg",
+      "alt": "Tetris"
+    },
+    {
+      "title": "The Bauble Factory",
+      "url": "/games/bbfactory.html",
+      "img": "/images/bbfactory-cap.png",
+      "alt": "The Bauble Factory"
+    },
+    {
+      "title": "The Hardest Game",
+      "url": "/games/hardestgame.html",
+      "img": "https://i.ibb.co/nNYZ2FST/8-LMW84-image-75.jpg",
+      "alt": "The Hardest Game"
+    },
+    {
+      "title": "The Typing Game",
+      "url": "/games/The%20Typing%20Game.html",
+      "img": "/images/thetypinggame.png",
+      "alt": "cat."
+    },
+    {
+      "title": "There is no game",
+      "url": "/games/there-is-no-game/index.html",
+      "img": "/games/there-is-no-game/images/letter_n-sheet0.png",
+      "alt": "A blue and white letter N."
+    },
+    {
+      "title": "Time Shooter 3",
+      "url": "/games/time3.html",
+      "img": "https://i.ibb.co/PzYcrhGC/images-8.jpg",
+      "alt": "Time Shooter 3"
+    },
+    {
+      "title": "Tomodatchi Collection",
+      "url": "/games/tomodatchi.html",
+      "img": "/images/tomodachi.png"
+    },
+    {
+      "title": "Touhou 1: Highly Responsive To Prayers",
+      "url": "/games/tou1.html",
+      "img": "/images/th1.webp"
+    },
+    {
+      "title": "Touhou: Luminous Strike",
+      "url": "/games/touhoulum.html",
+      "img": "/images/touhoulumicon.png"
+    },
+    {
+      "title": "Truck Space 2",
+      "url": "/games/truckspace2/index.html",
+      "img": "/images/ts2.jpg",
+      "alt": "truck space 2"
+    },
+    {
+      "title": "Tug of War with Cars",
+      "url": "/games/carwar.html",
+      "img": "/images/carwar.png"
     },
     {
       "title": "Tunnel Rush",
@@ -591,305 +895,15 @@
       "alt": "Twisted Rope 3D"
     },
     {
-      "title": "Jelly Drift",
-      "url": "/games/Jelly%20Drift.html",
-      "img": "/images/jellyicon.png",
-      "alt": "null"
-    },
-    {
-      "title": "Spacebar Clicker",
-      "url": "/games/Spacebar%20Clicker.html",
-      "img": "/images/spacebaricon.png",
-      "alt": "null"
-    },
-    {
-      "title": "BitPlanes",
-      "url": "/games/BitPlanes.html",
-      "img": "/images/bitplanesicon.png"
-    },
-    {
-      "title": "FNF: Bopcity",
-      "url": "/games/bopcity.html",
-      "img": "/images/bopcityicon.png"
-    },
-    {
-      "title": "Please Don't Touch Anything",
-      "url": "/games/pleasedonttouch.html",
-      "img": "/images/pleaseicon.png"
-    },
-    {
-      "title": "Telekinesis Drive",
-      "url": "/games/tdrive.html",
-      "img": "/images/tdrive.png"
-    },
-    {
-      "title": "Tomodatchi Collection",
-      "url": "/games/tomodatchi.html",
-      "img": "/images/tomodachi.png"
-    },
-    {
-      "title": "Space Waves",
-      "url": "/games/spacewaves.html",
-      "img": "/images/spacewavesicon.png"
-    },
-    {
-      "title": "Kittytoy",
-      "url": "/games/kittytoy.html",
-      "img": "/images/kittytoyicon.png"
-    },
-    {
-      "title": "Layers Roll",
-      "url": "/games/layers.html",
-      "img": "/images/layersicon.png"
-    },
-    {
-      "title": "Ragdoll Archers",
-      "url": "/games/ragdollarchers.html",
-      "img": "/images/ragdollarchicon.png"
-    },
-    {
-      "title": "Ragdoll Hit",
-      "url": "/games/ragdollhit.html",
-      "img": "/images/ragdollhit.png"
-    },
-    {
-      "title": "Touhou: Luminous Strike",
-      "url": "/games/touhoulum.html",
-      "img": "/images/touhoulumicon.png"
-    },
-    {
-      "title": "Tug of War with Cars",
-      "url": "/games/carwar.html",
-      "img": "/images/carwar.png"
-    },
-    {
-      "title": "Waterworks!",
-      "url": "/games/waterworks.html",
-      "img": "/images/waterworks.png"
-    },
-    {
-      "title": "Tanuki Sunset",
-      "url": "/games/tanukisunset.html",
-      "img": "/images/tomnook.png"
-    },
-    {
-      "title": "Getting Over It",
-      "url": "/games/gettingoverit.html",
-      "img": "/images/gettingoverit.png"
-    },
-    {
-      "title": "Snow Rider 3D",
-      "url": "/games/snowrider.html",
-      "img": "/images/snowrider.png"
-    },
-    {
-      "title": "Milk Inside a Bag of Milk Inside a Bag of Milk",
-      "url": "/games/milk.html",
-      "img": "/images/milk.png"
-    },
-    {
-      "title": "Milk Outside A Bag Of Milk Outside A Bag Of Milk",
-      "url": "/games/milk2.html",
-      "img": "/images/milk2.png"
-    },
-    {
-      "title": "Office Fight",
-      "url": "/games/of.html",
-      "img": "/images/office.png"
-    },
-    {
-      "title": "Ages of Conflict",
-      "url": "/games/aoc.html",
-      "img": "/images/aoc.png"
-    },
-    {
-      "title": "Evolving Bombs 3D",
-      "url": "/games/eb3.html",
-      "img": "/images/eb3.png"
-    },
-    {
-      "title": "Fifa 11",
-      "url": "/games/f11.html",
-      "img": "/images/fifa11.png"
-    },
-    {
-      "title": "osu!",
-      "url": "/games/osu!.html",
-      "img": "/images/osu.png"
-    },
-    {
-      "title": "Postal",
-      "url": "/games/Postal.html",
-      "img": "/images/postal.jpg"
-    },
-    {
-      "title": "Peggle",
-      "url": "/games/Peggle.html",
-      "img": "/images/peggle.png",
-      "alt": "peg"
-    },
-    {
-      "title": "Telekinesis Car",
-      "url": "/games/tcar.html",
-      "img": "/images/telecar.png"
-    },
-    {
-      "title": "Bad Parenting 1",
-      "url": "/games/bp1.html",
-      "img": "/images/bp1.png"
-    },
-    {
-      "title": "Chess Classic",
-      "url": "/games/cc.html",
-      "img": "/images/chess.png"
-    },
-    {
-      "title": "Soundboard",
-      "url": "/games/soundboard.html",
-      "img": "/images/sboard.png"
-    },
-    {
-      "title": "Buckshot Roulette",
-      "url": "/games/br.html",
-      "img": "/games/br.png"
-    },
-    {
-      "title": "JS Racer",
-      "url": "/games/racer.html",
-      "img": "/images/noimg.png"
-    },
-    {
-      "title": "2048 Merge Run",
-      "url": "/games/2048mr.html",
-      "img": "/images/2048mr.png"
-    },
-    {
-      "title": "Minecraft Indev",
-      "url": "/games/mc-indev.html",
-      "img": "/images/mc-indev.png"
-    },
-    {
-      "title": "Build a Plane",
-      "url": "/games/bap.html",
-      "img": "/images/buildplane.png"
-    },
-    {
-      "title": "Basketball Stars",
-      "url": "/games/bstars.html",
-      "img": "/images/bstars.png"
-    },
-    {
-      "title": "Basketball Random",
-      "url": "/games/brandom.html",
-      "img": "/images/brandom.png"
-    },
-    {
-      "title": "Blocky Snakes",
-      "url": "/games/blocksnakes.html",
-      "img": "/images/blocksnakes.png"
-    },
-    {
-      "title": "Coreball",
-      "url": "/games/coreball.html",
-      "img": "/images/coreball.png",
-      "alt": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    },
-    {
-      "title": "DOOM",
-      "url": "/games/doom.html",
-      "img": "/images/doom.png"
-    },
-    {
-      "title": "Five nights at Winston's",
-      "url": "/games/winston.html",
-      "img": "/images/winston.png",
-      "alt": "I may or may not have included a secret, res..."
-    },
-    {
-      "title": "Make a Superboat!",
-      "url": "/games/makesuperboat.html",
-      "img": "/images/makesuperboat.png"
-    },
-    {
-      "title": "maz ball",
-      "url": "https://mazball.vercel.app",
-      "img": "https://i.postimg.cc/MTZkD05S/IMG-3016.jpg",
-      "alt": "peak gaming"
-    },
-    {
-      "title": "Chicken Game 3: industrial revolution",
-      "url": "/games/c3.html",
-      "img": "/images/c3.png"
-    },
-    {
-      "title": "Chicken Game 4: A Space Odyssey",
-      "url": "/games/c4.html",
-      "img": "/images/c4.png"
-    },
-    {
-      "title": "Chicken Game 5: egg armageddon",
-      "url": "/games/c5.html",
-      "img": "/images/c5.png"
-    },
-    {
-      "title": "64 in 1 NES",
-      "url": "/games/64nes.html",
-      "img": "/images/64.gif"
-    },
-    {
-      "title": "Cooking Mama",
-      "url": "/games/cm.html",
-      "img": "/images/cm.png"
-    },
-    {
-      "title": "Growden.io",
-      "url": "/games/Growden.io.html",
-      "img": "/images/growden.png"
-    },
-    {
-      "title": "Terraria",
-      "url": "/games/Terraria.html",
-      "img": "/images/ter.png"
-    },
-    {
-      "title": "roberto simulator",
-      "url": "https://roberto-simulator.netlify.app/",
-      "img": "roberto.jpeg"
-    },
-    {
-      "title": "Block Blast",
-      "url": "/games/Block Blast.html",
-      "img": "/images/blockblast.png"
-    },
-    {
-      "title": "Cuphead",
-      "url": "/games/Cuphead.html",
-      "img": "/images/cuphead.jpg"
-    },
-    {
-      "title": "Famidash",
-      "url": "/games/Famidash.html",
-      "img": "/images/famidash.webp"
-    },
-    {
-      "title": "Parappa The Rapper",
-      "url": "/games/Parappa The Rapper",
-      "img": "/images/ptr.png"
-    },
-    {
       "title": "ULTRAKILL",
       "url": "/games/ULTRAKILL.html",
       "img": "/images/ultrakill.png"
     },
     {
-      "title": "Breaklock",
-      "url": "/games/Breaklock.html",
-      "img": "/images/breaklock.png"
-    },
-    {
-      "title": "Wolfenstein 3D",
-      "url": "/games/wolfen.html",
-      "img": "/images/wolfen.jpg"
+      "title": "Warfare Area 3",
+      "url": "/games/warfarearea3/index.html",
+      "img": "/images/warfarearea3.jpg",
+      "alt": "A picture of a man holding a gun, surrounded by enemies."
     },
     {
       "title": "WarioWare, Inc.: Mega Microgame$",
@@ -897,24 +911,20 @@
       "img": "/images/warioware.jpg"
     },
     {
-      "title": "Pepsiman",
-      "url": "/games/pepsiman.html",
-      "img": "/images/pepsiman.jpg"
+      "title": "Waterworks!",
+      "url": "/games/waterworks.html",
+      "img": "/images/waterworks.png"
     },
     {
-      "title": "Touhou 1: Highly Responsive To Prayers",
-      "url": "/games/tou1.html",
-      "img": "/images/th1.webp"
+      "title": "Wolfenstein 3D",
+      "url": "/games/wolfen.html",
+      "img": "/images/wolfen.jpg"
     },
     {
-      "title": "Russian Car Driver",
-      "url": "/games/clrussiancardriver.html",
-      "img": "/images/noimg.png"
-    },
-    {
-      "title": "Russian CS:GO",
-      "url": "/games/clcs6.html",
-      "img": "/images/noimg.png"
+      "title": "Wordle",
+      "url": "/games/wordle.html",
+      "img": "https://i.ibb.co/SXZymjyS/images.png",
+      "alt": "Wordle"
     }
   ]
 }
