@@ -11,40 +11,37 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const apiPath = path.join(__dirname, '..', 'public', 'api', 'games.json');
 
-async function askQuestion(question) {
-    const readline = await import('readline');
-    const rl = readline.default.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
-
-    return new Promise((resolve) => {
-        rl.question(question, (answer) => {
-            rl.close();
-            resolve(answer);
-        });
-    });
-}
-
 async function main() {
     console.log('\n Add New Game to Space Cat Games\n');
     console.log('\n (C) Space Cat Games - Neuron Technologies, Nijika Softworks. All rights reserved.')
     console.log('Press Ctrl+C at any time to cancel\n');
 
-    const title = await askQuestion('Game title: ');
+    const readline = await import('readline');
+    const rl = readline.default.createInterface({
+        input: process.stdin,
+        terminal: false
+    });
+
+    const ask = (query) => new Promise(resolve => rl.question(query, resolve));
+
+    const title = await ask('Game title: ');
     if (!title.trim()) {
         console.error('Error: Title is required');
+        rl.close();
         process.exit(1);
     }
 
-    const url = await askQuestion('Game URL (e.g., /games/game.html or https://example.com): ');
+    const url = await ask('Game URL (e.g., /games/game.html or https://example.com): ');
     if (!url.trim()) {
         console.error('Error: URL is required');
+        rl.close();
         process.exit(1);
     }
 
-    const img = await askQuestion('Icon URL (e.g., /images/gameicon.png or https://example.com/icon.jpg): ');
-    const alt = await askQuestion('Alt text (description, optional): ');
+    const img = await ask('Icon URL (e.g., /images/gameicon.png or https://example.com/icon.jpg): ');
+    const alt = await ask('Alt text (description, optional): ');
+
+    rl.close();
 
     // Read existing games.json
     let data;
@@ -68,6 +65,7 @@ async function main() {
 
     // Add to games array
     data.games.push(newGame);
+    data.games.sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base', numeric: true }));
     data.count = data.games.length;
     data.generatedAt = new Date().toISOString();
 

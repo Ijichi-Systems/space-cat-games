@@ -314,20 +314,6 @@ export default function Games() {
             />
           </div>
 
-          <div className="controls-row">
-            <div className="sort-options">
-              <label htmlFor="gameSort">Sort by:</label>
-              <select
-                id="gameSort"
-                className="sort-select"
-                value={sortType}
-                onChange={(e) => setSortType(e.target.value)}
-              >
-                <option value="default">Default</option>
-                <option value=" az">Name (A-Z)</option>
-                <option value="za">Name (Z-A)</option>
-              </select>
-            </div>
 
             <button
               id="randomGameBtn"
@@ -342,7 +328,6 @@ export default function Games() {
             Showing <span id="visibleCount">{filteredGames.length}</span> of{" "}
             <span id="totalCount">{games.length}</span> games
           </div>
-        </div>
 
         {/* Recently Played Section - Moved below controls */}
         {recentGames.length > 0 && (
