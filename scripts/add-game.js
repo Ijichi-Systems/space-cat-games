@@ -12,18 +12,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const apiPath = path.join(__dirname, '..', 'public', 'api', 'games.json');
 
 async function askQuestion(question) {
-    const readline = await import('readline');
+    const readline = await import('readline/promises');
     const rl = readline.default.createInterface({
         input: process.stdin,
         output: process.stdout
     });
 
-    return new Promise((resolve) => {
-        rl.question(question, (answer) => {
-            rl.close();
-            resolve(answer);
-        });
-    });
+    const answer = await rl.question(question);
+    rl.close();
+    return answer;
 }
 
 async function main() {
@@ -68,6 +65,7 @@ async function main() {
 
     // Add to games array
     data.games.push(newGame);
+    data.games.sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base', numeric: true }));
     data.count = data.games.length;
     data.generatedAt = new Date().toISOString();
 
