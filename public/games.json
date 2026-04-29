@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-08T13:44:40.350Z",
-  "count": 164,
+  "generatedAt": "2026-04-29T09:02:22.214Z",
+  "count": 165,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -550,6 +550,11 @@
       "alt": "Papa Louie 2"
     },
     {
+      "title": "Papa's Bakeria",
+      "url": "/games/Papa's Bakeria.html",
+      "img": "/images/papabk.png"
+    },
+    {
       "title": "Papa's Burgeria",
       "url": "/games/papasbugeria.html",
       "img": "/papasburgeria_400x226.jpg",
@@ -562,10 +567,9 @@
       "alt": "Papa's Cheeseria"
     },
     {
-      "title": "Papa's Freezeria",
-      "url": "/games/papaicecream.html",
-      "img": "/papasfreezeria_400x226.jpg",
-      "alt": "Papa's Freezeria"
+      "title": "Papa's Cupcakeria.html",
+      "url": "/games/Papa's Cupcakeria.html",
+      "img": "/images/pcupcake.png"
     },
     {
       "title": "Papa's Hotdoggeria",
