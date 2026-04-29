@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/vercel.json">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/vercel.json" />
+              <option name="originalContent" value="{&#10;  &quot;buildCommand&quot;: &quot;npm run build&quot;,&#10;  &quot;outputDirectory&quot;: &quot;dist&quot;,&#10;  &quot;rewrites&quot;: [&#10;    {&#10;      &quot;source&quot;: &quot;/api/:path*&quot;,&#10;      &quot;destination&quot;: &quot;/api/:path*&quot;&#10;    },&#10;    {&#10;      &quot;source&quot;: &quot;/:path((?!.*\\.).*)*&quot;,&#10;      &quot;destination&quot;: &quot;/index.html&quot;&#10;    }&#10;  ],&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;source&quot;: &quot;/api/:path*&quot;,&#10;      &quot;headers&quot;: [&#10;        {&#10;          &quot;key&quot;: &quot;Cache-Control&quot;,&#10;          &quot;value&quot;: &quot;public, max-age=300&quot;&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;source&quot;: &quot;/public/games.json&quot;,&#10;      &quot;headers&quot;: [&#10;        {&#10;          &quot;key&quot;: &quot;Cache-Control&quot;,&#10;          &quot;value&quot;: &quot;public, max-age=300&quot;&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;source&quot;: &quot;/(.*)&quot;,&#10;      &quot;headers&quot;: [&#10;        {&#10;          &quot;key&quot;: &quot;Cache-Control&quot;,&#10;          &quot;value&quot;: &quot;public, max-age=3600&quot;&#10;        }&#10;      ]&#10;    }&#10;  ]&#10;}&#10;&#10;&#10;&#10;" />
+              <option name="updatedContent" value="{&#10;  &quot;buildCommand&quot;: &quot;npm run build&quot;,&#10;  &quot;outputDirectory&quot;: &quot;dist&quot;,&#10;  &quot;rewrites&quot;: [&#10;    {&#10;      &quot;source&quot;: &quot;/api/:path*&quot;,&#10;      &quot;destination&quot;: &quot;/api/:path*&quot;&#10;    },&#10;    {&#10;      &quot;source&quot;: &quot;/(.*)&quot;,&#10;      &quot;destination&quot;: &quot;/index.html&quot;&#10;    }&#10;  ],&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;source&quot;: &quot;/api/:path*&quot;,&#10;      &quot;headers&quot;: [&#10;        {&#10;          &quot;key&quot;: &quot;Cache-Control&quot;,&#10;          &quot;value&quot;: &quot;public, max-age=300&quot;&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;source&quot;: &quot;/games.json&quot;,&#10;      &quot;headers&quot;: [&#10;        {&#10;          &quot;key&quot;: &quot;Cache-Control&quot;,&#10;          &quot;value&quot;: &quot;public, max-age=300&quot;&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;source&quot;: &quot;/(js|css)/:path*&quot;,&#10;      &quot;headers&quot;: [&#10;        {&#10;          &quot;key&quot;: &quot;Cache-Control&quot;,&#10;          &quot;value&quot;: &quot;public, max-age=31536000, immutable&quot;&#10;        }&#10;      ]&#10;    }&#10;  ]&#10;}&#10;&#10;&#10;&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
