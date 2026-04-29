@@ -60,11 +60,6 @@ export default function Games() {
       filtered = games.filter((game) =>
         game.title.toLowerCase().includes(searchTerm.toLowerCase())
       );
-      posthog.capture('game searched', {
-        search_term: searchTerm,
-        results_count: filtered.length,
-      });
-      flushAnalytics();
     }
 
     // Sort
@@ -76,6 +71,23 @@ export default function Games() {
 
     setFilteredGames(filtered);
   }, [searchTerm, sortType, games]);
+
+  useEffect(() => {
+    const trimmedSearchTerm = searchTerm.trim();
+
+    if (!trimmedSearchTerm) {
+      return;
+    }
+
+    const timeoutId = setTimeout(() => {
+      posthog.capture('game searched', {
+        search_term: trimmedSearchTerm,
+        results_count: filteredGames.length,
+      });
+    }, 500);
+
+    return () => clearTimeout(timeoutId);
+  }, [searchTerm, filteredGames.length]);
 
   // FPS Counter
   useEffect(() => {
