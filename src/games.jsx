@@ -545,21 +545,27 @@ export default function Games() {
             background: "#fff",
             border: "1px solid #ccc",
             borderRadius: "8px 0 0 8px",
-            padding: "10px 5px 10px 10px",
+            padding: "12px 8px",
             boxShadow: "0 2px 8px rgba(0, 0, 0, 0.2)",
-            minWidth: 180,
-            minHeight: 70,
+            minWidth: 200,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
             overflowX: "auto",
+            overflowY: "hidden",
           }}
         >
           <img
             src="https://count.getloli.com/@:spacecatgames?name=%3Aspacecatgames&theme=original-new&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=0&prefix=0"
             alt="Visitor counter"
-            style={{ maxWidth: "100%", height: "auto" }}
+            style={{
+              width: "100%",
+              maxWidth: "180px",
+              height: "auto",
+              display: "block",
+              imageRendering: "pixelated",
+            }}
           />
         </div>
       </div>

@@ -1,5 +1,11 @@
 [
   {
+    "hash": "4e52ad2",
+    "author": "Ben",
+    "date": "2026-04-28",
+    "message": "refactor: update dependencies and prune game library list in games.json"
+  },
+  {
     "hash": "5f1d9de",
     "author": "Ben",
     "date": "2026-04-28",
@@ -292,11 +298,5 @@
     "author": "Ben",
     "date": "2026-03-25",
     "message": "lock update"
-  },
-  {
-    "hash": "d0a366b",
-    "author": "Ben",
-    "date": "2026-03-25",
-    "message": "Merge remote-tracking branch 'origin/main'"
   }
 ]

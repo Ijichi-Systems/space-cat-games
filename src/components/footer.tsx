@@ -86,32 +86,6 @@ export default function Footer() {
         </div>
 
         {/* Images */}
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "16px", margin: "40px 0" }}>
-          <a href="https://github.com/Starry-Systems/">
-            <img
-              src="https://avatars.githubusercontent.com/u/241321890?s=200&v=4"
-              height="150"
-              alt="GitHub"
-            />
-          </a>
-          <a href="https://nijikasoftworks.meowcat.site/">
-            <img
-              src="images/ns_yellow.png"
-              height="150"
-              width="500"
-              alt="Nijika Softworks"
-            />
-          </a>
-        </div>
-
-        {/* Built with badges */}
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "16px", margin: "24px 0", opacity: 0.6 }}>
-          <img src="images/react.png" height="30" alt="React" />
-          <img src="images/vite.svg" height="25" alt="Vite" />
-          <a href="https://www.wolfram.com/language/">
-            <img src="images/wl.png" height="30" alt="Wolfram Language" />
-          </a>
-        </div>
         <div style={{ marginTop: "20px", color: "#666", fontSize: "0.8rem" }}>
           <div>Built on: {new Date(__BUILD_INFO__.date).toLocaleString()}</div>
           <div>

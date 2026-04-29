@@ -1,7 +1,7 @@
 {
   "name": "space-cat-games",
   "private": true,
-  "version": "18.3.30",
+  "version": "18.3.31",
   "type": "module",
   "scripts": {
     "predev": "node scripts/update-changelog.js && node scripts/generate-games-json.js && node scripts/generate-posts-json.js",
@@ -29,9 +29,12 @@
     "react-router-dom": "^6.30.3",
     "remark-gfm": "^4.0.1"
   },
+  "overrides": {
+    "@babel/parser": "7.27.7",
+    "@babel/core": "7.27.7"
+  },
   "devDependencies": {
-    "@babel/core": "^7.27.7",
-    "@babel/parser": "^7.27.7",
+    "@babel/core": "7.27.7",
     "@eslint/js": "^9.39.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
