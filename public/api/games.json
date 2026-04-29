@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-29T09:30:36.198Z",
-  "count": 169,
+  "generatedAt": "2026-04-29T09:49:55.168Z",
+  "count": 170,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -736,6 +736,11 @@
       "title": "Serial Experiments Lain",
       "url": "/games/SEL.html",
       "img": "/images/SEL.jpg"
+    },
+    {
+      "title": "Silent Hill",
+      "url": "/games/Silent Hill.html",
+      "img": "/games/silenthill.png"
     },
     {
       "title": "Slither.io",
