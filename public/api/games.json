@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T13:44:40.350Z",
+  "generatedAt": "2026-04-29T09:00:09.503Z",
   "count": 164,
   "games": [
     {
@@ -548,6 +548,11 @@
       "url": "/games/papalouie.html",
       "img": "/papalouie2_400x226.jpg",
       "alt": "Papa Louie 2"
+    },
+    {
+      "title": "Papa's Bakeria",
+      "url": "/games/Papa's Bakeria.html",
+      "img": "/images/papabk.png"
     },
     {
       "title": "Papa's Burgeria",
