@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-29T09:49:55.168Z",
-  "count": 170,
+  "generatedAt": "2026-04-29T09:55:29.054Z",
+  "count": 171,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -393,6 +393,11 @@
       "url": "/games/Hypper%20Sandbox.html",
       "img": "/games/hypper-sandbox-icon.png",
       "alt": "Hypper Sandbox"
+    },
+    {
+      "title": "I Have No Mouth, and I Must Scream",
+      "url": "/games/I Have No Mouth, and I Must Scream.html",
+      "img": "/images/762.png"
     },
     {
       "title": "Jelly Drift",
