@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-29T09:07:09.397Z",
-  "count": 166,
+  "generatedAt": "2026-04-29T09:08:19.923Z",
+  "count": 167,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -575,6 +575,11 @@
       "title": "Papa's Donuteria",
       "url": "/games/Papa's Donuteria",
       "img": "/images/pdoughnut.png"
+    },
+    {
+      "title": "Papa's Freezeria",
+      "url": "/games/Papa's Freezeria.html",
+      "img": "pfreeze.png"
     },
     {
       "title": "Papa's Hotdoggeria",
