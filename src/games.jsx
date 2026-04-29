@@ -6,7 +6,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import { trackGamePlay } from "./utils/analytics";
+import { trackGamePlay, flushAnalytics } from "./utils/analytics";
 import { usePlayHistory } from "./hooks/usePlayHistory";
 import posthog from "./utils/posthog";
 
@@ -52,8 +52,8 @@ export default function Games() {
     }
   }, []);
 
-  // Search and Filter functionality
-  useEffect(() => {
+   // Search and Filter functionality
+   useEffect(() => {
     let filtered = games;
 
     if (searchTerm) {
@@ -64,6 +64,7 @@ export default function Games() {
         search_term: searchTerm,
         results_count: filtered.length,
       });
+      flushAnalytics();
     }
 
     // Sort
@@ -114,6 +115,7 @@ export default function Games() {
     posthog.capture('random game selected', {
       total_games_shown: filteredGames.length,
     });
+    flushAnalytics();
 
     const randomIndex = Math.floor(Math.random() * filteredGames.length);
     const randomGame = filteredGames[randomIndex];
@@ -140,6 +142,7 @@ export default function Games() {
 
   const handleCloseSurvey = () => {
     posthog.capture('survey dismissed');
+    flushAnalytics();
     setShowSurveyPopup(false);
     localStorage.setItem("scg_survey_seen", "true");
   };
@@ -155,6 +158,7 @@ export default function Games() {
         new Promise((resolve) => setTimeout(resolve, 300)), // Max wait 300ms
       ]);
       console.log("[Debug] trackGamePlay finished or timed out");
+      flushAnalytics(); // Ensure events are sent
     } catch (e) {
       console.warn("[Analytics] Tracking timed out or failed", e);
     }

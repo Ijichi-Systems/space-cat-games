@@ -1,5 +1,29 @@
 [
   {
+    "hash": "ebe499f",
+    "author": "Ben",
+    "date": "2026-04-29",
+    "message": "update SECURITY.md"
+  },
+  {
+    "hash": "775dca7",
+    "author": "Ben",
+    "date": "2026-04-29",
+    "message": "Merge remote-tracking branch 'origin/main'"
+  },
+  {
+    "hash": "1fd2159",
+    "author": "Ben",
+    "date": "2026-04-29",
+    "message": "no idea why the uptime counter did that"
+  },
+  {
+    "hash": "2f84da7",
+    "author": "Lakshin Hemachandran",
+    "date": "2026-04-28",
+    "message": "Create SECURITY.md for security policy and reporting"
+  },
+  {
     "hash": "4e52ad2",
     "author": "Ben",
     "date": "2026-04-28",
@@ -274,29 +298,5 @@
     "author": "dependabot[bot]",
     "date": "2026-03-26",
     "message": "Bump picomatch in the npm_and_yarn group across 1 directory"
-  },
-  {
-    "hash": "eead459",
-    "author": "Ben",
-    "date": "2026-03-25",
-    "message": "blog system"
-  },
-  {
-    "hash": "5c94769",
-    "author": "Ben",
-    "date": "2026-03-25",
-    "message": "restrict login functions to main"
-  },
-  {
-    "hash": "02578d8",
-    "author": "Ben",
-    "date": "2026-03-25",
-    "message": "wrangler shoudln't kill itself now"
-  },
-  {
-    "hash": "44ff9b1",
-    "author": "Ben",
-    "date": "2026-03-25",
-    "message": "lock update"
   }
 ]

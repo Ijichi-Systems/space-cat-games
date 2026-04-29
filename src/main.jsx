@@ -12,6 +12,7 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
+import posthog from "./utils/posthog";
 import Navbar from "./components/navbar.tsx";
 import Home from "./index.jsx";
 import Games from "./games.jsx";
@@ -39,6 +40,11 @@ function RouteChangeHandler() {
     const timer = setTimeout(() => {
       refreshEplnxAds();
     }, 100);
+
+    // Track page view
+    posthog.capture('$pageview', {
+      $current_url: window.location.href,
+    });
 
     return () => clearTimeout(timer);
   }, [location.pathname, refreshEplnxAds]);
