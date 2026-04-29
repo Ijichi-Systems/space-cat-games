@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-29T09:08:19.923Z",
-  "count": 167,
+  "generatedAt": "2026-04-29T09:26:24.430Z",
+  "count": 168,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -163,6 +163,11 @@
       "url": "/games/crashbo.html",
       "img": "/images/noimg.png",
       "alt": "No Img"
+    },
+    {
+      "title": "Cheese Rolling",
+      "url": "/games/Cheese Rolling.html",
+      "img": "/images/cheeserolling.png"
     },
     {
       "title": "Chess Classic",
