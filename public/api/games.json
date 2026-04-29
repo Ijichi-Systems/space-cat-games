@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-29T09:26:24.430Z",
-  "count": 168,
+  "generatedAt": "2026-04-29T09:30:36.198Z",
+  "count": 169,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -13,6 +13,11 @@
       "url": "/games/3D%20Plane%20Game%20v2.3.html",
       "img": "/images/3dplane.gif",
       "alt": "plane"
+    },
+    {
+      "title": "10 Minutes Till Dawn",
+      "url": "/games/10 Minutes Till Dawn",
+      "img": "/images/10mintilldawn.png"
     },
     {
       "title": "64 in 1 NES",
