@@ -19,7 +19,8 @@ async function main() {
     const readline = await import('readline');
     const rl = readline.default.createInterface({
         input: process.stdin,
-        terminal: false
+        output: process.stdout,
+        terminal: true
     });
 
     const ask = (query) => new Promise(resolve => rl.question(query, resolve));
