@@ -25,6 +25,9 @@ export default function Home() {
      "Cirno is behind you by the way.",
      "did you know that for some reason this is react now?",
      "Now the train's gone and left.",
+      "Should have used PHP!",
+      "PhpStorm intellisense is trash",
+      "Built with React!"
 
 
 
