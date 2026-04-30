@@ -76,9 +76,13 @@ export const trackGamePlay = async (game) => {
  * Flush PostHog events to ensure they're sent
  */
 export const flushAnalytics = () => {
-    if (posthog) {
-        posthog.flush();
-        console.log('[Analytics] PostHog events flushed');
+    try {
+        if (posthog && typeof posthog.flush === 'function') {
+            posthog.flush();
+            console.log('[Analytics] PostHog events flushed');
+        }
+    } catch (e) {
+        console.warn('[Analytics] Failed to flush events', e);
     }
 };
 

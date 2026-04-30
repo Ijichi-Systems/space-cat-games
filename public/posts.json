@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-04-29T09:04:02.499Z",
+  "generatedAt": "2026-04-30T15:36:32.283Z",
   "posts": [
+    {
+      "slug": "toolingupd1",
+      "title": "Tooling Update - Add Game 1.2.4",
+      "date": "2026-04-29",
+      "author": "meowcat767",
+      "version": "18.3.38",
+      "file": "/content/blog/toolingupd1.md"
+    },
     {
       "slug": "700days",
       "title": "700 day anniversary!",

@@ -52,8 +52,8 @@ export default function Games() {
     }
   }, []);
 
-   // Search and Filter functionality
-   useEffect(() => {
+  // Search and Filter functionality
+  useEffect(() => {
     let filtered = games;
 
     if (searchTerm) {
@@ -153,8 +153,12 @@ export default function Games() {
   };
 
   const handleCloseSurvey = () => {
-    posthog.capture('survey dismissed');
-    flushAnalytics();
+    try {
+      posthog?.capture?.('survey dismissed');
+      flushAnalytics();
+    } catch (e) {
+      console.warn('[Analytics] Failed to track survey close:', e);
+    }
     setShowSurveyPopup(false);
     localStorage.setItem("scg_survey_seen", "true");
   };
@@ -340,19 +344,19 @@ export default function Games() {
           </div>
 
 
-            <button
-              id="randomGameBtn"
-              className="btn random-btn"
-              onClick={handleRandomGame}
-            >
-              <span className="icon">🎲</span> Random Game
-            </button>
-          </div>
+          <button
+            id="randomGameBtn"
+            className="btn random-btn"
+            onClick={handleRandomGame}
+          >
+            <span className="icon">🎲</span> Random Game
+          </button>
+        </div>
 
-          <div className="game-count">
-            Showing <span id="visibleCount">{filteredGames.length}</span> of{" "}
-            <span id="totalCount">{games.length}</span> games
-          </div>
+        <div className="game-count">
+          Showing <span id="visibleCount">{filteredGames.length}</span> of{" "}
+          <span id="totalCount">{games.length}</span> games
+        </div>
 
         {/* Recently Played Section - Moved below controls */}
         {recentGames.length > 0 && (

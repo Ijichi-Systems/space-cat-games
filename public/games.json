@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-29T09:02:22.214Z",
-  "count": 165,
+  "generatedAt": "2026-04-29T09:55:29.054Z",
+  "count": 171,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -13,6 +13,11 @@
       "url": "/games/3D%20Plane%20Game%20v2.3.html",
       "img": "/images/3dplane.gif",
       "alt": "plane"
+    },
+    {
+      "title": "10 Minutes Till Dawn",
+      "url": "/games/10 Minutes Till Dawn",
+      "img": "/images/10mintilldawn.png"
     },
     {
       "title": "64 in 1 NES",
@@ -163,6 +168,11 @@
       "url": "/games/crashbo.html",
       "img": "/images/noimg.png",
       "alt": "No Img"
+    },
+    {
+      "title": "Cheese Rolling",
+      "url": "/games/Cheese Rolling.html",
+      "img": "/images/cheeserolling.png"
     },
     {
       "title": "Chess Classic",
@@ -385,6 +395,11 @@
       "alt": "Hypper Sandbox"
     },
     {
+      "title": "I Have No Mouth, and I Must Scream",
+      "url": "/games/I Have No Mouth, and I Must Scream.html",
+      "img": "/images/779.webp"
+    },
+    {
       "title": "Jelly Drift",
       "url": "/games/Jelly%20Drift.html",
       "img": "/images/jellyicon.png",
@@ -567,9 +582,19 @@
       "alt": "Papa's Cheeseria"
     },
     {
-      "title": "Papa's Cupcakeria.html",
+      "title": "Papa's Cupcakeria",
       "url": "/games/Papa's Cupcakeria.html",
       "img": "/images/pcupcake.png"
+    },
+    {
+      "title": "Papa's Donuteria",
+      "url": "/games/Papa's Donuteria",
+      "img": "/images/pdoughnut.png"
+    },
+    {
+      "title": "Papa's Freezeria",
+      "url": "/games/Papa's Freezeria.html",
+      "img": "pfreeze.png"
     },
     {
       "title": "Papa's Hotdoggeria",
@@ -716,6 +741,11 @@
       "title": "Serial Experiments Lain",
       "url": "/games/SEL.html",
       "img": "/images/SEL.jpg"
+    },
+    {
+      "title": "Silent Hill",
+      "url": "/games/Silent Hill.html",
+      "img": "/games/silenthill.png"
     },
     {
       "title": "Slither.io",
