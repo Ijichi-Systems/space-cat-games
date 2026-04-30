@@ -13,6 +13,8 @@ if (key && host) {
         person_profiles: 'identified_only',
         capture_pageview: true,
         capture_pageleave: true,
+        cross_subdomain_cookie: false,
+        persistence: 'localStorage+cookie',
         loaded: () => {
             console.log('[PostHog] Initialized successfully');
         }
