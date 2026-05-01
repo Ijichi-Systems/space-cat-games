@@ -179,6 +179,9 @@ export default function Games() {
       console.warn("[Analytics] Tracking timed out or failed", e);
     }
 
+    // Explicit small delay to ensure PostHog flush request isn't aborted by the browser
+    await new Promise((resolve) => setTimeout(resolve, 250));
+
     // Record play in history
     recordPlay(game);
 
