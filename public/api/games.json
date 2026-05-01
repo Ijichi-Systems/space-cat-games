@@ -1,12 +1,18 @@
 {
-  "generatedAt": "2026-04-29T09:55:29.054Z",
-  "count": 171,
+  "generatedAt": "2026-05-01T15:06:22.472Z",
+  "count": 172,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
       "url": "/games/fruits.html",
       "img": "/images/fruitscap.png",
       "alt": "Papa's Sushiria"
+    },
+    {
+      "title": "3D Bowling",
+      "url": "/games/3D Bowling.html",
+      "img": "/images/320.png",
+      "alt": "fun bowling! now in 3D!"
     },
     {
       "title": "3D Plane Game",
