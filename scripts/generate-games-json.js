@@ -31,10 +31,12 @@ let games = [];
 
 // Check if games.json already exists, if so use it (useful for CI/CD without HTML)
 const existingJsonPath = apiOutputPath;
+let existingGames = [];
 if (fs.existsSync(existingJsonPath)) {
     try {
         const existingData = JSON.parse(fs.readFileSync(existingJsonPath, 'utf8'));
         if (existingData.games && existingData.games.length > 0) {
+            existingGames = existingData.games;
             console.log(`Using existing ${apiOutputPath} with ${existingData.games.length} games`);
             fs.writeFileSync(outputPath, JSON.stringify(existingData, null, 2), 'utf8');
             console.log(`Wrote ${existingData.games.length} games to ${outputPath}`);
@@ -96,7 +98,14 @@ games = items.map(item => {
     }
   }
 
-  return { title, url, img: imgSrc, alt };
+  // Preserve addedDate from existing games if in database, else use current date
+  let addedDate = new Date().toISOString();
+  const existingGame = existingGames.find(g => g.url === url);
+  if (existingGame && existingGame.addedDate) {
+    addedDate = existingGame.addedDate;
+  }
+
+  return { title, url, img: imgSrc, alt, addedDate };
 });
 
 // Filter out entries without a url and without title
