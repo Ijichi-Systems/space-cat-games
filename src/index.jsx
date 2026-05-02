@@ -14,6 +14,12 @@ export default function Home() {
   const [tip, setTip] = useState("");
   const [header, setHeader] = useState("");
   const [gameOfTheDay, setGameOfTheDay] = useState(null);
+  const recentlyAdded = [...games].filter((g) => {
+    const addedDate = new Date(g.addedAt);
+    const now = new Date();
+    const diffDays = (now - addedDate) / (1000 * 60 * 60 * 24);
+    return diffDays <= 30; // Added within the last 30 days
+  });
 
   const tips = [
     "Aishite Aishite Aishite!",
