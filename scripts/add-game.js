@@ -92,7 +92,8 @@ async function main() {
     const newGame = {
         title: title.trim(),
         url: url.trim(),
-        img: img.trim() || '/images/noimg.png'
+        img: img.trim() || '/images/noimg.png',
+        addedAt: new Date().toISOString()
     };
 
     if (alt.trim()) {
