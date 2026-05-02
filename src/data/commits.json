@@ -1,5 +1,11 @@
 [
   {
+    "hash": "592a732",
+    "author": "Ben",
+    "date": "2026-05-02",
+    "message": "add a feature-flagged recently added section"
+  },
+  {
     "hash": "b24b026",
     "author": "Ben",
     "date": "2026-05-02",
@@ -292,11 +298,5 @@
     "author": "Ben",
     "date": "2026-04-25",
     "message": "Add @netlify/blobs dependency"
-  },
-  {
-    "hash": "9c2c890",
-    "author": "Ben",
-    "date": "2026-04-25",
-    "message": "yeah commas are important in JSON"
   }
 ]
