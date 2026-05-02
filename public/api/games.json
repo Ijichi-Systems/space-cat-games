@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-01T15:06:22.472Z",
-  "count": 172,
+  "generatedAt": "2026-05-02T21:17:52.559Z",
+  "count": 173,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -476,6 +476,12 @@
       "url": "/games/I Have No Mouth, and I Must Scream.html",
       "img": "/images/779.webp",
       "addedDate": "2026-04-29T09:55:44.000Z"
+    },
+    {
+      "title": "Jeffrey Epstein Basics In Education And Kidnapping",
+      "url": "/games/jebb.html",
+      "img": "/images/751.png",
+      "addedAt": "2026-05-02T21:17:52.538Z"
     },
     {
       "title": "Jelly Drift",
