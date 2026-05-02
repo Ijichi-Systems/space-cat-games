@@ -4,17 +4,18 @@
 
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
-import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import { trackGamePlay } from "./utils/analytics";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import RecentlyAdded from "./components/RecentlyAdded";
 
 export default function Home() {
   const [buildId, setBuildId] = useState("");
   const [tip, setTip] = useState("");
   const [header, setHeader] = useState("");
   const [gameOfTheDay, setGameOfTheDay] = useState(null);
-  const recentlyAdded = [...games].filter((g) => {
+  const [games, setGames] = useState([]);
+  const recentlyAdded = games.filter((g) => {
     const addedDate = new Date(g.addedAt);
     const now = new Date();
     const diffDays = (now - addedDate) / (1000 * 60 * 60 * 24);
@@ -53,11 +54,13 @@ export default function Home() {
     pickTip();
     const interval = setInterval(pickTip, 5000);
 
-    // Fetch Game of the Day
-    fetch("/games.json")
+    // Fetch games data
+    fetch("/api/games.json")
       .then((r) => r.json())
       .then((data) => {
         if (data.games && data.games.length > 0) {
+          setGames(data.games);
+
           // Get current date string in GMT (YYYY-MM-DD)
           const dateStr = new Date().toISOString().split("T")[0];
 
@@ -128,6 +131,10 @@ export default function Home() {
           </a>
         </div>
       </div>
+
+        <div className={"container"}>
+        <RecentlyAdded games={recentlyAdded} />
+        </div>
 
       <div className="container">
         {gameOfTheDay && (

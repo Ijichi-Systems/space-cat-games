@@ -1,5 +1,41 @@
 [
   {
+    "hash": "b24b026",
+    "author": "Ben",
+    "date": "2026-05-02",
+    "message": "working on feature-flagged recent game section."
+  },
+  {
+    "hash": "205ddce",
+    "author": "Ben",
+    "date": "2026-05-02",
+    "message": "add the date to JSON"
+  },
+  {
+    "hash": "1b6e527",
+    "author": "Ben",
+    "date": "2026-05-01",
+    "message": "fix posthog env"
+  },
+  {
+    "hash": "91196f0",
+    "author": "Ben",
+    "date": "2026-05-01",
+    "message": "add 3D bowling"
+  },
+  {
+    "hash": "8dc630d",
+    "author": "Ben",
+    "date": "2026-05-01",
+    "message": "add a tiny delay for Posthog"
+  },
+  {
+    "hash": "054125d",
+    "author": "Ben",
+    "date": "2026-04-30",
+    "message": "more posthog stuff"
+  },
+  {
     "hash": "30f523e",
     "author": "Ben",
     "date": "2026-04-30",
@@ -262,41 +298,5 @@
     "author": "Ben",
     "date": "2026-04-25",
     "message": "yeah commas are important in JSON"
-  },
-  {
-    "hash": "ebdc1b5",
-    "author": "Anirudh",
-    "date": "2026-04-25",
-    "message": "Add GN MATH game to the games JSON"
-  },
-  {
-    "hash": "86e1659",
-    "author": "Anirudh",
-    "date": "2026-04-25",
-    "message": "gn"
-  },
-  {
-    "hash": "7865fae",
-    "author": "dependabot[bot]",
-    "date": "2026-04-25",
-    "message": "Bump postcss in the npm_and_yarn group across 1 directory"
-  },
-  {
-    "hash": "a33b492",
-    "author": "meowcat767",
-    "date": "2026-04-25",
-    "message": "Merge pull request #38 from neurontechofficial/dependabot/npm_and_yarn/npm_and_yarn-c4bc6a0a9e"
-  },
-  {
-    "hash": "d5ab9b2",
-    "author": "Ben House",
-    "date": "2026-04-21",
-    "message": "better warn them"
-  },
-  {
-    "hash": "ba7e992",
-    "author": "Ben House",
-    "date": "2026-04-21",
-    "message": "append button"
   }
 ]
