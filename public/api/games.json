@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-02T21:17:52.559Z",
-  "count": 173,
+  "generatedAt": "2026-05-03T09:23:30.866Z",
+  "count": 174,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -310,6 +310,12 @@
       "url": "/games/Cuphead.html",
       "img": "/images/cuphead.jpg",
       "addedDate": "2026-04-28T16:25:06.000Z"
+    },
+    {
+      "title": "Death Run 3D",
+      "url": "/games/Death Run 3D.html",
+      "img": "/images/211.png",
+      "addedAt": "2026-05-03T09:23:30.787Z"
     },
     {
       "title": "DON'T YOU LECTURE ME",
