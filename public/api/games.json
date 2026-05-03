@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-03T09:23:30.866Z",
-  "count": 174,
+  "generatedAt": "2026-05-03T10:20:43.026Z",
+  "count": 175,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -727,6 +727,12 @@
       "img": "/hotdog.jpg",
       "alt": "Papa's Hotdoggeria",
       "addedDate": "2026-04-28T16:25:06.000Z"
+    },
+    {
+      "title": "Papa's Pancakeria",
+      "url": "/games/Papa's Pancakeria.html",
+      "img": "/images/225.png",
+      "addedAt": "2026-05-03T10:20:42.984Z"
     },
     {
       "title": "Papa's Sushiria",
