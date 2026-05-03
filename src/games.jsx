@@ -482,6 +482,8 @@ export default function Games() {
                         overflow: hidden;
                         text-overflow: ellipsis;
                         margin-top: 8px;
+                        width: 100%;
+                        text-align: center;
                     }
                     `}
       </style>
