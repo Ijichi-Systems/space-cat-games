@@ -22,3 +22,4 @@
 
 * [Overview](scripts-and-tools/overview.md)
 * [Version Bumper](scripts-and-tools/version-bumper.md)
+* [Add Game Tool](scripts-and-tools/add-game-tool.md)
