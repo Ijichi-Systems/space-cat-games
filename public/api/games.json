@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-03T21:24:47.502Z",
-  "count": 177,
+  "generatedAt": "2026-05-03T21:27:34.190Z",
+  "count": 178,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -745,6 +745,13 @@
       "url": "/games/Papa's Pancakeria.html",
       "img": "/images/225.png",
       "addedAt": "2026-05-03T10:20:42.984Z"
+    },
+    {
+      "title": "Papa's Pizeria.html",
+      "url": "/games/Papa's Pizeria.html",
+      "img": "/images/230.png",
+      "addedAt": "2026-05-03T21:27:34.117Z",
+      "alt": "How is it even pronounced?"
     },
     {
       "title": "Papa's Sushiria",
