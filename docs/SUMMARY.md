@@ -10,6 +10,7 @@
 ## Deploying Space Cat Games
 
 * [How to deploy](deploying-space-cat-games/how-to-deploy.md)
+* [Using the Single File](deploying-space-cat-games/using-the-single-file.md)
 
 ## Modifying Space Cat Games <a href="#mod" id="mod"></a>
 
