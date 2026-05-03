@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-01T15:06:22.472Z",
-  "count": 172,
+  "generatedAt": "2026-05-03T10:20:43.026Z",
+  "count": 175,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -312,6 +312,12 @@
       "addedDate": "2026-04-28T16:25:06.000Z"
     },
     {
+      "title": "Death Run 3D",
+      "url": "/games/Death Run 3D.html",
+      "img": "/images/211.png",
+      "addedAt": "2026-05-03T09:23:30.787Z"
+    },
+    {
       "title": "DON'T YOU LECTURE ME",
       "url": "/games/DON/",
       "img": "/games/lecturemeicon.png",
@@ -476,6 +482,12 @@
       "url": "/games/I Have No Mouth, and I Must Scream.html",
       "img": "/images/779.webp",
       "addedDate": "2026-04-29T09:55:44.000Z"
+    },
+    {
+      "title": "Jeffrey Epstein Basics In Education And Kidnapping",
+      "url": "/games/jebb.html",
+      "img": "/images/751.png",
+      "addedAt": "2026-05-02T21:17:52.538Z"
     },
     {
       "title": "Jelly Drift",
@@ -715,6 +727,12 @@
       "img": "/hotdog.jpg",
       "alt": "Papa's Hotdoggeria",
       "addedDate": "2026-04-28T16:25:06.000Z"
+    },
+    {
+      "title": "Papa's Pancakeria",
+      "url": "/games/Papa's Pancakeria.html",
+      "img": "/images/225.png",
+      "addedAt": "2026-05-03T10:20:42.984Z"
     },
     {
       "title": "Papa's Sushiria",

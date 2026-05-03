@@ -338,6 +338,10 @@ a:hover {
 
 .game-item {
   width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
   transition: var(--transition);
   position: relative;
@@ -360,6 +364,7 @@ a:hover {
   background: var(--bg-card);
   cursor: pointer;
   padding: 15px;
+  margin: 0 auto;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
   display: flex;
@@ -367,6 +372,7 @@ a:hover {
   align-items: center;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .game-item img {
@@ -379,11 +385,15 @@ a:hover {
 }
 
 .game-item p {
+  width: 100%;
   margin-top: 12px;
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--text-main);
   transition: var(--transition);
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Hover Effects */

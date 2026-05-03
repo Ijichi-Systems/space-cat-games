@@ -441,6 +441,8 @@ export default function Games() {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        justify-content: flex-start;
+                        text-align: center;
                     }
                     .game-item:hover { transform: translateY(-5px); }
                     
@@ -461,29 +463,45 @@ export default function Games() {
                         display: flex !important; 
                         flex-wrap: nowrap !important; 
                         gap: 15px; 
-                        justify-content: flex-start !important;
+                        justify-content: center !important;
                     }
                     .game-item.small { 
-                        min-width: 140px; 
-                        max-width: 140px;
+                        width: 140px !important;
+                        min-width: 140px !important; 
+                        max-width: 140px !important;
+                        display: flex !important;
+                        flex-direction: column !important;
+                        align-items: center !important;
                     }
                     .game-item.small button {
+                        width: 140px !important;
                         height: 140px !important;
-                        padding: 10px !important;
+                        padding: 0 !important;
+                        margin: 0 auto !important;
                         border-radius: 15px !important;
+                        display: flex !important;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        box-sizing: border-box !important;
+                        background: var(--bg-card) !important;
                     }
                     .game-item.small img {
                         max-width: 80px !important;
                         max-height: 80px !important;
+                        margin: 0 auto !important;
+                        display: block !important;
+                        object-fit: contain !important;
                     }
                     .game-item.small p { 
                         font-size: 0.8em; 
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
-                        margin-top: 8px;
-                        width: 100%;
-                        text-align: center;
+                        margin: 8px 0 0 0 !important;
+                        width: 100% !important;
+                        text-align: center !important;
+                        padding: 0 !important;
+                        box-sizing: border-box !important;
                     }
                     `}
       </style>
