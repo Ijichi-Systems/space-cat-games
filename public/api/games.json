@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-03T21:22:28.459Z",
-  "count": 176,
+  "generatedAt": "2026-05-03T21:24:47.502Z",
+  "count": 177,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -648,6 +648,12 @@
       "img": "/images/noimg.png",
       "alt": "Nijika's Ahoge",
       "addedDate": "2025-12-29T12:36:05.000Z"
+    },
+    {
+      "title": "Nubby's Number Factory",
+      "url": "/games/Nubby's Number Factory.html",
+      "img": "/images/517.png",
+      "addedAt": "2026-05-03T21:24:47.478Z"
     },
     {
       "title": "Office Fight",
