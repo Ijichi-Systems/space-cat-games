@@ -125,25 +125,24 @@
   }
 
   .uptime-counter {
-    @apply flex justify-center items-center gap-4 whitespace-nowrap overflow-x-auto;
+    @apply flex justify-center items-center gap-4 flex-wrap sm:flex-nowrap;
   }
 
   .uptime-unit {
-    @apply relative flex flex-row items-baseline gap-1 flex-shrink-0;
+    @apply relative flex flex-row items-baseline gap-1 flex-shrink-0 min-w-[70px] justify-center sm:min-w-0;
   }
 
   .uptime-unit:not(:last-child) {
-    @apply pr-4;
+    @apply pr-4 sm:pr-4;
   }
 
   .uptime-unit:not(:last-child)::after {
-    @apply content-['|'] absolute right-0 top-1/2 -translate-y-1/2 text-text-muted;
+    @apply content-['|'] absolute right-0 top-1/2 -translate-y-1/2 text-text-muted hidden sm:block;
     opacity: 0.5;
   }
 
   .uptime-unit .value {
-    @apply font-mono font-black text-text-light;
-    font-size: 1.8rem;
+    @apply font-mono font-black text-text-light text-2xl sm:text-[1.8rem];
   }
 
   .uptime-unit .unit-label {

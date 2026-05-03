@@ -2,32 +2,57 @@
  * Copyright (c) Starry Systems and Nijika Softworks.
  */
 
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import UserButton from "./UserButton";
 import { useAuth } from "../hooks/useAuth";
 
 export default function Navbar() {
   const { isSupported, user } = useAuth();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const version = __BUILD_INFO__.appVersion;
 
-  return (
-    <div className="topnav">
-      <Link to="/">Home</Link>
-      <Link to="/games">Games</Link>
-      <Link to="/blog">Blog</Link>
-      <Link to="/opensource">Source Code</Link>
-      <Link to="https://space-cat-games.gitbook.io/space-cat-games-docs/">Documentation</Link>
-      <Link to="/credits">Credits</Link>
-      <Link to="/changelog">Changelog</Link>
-      {(isSupported || user) && <Link to="/dashboard">Dashboard</Link>}
-      <Link to="/settings" style={{ color: "#e74c3c", fontWeight: "bold" }}>Settings</Link>
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
-      <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: "4px" }}>
-        <UserButton />
-        <span style={{ padding: "0 16px", color: "#888", fontSize: "0.8rem", cursor: "default", whiteSpace: "nowrap" }}>
-          v{version}
-        </span>
+  return (
+    <nav className="topnav">
+      <div className="nav-container">
+        <Link to="/" className="nav-logo" onClick={closeMenu}>
+          SCG
+        </Link>
+
+        {/* Hamburger Menu Icon */}
+        <button
+          className={`menu-toggle ${isMenuOpen ? 'open' : ''}`}
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        {/* Navigation Links */}
+        <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+          <Link to="/" onClick={closeMenu}>Home</Link>
+          <Link to="/games" onClick={closeMenu}>Games</Link>
+          <Link to="/blog" onClick={closeMenu}>Blog</Link>
+          <Link to="/opensource" onClick={closeMenu}>Source Code</Link>
+          <Link to="https://space-cat-games.gitbook.io/space-cat-games-docs/" onClick={closeMenu}>Documentation</Link>
+          <Link to="/credits" onClick={closeMenu}>Credits</Link>
+          <Link to="/changelog" onClick={closeMenu}>Changelog</Link>
+          {(isSupported || user) && <Link to="/dashboard" onClick={closeMenu}>Dashboard</Link>}
+          <Link to="/settings" onClick={closeMenu} style={{ color: "#e74c3c", fontWeight: "bold" }}>Settings</Link>
+        </div>
+
+        <div className="nav-actions">
+          <UserButton />
+          <span className="version-tag">
+            v{version}
+          </span>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 }

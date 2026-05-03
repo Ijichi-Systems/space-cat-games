@@ -456,8 +456,13 @@ export default function Games() {
                     .recent-games-section { margin-bottom: 40px; }
                     .recent-games-scroll { 
                         overflow-x: auto; 
-                        padding-bottom: 12px;
+                        padding-bottom: 15px;
+                        margin: 0 -20px;
+                        padding-left: 20px;
+                        padding-right: 20px;
                         scrollbar-width: thin;
+                        -webkit-overflow-scrolling: touch;
+                        display: flex;
                     }
                     .recent-grid { 
                         display: flex !important; 
