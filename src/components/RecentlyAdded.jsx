@@ -23,11 +23,12 @@ function RecentlyAdded({ games }) {
             {showRecent && (
                 <section>
                     <h2>Recently Added</h2>
-                    <div className = "grid">
+                    <div className="games-grid">
                          {recentGames.map(game => (
                               <div key={game.url} className="game-item">
-                                  <a href={game.url}></a>
-                                  <img src={game.img} alt={game.alt || game.title} />
+                                  <a href={game.url}>
+                                      <img src={game.img} alt={game.alt || game.title} />
+                                  </a>
                                   <p>{game.title}</p>
                               </div>
                           ))}
