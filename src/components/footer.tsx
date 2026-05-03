@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Images */}
+        {/* Images - Your IDE may complain about unfound names; these are fine as Vite sets them at build time */}
         <div style={{ marginTop: "20px", color: "#666", fontSize: "0.8rem" }}>
           <div>Built on: {new Date(__BUILD_INFO__.date).toLocaleString()}</div>
           <div>
