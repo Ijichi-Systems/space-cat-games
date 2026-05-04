@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-03T10:20:43.026Z",
-  "count": 175,
+  "generatedAt": "2026-05-03T21:29:01.837Z",
+  "count": 179,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -116,7 +116,7 @@
     },
     {
       "title": "Bendy and the Ink Machine",
-      "url": "/games/bendy.html",
+      "url": "/games/Bendy and the Ink Machine.html",
       "img": "/images/bendyicon.png",
       "alt": "Dreams come true.",
       "addedDate": "2026-04-28T16:25:06.000Z"
@@ -368,6 +368,12 @@
       "img": "/images/winston.png",
       "alt": "I may or may not have included a secret, res...",
       "addedDate": "2026-04-28T16:25:06.000Z"
+    },
+    {
+      "title": "Flying Gorilla 3D",
+      "url": "/games/Flying Gorilla 3D.html",
+      "img": "/images/763.png",
+      "addedAt": "2026-05-03T21:22:28.438Z"
     },
     {
       "title": "FNAF 1",
@@ -644,6 +650,12 @@
       "addedDate": "2025-12-29T12:36:05.000Z"
     },
     {
+      "title": "Nubby's Number Factory",
+      "url": "/games/Nubby's Number Factory.html",
+      "img": "/images/517.png",
+      "addedAt": "2026-05-03T21:24:47.478Z"
+    },
+    {
       "title": "Office Fight",
       "url": "/games/of.html",
       "img": "/images/office.png",
@@ -733,6 +745,19 @@
       "url": "/games/Papa's Pancakeria.html",
       "img": "/images/225.png",
       "addedAt": "2026-05-03T10:20:42.984Z"
+    },
+    {
+      "title": "Papa's Pizeria",
+      "url": "/games/Papa's Pizeria.html",
+      "img": "/images/no-img.png",
+      "addedAt": "2026-05-03T21:27:34.117Z",
+      "alt": "How is it even pronounced?"
+    },
+    {
+      "title": "Papa's Scooperia",
+      "url": "/games/Papa's Scooperia.html",
+      "img": "/images/228.png",
+      "addedAt": "2026-05-03T21:29:01.820Z"
     },
     {
       "title": "Papa's Sushiria",

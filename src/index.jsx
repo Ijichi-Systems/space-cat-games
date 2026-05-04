@@ -121,6 +121,7 @@ export default function Home() {
         <div className="container">
           <h1 id="main-header">{header}</h1>
           <div className="build-id">{buildId}</div>
+          <p><em>This version is EOL as of June 31, 2026.</em></p>
           <div id="random-tip" className="random-tip">
             {tip}
           </div>
