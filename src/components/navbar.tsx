@@ -18,9 +18,6 @@ export default function Navbar() {
   return (
     <nav className="topnav">
       <div className="nav-container">
-        <Link to="/" className="nav-logo" onClick={closeMenu}>
-          SCG
-        </Link>
 
         {/* Hamburger Menu Icon */}
         <button

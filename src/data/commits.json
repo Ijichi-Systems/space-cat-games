@@ -1,5 +1,71 @@
 [
   {
+    "hash": "6f907af",
+    "author": "Ben",
+    "date": "2026-05-04",
+    "message": "prep package lock for development"
+  },
+  {
+    "hash": "385b751",
+    "author": "Ben",
+    "date": "2026-05-04",
+    "message": "just set no image"
+  },
+  {
+    "hash": "babcc7f",
+    "author": "Ben",
+    "date": "2026-05-03",
+    "message": "guh"
+  },
+  {
+    "hash": "f0a2a8a",
+    "author": "Ben",
+    "date": "2026-05-03",
+    "message": "feat: Papa's Scooperia"
+  },
+  {
+    "hash": "c6a8c3b",
+    "author": "Ben",
+    "date": "2026-05-03",
+    "message": "feat: Papa's Pizeria"
+  },
+  {
+    "hash": "ef93fdd",
+    "author": "Ben",
+    "date": "2026-05-03",
+    "message": "feat: Nubby's Number Factory"
+  },
+  {
+    "hash": "9e706df",
+    "author": "Ben",
+    "date": "2026-05-03",
+    "message": "feat: Flying Gorilla 3D"
+  },
+  {
+    "hash": "fa2ae95",
+    "author": "Ben",
+    "date": "2026-05-03",
+    "message": "upgrade bendy"
+  },
+  {
+    "hash": "5e9564a",
+    "author": "Ben",
+    "date": "2026-05-03",
+    "message": "feat: implement responsive mobile navigation menu and modernize navbar layout"
+  },
+  {
+    "hash": "6d16172",
+    "author": "Ben",
+    "date": "2026-05-03",
+    "message": "FINALLY FIXED IT!!!!!"
+  },
+  {
+    "hash": "f235076",
+    "author": "Ben House",
+    "date": "2026-05-03",
+    "message": "GITBOOK-16: add page for game tool"
+  },
+  {
     "hash": "52a6db7",
     "author": "Ben",
     "date": "2026-05-03",
@@ -232,71 +298,5 @@
     "author": "Ben",
     "date": "2026-04-29",
     "message": "update SECURITY.md"
-  },
-  {
-    "hash": "775dca7",
-    "author": "Ben",
-    "date": "2026-04-29",
-    "message": "Merge remote-tracking branch 'origin/main'"
-  },
-  {
-    "hash": "1fd2159",
-    "author": "Ben",
-    "date": "2026-04-29",
-    "message": "no idea why the uptime counter did that"
-  },
-  {
-    "hash": "2f84da7",
-    "author": "Lakshin Hemachandran",
-    "date": "2026-04-28",
-    "message": "Create SECURITY.md for security policy and reporting"
-  },
-  {
-    "hash": "4e52ad2",
-    "author": "Ben",
-    "date": "2026-04-28",
-    "message": "refactor: update dependencies and prune game library list in games.json"
-  },
-  {
-    "hash": "5f1d9de",
-    "author": "Ben",
-    "date": "2026-04-28",
-    "message": "fix builds"
-  },
-  {
-    "hash": "e1b5f03",
-    "author": "Ben",
-    "date": "2026-04-28",
-    "message": "posthog"
-  },
-  {
-    "hash": "1962040",
-    "author": "Ben",
-    "date": "2026-04-28",
-    "message": "getting ready for PostHog"
-  },
-  {
-    "hash": "434aed3",
-    "author": "Ben",
-    "date": "2026-04-28",
-    "message": "Merge remote-tracking branch 'origin/main'"
-  },
-  {
-    "hash": "e3adf77",
-    "author": "Ben",
-    "date": "2026-04-28",
-    "message": "sorting"
-  },
-  {
-    "hash": "609ee83",
-    "author": "Ben",
-    "date": "2026-04-28",
-    "message": "fix sorting"
-  },
-  {
-    "hash": "91e03f5",
-    "author": "Ben",
-    "date": "2026-04-28",
-    "message": "SORT IT ALPHABETICALLY!!"
   }
 ]
