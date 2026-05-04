@@ -3,6 +3,8 @@
 
 **The free and open source way to host a games website!**
 
+## *This version is EOL as of 31st June, 2026.*
+
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/spacecatgames) 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f795125c-9403-49b7-9e84-ae0c0c4df19e/deploy-status)](https://app.netlify.com/projects/spacecatgame/deploys)
 [![wakatime](https://wakatime.com/badge/user/dde58933-1038-4e79-920c-d923c92f1fa4/project/243db57b-c9df-4b25-b6b6-990b204ce8a5.svg)](https://wakatime.com/badge/user/dde58933-1038-4e79-920c-d923c92f1fa4/project/243db57b-c9df-4b25-b6b6-990b204ce8a5)
