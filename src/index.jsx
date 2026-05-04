@@ -34,7 +34,9 @@ export default function Home() {
      "Now the train's gone and left.",
       "Should have used PHP!",
       "PhpStorm intellisense is trash",
-      "Built with React!"
+      "Built with React!",
+      "We need a bug tracker!",
+
 
 
 
