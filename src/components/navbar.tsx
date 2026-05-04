@@ -44,7 +44,6 @@ export default function Navbar() {
         </div>
 
         <div className="nav-actions">
-          <UserButton />
           <span className="version-tag">
             v{version}
           </span>
