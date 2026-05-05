@@ -198,6 +198,13 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.nav-brand {
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo {
@@ -205,13 +212,14 @@ a:hover {
   font-size: 1.5rem;
   color: var(--primary) !important;
   letter-spacing: -1px;
+  white-space: nowrap;
 }
 
 .nav-links {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .nav-links a {
@@ -231,6 +239,14 @@ a:hover {
 }
 
 .nav-actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.nav-actions-container {
   display: flex;
   align-items: center;
   gap: 10px;
