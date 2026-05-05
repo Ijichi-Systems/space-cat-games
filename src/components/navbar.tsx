@@ -35,6 +35,7 @@ export default function Navbar() {
           <Link to="/" onClick={closeMenu}>Home</Link>
           <Link to="/games" onClick={closeMenu}>Games</Link>
           <Link to="/opensource" onClick={closeMenu}>Source Code</Link>
+          <Link to="https://bugs.meowcat.site/bugzilla/" onClick={closeMenu}>Report a Bug</Link>
           <Link to="https://space-cat-games.gitbook.io/space-cat-games-docs/" onClick={closeMenu}>Documentation</Link>
           <Link to="/settings" onClick={closeMenu} style={{ color: "#e74c3c", fontWeight: "bold" }}>Settings</Link>
         </div>
