@@ -18,9 +18,6 @@ export default function Navbar() {
   return (
     <nav className="topnav">
       <div className="nav-container">
-        <Link to="/" className="nav-logo" onClick={closeMenu}>
-          SCG
-        </Link>
 
         {/* Hamburger Menu Icon */}
         <button
@@ -37,17 +34,13 @@ export default function Navbar() {
         <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <Link to="/" onClick={closeMenu}>Home</Link>
           <Link to="/games" onClick={closeMenu}>Games</Link>
-          <Link to="/blog" onClick={closeMenu}>Blog</Link>
           <Link to="/opensource" onClick={closeMenu}>Source Code</Link>
+          <Link to="https://bugs.meowcat.site/bugzilla/" onClick={closeMenu}>Report a Bug</Link>
           <Link to="https://space-cat-games.gitbook.io/space-cat-games-docs/" onClick={closeMenu}>Documentation</Link>
-          <Link to="/credits" onClick={closeMenu}>Credits</Link>
-          <Link to="/changelog" onClick={closeMenu}>Changelog</Link>
-          {(isSupported || user) && <Link to="/dashboard" onClick={closeMenu}>Dashboard</Link>}
           <Link to="/settings" onClick={closeMenu} style={{ color: "#e74c3c", fontWeight: "bold" }}>Settings</Link>
         </div>
 
         <div className="nav-actions">
-          <UserButton />
           <span className="version-tag">
             v{version}
           </span>

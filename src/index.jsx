@@ -34,7 +34,9 @@ export default function Home() {
      "Now the train's gone and left.",
       "Should have used PHP!",
       "PhpStorm intellisense is trash",
-      "Built with React!"
+      "Built with React!",
+      "We need a bug tracker!",
+
 
 
 
@@ -46,7 +48,7 @@ export default function Home() {
     if (Math.random() < 0.1) {
       setHeader(`スペースキャットゲーム バージョン${version}`);
     } else {
-      setHeader(`Welcome to Space Cat Games ${version} - Hello, React!`);
+      setHeader(`Welcome to Space Cat Games ${version}`);
     }
 
     // Random tips
@@ -138,9 +140,9 @@ export default function Home() {
 
       <div className="container">
         {gameOfTheDay && (
-          <section className="game-of-the-day">
+          <section className="game-of-the-day centered">
             <h2>Game of the Day</h2>
-            <div className="games-grid single-game">
+            <div className="games-grid single-game centered">
               <Game
                 title={gameOfTheDay.title}
                 img={gameOfTheDay.img}
@@ -172,34 +174,7 @@ export default function Home() {
             />
           </div>
         </section>
-
-        <section className="featured-games">
-          <h2>Featured Games</h2>
-          <p className="center">
-            Featured games are selected at the start of every month
-          </p>
-
-          <div className="games-grid">
-            <Game
-              title="Geometry Dash"
-              img="https://i.ibb.co/Xr5LnpSz/Logo-of-Geometry-Dash-svg.png"
-              url="/games/gm.html"
-            />
-
-            <Game
-              title="Snow Rider 3D"
-              img="/images/snowrider.png"
-              url="/games/snowrider.html"
-            />
-
-            <Game
-              title="Space Waves"
-              img="/images/spacewavesicon.png"
-              url="/games/spacewaves.html"
-            />
-          </div>
-        </section>
-      </div>
+        </div>
 
       <Footer />
     </>

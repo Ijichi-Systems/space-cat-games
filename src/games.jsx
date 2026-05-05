@@ -33,6 +33,7 @@ export default function Games() {
         setGames(data.games || []);
         setFilteredGames(data.games || []);
         setLoading(false);
+        localStorage.setItem("scg_survey_seen", "true"); // prevent it from appearing
       })
       .catch((err) => {
         console.error("Error loading games:", err);
