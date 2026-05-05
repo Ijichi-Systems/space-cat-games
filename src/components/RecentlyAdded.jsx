@@ -14,8 +14,8 @@ function RecentlyAdded({ games }) {
     }, []);
 
     const recentGames = [...games]
-        .filter(g => g.addedAt)
-        .sort((a, b) => new Date(b.addedAt) - new Date(a.addedAt))
+        .filter(g => g.addedDate)
+        .sort((a, b) => new Date(b.addedDate) - new Date(a.addedDate))
         .slice(0, 6);
 
     return (
@@ -26,9 +26,9 @@ function RecentlyAdded({ games }) {
                     <div className="games-grid">
                         {recentGames.map(game => (
                             <div key={game.url} className="game-item">
-                                <a href={game.url} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-                                    <img src={game.img} alt={game.alt || game.title} style={{ margin: '0 auto' }} />
-                                </a>
+                                <button onClick={() => window.location.href = game.url}>
+                                    <img src={game.img} alt={game.alt || game.title} />
+                                </button>
                                 <p>{game.title}</p>
                             </div>
                         ))}

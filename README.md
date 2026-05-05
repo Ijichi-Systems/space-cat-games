@@ -1,6 +1,7 @@
 
 # Space Cat Games
-
+**Please report bugs at https://bugs.meowcat.site**
+---
 **The free and open source way to host a games website!**
 
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/spacecatgames) 

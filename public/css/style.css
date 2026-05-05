@@ -208,8 +208,10 @@ a:hover {
 }
 
 .nav-links {
-  display: flex;
-  align-items: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
 }
 
 .nav-links a {
