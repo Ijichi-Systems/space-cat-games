@@ -94,34 +94,6 @@ export default function Settings() {
                                 </div>
                             </div>
                         </section>
-
-                        {/* Developer Mode Section */}
-                        <section className="glass-card" style={{ padding: '40px', position: 'relative' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                                    <div style={{ fontSize: '2.5rem', width: '60px', height: '60px', background: 'rgba(52, 152, 219, 0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>💻</div>
-                                    <div>
-                                        <h2 style={{ fontSize: '1.8rem', fontWeight: '800', margin: '0' }}>Developer Mode</h2>
-                                        <p style={{ color: '#888', margin: '5px 0 0' }}>Inject scripts and styles live.</p>
-                                    </div>
-                                </div>
-                                <div
-                                    className={`premium-toggle-bg ${settings.enableCodeEditor ? 'active' : ''}`}
-                                    onClick={() => updateSettings({ enableCodeEditor: !settings.enableCodeEditor })}
-                                >
-                                    <div className="premium-toggle-knob" />
-                                </div>
-                            </div>
-
-                            {settings.enableCodeEditor && (
-                                <div style={{ marginTop: '30px', padding: '20px', background: 'rgba(52, 152, 219, 0.1)', border: '1px solid rgba(52, 152, 219, 0.2)', borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '15px' }}>
-                                    <span style={{ fontSize: '1.5rem' }}>🚀</span>
-                                    <p style={{ fontSize: '0.9rem', fontWeight: '700', color: '#3498db', margin: 0 }}>
-                                        Live Code Editor active. Look for the rocket icon at the bottom.
-                                    </p>
-                                </div>
-                            )}
-                        </section>
                     </div>
 
                     {/* Sidebar */}
