@@ -81,7 +81,7 @@ export default function Games() {
     }
 
     const timeoutId = setTimeout(() => {
-      posthog.capture('game searched', {
+      posthog.capture("game searched", {
         search_term: trimmedSearchTerm,
         results_count: filteredGames.length,
       });
@@ -125,7 +125,7 @@ export default function Games() {
 
   const handleRandomGame = () => {
     if (filteredGames.length === 0) return;
-    posthog.capture('random game selected', {
+    posthog.capture("random game selected", {
       total_games_shown: filteredGames.length,
     });
     flushAnalytics();
@@ -155,10 +155,10 @@ export default function Games() {
 
   const handleCloseSurvey = () => {
     try {
-      posthog?.capture?.('survey dismissed');
+      posthog?.capture?.("survey dismissed");
       flushAnalytics();
     } catch (e) {
-      console.warn('[Analytics] Failed to track survey close:', e);
+      console.warn("[Analytics] Failed to track survey close:", e);
     }
     setShowSurveyPopup(false);
     localStorage.setItem("scg_survey_seen", "true");
@@ -347,7 +347,6 @@ export default function Games() {
             />
           </div>
 
-
           <button
             id="randomGameBtn"
             className="btn random-btn"
@@ -362,7 +361,7 @@ export default function Games() {
           <span id="totalCount">{games.length}</span> games
         </div>
 
-        {/* Recently Played Section - Moved below controls */}
+        {/* Recently Played Section */}
         {recentGames.length > 0 && (
           <section className="recent-games-section">
             <h2>Recently Played</h2>
