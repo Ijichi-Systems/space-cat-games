@@ -14,8 +14,8 @@ function RecentlyAdded({ games }) {
     }, []);
 
     const recentGames = [...games]
-        .filter(g => g.addedAt)
-        .sort((a, b) => new Date(b.addedAt) - new Date(a.addedAt))
+        .filter(g => g.addedDate)
+        .sort((a, b) => new Date(b.addedDate) - new Date(a.addedDate))
         .slice(0, 6);
 
     return (
