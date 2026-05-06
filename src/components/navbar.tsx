@@ -19,6 +19,11 @@ export default function Navbar() {
     <nav className="topnav">
       <div className="nav-container">
 
+        {/* Brand/Logo */}
+        <div className="nav-brand">
+          <Link to="/" className="nav-logo">Space Cat Games</Link>
+        </div>
+
         {/* Hamburger Menu Icon */}
         <button
           className={`menu-toggle ${isMenuOpen ? 'open' : ''}`}
@@ -41,9 +46,11 @@ export default function Navbar() {
         </div>
 
         <div className="nav-actions">
-          <span className="version-tag">
-            v{version}
-          </span>
+          <div className="nav-actions-container">
+            <span className="version-tag">
+              v{version}
+            </span>
+          </div>
         </div>
       </div>
     </nav>

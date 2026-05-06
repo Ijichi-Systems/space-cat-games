@@ -5,11 +5,11 @@
 Space Cat Games maintains security updates for the following versions:
 
 | Version | Supported          |
-|---------| ------------------ |
+| ------- | ------------------ |
+| 19      | :white_check_mark: |
 | 18.3    | :white_check_mark: |
 | 17.3    | :white_check_mark: |
-| 16.3    | :white_check_mark:
-| < 15    | :x:                |
+| < 16    | :x:                |
 
 ## Reporting a Vulnerability
 
@@ -17,7 +17,7 @@ We take security seriously. If you discover a security vulnerability in Space Ca
 
 ### How to Report
 
-1. **Do not** open a public GitHub issue for security vulnerabilities
+1. **Do not** open a public Bugzilla issue for security vulnerabilities
 2. Email your report to the maintainers with details about:
    - Description of the vulnerability
    - Steps to reproduce (if applicable)
@@ -50,4 +50,3 @@ When using Space Cat Games:
 ## Contact
 
 For security inquiries, please reach out to the project maintainers through appropriate channels.
-
