@@ -17,7 +17,7 @@ We take security seriously. If you discover a security vulnerability in Space Ca
 
 ### How to Report
 
-1. **Do not** open a public GitHub issue for security vulnerabilities
+1. **Do not** open a public Bugzilla issue for security vulnerabilities
 2. Email your report to the maintainers with details about:
    - Description of the vulnerability
    - Steps to reproduce (if applicable)
