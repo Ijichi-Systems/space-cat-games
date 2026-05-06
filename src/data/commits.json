@@ -1,5 +1,29 @@
 [
   {
+    "hash": "86a544f",
+    "author": "meowcat767",
+    "date": "2026-05-05",
+    "message": "Merge pull request #47 from neurontechofficial/v19-devel"
+  },
+  {
+    "hash": "066c9b1",
+    "author": "Ben",
+    "date": "2026-05-05",
+    "message": "feat: add brand logo to navbar and restructure navigation layout for improved alignment"
+  },
+  {
+    "hash": "65402e6",
+    "author": "Ben",
+    "date": "2026-05-05",
+    "message": "add bug report notice"
+  },
+  {
+    "hash": "5e24c1d",
+    "author": "meowcat767",
+    "date": "2026-05-05",
+    "message": "Merge pull request #46 from neurontechofficial/v19-devel"
+  },
+  {
     "hash": "20e48b3",
     "author": "Ben",
     "date": "2026-05-05",
@@ -274,29 +298,5 @@
     "author": "Ben",
     "date": "2026-04-29",
     "message": "update i have no mouth and i must scream"
-  },
-  {
-    "hash": "3666c31",
-    "author": "Ben",
-    "date": "2026-04-29",
-    "message": "add i have no mouth and i must scream"
-  },
-  {
-    "hash": "32be90f",
-    "author": "Ben",
-    "date": "2026-04-29",
-    "message": "add silenthill"
-  },
-  {
-    "hash": "547ef0b",
-    "author": "Ben",
-    "date": "2026-04-29",
-    "message": "add 10 Minutes Till Dawn"
-  },
-  {
-    "hash": "b0c00b7",
-    "author": "Ben",
-    "date": "2026-04-29",
-    "message": "Add Cheese Rolling game and update games list"
   }
 ]

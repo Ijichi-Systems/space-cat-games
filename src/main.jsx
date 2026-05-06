@@ -26,7 +26,6 @@ import { SettingsProvider, useSettings } from "./hooks/useSettings.tsx";
 import { AuthProvider } from "./hooks/useAuth.tsx";
 import SettingsPage from "./components/Settings.tsx";
 import Dashboard from "./dashboard.jsx";
-import CodeEditor from "./components/CodeEditor.tsx";
 import Blog from "./blog.jsx";
 import BlogPost from "./BlogPost.jsx";
 import { useEplnxRefresh } from "./hooks/useEplnxRefresh";
@@ -42,7 +41,7 @@ function RouteChangeHandler() {
     }, 100);
 
     // Track page view
-    posthog.capture('$pageview', {
+    posthog.capture("$pageview", {
       $current_url: window.location.href,
     });
 
@@ -77,7 +76,6 @@ function AppContent() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-      <CodeEditor />
     </BrowserRouter>
   );
 }
