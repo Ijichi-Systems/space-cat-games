@@ -12,7 +12,7 @@ const PRESETS = [
     { name: 'Canva', title: 'Dashboard', icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAWlBMVEUCwswIuc4NrdEZo9QjldcyiNhOuNmt3ev////u9fyH1OLY5Phryt02eN9FcNwCmNRQYeBeTuMlhd5qO+grU+WAi+w8Zeh6Kumvs/RHM+5KTPFzJ/BZNvdkJ/qcqMW7AAABD0lEQVR4AXXPBRLDMAxEUVMTOcyc+1+zK6kMv4N9s3JrvrLIOe99uHybYYQG4N9l+LN0fzCB3YfvmBKKmfuBGVFe2IIog3lY+WYZP5hRvA2rh2GRsvG0FisrY/kDxGP6J1LKaxiGQDHLR0GIKNGjglIkEvI+T2oQjlbNHXGVCd1uwhrjrMM5/jlCAckO1honZcBapGMSU/SuFmRCpVrbtsZzdcEoIqTWM/IzRPFOQz6q9YZv4VokAkzlNA0jDWLzbDptIcqHCcFGmSmWPBkitBmGZqFlhYGAQlxOeDcSTGaCk7Rt2zrmkeLSrqB9VhRBUO44QPusahQODXTuSE3wDudx7mr3pX6tvRtQ4R3vegWNXiIGxpIzCAAAAABJRU5ErkJggg==' },
     { name: 'Drive', title: 'My Drive - Google Drive', icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAB+klEQVR4AWJwL/ChKx68ForXW7SJN1iswYb5GyxaqGqhycrgR+rTAKzUA2hoURwG8Cn3bL/wbNuIz7Y5p9kOY57NMBvZs23bPtt/dW7b4VR94ep3v6OHaJvFJSoaZldQROB+hDJValcFPBj20vB82AsEAYCVyTT1uUykaWitGAQIB1oy22WoKOhKQMCCMKa0dLypYN9dTs7HcMvg5YCAHQKAzLmwpwpYGbORBHH2LAfMY4G4JdmOaJkvBQnsMQ+DHAl5MTSeqjaMASaarvZ00SB8UATCyp1OVzMWgfBDiwLhY7J2+Nn5LScyVCkUfkoI3nLqWivAcB7j52HYSISMEJz9WIwEyyE/AAtEBJLbRLoNiBxigIcVgDO08AwFwnkpwfx4Sx1aSFrmLwAvRDz+BBtaFB6Gg9txA9sEg6d9NLNO+/5HvFz0sXXardmy567d4CFW4F5V1BuXiUgVNBa5jpdEBdz2vTRy2/cyxMtduyFpTjtMotobD1D75Yvs3LjopYDwh9v/5CNWrtsOSjGc/8bFqP/mHtRx7zyVodP7tisgZMeffB8SO6xfLYeIlllvTSkM2jH34UraQeB5VkvexoeWWsttR7bEaPu9Cz95IEZbAVw8wm461+7uuXrp4Q0L6LxxS/NKQQ+t2HpYKEKQPMhXkpkNqoYwXTEA+kphQitc/vYAAAAASUVORK5CYII=' },
     { name: 'Schoology', title: 'Home | Schoology', icon: 'https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico' },
-    { name: 'New tab', title: 'New tab', icon: 'null'},
+    { name: 'New tab', title: 'New tab', icon: 'null' },
 
 ];
 
@@ -92,6 +92,59 @@ export default function Settings() {
                                         />
                                     </div>
                                 </div>
+
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                                    <div>
+                                        <h4 style={{ margin: '0', fontSize: '1rem', fontWeight: '700' }}>Auto-Disguise on Focus Loss</h4>
+                                        <p style={{ margin: '5px 0 0', fontSize: '0.8rem', color: '#888' }}>Only apply disguise when you switch tabs or minimize.</p>
+                                    </div>
+                                    <button
+                                        onClick={() => updateSettings({ autoDisguise: !settings.autoDisguise })}
+                                        className={`premium-btn ${settings.autoDisguise ? 'premium-btn-primary' : 'premium-btn-outline'}`}
+                                        style={{ minWidth: '100px' }}
+                                    >
+                                        {settings.autoDisguise ? 'Enabled' : 'Disabled'}
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Emergency Section */}
+                        <section className="glass-card" style={{ padding: '40px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '30px' }}>
+                                <div style={{ fontSize: '2.5rem', width: '60px', height: '60px', background: 'rgba(231, 76, 60, 0.1)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>🚨</div>
+                                <div>
+                                    <h2 style={{ fontSize: '1.8rem', fontWeight: '800', margin: '0' }}>Emergency Panic</h2>
+                                    <p style={{ color: '#888', margin: '5px 0 0' }}>Instantly leave the site with a hotkey.</p>
+                                </div>
+                            </div>
+
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                                <div>
+                                    <label style={{ fontSize: '0.65rem', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '1px', color: '#e74c3c', marginLeft: '5px', marginBottom: '8px', display: 'block' }}>Panic URL</label>
+                                    <input
+                                        type="text"
+                                        className="premium-input"
+                                        value={settings.panicUrl}
+                                        onChange={(e) => updateSettings({ panicUrl: e.target.value })}
+                                        placeholder="e.g. https://google.com"
+                                    />
+                                </div>
+                                <div>
+                                    <label style={{ fontSize: '0.65rem', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '1px', color: '#e74c3c', marginLeft: '5px', marginBottom: '8px', display: 'block' }}>Panic Hotkey</label>
+                                    <input
+                                        type="text"
+                                        className="premium-input"
+                                        value={settings.panicKey}
+                                        onKeyDown={(e) => {
+                                            e.preventDefault();
+                                            updateSettings({ panicKey: e.key });
+                                        }}
+                                        readOnly
+                                        placeholder="Press any key..."
+                                    />
+                                    <p style={{ fontSize: '0.7rem', color: '#666', marginTop: '5px', marginLeft: '5px' }}>Current: <strong>{settings.panicKey}</strong></p>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -115,7 +168,7 @@ export default function Settings() {
                             >
                                 Clear localstorage
                             </button>
-                            
+
                         </div>
 
                         <div className="p-6 rounded-card border border-white/5 bg-white/[0.02] text-center" style={{ marginTop: '20px' }}>

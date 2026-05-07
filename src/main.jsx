@@ -52,13 +52,13 @@ function RouteChangeHandler() {
 }
 
 function AppContent() {
-  const { settings } = useSettings();
+  const { settings, effectiveTitle, effectiveIcon } = useSettings();
 
   return (
     <BrowserRouter>
       <Helmet>
-        <title>{settings.tabTitle}</title>
-        <link rel="icon" href={settings.tabIcon} />
+        <title>{effectiveTitle}</title>
+        <link rel="icon" href={effectiveIcon} />
       </Helmet>
       <RouteChangeHandler />
       <Navbar />

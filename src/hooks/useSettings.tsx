@@ -11,6 +11,9 @@ interface Settings {
     customJS: string;
     customCSS: string;
     testAprilFools: boolean;
+    panicUrl: string;
+    panicKey: string;
+    autoDisguise: boolean;
 }
 
 const DEFAULT_SETTINGS: Settings = {
@@ -20,12 +23,17 @@ const DEFAULT_SETTINGS: Settings = {
     customJS: '',
     customCSS: '',
     testAprilFools: false,
+    panicUrl: 'https://google.com',
+    panicKey: 'Escape',
+    autoDisguise: false,
 };
 
 interface SettingsContextType {
     settings: Settings;
     updateSettings: (newSettings: Partial<Settings>) => void;
     resetSettings: () => void;
+    effectiveTitle: string;
+    effectiveIcon: string;
 }
 
 const SettingsContext = createContext<SettingsContextType | undefined>(undefined);
@@ -36,10 +44,43 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         return saved ? { ...DEFAULT_SETTINGS, ...JSON.parse(saved) } : DEFAULT_SETTINGS;
     });
 
+    const [isDisguised, setIsDisguised] = useState(false);
+
+    useEffect(() => {
+        const handleVisibility = () => {
+            if (settings.autoDisguise) {
+                setIsDisguised(document.hidden);
+            }
+        };
+        document.addEventListener('visibilitychange', handleVisibility);
+        return () => document.removeEventListener('visibilitychange', handleVisibility);
+    }, [settings.autoDisguise]);
+
+    const effectiveTitle = settings.autoDisguise
+        ? (isDisguised ? settings.tabTitle : "Space Cat Games")
+        : settings.tabTitle;
+
+    const effectiveIcon = settings.autoDisguise
+        ? (isDisguised ? (settings.tabIcon === 'null' ? '/favicon.ico' : settings.tabIcon) : "/favicon.ico")
+        : (settings.tabIcon === 'null' ? '/favicon.ico' : settings.tabIcon);
+
     useEffect(() => {
         localStorage.setItem('scg_settings', JSON.stringify(settings));
         applySettings(settings);
     }, [settings]);
+
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === settings.panicKey) {
+                window.location.href = settings.panicUrl;
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [settings.panicKey, settings.panicUrl]);
 
     const updateSettings = (newSettings: Partial<Settings>) => {
         setSettings((prev) => ({ ...prev, ...newSettings }));
@@ -50,7 +91,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     };
 
     return (
-        <SettingsContext.Provider value={{ settings, updateSettings, resetSettings }}>
+        <SettingsContext.Provider value={{ settings, updateSettings, resetSettings, effectiveTitle, effectiveIcon }}>
             {children}
         </SettingsContext.Provider>
     );
