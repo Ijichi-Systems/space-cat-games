@@ -1,5 +1,71 @@
 [
   {
+    "hash": "a4b5b8d",
+    "author": "Ben",
+    "date": "2026-05-10",
+    "message": "update maintain"
+  },
+  {
+    "hash": "d95386c",
+    "author": "Ben",
+    "date": "2026-05-10",
+    "message": "add just shapes and beats"
+  },
+  {
+    "hash": "e5580ef",
+    "author": "Ben",
+    "date": "2026-05-10",
+    "message": "add animal crossing"
+  },
+  {
+    "hash": "83878b0",
+    "author": "Ben",
+    "date": "2026-05-07",
+    "message": "panic keys!"
+  },
+  {
+    "hash": "95ffcaf",
+    "author": "Ben",
+    "date": "2026-05-06",
+    "message": "Merge remote-tracking branch 'origin/main'"
+  },
+  {
+    "hash": "63cfc38",
+    "author": "Ben",
+    "date": "2026-05-06",
+    "message": "fix recent games"
+  },
+  {
+    "hash": "a2381c1",
+    "author": "Ben House",
+    "date": "2026-05-06",
+    "message": "comment fix"
+  },
+  {
+    "hash": "6944204",
+    "author": "Ben House",
+    "date": "2026-05-06",
+    "message": "update SECURITY.md"
+  },
+  {
+    "hash": "fda0092",
+    "author": "Ben House",
+    "date": "2026-05-06",
+    "message": "update SECURITY.md"
+  },
+  {
+    "hash": "dd20d12",
+    "author": "Ben House",
+    "date": "2026-05-06",
+    "message": "bump version"
+  },
+  {
+    "hash": "a037a22",
+    "author": "Ben House",
+    "date": "2026-05-06",
+    "message": "remove the code editor"
+  },
+  {
     "hash": "86a544f",
     "author": "meowcat767",
     "date": "2026-05-05",
@@ -232,71 +298,5 @@
     "author": "Ben",
     "date": "2026-05-02",
     "message": "fix flagging"
-  },
-  {
-    "hash": "89eb09c",
-    "author": "Ben",
-    "date": "2026-05-02",
-    "message": "addedDate implementation, cogs as background"
-  },
-  {
-    "hash": "592a732",
-    "author": "Ben",
-    "date": "2026-05-02",
-    "message": "add a feature-flagged recently added section"
-  },
-  {
-    "hash": "b24b026",
-    "author": "Ben",
-    "date": "2026-05-02",
-    "message": "working on feature-flagged recent game section."
-  },
-  {
-    "hash": "205ddce",
-    "author": "Ben",
-    "date": "2026-05-02",
-    "message": "add the date to JSON"
-  },
-  {
-    "hash": "1b6e527",
-    "author": "Ben",
-    "date": "2026-05-01",
-    "message": "fix posthog env"
-  },
-  {
-    "hash": "91196f0",
-    "author": "Ben",
-    "date": "2026-05-01",
-    "message": "add 3D bowling"
-  },
-  {
-    "hash": "8dc630d",
-    "author": "Ben",
-    "date": "2026-05-01",
-    "message": "add a tiny delay for Posthog"
-  },
-  {
-    "hash": "054125d",
-    "author": "Ben",
-    "date": "2026-04-30",
-    "message": "more posthog stuff"
-  },
-  {
-    "hash": "30f523e",
-    "author": "Ben",
-    "date": "2026-04-30",
-    "message": "fix modal"
-  },
-  {
-    "hash": "b7cd024",
-    "author": "Ben",
-    "date": "2026-04-29",
-    "message": "new tab preset"
-  },
-  {
-    "hash": "e44fc28",
-    "author": "Ben",
-    "date": "2026-04-29",
-    "message": "update i have no mouth and i must scream"
   }
 ]

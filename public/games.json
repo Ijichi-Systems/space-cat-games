@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-03T21:29:01.837Z",
-  "count": 179,
+  "generatedAt": "2026-05-10T18:33:04.811Z",
+  "count": 181,
   "games": [
     {
       "title": "🤑💰💸The Fruits🤑💰💸",
@@ -67,6 +67,12 @@
       "img": "/images/amazeicon.png",
       "alt": "Amaze",
       "addedDate": "2026-04-28T16:25:06.000Z"
+    },
+    {
+      "title": "Animal Crossing",
+      "url": "/games/ac.html",
+      "img": "/images/ac.html",
+      "addedAt": "2026-05-10T18:30:23.629Z"
     },
     {
       "title": "ASCII Shooter",
@@ -514,6 +520,12 @@
       "url": "/games/racer.html",
       "img": "/images/noimg.png",
       "addedDate": "2026-04-28T16:25:06.000Z"
+    },
+    {
+      "title": "Just Shapes & Beats",
+      "url": "/games/jsb.html",
+      "img": "/images/826.png",
+      "addedAt": "2026-05-10T18:33:04.796Z"
     },
     {
       "title": "Kittytoy",
