@@ -46,6 +46,7 @@ export default function Footer() {
           <Link to="/credits">Credits</Link>
           <Link to="/opensource">Open Source</Link>
           <Link to="/changelog">Changelog</Link>
+          <Link to="https://discord.gg/PghsjKB68j">Discord Server</Link>
         </div>
 
         <p className="copyright">
