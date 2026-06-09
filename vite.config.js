@@ -26,6 +26,22 @@ const viteVersion = JSON.parse(fs.readFileSync(vitePkgPath, 'utf-8')).version
 const appPkgPath = path.resolve('./package.json')
 const appVersion = JSON.parse(fs.readFileSync(appPkgPath, 'utf-8')).version
 
+function countLines(dir) {
+    let count = 0;
+    if (!fs.existsSync(dir)) return 0;
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+        const filePath = path.join(dir, file);
+        if (fs.statSync(filePath).isDirectory()) {
+            count += countLines(filePath);
+        } else if (file.endsWith('.js') || file.endsWith('.jsx') || file.endsWith('.ts') || file.endsWith('.tsx')) {
+            const content = fs.readFileSync(filePath, 'utf8');
+            count += content.split('\n').length;
+        }
+    }
+    return count;
+}
+
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -43,6 +59,7 @@ export default defineConfig({
       appVersion: appVersion,
       gitCommit: git.commit,
       gitBranch: git.branch,
+      sloc: countLines(path.resolve('./src')),
     }),
   },
   optimizeDeps: {
