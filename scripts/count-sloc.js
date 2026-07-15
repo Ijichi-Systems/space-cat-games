@@ -7,18 +7,31 @@ import path from 'node:path';
 
 function countLines(dir) {
     let count = 0;
+    if (!fs.existsSync(dir)) return 0;
     const files = fs.readdirSync(dir);
+    
+    const ignoredDirs = ['node_modules', '.git', 'dist', 'archive', 'vendor', '.husky'];
+    const ignoredFiles = ['package-lock.json', '.DS_Store'];
+
     for (const file of files) {
+        if (ignoredDirs.includes(file) || ignoredFiles.includes(file)) continue;
+
         const filePath = path.join(dir, file);
-        if (fs.statSync(filePath).isDirectory()) {
+        const stat = fs.statSync(filePath);
+
+        if (stat.isDirectory()) {
             count += countLines(filePath);
-        } else if (file.endsWith('.js') || file.endsWith('.jsx') || file.endsWith('.ts') || file.endsWith('.tsx')) {
-            const content = fs.readFileSync(filePath, 'utf8');
-            count += content.split('\n').length;
+        } else {
+            try {
+                const content = fs.readFileSync(filePath, 'utf8');
+                count += content.split('\n').length;
+            } catch {
+                continue;
+            }
         }
     }
     return count;
 }
 
-const sloc = countLines(path.resolve('src'));
+const sloc = countLines(path.resolve('.'));
 console.log(sloc);

@@ -26,17 +26,32 @@ const viteVersion = JSON.parse(fs.readFileSync(vitePkgPath, 'utf-8')).version
 const appPkgPath = path.resolve('./package.json')
 const appVersion = JSON.parse(fs.readFileSync(appPkgPath, 'utf-8')).version
 
-function countLines(dir) {
+function countLines(dir, baseDir = dir) {
     let count = 0;
     if (!fs.existsSync(dir)) return 0;
     const files = fs.readdirSync(dir);
+    
+    const ignoredDirs = ['node_modules', '.git', 'dist', 'archive', 'vendor', '.husky'];
+    const ignoredFiles = ['package-lock.json', '.DS_Store'];
+
     for (const file of files) {
+        if (ignoredDirs.includes(file) || ignoredFiles.includes(file)) continue;
+
         const filePath = path.join(dir, file);
-        if (fs.statSync(filePath).isDirectory()) {
-            count += countLines(filePath);
-        } else if (file.endsWith('.js') || file.endsWith('.jsx') || file.endsWith('.ts') || file.endsWith('.tsx')) {
-            const content = fs.readFileSync(filePath, 'utf8');
-            count += content.split('\n').length;
+        const stat = fs.statSync(filePath);
+
+        if (stat.isDirectory()) {
+            count += countLines(filePath, baseDir);
+        } else {
+            // Include all text-based files, or just everything that isn't binary
+            // For simplicity and to "include ALL files", we'll count all files that aren't in ignored list
+            try {
+                const content = fs.readFileSync(filePath, 'utf8');
+                count += content.split('\n').length;
+            } catch {
+                // Skip files that can't be read as utf8 (likely binary)
+                continue;
+            }
         }
     }
     return count;
@@ -59,7 +74,7 @@ export default defineConfig({
       appVersion: appVersion,
       gitCommit: git.commit,
       gitBranch: git.branch,
-      sloc: countLines(path.resolve('./src')),
+      sloc: countLines(path.resolve('.')),
     }),
   },
   optimizeDeps: {
