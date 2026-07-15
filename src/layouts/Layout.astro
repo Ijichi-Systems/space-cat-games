@@ -1,0 +1,111 @@
+---
+/*
+ * Copyright (c) Starry Systems and Nijika Softworks.
+ */
+import Navbar from '../components/navbar.tsx';
+import Footer from '../components/footer.tsx';
+import '../index.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Space Cat Games", 
+  description = "The worlds best free and open source games website!" 
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    
+    <!-- Ads / Analytics -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3059320394040070"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      data-cfasync="false"
+      async
+      src="https://media.eplinx.net/js/code.min.js"
+    ></script>
+    <meta
+      content="b45d94d97346d1c2ad4b8481a98a3b08"
+      name="eplinx-site-verification"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/style.css" rel="stylesheet" />
+    <style is:global>
+      @import "../index.css";
+    </style>
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Cookiebot -->
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="3a050c7c-3ead-4b4e-b044-854d2f99657b"
+      data-blockingmode="auto"
+    ></script>
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TTZS202J2Q"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-TTZS202J2Q");
+    </script>
+    <!-- Google Search Console Verification -->
+    <meta
+      name="google-site-verification"
+      content="4FfZh-FnYXCbMh1VohpEyKO3dRNAWIJDIu6wsG8qP0k"
+    />
+
+    <!-- Better Stack Script -->
+    <script is:inline>
+      !(function (b, e, t, r) {
+        b[t] =
+          b[t] ||
+          function (...args) {
+            (b[t].q = b[t].q || []).push(args);
+          };
+        b[t].l = +new Date();
+        var s = e.createElement("script");
+        s.async = 1;
+        s.crossOrigin = "anonymous";
+        s.src = "https://betterstack.net/b.js?t=" + r;
+        (e.head || e.getElementsByTagName("head")[0]).appendChild(s);
+      })(window, document, "betterstack", "Xx9RqEJ7jW6ofziTJ92TkoQk");
+      betterstack("init", { environment: "production" });
+    </script>
+  </head>
+  <body class="dark-theme">
+    <Navbar client:load />
+    <main>
+      <slot />
+    </main>
+    <Footer client:load />
+    
+    <!-- Legacy scripts -->
+    <script is:inline src="/js/main.js"></script>
+    <script is:inline src="/js/themeswitcher.js"></script>
+    <script is:inline src="/js/type.js"></script>
+  </body>
+</html>
