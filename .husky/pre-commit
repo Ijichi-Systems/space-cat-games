@@ -1,1 +1,1 @@
-node scripts/bump-version.js
+node scripts/update-version.js
