@@ -34,4 +34,4 @@ function countLines(dir) {
 }
 
 const sloc = countLines(path.resolve('.'));
-console.log(sloc);
+console.log(sloc.toLocaleString());

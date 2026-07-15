@@ -90,7 +90,7 @@ export default function Footer() {
         <div style={{ marginTop: "20px", color: "#666", fontSize: "0.8rem" }}>
           <div>Built on: {new Date(__BUILD_INFO__.date).toLocaleString()}</div>
           <div>
-            Node: {__BUILD_INFO__.node} | Vite: {__BUILD_INFO__.vite} | SLOC: {__BUILD_INFO__.sloc} | Version:{" "}
+            Node: {__BUILD_INFO__.node} | Vite: {__BUILD_INFO__.vite} | SLOC: {__BUILD_INFO__.sloc.toLocaleString()} | Version:{" "}
             {version}
           </div>
         </div>
