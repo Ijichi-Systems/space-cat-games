@@ -209,35 +209,13 @@ export default function Games() {
       <>
         <Helmet></Helmet>
         <div className="container">
-          {showSurveyPopup && (
-            <div className="survey-popup-overlay">
-              <div className="survey-popup">
-                <button className="survey-close" onClick={handleCloseSurvey}>
-                  &times;
-                </button>
-                <h3>Quick Survey! 🐱</h3>
-                <p>
-                  We'd love to hear your thoughts on Space Cat Games. It only
-                  takes a minute!
-                </p>
-                <a
-                  href="https://form.typeform.com/to/Dp8OGYV7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn survey-btn"
-                  onClick={handleCloseSurvey}
-                >
-                  Take the Survey
-                </a>
-              </div>
-            </div>
-          )}
           <h1>Games Collection</h1>
           <div className="game-controls skeleton-controls">
             <div className="skeleton skeleton-search"></div>
             <div className="skeleton skeleton-button"></div>
           </div>
           <div className="games-grid">
+            <p className="text-center">A re-write is starting soon, please bear with us!</p>
             {[...Array(12)].map((_, i) => (
               <div key={i} className="game-item skeleton-card">
                 <div className="skeleton skeleton-img"></div>
