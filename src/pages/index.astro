@@ -1,17 +1,89 @@
 ---
+// src/layouts/Layout.astro
+interface Props {
+	title: string;
+}
 
+const { title } = Astro.props;
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{title}</title>
+
+	<script
+		async
+		src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3059320394040070"
+		crossorigin="anonymous"
+	></script>
+	<script
+		data-cfasync="false"
+		async
+		src="https://media.eplinx.net/js/code.min.js"
+	></script>
+	<meta
+		content="b45d94d97346d1c2ad4b8481a98a3b08"
+		name="eplinx-site-verification"
+	/>
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet"
+	/>
+	<link href="/css/style.css" rel="stylesheet" />
+	<link rel="icon" href="/favicon.ico" />
+
+	<script
+		id="Cookiebot"
+		src="https://consent.cookiebot.com/uc.js"
+		data-cbid="3a050c7c-3ead-4b4e-b044-854d2f99657b"
+		data-blockingmode="auto"
+	></script>
+
+	<script
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=G-TTZS202J2Q"
+	></script>
+	<script is:inline>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+		gtag("config", "G-TTZS202J2Q");
+	</script>
+
+	<meta
+		name="google-site-verification"
+		content="4FfZh-FnYXCbMh1VohpEyKO3dRNAWIJDIu6wsG8qP0k"
+	/>
+
+	<script is:inline>
+		!(function (b, e, t, r) {
+			b[t] =
+				b[t] ||
+				function (...args) {
+					(b[t].q = b[t].q || []).push(args);
+				};
+			b[t].l = +new Date();
+			var s = e.createElement("script");
+			s.async = 1;
+			s.crossOrigin = "anonymous";
+			s.src = "https://betterstack.net/b.js?t=" + r;
+			(e.head || e.getElementsByTagName("head")[0]).appendChild(s);
+		})(window, document, "betterstack", "Xx9RqEJ7jW6ofziTJ92TkoQk");
+		betterstack("init", { environment: "production" });
+	</script>
+</head>
+
+<body class="dark-theme">
+<slot />
+
+<script is:inline type="text/javascript" src="/js/main.js"></script>
+<script is:inline type="text/javascript" src="/js/themeswitcher.js"></script>
+<script is:inline type="text/javascript" src="/js/type.js"></script>
+</body>
 </html>

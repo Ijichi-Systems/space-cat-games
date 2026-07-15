@@ -1,7 +1,7 @@
 {
   "name": "space-cat-games",
   "type": "module",
-  "version": "19.0.31",
+  "version": "19.0.32",
   "engines": {
     "node": ">=22.12.0"
   },
