@@ -55,7 +55,8 @@
   }
 
   .games-grid {
-    @apply grid grid-cols-[repeat(auto-fill, minmax(200px, 1fr))] gap-8 my-10;
+    @apply grid gap-8 my-10;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
   .game-item {
@@ -159,7 +160,8 @@ body.dark-theme {
 
 /* Navbar Styles */
 .topnav {
-  @apply bg-nav py-4 shadow-nav border-b border-white/5;
+  background-color: var(--color-bg-nav);
+  @apply py-4 shadow-nav border-b border-white/5;
 }
 
 .nav-container {
@@ -201,7 +203,8 @@ body.dark-theme {
   }
 
   .nav-links.open {
-    @apply absolute top-16 left-0 right-0 bg-nav flex-col border-b border-white/5;
+    background-color: var(--color-bg-nav);
+    @apply absolute top-16 left-0 right-0 flex-col border-b border-white/5;
   }
 
   .menu-toggle.open span:nth-child(1) {

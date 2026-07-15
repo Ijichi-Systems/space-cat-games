@@ -31,14 +31,8 @@
     },
     {
       "title": "64 in 1 NES",
-      "url": "/games/64nes.html",
+      "url": "/games/64 in 1 NES.html",
       "img": "/images/64.gif",
-      "addedDate": "2026-04-28T16:25:06.000Z"
-    },
-    {
-      "title": "2048 Merge Run",
-      "url": "/games/2048mr.html",
-      "img": "/images/2048mr.png",
       "addedDate": "2026-04-28T16:25:06.000Z"
     },
     {
@@ -911,7 +905,7 @@
     },
     {
       "title": "Sandboxels",
-      "url": "/games/Sandboxels.html",
+      "url": "/games/sandboxels.html",
       "img": "/games/sandboxels-icon.png",
       "alt": "Sandboxels",
       "addedDate": "2026-04-28T16:25:06.000Z"
